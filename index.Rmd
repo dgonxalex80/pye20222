@@ -1,0 +1,36 @@
+---
+title: "**PROBABILIDAD Y ESTADÍSTICA**"
+subtitle: "300MAE005"
+author: "dgonzalez"
+date: ""
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
+    theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<br/><br/>
+
+![](img/bannerG.png)
+<br/><br/><br/>
+
+<H1> 
+<span style="color:#0036b1">**Calendario 2022-2**</span>
+</H1>
+
+![](img/calendario20222.png)
+<br/><br/><br/>
+
+<H1> 
+<span style="color:#0036b1">**Atención a Estudiantes**</span>
+</H1>
+
+
+![](img/atencion_estudiantes_estadistica.png)
+
