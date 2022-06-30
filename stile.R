@@ -1,0 +1,158 @@
+name: " "
+output_dir: "."
+navbar:
+  title: " "
+  left:
+    - text: "PyE"
+      icon: fa-home
+      href: index.html
+    - text: "Módulo 0"
+      menu:
+         - text: "Módulo 0"
+           href: Modulo0.html
+         - text: "Guía 0.1"
+           href: Guia001.html  
+         - text: "Guía 0.2"
+           href: Guia002.html  
+         - text: "Guía 0.3"
+           href: Guia003.html  
+         - text: "Guía 0.4"
+           href: Guia004.html  
+         - text: "----------"
+    - text: "Módulo 1"
+      icon: fa-solid fa-circle-1
+      menu:
+        - text: "Módulo 1"
+          href: Modulo1.html
+        - text: "Guía 1.1"
+          href: Guia101.html  
+        - text: "Guía 1.2"
+          href: Guia102.html  
+        - text: "Guía 1.3"
+          href: Guia103.html
+        - text: "----------"  
+        - text: "Recursos 1.1"
+        - href: recursos101.html
+        - text: "Recursos 1.2"
+        - href: recursos102.html
+        - text: "Recursos 1.3"
+        - href: recursos103.html
+        - text: "----------"
+        - text: "monitoria 1"
+          href: monitoria1.html
+        - text: "----------"
+        - text: "Introducción a R"
+          href: introduccionR.html
+        - text: "Código u1.1"
+          href: codigo101.html
+        - text: "Código u1.2"
+          href: codigo102.html  
+        - text: "Código u1.3"
+          href: codigo103.html        
+          
+    - text: "Módulo 2"
+      menu:
+        - text: "Módulo 2"
+          href: Modulo2.html
+        - text: "Guía 2.1"
+          href: Guia201.html  
+        - text: "Guía 2.2"
+          href: Guia202.html
+        - text: "----------"  
+         - text: "Recursos 2.1"
+        - href: recursos201.html
+        - text: "Recursos 2.2"
+        - href: recursos202.html
+        - text: "----------"
+        - text: "monitoria 2"
+          href: monitoria2.html
+        - text: "----------"  
+        - text: "Código u2.1"
+          href: codigo201.html
+          
+          
+    - text: "Módulo 3"
+      menu:
+        - text: "Módulo 3"
+          href: Modulo3.html
+        - text: "Guía 3.1"
+          href: Guia301.html  
+        - text: "Guía 3.2"
+          href: Guia302.html  
+        - text: "Guía 3.3"
+          href: Guia303.html
+        - text: "----------"  
+        - text: "Recursos 3.1"
+        - href: recursos301.html
+        - text: "Recursos 3.2"
+        - href: recursos302.html
+        - text: "Recursos 3.3"
+        - href: recursos303.html
+        - text: "----------"
+        - text: "monitoria 3"
+          href: monitoria3.html
+        - text: "----------"
+        - text: "Código u3.1"
+          href: codigo301.html
+        - text: "Código u3.2"
+          href: codigo302.html
+        - text: "Código u3.3"
+          href: codigo303.html
+          
+          
+    - text: "Módulo 4"
+      menu:
+        - text: "Módulo 4"
+          href: Modulo4.html
+        - text: "Guía 4.1"
+          href: Guia401.html  
+        - text: "Guía 4.2"
+          href: Guia402.html  
+        - text: "Guía 4.3"
+          href: Guia403.html  
+        - text: "----------"  
+        - text: "Recursos 4.1"
+        - href: recursos401.html
+        - text: "Recursos 4.2"
+        - href: recursos402.html
+        - text: "Recursos 4.3"
+        - href: recursos403.html
+        - text: "----------"
+        - text: "monitoria 4"
+          href: monitoria4.html
+        - text: "----------"
+        - text: "Código u4.1"
+          href: codigo401.html   
+        - text: "Código u4.2"
+          href: codigo402.html 
+        - text: "Código u4.3"
+          href: codigo403.html    
+    
+    - text: "Módulo 5"
+      menu:
+        - text: "Módulo 5"
+          href: Modulo5.html
+        - text: "Guía 5.1"
+          href: Guia501.html  
+        - text: "Guía 5.2"
+          href: Guia502.html
+        - text: "----------"
+        - text: "Recursos 5.1"
+        - href: recursos501.html
+        - text: "Recursos 5.2"
+        - href: recursos502.html
+        - text: "----------"
+        - text: "monitoria 5"
+          href: monitoria5.html
+        - text: "----------"
+        - text: "Código u5.1"
+          href: codigo501.html     
+        - text: "Código u5.2"
+          href: codigo502.html           
+
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
+    theme: flatly
