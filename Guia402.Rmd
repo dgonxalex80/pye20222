@@ -1,0 +1,44 @@
+---
+title: <span style="color:#646420">**Probabilidad y Estadística**</span>
+author: "dgonzalez "
+subtitle: <span style="color:#646420">**Unidad 4.2**</span>
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
+    theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,comment = NA)
+library(readr)
+library(paqueteDEG)
+# colores
+c0= "#b0394a"
+c1= "#ad6395"
+c2= "#a391c4"
+c3= "#8acfe6"
+c4= "#646420"
+c5= "#db524f"
+```
+
+
+```{r,  include=FALSE}
+library(readr)
+#datos <- read_csv("data/Datos_PyE.csv")
+#datos$notafin=as.numeric(datos$notafin)
+muestra1<- read_delim("data/base_muestreo.csv",delim = ";",escape_double = FALSE, trim_ws = TRUE)
+Colombia <- read_csv("data/Colombia.csv")
+
+```
+
+
+
+![](img/banner4.png)
+
+
+<span style="color:#db524f"> **EN CONSTRUCCIÓN**</span> 
+
+
+# **Guía de aprendizaje**

@@ -1,0 +1,49 @@
+---
+title: <span style="color:#ad6395">**Probabilidad y Estadística**</span>
+author: "dgonzalez "
+subtitle: <span style="color:#ad6395">**Unidad 1.2**</span>
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
+    theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,comment = NA)
+
+library(readr)
+library(readxl)
+library(rapportools) # miselania de estadisticas
+library(summarytools)
+library(agricolae)
+library(stringr)
+library(ggplot2)
+library(agricolae)
+
+bpe=read_delim("data/bpye20221.csv",delim = ";", escape_double = FALSE, trim_ws = TRUE)
+bpe=bpe[,c(1,2,4,5)]
+
+# colores
+c0= "#b0394a"
+c1= "#ad6395"
+c2= "#a391c4"
+c3= "#8acfe6"
+c4= "#646420"
+c5= "#db524f"
+
+```
+
+
+
+
+![](img/banner1.png)
+
+<br/><br/>
+
+<span style="color:#db524f"> **EN CONSTRUCCIÓN**</span> 
+
+
+# **Guía de aprendizaje**
+

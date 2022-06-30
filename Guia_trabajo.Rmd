@@ -1,0 +1,132 @@
+---
+title: "Guía trabajo final"
+author: "dgonzalez "
+subtitle: " " 
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
+    theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# colores
+c0= "#b0394a"
+c1= "#ad6395"
+c2= "#a391c4"
+c3= "#8acfe6"
+c4= "#646420"
+c5= "#db524f"
+```
+
+![](img/bannerG.png)
+
+Los estudiantes deberán realizar un proyecto que les permita poner en práctica los conocimientos adquiridos en el curso de  Probabilidad y Estadística.
+
+<br/><br/><br/>
+  
+## **Objetivos** 
+  
+  + Contribuir a la formación integral, al trabajo en equipo y la interrelación de conocimientos de Estadística alrededor de un problema específico.
+
++ Permitir los estudiantes detectar situaciones en las cuales pueda aplicar las técnicas Estadísticas estudiadas.
+
++ Desarrollar destrezas en el análisis estadístico y la presentación de informes estadísticos. 
+
+<br/><br/><br/>
+  
+## **Temática** 
+  
+  En grupos de hasta de tres estudiantes deberán desarrollar un trabajo que corresponda a un problema de  interés para el  grupo, que permita la aplicación de la Estadística en un tema específico. 
+
+El producto de este trabajo deberá ser entregado en una infografía junto a un resumen  
+
+<br/><br/><br/>
+  
+## **Requisitos** 
+  
+  + Máximo tres, mínimo de dos integrantes. No se permiten trabajos individuales.
+
++ Seleccionar un problema de interés propio para el grupo que  permita la aplicación de los conocimientos de estadística vistos en el curso. El tema propuesto deberá contar con el visto bueno del profesor.
+
++  El contenido de la infografía deberá utilizar por lo menos 6 resultados producto de la inferencia estadística (intervalos de confianza o pruebas de hipótesis) que respalden los resultados presentados
+
++ Al final los estudiantes deberán realizar una presentación del trabajo y de los principales hallazgos. Cada grupo contará con un tiempo de 5 minutos para la presentación de los resultados.
+
+<br/><br/><br/>
+  
+## **Fechas** 
+  
+  Entrega de informes: 
+  
+  + Entrega del informe final y presentación:
+  + **Infografía** en formato pdf o png 
+  + **video** o enlace de video con la sustentación del trabajo (requisito cámara prendida)
+  + Fecha: mayo 20 de 2022
+  + El trabajo será socializado en la página del curso
+
+<br/><br/><br/>
+  
+## **Referencias** 
+  
+  <br/>
+  
+  + Metodología de la investigación . Hernandez Sampieri Roberto. Segunda edición. Mc Graw-Hill
+  + Investigación de Mercados. Naresh K. Malhotra. Quinta Edición. Pearson.
+
+<br/><br/>
+  
+## **Grupos**
+  
+  <br/>
+  
+### 300MAE005 - A
+
+| Grupo   |                             |                                  |                        | 
+|:--------|:----------------------------|:---------------------------------|:-----------------------|
+| 1       | Juan Camilo Sánchez         | Juan Fernando Ríos               | Gian Marco Pantoja     |  
+| 2       | Valeria Ríos                | María Alejandra Ortiz            |                        |  
+| 3       | Valentina Sánchez           | Carlos Mauricio Ramírez          | Daniela Velasco        | 
+| 4       | Manuela Valdés              | Lina María Mazo                  | Valentina Gutiérrez    |  
+| 5       | Alejandra Otero Marín       | Esteban Castro Castro            | Santiago Portillo      | 
+| 6       | Antonio Varona              | Juan David Rodríguez             | Camilo Tarazona        |  
+| 7       | Santiago Astudillo          | Maria Kanaseki                   | Isabella Llanos        | 
+| 9       | Juan Camilo Zúñiga          | Yuliam Obando                    | Nayerly Rojas          |  
+| 10      | Samuel Morales              | Juan Fernando Barrera            | Brayan Portilla        |  
+| 11      | José Arango Gutierrez       | Sara Lucia Arango Rubio          | Andres Ceron Borja     |  
+| 12      | Sebastian Echeverry Lemos   | Isaac Grun Valencia              | Carlos Enrique Lenis Cruz|
+| 13      | Juan Solano Amaya           | Marlon TRochez Ramirez           |                        |
+
+
+
+
+<br/><br/>
+
+### 300MAE005 - B
+
+| Grupo   |                             |                                  |                        |
+|:--------|:----------------------------|:---------------------------------|:-----------------------|
+| 1       | Shalom Cassetta             | Juliana Figueroa                 | Isaac López            |   
+| 2       | Andrés Felipe Rodríguez     | Daniel Santiago Lodnoño          | Marlon Montero         |   
+| 3       | Miguel Bejarano             | David Mauricio Suarez            |                        |   
+| 4       | Esteban Campo               | María Camila Cortez              | Ismael Perea           |  
+| 5       | Felipe Palacio              | Santiago Grisales                |                        |   
+| 6       | Juan Acosta                 | Maria del Mar Villaquiran        | Fabian Ledezma         |   
+| 7       | Miguel Cumbalaza Christian  | Riascos Joan Sandoval            |                        |   
+| 8       | Cristian Camilo Tabares     | Jean Paul Gonzalez               | Néstor José Lugo       |  
+| 9       | Deivi Muñoz                 | Fabian Antoyne Garcia Gallego    |                        |   
+|10       | Duvan Aristizabal Figueroa  | Victor Cañon Otiz                |                        |   
+|11       | Santiago Caicedo Rojas      | Dilan Correa Ortiz               | Juan José Gómez Gómez  |  
+|12       | Maria Gomez Martinez        | Carlos Loaiza Cifuentes          |                        |
+|13       | Andres Loaiza Diaz          | Carlos Molina Rodriguez          | Cristian Riascos Ramirez|  
+|14       | Juan Rivera Cabrera         | Alvaro Vargas Garcia             |                        |   
+|15       |Jhoan Manuel Buitrago Chavez |Carlos Guerrero Betancourth       |                        |
+
+
+
+
+
+  

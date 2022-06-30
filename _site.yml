@@ -109,16 +109,9 @@ navbar:
     - text: "Actividad"
       icon: fa-cogs
       menu: 
-        - text: "Actividad 331"
+        - text: "Actividad "
           href: Actividad331.html          
-        - text: "Actividad 332"
-          href: Actividad332.html
-        - text: "SEP-parte A"
-          href: SEP_parteA.html
-        - text: "Trabajo Final"
-          href: Trabajo_Final.html
-        - text: "Caso C&A"
-          href: casoCyA.html
+        
           
 output:
   html_document:

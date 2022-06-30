@@ -11,6 +11,7 @@ output:
     theme: flatly
 ---
 
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -20,17 +21,17 @@ knitr::opts_chunk$set(echo = TRUE)
 ![](img/bannerG.png)
 <br/><br/><br/>
 
-<H1> 
-<span style="color:#0036b1">**Calendario 2022-2**</span>
-</H1>
+ 
+# **Calendario 2022-2**</span>
+
 
 ![](img/calendario20222.png)
 <br/><br/><br/>
 
-<H1> 
-<span style="color:#0036b1">**Atención a Estudiantes**</span>
-</H1>
+
+# **Atención a Estudiantes**
 
 
-![](img/atencion_estudiantes_estadistica.png)
+
+<!-- ![](img/atencion_estudiantes_estadistica.png) -->
 

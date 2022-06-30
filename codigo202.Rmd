@@ -1,0 +1,36 @@
+---
+title: <span style="color:#a391c4"> **Código 2.2**</span>  
+author: "dgonzalez "
+subtitle: <span style="color:#a391c4">**Módulo 2- Unidad 2.2**</span>
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
+    theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, comment = NA)
+library(psych)
+library(summarytools)
+
+# colores
+c0= "#b0394a"
+c1= "#ad6395"
+c2= "#a391c4"
+c3= "#8acfe6"
+c4= "#646420"
+c5= "#db524f" 
+
+```
+
+
+![](img/banner2.png)
+
+<br/><br/>
+
+<br/><br/>
+
+
+ 

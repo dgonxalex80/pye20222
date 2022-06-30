@@ -1,0 +1,36 @@
+---
+title: <span style="color:#8acfe6">**Probabilidad y Estadística**</span>
+author: "dgonzalez "
+subtitle: <span style="color:#8acfe6">**Unidad 3.3**</span> 
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
+    theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,comment = NA)
+
+# colores
+c0= "#b0394a"
+c1= "#ad6395"
+c2= "#a391c4"
+c3= "#8acfe6"
+c4= "#646420"
+c5= "#db524f"
+
+library(ggplot2)
+
+```
+
+
+
+![](img/banner3.png)
+<br/><br/>
+
+
+<span style="color:#db524f"> **EN CONSTRUCCIÓN**</span> 
+
+# **Guía de aprendizaje**
