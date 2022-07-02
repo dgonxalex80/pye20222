@@ -1,0 +1,32 @@
+---
+title: <span style="color:#ad6395"> **Recursos 1.3**</span>  
+author: "dgonzalez "
+subtitle: <span style="color:#ad6395">**Módulo 1- Unidad 1.3**</span> 
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
+    theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(comment = NA)
+
+library(RColorBrewer)
+library(summarytools)
+library(knitr)
+library(readxl)
+library(tidyverse)
+# Colombia<- readRDS("data/Colombia.RDS")
+
+# colores
+c0= "#b0394a"
+c1= "#ad6395"
+c2= "#a391c4"
+c3= "#8acfe6"
+c4= "#646420"
+c5= "#db524f"
+```
+
+![](img/banner1.png)
