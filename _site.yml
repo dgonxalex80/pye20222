@@ -11,7 +11,7 @@ navbar:
         - text: "Módulo 0"
           href: Modulo0.html
         - text: "Recurso 0.1"
-          href: recurso001.html  
+          href: recurso001.html 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 
         - text: "Recurso 0.2"
           href: recurso002.html  
         - text: "Recurso 0.3"
@@ -54,7 +54,7 @@ navbar:
         - text: "Recursos 2.2"
           href: recurso202.html
         - text: "---------"  
-        - text: "monitoria 2"
+        - text: "Monitoria 2"
           href: monitoria2.html        
     - text: "Módulo 3"
       menu:
@@ -75,7 +75,7 @@ navbar:
         - text: "Recursos 3.3"
           href: recurso303.html
         - text: "---------"            
-        - text: "monitoria 3"
+        - text: "Monitoria 3"
           href: monitoria3.html
     - text: "Módulo 4"
       menu:
@@ -96,7 +96,7 @@ navbar:
         - text: "Recursos 4.3"
           href: recurso403.html
         - text: "---------"  
-        - text: "monitoria 4"
+        - text: "Monitoria 4"
           href: monitoria4.html        
     - text: "Módulo 5"
       menu:
@@ -113,7 +113,7 @@ navbar:
         - text: "Recursos 5.2"
           href: recurso502.html
         - text: "---------"            
-        - text: "monitoria 5"
+        - text: "Monitoria 5"
           href: monitoria5.html
     - text: "Código R"
       icon: fa-code
