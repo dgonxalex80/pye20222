@@ -46,7 +46,12 @@ base_muestreo <- read_delim("data/base_muestreo.csv",
 
 <br/><br/>
 
->El sumatorio o sumatoria también conocida como operador de suma, notación sigma o símbolo de suma, es una notación matemática que permite representar una suma de varios sumandos, n o incluso infinitos sumandos son colocar puntos suspensivos. Se expresa mediante la letra sigma mayúscula.-Wikipedia
+*El sumatorio o sumatoria también conocida como operador de suma, notación sigma o símbolo de suma, es una notación matemática que permite representar una suma de varios sumandos, n o incluso infinitos sumandos son colocar puntos suspensivos. Se expresa mediante la letra sigma mayúscula.*
+
+*Wikipedia*
+
+<br/><br/>
+
 
 Este operador será utilizado en el curso en la construcción de conceptos como media aritmética, varianza, covarianza, correlación, estimación de los coeficientes del modelo de regresión entre otros
 
@@ -79,7 +84,7 @@ Si se tienen las notas de un examen de 12 estudiantes como:
 
 3.4, 4.2, 2.5, 4.1, 3.0, 4.2, 4.7, 3.3, 4.5, 5.0, 2.5, 4.8
  
-Y se desea calcular la media de las notas, primero se deben sumar todas las notas y el resultado dividirlo por el numero de notas. 
+Y se desea calcular la media de las notas, primero se deben sumar todas las notas y el resultado dividirlo por el número de notas. 
  
 
 $$\bar{x} = \dfrac{1}{12}\displaystyle\sum_{i=1}^{12} x_{i}$$
@@ -171,8 +176,11 @@ f. $\displaystyle\sum_{i=1}^{15} \dfrac{(x_{i}-3.5)(y_{i}-4.0)}{(x_{i}-3.5)^{2}}
 
 <br/><br/>
 
->El productorio o productoria, también conocido como multiplicatorio, multiplicatoria o simplemente producto es una notación matemática que representa una multiplicación de una cantidad arbitraria finita o infinita.-Wikipedia
+*El productorio o productoria, también conocido como multiplicatorio, multiplicatoria o simplemente producto es una notación matemática que representa una multiplicación de una cantidad arbitraria finita o infinita.*
 
+*Wikipedia*
+
+<br/><br/>
 
 Este operador será utilizado para desarrollar el método de estimación de Máxima Verosimilitud, soporte de la inferencia estadística abordado en la Unidad 4.1 del Módulo 4.
 
