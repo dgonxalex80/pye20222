@@ -39,6 +39,15 @@ navbar:
         - text: "---------"            
         - text: "Monitoria 1"
           href: monitoria1.html
+        - text: "---------"          
+        - text: "Introducción a R"
+          href: introduccionR.html
+        - text: "Código 1.1"
+          href: codigo101.html
+        - text: "Código 1.2"
+          href: codigo102.html  
+        - text: "Código 1.3"
+          href: codigo103.html          
     - text: "Módulo 2"
       menu:
         - text: "Módulo 2"
@@ -55,7 +64,10 @@ navbar:
           href: recurso202.html
         - text: "---------"  
         - text: "Monitoria 2"
-          href: monitoria2.html        
+          href: monitoria2.html   
+        - text: "---------"  
+        - text: "Código 2.1"
+          href: codigo201.html        
     - text: "Módulo 3"
       menu:
         - text: "Módulo 3"
@@ -77,6 +89,13 @@ navbar:
         - text: "---------"            
         - text: "Monitoria 3"
           href: monitoria3.html
+        - text: "---------"   
+        - text: "Código 3.1"
+          href: codigo301.html
+        - text: "Código 3.2"
+          href: codigo302.html
+        - text: "Código 3.3"
+          href: codigo303.html        
     - text: "Módulo 4"
       menu:
         - text: "Módulo 4"
@@ -97,7 +116,14 @@ navbar:
           href: recurso403.html
         - text: "---------"  
         - text: "Monitoria 4"
-          href: monitoria4.html        
+          href: monitoria4.html
+        - text: "---------"   
+        - text: "Código 4.1"
+          href: codigo401.html   
+        - text: "Código 4.2"
+          href: codigo402.html 
+        - text: "Código 4.3"
+          href: codigo403.html        
     - text: "Módulo 5"
       menu:
         - text: "Módulo 5"
@@ -115,36 +141,14 @@ navbar:
         - text: "---------"            
         - text: "Monitoria 5"
           href: monitoria5.html
-    - text: "Código R"
-      icon: fa-code
-      menu:
-        - text: "Introducción a R"
-          href: introduccionR.html
-        - text: "Código u1.1"
-          href: codigo101.html
-        - text: "Código u1.2"
-          href: codigo102.html  
-        - text: "Código u1.3"
-          href: codigo103.html
-        - text: "Código u2.1"
-          href: codigo201.html
-        - text: "Código u3.1"
-          href: codigo301.html
-        - text: "Código u3.2"
-          href: codigo302.html
-        - text: "Código u3.3"
-          href: codigo303.html
-        - text: "Código u4.1"
-          href: codigo401.html   
-        - text: "Código u4.2"
-          href: codigo402.html 
-        - text: "Código u4.3"
-          href: codigo403.html
-        - text: "Código u5.1"
+        - text: "---------"           
+        - text: "Código 5.1"
           href: codigo501.html     
-        - text: "Código u5.2"
+        - text: "Código 5.2"
           href: codigo502.html    
-          
+  right:
+    - icon: fab fa-github 
+      href: https://github.com/dgonxalex80/pye20222         
 output:
   html_document:
     theme: flatly
