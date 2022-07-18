@@ -27,7 +27,7 @@ c5= "#db524f"
 
 <br/><br/>
 
-### **Introducción**
+# **Introducción**
 
 Este módulo contiene aquellos conceptos que se consideran necesarios para abordar los temas propuestos en  el curso. En caso de no recordarlos o de no  haberlos trabajado  previamente, te  recomiendo revisar el  contenido de esta modulo.
 
@@ -49,6 +49,6 @@ Son ellos:
 
 <br/><br/><br/>
 
-### **Objetivo**
+# **Objetivo**
 
 Al finalizar este modulo los estudiantes RECORDARAN los conceptos de SUMATORIA, PRODUCTORIA, TEORIA DE CONJUNTOS, TECNCAS DE CONTEO, FUNCION EXOPNENCIAL y LOGARÍTMICA, DERIVACIÓN e INTEGRACIÓN, conceptos que serán requeridos para la mejor comprensión de los conceptos planteados en el curso.
