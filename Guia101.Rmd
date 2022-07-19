@@ -134,7 +134,7 @@ Para alcanzar los objetivos planteados se propone realizar las siguientes activi
 |Actividad103   | Descripción                    | 
 |:--------------|:-----------------------------  |
 |Individual     |**Instalación de R y RStudio** : Para el  desarrollo  de las  actividades del curso deberán instalar [R CRAN](https://www.r-project.org/) y   [RStudio](https://rstudio.com/). Para su correcta instalación  existen varios videos en  YouTube que le permitirán realizarlo de una manera correcta   | 
-|Recursos       | [DESCARGAR e instalar R y RStudio 2021 -Video Rafa Gonzalez Gouveia](https://www.youtube.com/watch?v=Nmu4WPdJBRo) |
+|Recursos       | [Descargar e instalar R y RStudio 2021 -Video Rafa Gonzalez Gouveia](https://www.youtube.com/watch?v=Nmu4WPdJBRo) |
 |               | [R download](https://cran.r-project.org/) |
 |               | [RStudio download](https://rstudio.com/products/rstudio/download/) |
 | Fecha         | 31 de julio 2022 |
