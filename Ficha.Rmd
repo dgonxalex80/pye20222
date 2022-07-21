@@ -1,5 +1,5 @@
 ---
-title: <span style="color:#ad6395">**Ficha técnica**</span>
+title: <span style="color:#ad6395">**Probabilidad y Estadística**</span>
 author: "dgonzalez "
 subtitle: <span style="color:#ad6395">**Unidad 1.1**</span>
 output:

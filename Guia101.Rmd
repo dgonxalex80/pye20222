@@ -112,7 +112,7 @@ Para alcanzar los objetivos planteados se propone realizar las siguientes activi
 |:--------------|:-----------------------------  |
 |Individual     |  **Base de datos** : Cada estudiante deberá  buscar una  base de  datos  de su interés,  depuarla  y  documentarla  si es  necesario. A partir de la información  recolectada deberá construir la ficha técnica de  la base. El resultado  de esta actividad deberá se entregado  en **archivo en formato pdf** con  nombre: **actividad102.pdf** |
 | Recurso       | Video: [Como descargar datos abiertos](https://www.youtube.com/watch?v=lRftK2mL3Sw) 
-|               | Formato ficha : [Ficha técnica](https://drive.google.com/file/d/1O1eaS8y6olf5o_42ehgDgVZ4q1dganbd/view?usp=sharing) |
+|               | Formato ficha : [Ficha técnica](https://dgonxalex80.github.io/pye20222/Ficha.html) |
 |               | Excel |
 |               | RStudio |
 |Fecha          | 31 de julio 2022 |
