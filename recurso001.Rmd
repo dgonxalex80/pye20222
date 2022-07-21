@@ -52,6 +52,13 @@ base_muestreo <- read_delim("data/base_muestreo.csv",
 
 <br/><br/>
 
+$$\displaystyle\sum_{k=1}^{12} 4k $$
+
+
+<br/><br/>
+Se lee: *Sumatoria de 4 por k, desde k igual a uno hasta doce*
+
+<br/><br/>
 
 Este operador será utilizado en el curso en la construcción de conceptos como media aritmética, varianza, covarianza, correlación, estimación de los coeficientes del modelo de regresión entre otros
 
@@ -182,6 +189,13 @@ f. $\displaystyle\sum_{i=1}^{15} \dfrac{(x_{i}-3.5)(y_{i}-4.0)}{(x_{i}-3.5)^{2}}
 
 <br/><br/>
 
+$$\displaystyle\prod_{k=1}^{10} 3k $$
+<br/><br/>
+
+*Se lee : productoria de 3 por k desde k igual a uno hasta diez*
+
+<br/><br/>
+
 Este operador será utilizado para desarrollar el método de estimación de Máxima Verosimilitud, soporte de la inferencia estadística abordado en la Unidad 4.1 del Módulo 4.
 
 <br/><br/><br/> 
@@ -195,13 +209,20 @@ El operador consiste en multiplicar un numero de veces establecido los términos
 Una de las aplicaciones más conocida de la productoria son los números factoriales
 
 $$n! = \displaystyle\prod_{i=1}^n i = 1 \times 2 \times 3 \cdots \times n$$    
+
+<br/><br/>
+
 Este operador también se utiliza para multiplicar funciones, matrices como por ejemplo:
 
-$$\displaystyle\prod_{i=1}^n f(x_i) = f(x_1) \times f(x_2) \times f(x_3) \cdots \times f(x_n)$$    
+$$\displaystyle\prod_{i=1}^n f(x_i) = f(x_1) \times f(x_2) \times f(x_3) \cdots \times f(x_n)$$   
+
+
 Para el caso de $f(x) = \exp\{x\}$ tenemos:
 
 
 $$\displaystyle\prod_{i=1}^n \exp\{x_i\} = \exp\{x_1\} \times \exp\{x_2\} \times \exp\{x_3\} \cdots \times \exp\{x_n\}$$    
+
+<br/><br/>
 
 Al tener la misma base con diferente exponente, el resultado se obtiene al colocar la misma base y sumar los exponentes,
 
@@ -225,19 +246,19 @@ prod(1:10)
 
 <br/><br/> 
 
-1.  $\displaystyle\prod_{k=1}^{20} 2^{k}$
+*  $\displaystyle\prod_{k=1}^{20} 2^{k}$
 
 <br/><br/> 
 
-2. $\displaystyle\prod_{i=1}^{30} k 2^{k}$
+* $\displaystyle\prod_{i=1}^{30} k 2^{k}$
 
 <br/><br/> 
 
-3. $\displaystyle\prod_{i=1}^n f(x_{i})$    para las siguientes funciones:
+* $\displaystyle\prod_{i=1}^n f(x_{i})$    para las siguientes funciones:
 
-  a. $f(x) = \dfrac{1}{60}$
+  + $f(x) = \dfrac{1}{60}$
   
-  b. $f(x_{i}) = \dfrac{1}{x_{i}}$
+  + $f(x_{i}) = \dfrac{1}{x_{i}}$
   
-  c. $f(x_{i} = \dfrac{1}{\sqrt{2\pi}} \exp\{\frac{1}{2}x^{2}\}$
+  + $f(x_{i}) = \dfrac{1}{\sqrt{2\pi}} \exp \bigg\{\frac{1}{2}x_{i}^{2}\bigg\}$
 
