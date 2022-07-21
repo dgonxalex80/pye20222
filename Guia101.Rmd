@@ -37,17 +37,6 @@ paleta4=c(co1,co2,co3,co7)
 paleta5=c(co1,co2,co3,co4,co7)
 paleta6=c(co1,co2,co3,co4,co5,co7)
 paleta7=c(co1,co2,co3,co4,co5,co6,co7)
-
-library(RColorBrewer)
-library(readxl)
-library(summarytools)
-library(knitr)
-library(readxl)
-library(tidyverse)
-library(readr)
-bpe20221 <- read_delim("data/bpye20221.csv", 
-     delim = ";", escape_double = FALSE, col_types = cols(promedio = col_number()), 
-     trim_ws = TRUE)
 ```
 
 # **Guía de aprendizaje**

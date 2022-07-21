@@ -47,7 +47,9 @@ navbar:
         - text: "Código 1.2"
           href: codigo102.html  
         - text: "Código 1.3"
-          href: codigo103.html          
+          href: codigo103.html   
+        - text: "Ficha ténica"
+          href: Ficha.html          
     - text: "Módulo 2"
       menu:
         - text: "Módulo 2"

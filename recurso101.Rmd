@@ -19,6 +19,8 @@ library(knitr)
 library(readxl)
 library(tidyverse)
 # Colombia<- readRDS("data/Colombia.RDS")
+library(readxl)
+pye20222 <- read_excel("data/pye20222.xlsx", sheet = "Sheet4", col_types = c("text", "numeric", "text", "numeric", "text", "numeric", "numeric","numeric", "numeric"))
 
 # colores
 c0= "#b0394a"
@@ -38,19 +40,19 @@ Con el fin de tener una idea inicial del propósito de este módulo, se presenta
 
 <br/><br/>
 
-# **Grupos 2022-**
+# **Grupos 2022-2**
 
 
 ```{r, echo=FALSE}
-t1011=table(bpe20221$carrera,bpe20221$grup)
-barplot(t1011,col = brewer.pal(6,"Set1"), ylim = c(0,60),
+t1011=table(pye20222$carrera,pye20222$grup)
+barplot(t1011,col = brewer.pal(6,"Set1"), ylim = c(0,30),
         legend = rownames(t1011))
 ```
 
 
 
 ```{r, echo=FALSE, warning=FALSE}
-p=ggplot(bpe20221, aes(x=promedio))+
+p=ggplot(pye20222, aes(x=prom_acad))+
   geom_density()
 p 
 ```
@@ -58,7 +60,7 @@ p
 
 
 ```{r, echo=FALSE}
-p1012<-ggplot(bpe20221, aes(x=grup, y=promedio)) +
+p1012<-ggplot(pye20222, aes(x=grup, y=prom_acad)) +
   geom_boxplot(fill = "palegreen", color = "blue4", 
                size=0.5, outlier.color = "blue4", outlier.size = 2)+
   geom_jitter(color="black", size=0.4, alpha=0.9)
@@ -68,7 +70,7 @@ p1012
 
 
 ```{r, echo=FALSE}
-ggplot(bpe20221, aes(x = promedio, fill = grup)) +
+ggplot(pye20222, aes(x = prom_acad, fill = grup)) +
         geom_density(alpha = .5)
 ```
 
@@ -85,23 +87,15 @@ Una forma de abordar el curso de Probabilidad y Estadística e mediante la metod
 
 <br/>
 
-    1. Definición del problema
-
-    2. Definición de los objetivos
-
-    3. Definición de las variables de interés
-
-    4. Diseño del experimento
-
-    5. Recolección de la información
-
-    6. Procesamiento de los datos
-
-    7. Análisis descriptivo
-
-    8. Inferencia estadística
-
-    9. Conclusiones y recomendaciones
+##### 1. **Definición del problema**
+##### 2. **Definición de los objetivos**
+##### 3. **Definición de las variables de interés**
+##### 4. **Diseño del experimento**
+##### 5. **Recolección de la información**
+##### 6. **Procesamiento de los datos**
+##### 7. **Análisis descriptivo**
+##### 8. **Inferencia estadística**
+##### 9. **Conclusiones y recomendaciones**
 
 <br/><br/>
 
@@ -110,7 +104,7 @@ La descripción de cada una de ellas se presenta a continuación:
 
 <br/>
 
-[![](img/metodologia.png)](https://view.genial.ly/5f1ba8da1829700da368b4ab/horizontal-infographic-review-metodologia)
+<div class="container-wrapper-genially" style="position: relative; min-height: 400px; max-width: 100%;"><video class="loader-genially" autoplay="autoplay" loop="loop" playsinline="playsInline" muted="muted" style="position: absolute;top: 45%;left: 50%;transform: translate(-50%, -50%);width: 80px;height: 80px;margin-bottom: 10%"><source src="https://static.genial.ly/resources/panel-loader-low.mp4" type="video/mp4" />Your browser does not support the video tag.</video><div id="5f1ba8da1829700da368b4ab" class="genially-embed" style="margin: 0px auto; position: relative; height: auto; width: 100%;"></div></div><script>(function (d) { var js, id = "genially-embed-js", ref = d.getElementsByTagName("script")[0]; if (d.getElementById(id)) { return; } js = d.createElement("script"); js.id = id; js.async = true; js.src = "https://view.genial.ly/static/embed/embed.js"; ref.parentNode.insertBefore(js, ref); }(document));</script>
 
 <br/><br/><br/>
 
@@ -134,16 +128,17 @@ En caso de tratarse de un problema con cierta frecuencia pero con característic
 
 <br/><br/>
 
-**Ejemplos de problemas:**
-
-+ Aumento de embarazo de adolescentes en Colombia
-+ Incremento de fugas de energía eléctrica en la ciudad
-+ Incremento de la tasa de empleo informal
-+ Incremento de incapacidades  causadas por accidentes automovilísticos
-+ Aumento del tiempo de atención al cliente
-+ Aumento de quejas por prestación de servicios
-+ Aumentó corrupción en Colombia, según Transparencia Internacional 
-+ Disminución de la demanda de educación en el área de las ingenierías
+|    |                                     |
+|:--:|:------------------------------------|
+| <img src="img/ej1.png" alt="drawing" width="200"/> ||  
+|                  |Aumento de embarazo de adolescentes en Colombia|
+|                  | Incremento de fugas de energía eléctrica en la ciudad|
+|                  | Incremento de la tasa de empleo informal|
+|                  | Incremento de incapacidades  causadas por accidentes automovilísticos|
+|                  | Aumento del tiempo de atención al cliente|
+|                  | Aumento de quejas por prestación de servicios|
+|                  | Aumentó corrupción en Colombia, según Transparencia Internacional| 
+|                  | Disminución de la demanda de educación en el área de las ingenierías|
 
 <br/><br/><br/>
 
@@ -161,12 +156,13 @@ Algunos verbos que se recomienda no utilizar: saber, aprender, conocer, entender
 
 <br/><br/>
 
-**Ejemplo de objetivos**
-
-+ Establecer los principales causas de las fugas de energía eléctrica en la  ciudad 
-+ Determinar  las  principales causas de las incapacidades del personal por causas extralaborales
-+ Determinar los principales factores que inciden sobre el aumento del tiempo de atención 
-+ Establecer cuáles son los principales factores que inciden en la escogencia de la carrera universitaria en ingeniería
+|    |                                     |
+|:--:|:------------------------------------|
+| <img src="img/ej2.png" alt="drawing" width="200"/> || 
+|| Establecer los principales causas de las fugas de energía eléctrica en la  ciudad| 
+|| Determinar  las  principales causas de las incapacidades del personal por causas extralaborales|
+|| Determinar los principales factores que inciden sobre el aumento del tiempo de atención| 
+|| Establecer cuáles son los principales factores que inciden en la escogencia de la carrera universitaria en ingeniería|
 
 <br/><br/><br/>
 
@@ -187,33 +183,35 @@ Existen diferentes formas de clasificación de las variables aleatorias, inicial
 
 ## **Variables Cualitativas**  
 
-Corresponden a valores no numéricos como por ejemplo: 
-      
-+ Día de la semana, (Lun, Mar, Mié, Jue, Vie, Sáb, Dom) 
-+ Estado civil, (soltero, casado, unión libre, separado, viudo)
-+ Sexo,(Mujer, Hombre)
-+ Satisfacción del cliente por el servicio prestado (Alta, media, baja)
-+ Tipo de queja
-+ Barrio donde se produce el daño
-+ Asignatura cursada
-+ Carrera o programa académico 
+|    |                                     |
+|:--:|:------------------------------------|
+| <img src="img/ej3.png" alt="drawing" width="200"/> || 
+|| Día de la semana, (Lun, Mar, Mié, Jue, Vie, Sáb, Dom) |
+|| Estado civil, (soltero, casado, unión libre, separado, viudo)|
+|| Sexo,(Mujer, Hombre)|
+|| Satisfacción del cliente por el servicio prestado (Alta, media, baja)
+|| Tipo de queja |
+|| Barrio donde se produce el daño |
+|| Asignatura cursada |
+|| Carrera o programa académico | 
 
 <br/><br/>
 
 #### **Variables Cuantitativas** 
 
-Corresponden a valores numéricos como por ejemplo : 
-
-+ Consumo de energía en la residencia
-+ Tiempo de respuesta a la solicitud
-+ Número de servicios realizados en  el día
-+ Costo del servicio prestado 
-+ Número de trabajadores que se requieren para solucionar problema
-+ Consumo de energía de un hogar en kW-h
-+ Valor de la factura de consumo  de energía para hogares
-+ Valor de la cartera morosa de la empresa en  un  mes determinado
-+ Peso en Kg de una persona
-+ Edad de un estudiante
+|    |                                     |
+|:--:|:------------------------------------|
+| <img src="img/ej4.png" alt="drawing" width="200"/> |                       |
+|| Consumo de energía en la residencia|
+|| Tiempo de respuesta a la solicitud|
+|| Número de servicios realizados en  el día|
+|| Costo del servicio prestado| 
+|| Número de trabajadores que se requieren para solucionar problema|
+|| Consumo de energía de un hogar en kW-h |
+|| Valor de la factura de consumo  de energía para hogares |
+|| Valor de la cartera morosa de la empresa en  un  mes determinado |
+|| Peso en Kg de una persona |
+|| Edad de un estudiante |
 
 Las variables se miden en diferentes escalas, dependiendo del tipo de valor que pueden tomar. Es necesario tener claro además del tipo de variables,  el tipo de escala, por cuanto esto puede determinar el tipo de procesamiento estadística que se debe utilizar.
 
@@ -229,22 +227,30 @@ Las variables se miden en diferentes escalas, dependiendo del tipo de valor que 
 | cuantitativa    | de intervalo      |
 |cuantitativa     | de razón          |
 
+<br/><br/>
 
 ##### **Escala nominal** 
 
 Corresponde a valores no numéricos sin presencia de orden entre ellos. 
 
-Operaciones posibles  al comparar dos valores:  
+Operaciones posibles  al comparar dos valores:
+
 + podemos afirmas que son iguales
 + podemos afirmar que los valores son diferentes  
 
-Ejemplos:
+<br/><br/>
 
-+ Genero
-+ Estado civil
-+ Nacionalidad
+|    |                                     |
+|:--|:------------------------------------|
+|<img src="img/ej5.png" alt="drawing" width="70"/> || 
+|| Genero |
+|| Estado civil |
+|| Nacionalidad |
+|| Carrera o programa académico|
 
-		
+
+<br/><br/>
+
 ##### **Escala ordinal** 
 
 Corresponde a valores no numéricos con presencia de orden entre ellos. Es posible realizar las comparaciones de dos valores: 
@@ -254,10 +260,18 @@ Corresponde a valores no numéricos con presencia de orden entre ellos. Es posib
 + podemos afirmar que un valor es menor que el otro valor, 
 + podemos afirmar que un valor es mayor que el otro. 
 
-Ejemplo: 
+<br/><br/>
 
-+	Considera que el servicio que acaba de recibir es: <br/>
-$\square$  Excelente, $\square$  Muy bueno, $\square$  Bueno, $\square$  Regular, $\square$  Muy regular, $\square$  Pésimo      
+|    |                                     |
+|:--|:------------------------------------|
+| <img src="img/ej6.png" alt="drawing" width="70"/> || 
+|| Considera que el servicio que acaba de recibir es:| 
+|| $\square$  Excelente,|
+|| $\square$  Muy bueno,|
+|| $\square$  Bueno, |
+|| $\square$  Regular,| 
+|| $\square$  Muy regular,| 
+|| $\square$  Pésimo|      
 
 <br/><br/>
 
@@ -272,15 +286,17 @@ Corresponde a valores numéricos, dentro de los cuales solo tiene sentido la dif
 + la diferencia (resta) entre dos valores tiene sentido
 + el valor de cero no implica ausencia de la variable
 
-Ejemplo:  
+<br/><br/>
 
-+ Temperatura. La variable se puede medir en diferentes tipos de escalas :
-
-    + Celsius $^{\circ} C$, (La escala Celsius fue creada  Andrés Celsius (1742) . Esta escala  tiene como referencia los puntos de congelación y ebullición del agua, límites que divide en 100 partes iguales 
-    + Kelvin $K$, Creada por William Thompson Kelvin (1848), en la que propone una transformación de la escala Celsius hasta un valor  hipotético en el que hay ausencia de calor. 
-    + Fahrenheit $^{\circ}F$  Escala propuesta Gabriel Daniel Fahrenheit (1724), proponiendo una modificación a la escala Celsius
-    
-En conclusión la variable temperatura se puede medir en varias escalas
+|    |                                     |
+|:--|:------------------------------------|
+|<img src="img/ej7.png" alt="drawing" width="200"/> ||  
+|| Temperatura.  |
+|| La variable se puede medir en diferentes tipos de escalas : |
+|| * Celsius $^{\circ} C$, (La escala Celsius fue creada  Andrés Celsius (1742) . Esta escala  tiene como referencia los puntos de congelación y ebullición del agua, límites que divide en 100 partes iguales |
+|| * Kelvin $K$, Creada por William Thompson Kelvin (1848), en la que propone una transformación de la escala Celsius hasta un valor  hipotético en el que hay ausencia de calor. |
+|| * Fahrenheit $^{\circ}F$  Escala propuesta Gabriel Daniel Fahrenheit (1724), proponiendo una modificación a la escala Celsius |
+|| En conclusión la variable temperatura se puede medir en varias escalas |
 
 
 En ocasiones variables de tipo cualitativo no observables de manera directa como :
@@ -291,9 +307,10 @@ En ocasiones variables de tipo cualitativo no observables de manera directa como
 + Nivel de desempeño
 + Calidad
 
-requieren de la medición de factores que a su vez están conformados por lo variables cualiitativas en escala ordinal. En estos casos se recurre a instrumentos que valoran las respuestas mediante puntuaciones que se suman y arrojan un nivel que permite valorar el nivel de la variable de interes
+Con frecuencia a las variables anteriores se les llama variables latentes debido a que su medición no es directa, sino que se realiza a través de preguntas que se recogen en un instrumento en muchos casos agrupados por factores. Cada respuesta en las preguntas tiene un valor o puntaje que es sumado y determina los niveles de la variable.  Los valores dados  a  las respuestas pueden cambiar de instrumento a instrumento, pues existen escalas con 3 valores, otras con 5, 7 que que pueden representar una escala ordinal. 
 
-A esta transformación numérica para poder interpretar se conoce como **operacionalización** a escala de intervalo de una variable cualitativa.  
+
+A esta transformación numérica (suma de los puntajes obtenidos al totalizar los puntajes obtenidos) se conoce como **operacionalización** a escala de intervalo de una variable cualitativa.  
 
 <br/><br/>
 
@@ -309,14 +326,16 @@ Corresponde a valores  numéricos, para los cuales además de las diferencias ta
 + la razón o división de dos de sus valores tiene sentido
 + el valor de cero indica ausencia de la variable
 
+<br/><br/>
 
-Ejemplos:  
-
-+ Consumo de energía por hogar en kW-h
-+ Salario que recibe un empleado en pesos colombianos
-+ Utilidad de una empresa obtenida al final del año
-+	Nivel de endeudamiento de una empresa al final del año en porcentaje
-+ Precio del metro cuadrado de tierra  en a comuna 22 de Cali
+|    |                                     |
+|:--|:------------------------------------|
+|<img src="img/ej8.png" alt="drawing" width="200"/> || 
+|| + Consumo de energía por hogar en kW-h |
+|| + Salario que recibe un empleado en pesos colombianos |
+|| + Utilidad de una empresa obtenida al final del año  |
+|| +	Nivel de endeudamiento de una empresa al final del año en porcentaje |
+|| + Precio del metro cuadrado de tierra  en a comuna 22 de Cali |
 
 <br/><br/> 
 
@@ -638,12 +657,15 @@ Existen repositorio de bases de datos para uso general como:
 
 **Base datos iris (dataset R)**
 
-<br/>
+<br/><br/>
 
 ```{r ,warning=FALSE, message=FALSE}
 data(iris)
 head(iris)
 ```
+
+<br/><br/>
+
 Datos de iris (de Fisher o Anderson) 
 + longitud y ancho del sépalo 
 + largo y ancho de pétalos
@@ -653,7 +675,7 @@ Datos de iris (de Fisher o Anderson)
 
 Base de datos estadísticos se estructura mediante arreglo de filas y columnas (matriz) donde por lo general las columnas representan las variables y las filas los registros de los objetos de estudio
 
-Una base de datos es un conjunto de datos pertenecientes a un mismo contexto y almacenados sistemáticamente para su posterior uso.
+*Una base de datos es un conjunto de datos pertenecientes a un mismo contexto y almacenados sistemáticamente para su posterior uso.*
 
 <br/>
 
@@ -858,7 +880,7 @@ El formato **csv** es uno de los mas utilizados para el almacenamiento de datos 
 
 ```{r, warning=FALSE, message=FALSE}
 var1=c(1,2,4,5)
-bd=bpe20221[,var1]
+bd=pye20222[,var1]
 head(bd, n=3)
 ```
 

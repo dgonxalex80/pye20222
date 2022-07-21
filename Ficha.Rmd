@@ -1,7 +1,7 @@
 ---
-title: <span style="color:#646420">**Probabilidad y Estadística**</span>
+title: <span style="color:#ad6395">**Ficha técnica**</span>
 author: "dgonzalez "
-subtitle: <span style="color:#646420">**Unidad 4.2**</span>
+subtitle: <span style="color:#ad6395">**Unidad 1.1**</span>
 output:
   html_document:
     toc: yes
@@ -12,7 +12,6 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE,comment = NA)
-
 # colores
 c0= "#b0394a"
 c1= "#ad6395"
@@ -20,14 +19,21 @@ c2= "#a391c4"
 c3= "#8acfe6"
 c4= "#646420"
 c5= "#db524f"
+
 ```
 
 
 
-![](img/banner4.png)
+![](img/banner1.png)
+
+<br/><br/>
+
+## **Ficha ténica**
+
+![](img/tabla_ficha.png)
 
 
-<span style="color:#db524f"> **EN CONSTRUCCIÓN**</span> 
 
 
-# **Guía de aprendizaje**
+
+

@@ -21,8 +21,6 @@ c3= "#8acfe6"
 c4= "#646420"
 c5= "#db524f"
 
-library(ggplot2)
-
 ```
 
 
