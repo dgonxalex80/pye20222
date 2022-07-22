@@ -111,8 +111,8 @@ Para alcanzar los objetivos planteados se propone realizar las siguientes activi
 |Actividad102   | Descripción                    | 
 |:--------------|:-----------------------------  |
 |Individual     |  **Base de datos** : Cada estudiante deberá  buscar una  base de  datos  de su interés,  depuarla  y  documentarla  si es  necesario. A partir de la información  recolectada deberá construir la ficha técnica de  la base. El resultado  de esta actividad deberá se entregado  en **archivo en formato pdf** con  nombre: **actividad102.pdf** |
-| Recurso       | Video: [Como descargar datos abiertos](https://www.youtube.com/watch?v=lRftK2mL3Sw) 
-|               | Formato ficha : [Ficha técnica](https://dgonxalex80.github.io/pye20222/Ficha.html) |
+| Recurso       | Video: [**Como descargar datos abiertos**](https://www.youtube.com/watch?v=lRftK2mL3Sw) 
+|               | Formato ficha : [**Ficha técnica**](https://dgonxalex80.github.io/pye20222/Ficha.html) |
 |               | Excel |
 |               | RStudio |
 |Fecha          | 31 de julio 2022 |
@@ -154,8 +154,8 @@ Los entregables completos y enviados dentro de los tiempos establecidos  otorgar
 
 | Entregable |  Descripción                    |
 |:--------------|:-----------------------------|
-|**actividad1.pdf** | Documento que contenga: Formulación de problema propuesto, definición  de los objetivos y definición de variables de interés. En este último caso detallar para cada variable su  tipo ( cualitativa o cuantitativa ) y su escala de medición ( nominal, ordinal, de intervalo o de razón).|
-|**actividad2.pdf**| Ficha técnica de  la base seleccionada |
+|**actividad101.pdf** | Documento que contenga: Formulación de problema propuesto, definición  de los objetivos y definición de variables de interés. En este último caso detallar para cada variable su  tipo ( cualitativa o cuantitativa ) y su escala de medición ( nominal, ordinal, de intervalo o de razón).|
+|**actividad102.pdf**| Ficha técnica de  la base seleccionada |
 |||
 |**Fecha** | 31 de julio de 2022| 
 |**Hora límite**| 23:59  hora  local|

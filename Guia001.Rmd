@@ -28,7 +28,6 @@ c5= "#db524f"
 
 # **Sumatoria**
 
-
 El **sumatorio** o **sumatoria** también conocida como operador de suma, notación sigma o símbolo de suma, es una notación matemática que permite representar una suma de varios sumandos, n o incluso infinitos sumandos son colocar puntos suspensivos. Se expresa mediante la letra sigma mayúscula.
 
 Wikipedia
@@ -53,7 +52,9 @@ Esta forma de expresión matemática nos ayuda a resumir la escritura de series 
  Ahora si se quiere representar la suma de los primeros 100 números enteros se escribe:
  
  $$\sum_{i=1}^{100} x = 1 + 2 + 3 + 4 + 5 + \cdots + 99 +100$$
-```{r}
+ <br/><br/>
+ 
+```{r, eval=FALSE}
 sum(1:100)
 ```
  <br/><br/>
@@ -70,12 +71,15 @@ Y se desea calcular la media de las notas, primero se deben sumar todas las nota
 $$\bar{x} = \dfrac{1}{12}\displaystyle\sum_{i=1}^{12} x_{i}$$
 En este caso $3.4$ representa el primer termino de la suma $x_1$ , el segundo término $x_2 = 4.2$, asi, hasta el final donde $4.8$ representa $x_{12}$. Lo cual equivale a :
 
+<br/><br/>
+
 $$\dfrac{(3.4 + 4.2 + 2.5 + 4.1 + 3.0 + 4.2 + 4.7 + 3.3 + 4.5 + 5.0 + 2.5 + 4.8)}{12}=\dfrac{46.2}{12}$$
 
-```{r}
+```{r, eval=FALSE}
 x=c(3.4, 4.2, 2.5, 4.1 , 3.0, 4.2, 4.7, 3.3, 4.5, 5.0, 2.5, 4.8)
 sum(x)/12
 ```
+
 <br/><br/>
 
 ## **Propiedades** 
@@ -199,19 +203,25 @@ prod(1:10)
 
 ## **Problemas propuestos**
 
-1.  $\displaystyle\prod_{k=1}^{20} 2^{k}$
+*  $\displaystyle\prod_{k=1}^{20} 2^{k}$
 
 <br/> <br/> 
 
-2. $\displaystyle\prod_{i=1}^{20} k 2^{k}$
+* $\displaystyle\prod_{i=1}^{20} k 2^{k}$
 
 <br/> <br/> 
 
-3. $\displaystyle\prod_{i=1}^n f(x_{i})$ para las siguientes funciones:
+*  $\displaystyle\prod_{i=1}^n f(x_{i})$ 
 
-  a. $f(x) = \dfrac{1}{60}$
+para las siguientes funciones:
+
+  + $f(x) = \dfrac{1}{60}$ 
   
-  b. $f(x_{i}) = \dfrac{1}{x_{i}}$
+  <br/>
   
-  c. $f(x_{i} = \dfrac{1}{\sqrt{2\pi}} \exp\{\frac{1}{2}x^{2}\}$
+  + $f(x_{i}) = \dfrac{1}{x_{i}}$
+  
+  <br/>
+  
+  + $f(x_{i}) = \dfrac{1}{\sqrt{2\pi}} \exp\bigg\{\frac{1}{2}x^{2}\bigg\}$
 

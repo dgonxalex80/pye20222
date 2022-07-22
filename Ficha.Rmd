@@ -1,7 +1,7 @@
 ---
-title: <span style="color:#ad6395">**Probabilidad y Estadística**</span>
-author: "dgonzalez "
-subtitle: <span style="color:#ad6395">**Unidad 1.1**</span>
+title: " "
+author: ""
+subtitle: ""
 output:
   html_document:
     toc: yes
@@ -24,11 +24,10 @@ c5= "#db524f"
 
 
 
-![](img/banner1.png)
 
 <br/><br/>
 
-## **Ficha ténica**
+### **Ficha ténica**
 
 ![](img/tabla_ficha.png)
 
