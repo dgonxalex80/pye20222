@@ -455,8 +455,11 @@ En este tipo de muestreo se seleccionan los elementos de la población de tal ma
 Para realizarlo se requiere de poseer un marco muestral actualizado y un sistema que permita la escogencia de las unidades de manera aleatoria
 
 <br/>
-Excel : ` =ALEATORIO.ENTRE(1;2000)` permite elegir un número aleatorio entre 1-2000 ) <br/>
-R : `sample(1:2000, 50, rep=FALSE)`
+
+|           |                                                                               |
+|:----------|:------------------------------------------------------------------------------|
+Excel :     |`=ALEATORIO.ENTRE(1;2000)` permite elegir un número aleatorio entre 1-2000 )   |
+|R :        |`sample(1:2000, 50, rep=FALSE)`                                                |
 
 <br/><br/>
 
