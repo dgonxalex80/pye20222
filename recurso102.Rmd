@@ -59,7 +59,7 @@ Tomaremos una base de datos de la FIFA para analizar indicadores de las seleccio
 library(DT)
 DT::datatable(head(futbol, 218),fillContainer = FALSE, options = list(pageLength = 8))
 ```
-
+portal FiveThirtyEight : https://data.fivethirtyeight.com/
 
 <br/> <br/> <br/>
 
