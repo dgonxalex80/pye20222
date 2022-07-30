@@ -27,20 +27,23 @@ c2= "#a391c4"
 c3= "#8acfe6"
 c4= "#646420"
 c5= "#db524f"
+
+library(readr)
+futbol <- read_csv("data/futbol.csv")
 ```
 
 ![](img/banner1.png)
 
-
+<br/><br/>
 
 
 ### **¿Que es un indicador?**
 
-<br/>
+<br/><br/>
 
 <img src="img/tablero1.jpg" width="1000">
 
-<br/>
+<br/><br/>
 
 Cuando nos subimos a un auto  observamos un tablero con muchos indicadores que permiten al conductor validar el estado del vehículo. Todos los podemos visualizar al tiempo con el fin de darnos una idea del nivel de combustible, la temperatura, el estado de la batería, si alguna puerta esta abierta, la velocidad a la que se viaja, entre otros.
 
@@ -50,18 +53,24 @@ Al igual que la situación anterior cuando nos enfrentamos a una análisis de da
 
 <br/> <br/> <br/>
 
+Tomaremos una base de datos de la FIFA para analizar indicadores de las selecciones de futbol asociadas a 6 confederaciones.
+
+```{r}
+library(DT)
+DT::datatable(head(futbol, 218),fillContainer = FALSE, options = list(pageLength = 8))
+```
+
+
+<br/> <br/> <br/>
+
 ## **Tablas de frecuencia** 
+
 
  <br/>
  
 ### **Tablas de frecuencia para variables cualitativas**
 
 <br/>
-
-| Categorías (c1)| frecuencia absoluta (c2) | frecuencia relativa   (c3)  | 
-|:---------------|:-------------------------|:----------------------------|
-|                |                          |                             |
-
 <br/>
 
 Las distribuciones de frecuencia o también llamadas tablas de frecuencia nos sirven para agrupar los datos y así permitir resumir para poder tener una idea mas clara de sus características.
@@ -78,16 +87,18 @@ Para las variables cualitativas la tabla posee 3 columnas :
  <br/> <br/>
 
 ```{r, echo=TRUE, message=FALSE, warning=FALSE}
+library(readr)
+futbol <- read_csv("data/futbol.csv")
 # Forma simple
-data.frame(table(bpe$carrera))
+table(futbol$confed)
 ```
  
  <br/> <br/>
 
 ```{r, message=FALSE, warning=FALSE}
 #utilizando summarytools
-carrera=as.factor(bpe$carrera)
-summarytools::freq(carrera, cumul = FALSE)
+confederacion=as.factor(futbol$confed)
+summarytools::freq(confederacion, cumul = FALSE)
 ```
 
 Nota: paquete [summarytools](https://cran.r-project.org/web/packages/summarytools/vignettes/Introduction.html) 
@@ -101,19 +112,21 @@ Para las variables cuantitativas las tablas de frecuencias tiene una presentaci�
 Cuando tenemos los datos sin agrupar nos es difícil extraer información que nos permita hacer un análisis de los mismos
 
 ```{r}
-bpe$promedio
+futbol$off
 ```
 
 Una primera aproximación pude ser el diagrama de tallos y hojas con consiste en separar los dígitos de los datos en dos : una primera parte que se repite llamada tallo y otra parte que tiene diversos valores. Este diagrama también nos permite ordenar los datos de menor a mayor
 
 ```{r}
-stem(bpe$promedio)
+stem(futbol$off)
 ```
 
 Una forma de construir una tabla de freciencias por intervalos es utilizando la funcion `graph.freq` del paquete agricolae
 
 ```{r,  echo=TRUE, message=FALSE, warning=FALSE}
-h2=with(bpe,graph.freq(promedio,plot=FALSE));t2=table.freq(h2);
+library(agricolae)
+h2=with(futbol,graph.freq(off,plot=FALSE))
+t2=table.freq(h2)
 colnames(t2) = c("  LI  ", "  LS  ", "marca clase'", "Frec.Abs","Frec.Rel", "Frec.Abs.Ac","Frec.Rel.Ac")
 t2
 ```
@@ -127,8 +140,8 @@ Frec.Rel.Ac : Frecuencia Relativa Acumulada
 Si se requiere dividir el rango en intervalos determinados se utiliza la función `cut` 
  
 ```{r}
-c <- cut(bpe$promedio, breaks = c(0, 0.99, 1.99, 2.99, 3.99, 5))
-levels(c) <- c("[0-1)", "[1-2)", "[2-3)", "[3-4)", "[4-5]")
+c <- cut(futbol$off, breaks = c(0, 0.999, 1.99, 2.99, 3.995, 4))
+levels(c) <- c("[0-1)", "[1-2)", "[2-3)", "[3-4)","[4-5]")
 table(c)
 ```
  
@@ -149,7 +162,7 @@ summarytools::freq(iris$Species, cumul = FALSE, headings = FALSE)
 
  <br/>
  
-Es un número que divide la muestra en dos partes. $x$ % de los datos de la muestra son iguales o menores que $P_x$ y un $(100-x)$ % por encima  de el.
+Es un número que divide la muestra en dos partes. $x$ % de los datos de la muestra son iguales o menores que $P_{x}$ y un $(100-x)$ % por encima  de el.
 
 ![](img/carrera.jpg)
 
@@ -160,8 +173,12 @@ Es un número que divide la muestra en dos partes. $x$ % de los datos de la mues
  <br/> <br/>
  
  
+### **Reto :** 
  
+ Que significado tiene :
  
+  <br/>
+  
 + Participé en una carrera **K10** y ocupé el percentil 30 : $P_{30}$
 
 + Mi nota en un examen de matemáticas ocupó el percentil 90 : $P_{90}$
@@ -175,8 +192,8 @@ Es un número que divide la muestra en dos partes. $x$ % de los datos de la mues
 
  <br/>
  
-```{r, warning=FALSE, message=FALSE, fig.height=2, fig.width=10.7} 
-ggplot(bpe, aes(x=promedio))+geom_boxplot()
+```{r, warning=FALSE, message=FALSE, fig.height=2, fig.width=8} 
+ggplot(futbol, aes(x=off))+geom_boxplot()
 ```
 
  <br/>
@@ -189,25 +206,32 @@ atípico | $LI=Q_{1}- 1.5(Q_{3}-Q_{1})$ | $Q_{1}$ | $Q_{2}$ | $Q_{3}$ | $LS=Q_{3
  Con ayuda del diagrama de tallos y hojas es posible ubicar los percentiles en un conjunto de datos
  
 ```{r}
-stem(bpe$promedio)
+stem(futbol$off)
 ```
+ <br/> <br/>
+ 
+En este caso el valor mínimo corresponde a 0.20 y el máximo a 3.44
 
-Determine los percentiles :
+ <br/> <br/>
+ 
+Ahora determine en este diagrama los percentiles :
 
 + $P_{25}$
 + $P_{50}$
 + $P_{75}$
 + $P_{10}$
 
+Es más rápido utilizando la función de R : `quantile`
 
 ```{r}
-quantile(bpe$promedio, c(0.25,.50,0.75,0.10))
+quantile(futbol$off, c(0.25,.50,0.75,0.10))
 ```
  
- 
+  <br/> <br/>
+  
 ## **Características de los  datos**
 
- <br/>
+ <br/> <br/>
  
 | Central                    | Dispersión                   | Forma                          |
 |:---------------------------|:-----------------------------|:-------------------------------|
@@ -228,7 +252,7 @@ quantile(bpe$promedio, c(0.25,.50,0.75,0.10))
 
  <br/>
  
-$$\widehat{x}= \frac{1}{n} \sum_{i=1}^{n} x_{i}$$
+$$\bar{x}= \frac{1}{n} \sum_{i=1}^{n} x_{i}$$
 
  <br/>
  
@@ -250,6 +274,7 @@ Propiedades de la media :
  
 **Ejemplo 1**
 
+El promedio de el rendimiento de millas por galón de combustible del grupo de autos observados es de $20.09$ mpg
 
 ```{r}
 mean(mtcars$mpg,na.rm = TRUE)
@@ -259,13 +284,17 @@ mean(mtcars$mpg,na.rm = TRUE)
 
 **Ejemplo 2**
 
+El valor promedio de poder ofencivo de las selecciones de futbol asociadas a la FIFA es de 1.16
+
 ```{r}
-mean(bpe$promedio, na.rm = TRUE)
+mean(futbol$off, na.rm = TRUE)
 ```
 
  <br/> <br/>
  
 **Ejemplo 3**
+
+El promedio del conjunto de números enteros entre uno y diez es 5.5 
 
 ```{r}
 x=1:10
@@ -280,9 +309,13 @@ cat("media :",mean(x))
  
  **Ejemplo 4**
 
+Surge el problema a que se puede tener es este indicador cuando uno de sus datos cambia drásticamente, por ejemplo si se cambia el último datos (10) por otro valor como 100 entonces, que pasaría con la media ?
+
+En este caso el promedio se eleva a 14.5 por el cambio realizado. Esto puede suceder en algunos casos donde trabajamos información que puede presentar datos extremos o atípicos
+
 ```{r}
 x=1:10
-x[10]=20
+x[10]=100
 x
 cat("media :" ,mean(x))
 ```
@@ -293,18 +326,18 @@ cat("media :" ,mean(x))
 
 **Me** :Es el número que divide la muestra en dos partes de igual proporción (50% : 50%). Es decir que corresponde a:
 
-$P_{50} = D_{5} = Q_{2}$
+$$P_{50} = D_{5} = Q_{2}$$
 
 también corresponde a la linea central del diagrama de cajas.
 
 ```{r}
-median(bpe$promedio,na.rm = TRUE)
+median(futbol$off,na.rm = TRUE)
 ```
 
  <br/> <br/>
  
 ```{r, warning=FALSE, message=FALSE, fig.height=3, fig.width=7}
-boxplot(bpe$promedio, las=1, horizontal = TRUE, col = c1)
+boxplot(futbol$off, las=1, horizontal = TRUE, col = c1)
 ```
  
  <br/> <br/>
@@ -336,10 +369,10 @@ cat("media :" ,median(x))
 
 ```{r, message=FALSE}
 #utilizando summarytools
-summarytools::freq(bpe$carrera, cumul = FALSE, headings = FALSE)
+summarytools::freq(futbol$confed, cumul = FALSE, headings = FALSE)
 ```
 
-moda : **Ingeniería de Sistemas**
+moda : **UEFA**, es la confederación con más selecciones nacionales de futbol ascritas
 
  <br/> <br/>
  
@@ -349,31 +382,41 @@ moda : **Ingeniería de Sistemas**
  
 ### **Media truncada**
 
+Con el fin de evitar que los datos atípicos generen sesgos en el indicador de la media, es posible separar el 90% de los datos, quitando un 5% de los datos mas pequeños y un  5% de los datos mayores. A este indicador de le llama media truncada al 10%  ($\bar{x}_{0.10}$)
+
+ <br/> <br/>
+ 
 ```{r, warning=FALSE, message=FALSE}
 
-mean(bpe$promedio, na.rm = TRUE, trim = 0.10)
+mean(futbol$off, na.rm = TRUE, trim = 0.10)
 ```
 
  <br/> <br/>
  
 ### **Rango medio**  
 
-$\frac{1}{2}(max(x)+min(x))$
+$$\frac{1}{2}\big(max(x)+min(x)\big)$$
 
 
 ```{r, warning=FALSE, message=FALSE}
-(max(bpe$promedio,na.rm = TRUE)+min(bpe$promedio,na.rm = TRUE))/2
+(max(futbol$off,na.rm = TRUE)+min(futbol$off,na.rm = TRUE))/2
 ```
 
+La diferencia entre el equipo con mas poder ofencivo y el equipo como menor valor es de 1.87 puntos. 
  <br/> <br/>
  
 ###  **Media geométrica** 
 
-este indicador de tendencia central se utiliza para promediar tasa de crecimiento o de interés. Para encontrar su valor se multiplican los valores de $n$ tasas incrementadas en uno. A ese producto se le extrae la raíz n-esima.
+Este indicador de tendencia central se utiliza para promediar tasa de crecimiento o de interés. Para encontrar su valor se multiplican los valores de $n$ tasas incrementadas en uno ($1+r$). A ese producto se le extrae la raíz n-esima.
+
+$$MG = \Bigg(\displaystyle\prod_{i=1}^n (r_{i}+1)\Bigg)^{1/n}$$
 
  <br/> <br/>
 
 ###  **Media armónica**  
+
+
+$$H = \dfrac{1}{\frac{1}{x_{1}}+\frac{1}{x_{2}}+ ... + \frac{1}{x_{n}}}  $$
 
 Este indicador corresponde al inverso de la media aritmética 
 
@@ -452,8 +495,8 @@ $$s=\sqrt{s^{2}}$$
 **Nota** : no aplican todas las propiedades de la varianza
 
 ```{r}
-cat( "Varianza :",var(bpe$promedio), "\n" )
-cat("Desviación estándar :",sd(bpe$promedio))
+cat( "Varianza :",var(futbol$off), "\n" )
+cat("Desviación estándar :",sd(futbol$off))
 ```
 
 Aunque la desviación estándar reduce el problema debido a tener las mismas unidades de la variable, es útil para comparación de dos grupos
@@ -469,8 +512,11 @@ $$CV= \dfrac{s}{\bar{x}} \times 100 \% $$
 Existen diferentes reglas empíricas para la interpretación del coeficiente de variación. Una de ellas establece como límite el 20% para separar los grupos homogéneos de los heterogéneos Por lo general se utiliza un valor hasta el 20% para determinar que un grupo de datos son homogéneos, de lo contrario se calificará como heterogéneo.
 
 ```{r}
-cat("Coeficiente de variación :",sd(bpe$promedio)/mean(bpe$promedio)*100, " %")
+cat("Coeficiente de variación :",sd(futbol$off)/mean(futbol$off)*100, " %")
 ```
+
+En este caso se obtiene un valor muy alto del coeficiente de variación lo cual indica que los datos en este caso el poder ofencivo de los equipos es alta, pudiendo calificar esta variable como heterogenea
+
 
  <br/> <br/>
  
@@ -493,7 +539,7 @@ De acuerdo con su valor, la puntudez de los datos puede clasificarse en tres gru
  <br/> <br/>
  
 ```{r}
-rapportools::kurtosis(bpe$promedio)
+rapportools::kurtosis(futbol$off)
 ```
  
  
@@ -515,13 +561,15 @@ Mide que tanto la forma de la distribución de frecuencias de los datos es simé
 + **Asimetria positiva** : Mucho con poco, poco con mucho
 
 ```{r}
-rapportools::skewness(bpe$promedio)
+rapportools::skewness(futbol$off)
 ```
+
+El valor obtenido para el sesgos nos indica que existe un mediano sesgo positivo o a la derecha ( mucho con poco - poco con mucho). Este resultado nos indica que muchos equipos tienen bajo nivel ofencivo y unos pocos son los que tienen un alto poder ofencivo.
 
 
 ```{r, message=FALSE, warning=FALSE}
 
-summarytools::descr(bpe$promedio)
+summarytools::descr(futbol$off)
 
 ```
 
@@ -533,7 +581,7 @@ summarytools::descr(mtcars$mpg)
 
 
 ```{r, message=FALSE, warning=FALSE}
-d1=density(bpe$promedio, na.rm=TRUE); plot(d1)
+d1=density(futbol$off, na.rm=TRUE); plot(d1)
 ```
 
 
@@ -546,16 +594,6 @@ d2=density(mtcars$mpg); plot(d2)
 
  <br/> <br/>
  
-## **Actividades**
-
-<br/>
-
-+ **Actividad 104**: Realice las  actividades consignadas en  el **Taller 1-01**.  Adjunte y envíe las respuesta a la plataforma de Brightspace en  formato pdf.
-    + **Nota**: RMarkdown permite realizar el trabajo fácilmente
-
-<br/>
-
-+ **Actividad 105** : A partir de la  información contenida en  la base de datos  seleccionada en la **Unidad 1.1**, realice un análisis de al menos una variable cualitativa y una cuantitativa teniendo como soportes las tablas de frecuencia y los indicadores estadísticos correspondiente.
 
 <br/><br/><br/>
 
@@ -590,8 +628,10 @@ d2=density(mtcars$mpg); plot(d2)
  <br/> <br/>
 
 
-## **Taller 121**
+## **Ejemplo**
 
+ <br/> <br/>
+ 
 ### **Nivel de ansiedad**
 
 Los siguientes datos corresponden al **nivel de ansiedad** de un grupo de estudiantes de la universidad valorada antes de la presentación del primer examen parcial. El investigador a cargo del proyecto utilizó una prueba para medir el nivel de ansiedad que permite puntajes entre 0 y 100. Los valores inferiores a 50 puntos se consideran como nivel bajo . Entre 50 y 80 , nivel medio y superiores a 80 se consideran altos.
