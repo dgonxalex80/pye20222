@@ -103,6 +103,8 @@ ft1
 ```
 El resultado corresponde a un conteo de cada uno de los valores de la variable.  En caso de que se requiera calcular la proporción que corresponde cada caso utilizamos la función : **prop.table()** y se la aplicamos a la tabla anterior
 
+<br/><br/>
+
 ```{r}
 ft2=table(ventas$Metodo_Pago)%>%
        prop.table() %>% 
@@ -129,6 +131,7 @@ Si utilizamos la función **freq** del paquete summarytools, la salida es una ta
 ```{r}
 summarytools::freq(ventas$Metodo_Pago, cumul = F)
 ```
+
 <br/><br/>
 
 ## **Tablas variables cuantitativas**
@@ -154,6 +157,8 @@ Consultados los ciclos de la vida tenemos:
  + Adultez (27- 59 años)
  + Persona Mayor (60 años o mas) envejecimiento y vejez
 
+<br/><br/>
+
 ```{r}
 Colombia$edadR[Colombia$edad<=5]="1. (0  a 5  años]"
 Colombia$edadR[Colombia$edad>5 & Colombia$edad<=11]="2. (5  a 11 años]"
@@ -166,6 +171,8 @@ summarytools::freq(Colombia$edadR)
 Esta tabla nos permite identificar los rangos de mayor frecuencia 
 
 Tambien podemo realizar una tabla sin tener que realizar la recodificación. Esto se logra con la función **hist()**
+
+<br/><br/>
 
 ```{r}
 h=hist(Colombia$edad)
@@ -186,6 +193,9 @@ breaks=seq(0,110, by=20)
 Edad.fallecidos=cut(Fallecidos$edad, breaks)
 summarytools::freq(Edad.fallecidos)
 ```
+
+<br/><br/>
+
 O tambien
 
 ```{r}
@@ -199,6 +209,8 @@ FreAbAc=cumsum(FreAbs)
 FreRAc=cumsum(FreRel)
 data.frame(LI,LS,FreAbs,FreRel, FreAbAc, FreRAc)
 ```
+
+<br/><br/>
 
 ## **Tablas de doble entrada**
 
@@ -232,9 +244,14 @@ En el caso de las variables cuantitativas debemos de construirlos
 summary(Colombia$edad)
 ```
 
+<br/><br/>
+
 ```{r}
 psych::describe(Colombia$edad)
 ```
+
+<br/><br/>
+
 ```{r}
 psych::describe.by(Colombia$edad, group = Colombia$ubicacion)
 ```
@@ -247,9 +264,12 @@ summarytools::descr(Colombia$edad)
 
 
 <br/><br/>
-**YA ESTAMOS LISTOS PARA INTERPRETAR LA INFORMACION**
 
-# **4. Documentos pdf con Rmarkdown**
+**YA ESTAMOS LISTOS PARA INTERPRETAR LA INFORMACIÓN  !!**
+
+<br/><br/><br/>
+
+# **4. Documentos pdf con Rmd**
 
 A través de RStudio se pueden construir documentos en formatos **PDF**, **DOC**, **HTML** entre otros. En esta ocasión se describe como realizar un informe utilizando para ello un archivo Rmd en RStudio.
 
@@ -342,6 +362,8 @@ En la siguiente página pueden encotrar resumen de varios paquetes de R dentro d
 
 https://www.rstudio.com/resources/cheatsheets/
 
+<br/><br/>
+
 ## **Otros formatos de tablas**
 
 ```{r}
@@ -358,6 +380,8 @@ df1 <- data.frame(
   stringsAsFactors = FALSE)
 df1
 ```
+
+<br/><br/>
 
 ```{r}
 colnames(df1)=c("Id", "Nombre", "Edad","grado", "Nota1", "Nota2", "Nota Final", "Registrado")
