@@ -62,9 +62,9 @@ Para alcanzar los objetivos planteados se propone realizar las siguientes activi
 ## **Cronograma de trabajo**
 
 
-|Actividad104   | Descripción                    | 
+|Actividad121   | Descripción                    | 
 |:--------------|:-----------------------------  |
-|Trabajo individual| **Actividad 121** - **Caso 1** :  Realice las actividades consignadas en el caso101, adjunte y envíe las respuesta a la plataforma de Brightspace en formato pdf |
+|Trabajo individual| **Actividad 121** - **Caso 1** :  Realice las actividades consignadas en el **Caso1**, adjunte y envíe las respuesta a la plataforma de Brightspace en **formato pdf** |
 |Recursos       |[Video indicadores estadísticos](https://youtu.be/dWVs-M7oCh4)         |
 || [Vídeo calculo indicadores con tablas de distribución](https://youtu.be/n2UCDZNncls)|
 | Fecha         | 07 de agosto de 2022          |
@@ -72,9 +72,9 @@ Para alcanzar los objetivos planteados se propone realizar las siguientes activi
 
 <br/> 
 
-|Actividad105   | Descripción                    | 
+|Actividad122   | Descripción                    | 
 |:--------------|:-----------------------------  |
-|Trabajo individual|**Actividad 122** :  A partir de la información contenida en la **base de datos seleccionada en la Actividad 102**, realice un análisis de al menos dos variables cualitativas y dos cuantitativas teniendo como soportes las tablas de frecuencia y los indicadores estadísticos correspondiente.|
+|Trabajo individual|**Actividad 122** :  A partir de la información contenida en la **base de datos seleccionada en la Actividad 102**, realice un análisis de al menos dos variables cualitativas y dos cuantitativas teniendo como soportes las tablas de frecuencia y los indicadores estadísticos correspondiente. adjunte y envíe las respuesta a la plataforma de Brightspace en **formato pdf**|
 |Recursos| Base de datos actividad-1 Unidad 1.1|
 |               |Excel                |
 |               |RStudio              |
@@ -103,8 +103,8 @@ Los entregables completos y enviados dentro de los tiempos establecidos otorgar�
 
 | Entregable    |  Descripción                   |
 |:--------------|:-------------------------------|
-|**Actividad104.pdf**|  Desarrollo del Caso 1  |
-|**Actividad105.pdf**|  Aplicar lo aprendido en la unidad 1.2 a la base de datos seleccionada para la actividad102    |
+|**Actividad121.pdf**|  Desarrollo del Caso 1  |
+|**Actividad122.pdf**|  Aplicar lo aprendido en la unidad 1.2 a la base de datos seleccionada para la actividad102    |
 |Fecha          |Domingo 07 de agosto de 2022    | 
 |Hora límite    | 23:59  hora  local             |
 
