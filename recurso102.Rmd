@@ -648,7 +648,11 @@ d2=density(mtcars$mpg); plot(d2)
  
 ### **Nivel de ansiedad**
 
-Los siguientes datos corresponden al **nivel de ansiedad** de un grupo de estudiantes de la universidad valorada antes de la presentación del primer examen parcial. El investigador a cargo del proyecto utilizó una prueba para medir el nivel de ansiedad que permite puntajes entre 0 y 100. Los valores inferiores a 50 puntos se consideran como nivel bajo . Entre 50 y 80 , nivel medio y superiores a 80 se consideran altos.
+
+|               |                             |
+|:--------------|:----------------------------|    
+| ![](img/ansiedad.png)| Los siguientes datos corresponden al **nivel de ansiedad** de un grupo de estudiantes de la universidad valorada antes de la presentación del primer examen parcial. El investigador a cargo del proyecto utilizó una prueba para medir el nivel de ansiedad que permite puntajes entre 0 y 100. Los valores inferiores a 50 puntos se consideran como nivel bajo . Entre 50 y 80 , nivel medio y superiores a 80 se consideran altos.|
+
 
 Otra variable importante en el análisis corresponde a la **facultad** a la que pertence el estudiante
 
@@ -745,7 +749,9 @@ summarytools::freq(data$fac, cumul = FALSE)
 
 Los reultados indican una mayor proporción de estudiantes de la Facultad de Ingenieria y Ciencias (34%), mientras que la Facultad de Salud la menor (11.3%)
 
+## **Video**
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dWVs-M7oCh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/><br/>
 
 <img src="img/person-1245959_1920.jpg" width="1000">
