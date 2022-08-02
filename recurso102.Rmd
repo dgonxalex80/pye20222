@@ -179,9 +179,9 @@ Es un número que divide la muestra en dos partes. $x$ % de los datos de la mues
  
   <br/>
   
-+ Participé en una carrera **K10** y ocupé el percentil 30 : $P_{30}$
++ Participar en una carrera **K10** y ocupar el percentil 30 : $P_{30}$
 
-+ Mi nota en un examen de matemáticas ocupó el percentil 90 : $P_{90}$
++ Una nota en un examen de matemáticas ocupó el percentil 90 : $P_{90}$
 
 + Que significa: $P_{25}$ ; $P_{50}$ ;  $P_{75}$
 
@@ -229,7 +229,7 @@ quantile(futbol$off, c(0.25,.50,0.75,0.10))
  
   <br/> <br/>
   
-## **Características de los  datos**
+## **Indicadores de los Datos**
 
  <br/> <br/>
  
@@ -247,6 +247,7 @@ quantile(futbol$off, c(0.25,.50,0.75,0.10))
 
  <br/> <br/>
 
+## **Indicadores de Centro**
 
 ### **Media aritmética** 
 
@@ -424,6 +425,10 @@ Este indicador corresponde al inverso de la media aritmética
  
 ### **Problema reconocimiento de grupo**
 
+Spongaos que solo se nos dice que un grupo conformado por 4 personas tiene un promedio de edad de $20$ años. Todos inicialmente suponemos que se trata de cuatro jóvenes que tienen edades cercanas a $20$ años. Pero  puede ocurrir que estemos lejos de acertarlo, pues existen multiples combinaciones de edades que tienen como promedio $20$ años. 
+
+Por ello es necesario tener más informacion sobre el grupo.
+
 |                             |                                    |
 |:----------------------------|:-----------------------------------|
 |**Grupo 1**                  |**Grupo 2**                         | 
@@ -431,10 +436,10 @@ Este indicador corresponde al inverso de la media aritmética
 |Promedio : 20 años           |Promedio : 20 años                  |
 |                             |                                    |
 
-<img src="img/grupos.png" width="700">
+<img src="img/grupos3.png" width="700">
 
 
-Hace falta otro indicador que nos oriente de cual grupo hablamos cuando solo tenemos como información : media = 20 años.
+Hace falta otro indicador que nos oriente de cual grupo hablamos cuando solo tenemos como información : media = $20$ años. Esta necesidad la suplen los `indicadores de dispersión`.
 
  <br/> <br/>
  
@@ -451,7 +456,9 @@ En caso de los dos grupos:
 |$\bar{x} = 20$ años          |$\bar{x} = 20$ años                 |
 |$r = 4$ años                 |$r = 38$ años                       |  
 |                             |                                    |
-  
+
+
+
 Es importante hacer notar que si además de la media conocemos tambien un indicador de dispersión, en este caso el rango, podemos intuir si se trata del primero o segundo grupo. El ranto es un indicador muy útil cuando se deben realizar cálculos rápidos.
 
  <br/> <br/>
@@ -520,7 +527,9 @@ En este caso se obtiene un valor muy alto del coeficiente de variación lo cual 
 
  <br/> <br/>
  
-## **Indicadores de forma**
+## **Indicadores de Forma**
+
+<br/>
 
 ### **Curtosis**
 
@@ -542,7 +551,7 @@ De acuerdo con su valor, la puntudez de los datos puede clasificarse en tres gru
 rapportools::kurtosis(futbol$off)
 ```
  
- 
+<br/><br/> 
  
 ### **Asimetría o sesgo**
 
@@ -560,24 +569,29 @@ Mide que tanto la forma de la distribución de frecuencias de los datos es simé
 + **Simetrica** : Poco con poco, poco con mucho, mucho al rededor de un centro
 + **Asimetria positiva** : Mucho con poco, poco con mucho
 
+<br/>
+
 ```{r}
 rapportools::skewness(futbol$off)
 ```
 
+<br/>
+
 El valor obtenido para el sesgos nos indica que existe un mediano sesgo positivo o a la derecha ( mucho con poco - poco con mucho). Este resultado nos indica que muchos equipos tienen bajo nivel ofencivo y unos pocos son los que tienen un alto poder ofencivo.
 
+<br/>
 
 ```{r, message=FALSE, warning=FALSE}
-
 summarytools::descr(futbol$off)
-
 ```
 
-
+<br/><br/>
 
 ```{r}
 summarytools::descr(mtcars$mpg)
 ```
+
+<br/><br/>
 
 
 ```{r, message=FALSE, warning=FALSE}
