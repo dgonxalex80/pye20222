@@ -193,7 +193,20 @@ Es un número que divide la muestra en dos partes. $x$ % de los datos de la mues
  <br/>
  
 ```{r, warning=FALSE, message=FALSE, fig.height=2, fig.width=8} 
-ggplot(futbol, aes(x=off))+geom_boxplot()
+p=ggplot(futbol, aes(x=off))+geom_boxplot(fill = "#b0394a",           # Color caja
+               alpha = 0.3,        # Transparencia
+               color = "#000000",          # Color del borde
+               outlier.colour = "#000000") # Color atípicos
+
+p + geom_text(data = NULL, x = 1.5, y = 0.4, label = "Q3",col="#b0394a")+
+    geom_text(data = NULL, x = 1.03, y = 0.4, label = "Q2=Me",col="#b0394a")+
+    geom_text(data = NULL, x = 0.65, y = 0.4, label = "Q1",col="#b0394a") +
+    geom_text(data = NULL, x = 0.2, y = 0.4, label = "mín",col="#b0394a") +
+    geom_text(data = NULL, x = 3.5, y = 0.4, label = "máx",col="#b0394a") +
+    geom_text(data = NULL, x = 3, y = 0.4, label = "atípicos",col="#b0394a") +
+    geom_text(data = NULL, x = 1.166468, y = 0, label = "x",col="#b0394a") +
+    geom_text(data = NULL, x = 1.2, y = 0.4, label = "media",col="#b0394a")
+  
 ```
 
  <br/>
@@ -537,13 +550,21 @@ Se mide a través del coeficiente de curtosis que mide cuan **puntiaguda** es un
 
 De acuerdo con su valor, la puntudez de los datos puede clasificarse en tres grupos:
 
-+ **Leptocúrtica**, con valores grandes para el coeficiente (CA>0)
++ <span style="color:#ee3b3b">**Leptocúrtica**</span>, con valores grandes para el coeficiente ( <span style="color:#ee3b3b">**CA>0**</span>)
 
-+ **Mesocúrtica**, con valores medianos para el coeficiente (CA=0)
++ <span style="color:#0000cd">**Mesocúrtica**</span>, con valores medianos para el coeficiente ( <span style="color:#0000cd">**CA=0**</span>)
 
-+ **Platicútrica**, con valores pequeños para el coeficiente (CA<0) 
++ <span style="color:#ee9a00">**Platicútrica**</span>, con valores pequeños para el coeficiente ( <span style="color:#ee9a00">**CA<0**</span>) 
 
-<img src="img/curtosis.png" width="500">
+```{r, echo=FALSE, fig.height=3.5, fig.width=9}
+# Distribucion normal
+library(ggfortify)
+
+p=ggdistribution(dnorm, seq(-5, 5, 0.01), mean = 0, sd = 1,colour = 'blue')
+p=ggdistribution(dnorm, seq(-5, 5, 0.01), mean = 0, sd = .7,colour = 'red', p=p)
+p=ggdistribution(dnorm, seq(-5, 5, 0.01),   mean = 0, sd = 1.5,colour = 'orange', p=p)
+p
+```
 
  <br/> <br/>
  
@@ -557,13 +578,13 @@ rapportools::kurtosis(futbol$off)
 
 Mide que tanto la forma de la distribución de frecuencias de los datos es simétrica o no con respecto a la media. Esta característica de los datos se mide a través del coeficiente de asimetría o sesgo.
 
-+ Es **simétrica** si el  valor del indicador es 0  ($\bar{x}=Me$)
++ Es <span style="color:#ee3b3b">**simétrica**</span> si el  valor del indicador es 0  ($\bar{x}=Me$)
 
-+ Es **asimétrica a la izquierda** si el valor del indicador es negativo ($\bar{x}<Me$)
++ Es <span style="color:#ee9a00">**asimétrica a la izquierda**</span> si el valor del indicador es negativo ($\bar{x}<Me$)
 
-+ Es **asimétrica a la derecha** si el valor del indicador es positivo ($\bar{x}>Me$)
++ Es <span style="color:#0000cd">**asimétrica a la derecha**</span> si el valor del indicador es positivo ($\bar{x}>Me$)
 
-<img src="img/asimetria.png" width="700">
+![](img/simetria.png)
 
 + **Asimetria negativa ** : Poco con poco, mucho con mucho
 + **Simetrica** : Poco con poco, poco con mucho, mucho al rededor de un centro
@@ -749,12 +770,16 @@ summarytools::freq(data$fac, cumul = FALSE)
 
 Los reultados indican una mayor proporción de estudiantes de la Facultad de Ingenieria y Ciencias (34%), mientras que la Facultad de Salud la menor (11.3%)
 
+<br/><br/>
+
 ## **Video**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dWVs-M7oCh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/><br/>
 
 <img src="img/person-1245959_1920.jpg" width="1000">
+
+<br/><br/>
 
 ### **Lo podemos lograr...**
 #### Daniel Enrique González Gómez 
