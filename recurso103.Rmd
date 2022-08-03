@@ -199,7 +199,7 @@ par(mfrow=c(1, 1))
 ```
     
 
-<br/><br/><br/>
+<br/><br/>
 
 
 ## **Gráficos con ggplot2**
