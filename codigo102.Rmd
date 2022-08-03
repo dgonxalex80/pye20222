@@ -46,6 +46,21 @@ Las variables cuantitativas tiene un gran número de indicadores que se dividien
 
 A continuación se indica como realizar el proceso utilizando RStudio, bajo el supuesto que se cuenta con una base de datos que se ha importado en RStudio.
 
+<br/><br/>
+
+## **Instalación de summarytools**
+
+Uno de los paquetes de R utilizados para la construcción de tablas de frecuencia e indicadores descriptivos es summarytools, a continuación se comparte código para su instalación :
+
+<br/>
+
+```{r, eval=FALSE}
+install.packages("remotes")        # se puede tambien utulizar el paquete devtools
+library(remotes)
+install_github("rapporter/pander") # repositorio recomendado
+install_github("dcomtois/summarytools", build_vignettes = TRUE)
+```
+
 
 <br/><br/>
 
@@ -413,4 +428,5 @@ colnames(df1)=c("Id", "Nombre", "Edad","grado", "Nota1", "Nota2", "Nota Final", 
 df1=flextable(df1)
 df1
 ```
+
 
