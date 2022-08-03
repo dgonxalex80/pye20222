@@ -61,7 +61,6 @@ Finalmente adjunte un análisis de los resultados obtenidos.
 ## **Cargar datos** 
 
 ```{r, eval=FALSE}
-install.packages("learnr") # solo una vez
 install.packages("devtools") # solo una vez
 devtools::install_github("dgonxalex80/paqueteDEG") # descarga paqueteDEG
 library(paqueteDEG) # activa paqueteDEG
