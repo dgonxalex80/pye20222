@@ -646,7 +646,7 @@ d2=density(mtcars$mpg); plot(d2)
 |media geométrica        | $(x_{1} \times x_{2} \times x_{3} .... x_{n})^{1/n}$  |               |
 |media armónica          | $\dfrac{n}{\dfrac{1}{x_{1}}+\dfrac{1}{x_{2}}+\dfrac{1}{x_{3}}+...+\dfrac{1}{x_{n}}}$ | |
 |**dispersión**          |                                       |                               |
-|rango                   |$r= min\{x\}-max\{x\}$                 |`max(x)-min(x)`                |
+|rango                   |$r= max\{x\}-min\{x\}$                 |`max(x)-min(x)`                |
 |varianza                |$s^{2} = \dfrac{1}{n-1} \displaystyle\sum_{i=1}^{n}(x_{i}-\bar{x})^{2}$  |`var(x)`    |
 |desviación estandar     |$s = \sqrt{s^{2}}$                     |`sd(x)`                        |
 |coeficiente de variación|$cv= \dfrac{s}{\bar{x}} \times 100$ %  |`sd(x)/mean(x)*100`            |
