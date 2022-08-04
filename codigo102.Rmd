@@ -48,6 +48,15 @@ A continuación se indica como realizar el proceso utilizando RStudio, bajo el s
 
 <br/><br/>
 
+<img src="img/summarytools.png" width="90">
+<img src="img/flextable.png" width="90">
+<img src="img/gt.png" width="120"> 
+
+<br/><br/>
+
+
+
+
 ## **Instalación de summarytools**
 
 Uno de los paquetes de R utilizados para la construcción de tablas de frecuencia e indicadores descriptivos es summarytools, a continuación se comparte código para su instalación :
@@ -102,6 +111,14 @@ table(ventas$Metodo_Pago)
 En todos los casos  podemos elaborar una tabla acompañada con los porcentajes (frecuencia  relativa)
 
 <br/>
+
+### Paquete flextable
+
+```{r, eval=FALSE}
+install.packages("flextable")
+library(flextable)
+```
+
 
 ```{r}
 ft1=table(ventas$Metodo_Pago)%>% 
@@ -301,6 +318,10 @@ Utilizando la función `descr` del paquete `summaytools` :
 ```{r}
 summarytools::descr(Colombia$edad)
 ```
+
+## Tablas con gtsummary
+
+
 
 
 <br/><br/>
