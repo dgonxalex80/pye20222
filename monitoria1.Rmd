@@ -53,7 +53,7 @@ Indique el concepto referido en cada uno de los siguientes enunciados:
 
 |   |                                                  |
 |:--|:-------------------------------------------------|
-|a. | Divide la muestra en dos partes de igual de proporción de datos. |
+|a. | Divide la muestra en dos partes de igual proporción. |
 |b. | Describe la variabilidad de los datos con respecto a la media y tiene la misma unidad del promedio.| 
 |c. | Los valores de la variable se pueden ordenar en un sentido lógico, pero no es posibles establecer  diferencias entre un par de valores |
 |d. | Se obtiene al restar los extremos del conjunto de datos. |
