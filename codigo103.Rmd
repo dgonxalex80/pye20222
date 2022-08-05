@@ -75,7 +75,7 @@ cc=c(20, 10, 20, 20, 20, 20, 20, 20, 20, 30, 20, 20, 20, 10, 30, 20, 20, 30, 20,
      20, 10, 20, 10, 30, 20, 10, 20, 30, 10, 30, 30, 30, 20, 30, 30, 30, 30, 30, 
      30, 20, 10, 30, 10, 20, 20, 10, 20, 20, 20, 20, 10, 20) 
 t1=table(cc)
-pie(t1)
+pie(t1, col=c("#023047", "#f4d35e", "#ee964b"))
 ```
 
 
@@ -91,7 +91,8 @@ labs=paste(labs, pct);labs=paste(labs, "%", sep = " ")
 t1=table(cc)
 pie(t1, 
     labels=labs, 
-    main=" Distribución por carrera")
+    main=" Distribución por carrera",
+    col=c("#023047", "#f4d35e", "#ee964b"))
 ```
 
 <br/><br/><br/>
@@ -112,9 +113,9 @@ barplot(ev)
 ev=c(5,13,30,52,35)
 ev=as.table(ev)
 names(ev)=c("MR","R","B","MB","E")
-barplot(ev, col=c("red","yellow","orange","green","blue"), 
+barplot(ev,  col=c("#f95738","#ee964b", "#f4d35e", "#faf0ca", "#0d3b66"), 
         main = "Evaluación proceso de inducción",
-        las=1)
+        las=1 )
 ```
 <br/><br/><br/>
 
@@ -133,7 +134,7 @@ counts <- table(mtcars$vs, mtcars$gear)
 rownames(counts)=c("Montor en linea", "Motor en V")
 barplot(counts, main="Número de cambios adelante por Tipo de motor",  
         xlab="Número de cambios adelante ",
-        col=c("dodgerblue3","orange"),
+        col=c("#0d3b66","#f4d35e"),
         legend = rownames(counts),
         las=1)
 ```
@@ -145,7 +146,7 @@ barplot(counts, main="Número de cambios adelante por Tipo de motor",
 ```{r}
 mosaicplot(~gear + vs, 
            data = mtcars, 
-           color =  c("dodgerblue3","orange"), 
+          col=c("#0d3b66","#f4d35e"),
            las = 1) 
 ```
 
@@ -183,9 +184,9 @@ h1=hist(nf,
         main = "Nota final matemáticas fundamentales", 
         xlab = "nota", ylab="frecuencias absolutas", 
         labels=TRUE, 
-        col="dodgerblue3",
+        col="#0d3b66",
         ylim = c(0,30))
-abline(v=3,col="red")
+abline(v=3, col="#f95738", lwd=4)
 ```
 <br/><br/><br/>
 
@@ -207,7 +208,7 @@ plot(density(nf))
 ```{r}
 plot(density(nf),
      main="Distribución notas de matemátias fundamentales", 
-     col="dodgerblue3", 
+     col="#0d3b66", 
      lwd=5,
      las=1, 
      xlab = "Nota",
@@ -225,9 +226,9 @@ boxplot(nf)
 
 ```{r}
 boxplot(nf, main="Nota final matemáticas fundamentales",
-        col="dodgerblue3",
+        col="#f4d35e",
         las=1)
-abline(h=3, col="red")
+abline(h=3, col="#f95738", lwd=3)
 ```
 
 <br/><br/><br/>
@@ -253,11 +254,12 @@ cc=c(20, 10, 20, 20, 20, 20, 20, 20, 20, 30, 20, 20, 20, 10, 30, 20, 20, 30, 20,
      20, 30, 30, 30, 10, 30, 20, 20, 20, 20, 20, 20, 10, 20, 30, 30, 10, 10, 10,
      20, 10, 20, 10, 30, 20, 10, 20, 30, 10, 30, 30, 30, 20, 30, 30, 30, 30, 30,
      30, 20, 10, 30, 10, 20, 20, 10, 20, 20, 20, 20, 10, 20)
-labs=c("Ing. Mecánica","Ing. Civil ","Ing.Sistemas") 
+
+labs=c("Ing. de Sistemas","Ing. Industrial","Ing. Mecánica")
 boxplot((nf~cc),main="Nota final matemáticas fundamentales por carrera", 
-        col="dodgerblue3")
-abline(h=3, col="red")
-abline(h=4, col="blue")
+        col=c("#066d8d","#34b5aa","#ecbe14"), names=labs, xlab = "carrera", ylab = "nota")
+abline(h=3, col="#f69312", lwd=4)
+abline(h=4, col="#447270", lwd=4)
 ```
 
 <br/><br/><br/>
@@ -269,7 +271,7 @@ t=1:300 ; x=w=rnorm(300,0,1); x<-w; for(t in 2:300) x[t]<-x[t-1]+w[t]
 
 plot(x, type="l",
      main="Número de pasajeros", 
-     col="dodgerblue3", 
+     col="#ee964b", 
      lwd = 4)
 ```
 
@@ -422,7 +424,7 @@ casas$mes=as.factor(casas$id)
 fig2 = ggplot(data=casas, aes(x=precio, y=mes)) +
   geom_boxplot(fill="lightSalmon", 
                color="black")+
-  geom_point(color="blue")+
+  geom_point(color="#0d3b66")+
   ggtitle("Precio de casas por mes")+
   labs(x="miles de pesos " , y="mes")
   
@@ -668,7 +670,7 @@ plot # imprime grafico
 
 ## **calendR**
 
-```{r}
+```{r, fig.height=10}
 par(cex=0.3, cex.axis=.5, cex.lab=.5, cex.main=.5, cex.sub=.5)
 # install.packages(calendR)
 library(calendR)
@@ -678,19 +680,19 @@ set.seed(2)
 datos <- rnorm(365)
 
 # Vertical calendar
-calendR(year = 2021,
+calendR(year = 2022,
         special.days = datos,
-        low.col = "#FCFFDD",
-        special.col = "#00AAAE",
+        low.col ="#ee964b",
+        special.col = "#faf0ca",
         gradient = TRUE,
         legend.pos = "none",
         orientation = "portrait",
-        title.size = 7,  
-        subtitle.size = 5,
-        text.size = 2,
-        weeknames.size = 3,
-        day.size = 2,  # tamaño numero del dia
-        months.size = 6,
+        title.size = 20,  
+        subtitle.size = 9,
+        text.size = 9,
+        weeknames.size = 8,
+        day.size = 10,  # tamaño numero del dia
+        months.size = 20,
         papersize="A3") # tamaño nombre del mes
 
 ```
@@ -736,7 +738,7 @@ En el caso de Cali tiene 22 comunas se adiciona un vector con 22 valores con el 
 ```{r, warning=FALSE, message=FALSE}
 cali=shapefile("map/cali/cali.shp")  # importa mapa en formato .shp
 cali@data$indice=rnorm(22)      # se genera variable a ilustrar
-spplot(cali[,21]) 
+spplot(cali[,21], palette = "BuGn") 
 ```
 <br/><br/>
 
@@ -922,6 +924,7 @@ En este formato podemos distinguir varias partes :
 
 https://r-charts.com/colors/
 
+http://brandcolors.net/
 
 ## **Algunos paquetes**
 

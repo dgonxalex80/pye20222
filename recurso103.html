@@ -726,7 +726,7 @@ barplot(ev, col=c(&quot;#ff5b00&quot;,&quot;#dcf600&quot;,&quot;#7dbd00&quot;,&q
 <div id="diagrama-de-barras-dos-variables" class="section level3">
 <h3><strong>Diagrama de barras dos variables</strong></h3>
 <pre class="r"><code>counts &lt;- table(mtcars$vs, mtcars$gear); rownames(counts)=c(&quot;Montor en linea&quot;, &quot;Motor en V&quot;)
-barplot(counts, main=&quot;Numero de cambios adelante por Tipo de motor&quot;,  xlab=&quot;Numero de cambios adelante &quot;,col=c(&quot;#195e4b&quot;,&quot;#00da9d&quot;),
+barplot(counts, main=&quot;Numero de cambios adelante por Tipo de motor&quot;,  xlab=&quot;Numero de cambios adelante &quot;,col=c(&quot;#447270&quot;,&quot;#f6e271&quot;),
   legend = rownames(counts))</code></pre>
 <p><img src="recurso103_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 </div>
@@ -753,8 +753,8 @@ están la mayor concentración de ellos.</p>
 </div>
 <div id="histograma" class="section level3">
 <h3><strong>Histograma</strong></h3>
-<pre class="r"><code>h1=hist(nf, main = &quot;Nota final matemáticas fundamentales&quot;, xlab = &quot;nota&quot;, ylab=&quot;frecuencias absolutas&quot;, labels=TRUE, col=c1, ylim = c(0,30))
-abline(v=3,col=&quot;#2956b2&quot;)</code></pre>
+<pre class="r"><code>h1=hist(nf, main = &quot;Nota final matemáticas fundamentales&quot;, xlab = &quot;nota&quot;, ylab=&quot;frecuencias absolutas&quot;, labels=TRUE, col=&quot;#6b9493&quot;, ylim = c(0,30))
+abline(v=3,col=&quot;#f6b915&quot;, lwd=4)</code></pre>
 <p><img src="recurso103_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 <p><br/><br/></p>
 </div>
@@ -780,21 +780,22 @@ cc=c(20, 10, 20, 20, 20, 20, 20, 20, 20, 30, 20, 20, 20, 10, 30, 20, 20, 30, 20,
 labs=c(&quot;Ing. de Sistemas&quot;,&quot;Ing. Industrial&quot;,&quot;Ing. Mecánica&quot;)
 boxplot((nf~cc),main=&quot;Nota final matemáticas fundamentales por carrera&quot;, 
         col=c(&quot;#066d8d&quot;,&quot;#34b5aa&quot;,&quot;#ecbe14&quot;), names=labs, xlab = &quot;carrera&quot;, ylab = &quot;nota&quot;)
-abline(h=3, col=&quot;red&quot;); abline(h=4, col=&quot;blue&quot;)</code></pre>
+abline(h=3, col=&quot;#f69312&quot;, lwd=4)
+abline(h=4, col=&quot;#447270&quot;, lwd=4)</code></pre>
 <p><img src="recurso103_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 <p><br/><br/></p>
 </div>
 <div id="diagrama-de-dispersión" class="section level3">
 <h3><strong>Diagrama de dispersión</strong></h3>
 <pre class="r"><code>ed=round(rnorm(90,18,1),1)
-plot(ed,nf, main=&quot;Edad vs Nota final matemáticas fundamentales&quot;, ylim = c(0,5), xlab = &quot;Edad&quot;, ylab = &quot;Nota final&quot;,col=&quot;dodgerblue3&quot;,pch=19)
+plot(ed,nf, main=&quot;Edad vs Nota final matemáticas fundamentales&quot;, ylim = c(0,5), xlab = &quot;Edad&quot;, ylab = &quot;Nota final&quot;,col=&quot;#447270&quot;,pch=19)
 grid()</code></pre>
 <p><img src="recurso103_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <p><br/><br/></p>
 </div>
 <div id="gráfica-de-series-de-tiempo" class="section level3">
 <h3><strong>Gráfica de series de tiempo</strong></h3>
-<pre class="r"><code>plot(AirPassengers, main=&quot;Numero de pasajeros por mes&quot;, col=&quot;dodgerblue3&quot;, lwd = 3)</code></pre>
+<pre class="r"><code>plot(AirPassengers, main=&quot;Numero de pasajeros por mes&quot;, col=&quot;#203c3b&quot;, lwd = 4)</code></pre>
 <p><img src="recurso103_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
 <p><br/><br/></p>
 </div>
@@ -894,7 +895,7 @@ ggplot(clasificacion, aes(x=off , y=def))</code></pre>
 data=data.frame(carrera=c(&quot;biologia&quot;,&quot;biomedica&quot;,&quot;civil&quot;,&quot;electronica&quot;,&quot;mecanica&quot;,  &quot;sistemas&quot;),frecuencia=c(8, 9,10,2, 3,7))
 
 ggplot(data, aes(x=carrera, y=frecuencia)) +
-  geom_bar(stat=&quot;identity&quot;, fill=&quot;#0d3b66&quot;)+
+  geom_bar(stat=&quot;identity&quot;, fill=&quot;#203c3d&quot;)+
   geom_text(aes(label=frecuencia), vjust=2.5, color=&quot;white&quot;, size=7)+
   theme_minimal()</code></pre>
 <p><img src="recurso103_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
@@ -903,7 +904,7 @@ ggplot(mtcars, aes(x=mpg, y=wt, colour = cyl)) +
   geom_point()</code></pre>
 <p><img src="recurso103_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
 <pre class="r"><code>ggplot(iris, aes(Sepal.Length)) +
-       geom_histogram(bins = 7,fill=&quot;#69b3a2&quot;, color=&quot;#e9ecef&quot;, alpha=0.9)+
+       geom_histogram(bins = 7,fill=&quot;#447270&quot;, color=&quot;#e9ecef&quot;, alpha=0.9)+
        theme_minimal() +
        labs(x = &quot;cm&quot;, y = &quot;frecuencia absoluta&quot;) +
        ggtitle(&quot;Longitud del sepalo&quot;)</code></pre>

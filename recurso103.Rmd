@@ -100,7 +100,7 @@ barplot(ev, col=c("#ff5b00","#dcf600","#7dbd00","#659cef","#2956b2"), main = "Ev
 
 ```{r, fig.height=5.5}
 counts <- table(mtcars$vs, mtcars$gear); rownames(counts)=c("Montor en linea", "Motor en V")
-barplot(counts, main="Numero de cambios adelante por Tipo de motor",  xlab="Numero de cambios adelante ",col=c("#195e4b","#00da9d"),
+barplot(counts, main="Numero de cambios adelante por Tipo de motor",  xlab="Numero de cambios adelante ",col=c("#447270","#f6e271"),
   legend = rownames(counts))
 ```
 
@@ -119,8 +119,8 @@ Este diagrama ordena los datos de manera que se puede determinar tanto en mínim
 ### **Histograma**
 
 ```{r, fig.height=5}
-h1=hist(nf, main = "Nota final matemáticas fundamentales", xlab = "nota", ylab="frecuencias absolutas", labels=TRUE, col=c1, ylim = c(0,30))
-abline(v=3,col="#2956b2")
+h1=hist(nf, main = "Nota final matemáticas fundamentales", xlab = "nota", ylab="frecuencias absolutas", labels=TRUE, col="#6b9493", ylim = c(0,30))
+abline(v=3,col="#f6b915", lwd=4)
 ```
 
 
@@ -155,7 +155,8 @@ cc=c(20, 10, 20, 20, 20, 20, 20, 20, 20, 30, 20, 20, 20, 10, 30, 20, 20, 30, 20,
 labs=c("Ing. de Sistemas","Ing. Industrial","Ing. Mecánica")
 boxplot((nf~cc),main="Nota final matemáticas fundamentales por carrera", 
         col=c("#066d8d","#34b5aa","#ecbe14"), names=labs, xlab = "carrera", ylab = "nota")
-abline(h=3, col="red"); abline(h=4, col="blue")
+abline(h=3, col="#f69312", lwd=4)
+abline(h=4, col="#447270", lwd=4)
 ```
 
 <br/><br/>
@@ -164,7 +165,7 @@ abline(h=3, col="red"); abline(h=4, col="blue")
 
 ```{r, fig.height=5}
 ed=round(rnorm(90,18,1),1)
-plot(ed,nf, main="Edad vs Nota final matemáticas fundamentales", ylim = c(0,5), xlab = "Edad", ylab = "Nota final",col="dodgerblue3",pch=19)
+plot(ed,nf, main="Edad vs Nota final matemáticas fundamentales", ylim = c(0,5), xlab = "Edad", ylab = "Nota final",col="#447270",pch=19)
 grid()
 ```
 
@@ -174,7 +175,7 @@ grid()
 ### **Gráfica de series de tiempo**
 
 ```{r, fig.height=5}
-plot(AirPassengers, main="Numero de pasajeros por mes", col="dodgerblue3", lwd = 3)
+plot(AirPassengers, main="Numero de pasajeros por mes", col="#203c3b", lwd = 4)
 ```
 
 <br/><br/>
@@ -295,7 +296,7 @@ library(ggplot2)
 data=data.frame(carrera=c("biologia","biomedica","civil","electronica","mecanica",  "sistemas"),frecuencia=c(8, 9,10,2, 3,7))
 
 ggplot(data, aes(x=carrera, y=frecuencia)) +
-  geom_bar(stat="identity", fill="#0d3b66")+
+  geom_bar(stat="identity", fill="#203c3d")+
   geom_text(aes(label=frecuencia), vjust=2.5, color="white", size=7)+
   theme_minimal()
 ```
@@ -311,7 +312,7 @@ ggplot(mtcars, aes(x=mpg, y=wt, colour = cyl)) +
 
 ```{r, message=FALSE, warning=FALSE,fig.height=5}
 ggplot(iris, aes(Sepal.Length)) +
-       geom_histogram(bins = 7,fill="#69b3a2", color="#e9ecef", alpha=0.9)+
+       geom_histogram(bins = 7,fill="#447270", color="#e9ecef", alpha=0.9)+
        theme_minimal() +
        labs(x = "cm", y = "frecuencia absoluta") +
        ggtitle("Longitud del sepalo")
