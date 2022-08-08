@@ -62,11 +62,13 @@ Elegir el gráfico adecuado es muy importante pues existen diferentes alternativ
 |                  |                 |                                           |
 |Cuantitativas     |Intervalo-razón  | diagrama de tallos y hojas                |
 |                  |                 | histograma                                |
-|                  |                 | diagrama de tallos y hojas                |
 |                  |                 | diagrama de cajas                         |
 |                  |                 | diagrama de densidad                      |
 |                  |                 | diagrama de puntos                        |
 |                  |                 | diagrama de lineas                        |
+|                  |                 | diagrama de radar                         |
+|                  |                 | gráfico likert                            |
+|                  |                 | mapa de calor                             |
 
 
 ### **Gráficos variables cualitativas con R base**
