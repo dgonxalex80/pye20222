@@ -175,7 +175,7 @@ Junio: 12.0, 12.0, 12.0, 12.7, 12.8, 12.9,  8.0,  8.0, 13.2, 13.3,
  
 El nivel tecnológico de los 60 distribuidores mostró el siguiente comportamiento
 
-```{r}
+```{r, echo=FALSE}
 nivtec=c(12.5,40,42.5)
 names(nivtec)=c("Bajo", "Medio", "Alto")
 barplot(nivtec, 
@@ -184,9 +184,12 @@ barplot(nivtec,
 grid()
 ```
 
+```{r}
+
+```
 
 
-![](img/p2.png) 
+
 
 De acuerdo con la información anterior, responda falso o verdadero a las siguientes premisas. En caso de ser falsa justifique su respuesta.
 
@@ -266,7 +269,7 @@ Pct.Valid  100.00
 
 Los pesos en libra de 54 paquetes de hamburguesas fueron obtenidos en el mostrador de un supermercado de cadena de la ciudad:
 
-```{r}
+```{r, echo=FALSE}
 peso=c(1.08,0.99,0.97,1.18,1.41,1.28,0.83,1.06,1.14,1.38,
        0.75,0.96,1.08,0.87,0.89,0.89,0.96,1.12,1.12,0.97,
        1.24,0.89,0.98,1.14,0.92,1.18,1.17,0.75,0.83,0.87,

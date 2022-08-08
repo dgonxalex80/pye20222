@@ -639,7 +639,7 @@ class="math inline">\(X no \sim norm\)</span></td>
     Shapiro-Wilk normality test
 
 data:  w
-W = 0.99038, p-value = 0.6953</code></pre>
+W = 0.98899, p-value = 0.5835</code></pre>
 <p><br/><br/><br/></p>
 <p><strong>Prueba de hipótesis para una media</strong></p>
 <p><br/></p>
@@ -661,13 +661,13 @@ class="math inline">\(\sigma^{2}=4\)</span>)</td>
     One-sample z-Test
 
 data:  w
-z = 2.065, p-value = 0.03892
+z = -1.7047, p-value = 0.08826
 alternative hypothesis: true mean is not equal to 1000
 95 percent confidence interval:
- 1000.021 1000.805
+  999.2671 1000.0511
 sample estimates:
 mean of x 
- 1000.413 </code></pre>
+ 999.6591 </code></pre>
 <p><br/><br/><br/></p>
 <div id="prueba-de-hipótesis-para-una-media" class="section level3">
 <h3><strong>Prueba de hipótesis para una media</strong></h3>
@@ -1075,7 +1075,7 @@ plot(density(x), las=1)</code></pre>
     Shapiro-Wilk normality test
 
 data:  x
-W = 0.99323, p-value = 0.4902</code></pre>
+W = 0.98894, p-value = 0.1248</code></pre>
 <p>Esta prueba no requiere la instalación de paquetes adicionales, está
 disponible en la configuración básica de R</p>
 <p><br/><br/></p>
@@ -1091,7 +1091,7 @@ disponible en la configuración básica de R</p>
     Adjusted Jarque-Bera test for normality
 
 data:  x
-AJB = 1.4989, p-value = 0.435</code></pre>
+AJB = 1.295, p-value = 0.503</code></pre>
 <p><br/><br/></p>
 <p><strong>Frosini</strong></p>
 <pre class="r"><code>frosini.norm.test(x)    </code></pre>
@@ -1099,7 +1099,7 @@ AJB = 1.4989, p-value = 0.435</code></pre>
     Frosini test for normality
 
 data:  x
-B = 0.21596, p-value = 0.265</code></pre>
+B = 0.25141, p-value = 0.122</code></pre>
 <p><br/><br/></p>
 <p><strong>Geary</strong></p>
 <pre class="r"><code>geary.norm.test(x)  </code></pre>
@@ -1107,7 +1107,7 @@ B = 0.21596, p-value = 0.265</code></pre>
     Geary test for normality
 
 data:  x
-d = 0.80863, p-value = 0.2695</code></pre>
+d = 0.78597, p-value = 0.8095</code></pre>
 <p><br/><br/></p>
 <p><strong>Hagazy-Green 1</strong></p>
 <pre class="r"><code>hegazy1.norm.test(x)    </code></pre>
@@ -1115,7 +1115,7 @@ d = 0.80863, p-value = 0.2695</code></pre>
     Hegazy-Green test for normality
 
 data:  x
-T = 0.064157, p-value = 0.2835</code></pre>
+T = 0.073231, p-value = 0.131</code></pre>
 <p><br/></p>
 <p><strong>Hagazy-Green 2</strong></p>
 <pre class="r"><code>hegazy2.norm.test(x)</code></pre>
@@ -1123,7 +1123,7 @@ T = 0.064157, p-value = 0.2835</code></pre>
     Hegazy-Green test for normality
 
 data:  x
-T = 0.0065573, p-value = 0.53</code></pre>
+T = 0.0094281, p-value = 0.243</code></pre>
 <p><br/><br/></p>
 <p><strong>Jarque-Bera</strong></p>
 <pre class="r"><code>jb.norm.test(x) </code></pre>
@@ -1131,7 +1131,7 @@ T = 0.0065573, p-value = 0.53</code></pre>
     Jarque-Bera test for normality
 
 data:  x
-JB = 1.5322, p-value = 0.417</code></pre>
+JB = 1.3594, p-value = 0.4675</code></pre>
 <p><br/><br/></p>
 <p><strong>de kurtosis</strong></p>
 <pre class="r"><code>kurtosis.norm.test(x)</code></pre>
@@ -1139,7 +1139,7 @@ JB = 1.5322, p-value = 0.417</code></pre>
     Kurtosis test for normality
 
 data:  x
-T = 2.8093, p-value = 0.5645</code></pre>
+T = 2.7373, p-value = 0.4145</code></pre>
 <p><br/><br/></p>
 <p><strong>de sesgo</strong></p>
 <pre class="r"><code>skewness.norm.test(x)   </code></pre>
@@ -1147,7 +1147,7 @@ T = 2.8093, p-value = 0.5645</code></pre>
     Skewness test for normality
 
 data:  x
-T = -0.19203, p-value = 0.26</code></pre>
+T = -0.15339, p-value = 0.3605</code></pre>
 <p><br/><br/></p>
 <p><strong>Spiegelhalter</strong></p>
 <pre class="r"><code>spiegelhalter.norm.test(x)  </code></pre>
@@ -1155,7 +1155,7 @@ T = -0.19203, p-value = 0.26</code></pre>
     Spiegelhalter test for normality
 
 data:  x
-T = 1.2367, p-value = 0.7345</code></pre>
+T = 1.2723, p-value = 0.1955</code></pre>
 <p><br/><br/></p>
 <p><strong>Weisberg-Bingham</strong></p>
 <pre class="r"><code>wb.norm.test(x) </code></pre>
@@ -1163,7 +1163,7 @@ T = 1.2367, p-value = 0.7345</code></pre>
     Weisberg-Bingham test for normality
 
 data:  x
-WB = 0.99382, p-value = 0.484</code></pre>
+WB = 0.9903, p-value = 0.1665</code></pre>
 <p><br/><br/><br/></p>
 <div id="paquete-nortest" class="section level3">
 <h3><strong>Paquete nortest</strong></h3>
@@ -1178,7 +1178,7 @@ WB = 0.99382, p-value = 0.484</code></pre>
     Anderson-Darling normality test
 
 data:  x
-A = 0.4238, p-value = 0.3159</code></pre>
+A = 0.68052, p-value = 0.07446</code></pre>
 <p><br/></p>
 <p><strong>Cramer-von Mises</strong></p>
 <pre class="r"><code>cvm.test(x)</code></pre>
@@ -1186,7 +1186,7 @@ A = 0.4238, p-value = 0.3159</code></pre>
     Cramer-von Mises normality test
 
 data:  x
-W = 0.06672, p-value = 0.3072</code></pre>
+W = 0.096014, p-value = 0.1267</code></pre>
 <p><br/></p>
 <p><strong>Lilliefors (Kolmogorov-Smirnov)</strong></p>
 <pre class="r"><code>lillie.test(x)</code></pre>
@@ -1194,7 +1194,7 @@ W = 0.06672, p-value = 0.3072</code></pre>
     Lilliefors (Kolmogorov-Smirnov) normality test
 
 data:  x
-D = 0.043293, p-value = 0.4782</code></pre>
+D = 0.053148, p-value = 0.1826</code></pre>
 <p><br/></p>
 <p><strong>chi-cuadrado de Pearson</strong></p>
 <pre class="r"><code>pearson.test(x)</code></pre>
@@ -1202,7 +1202,7 @@ D = 0.043293, p-value = 0.4782</code></pre>
     Pearson chi-square normality test
 
 data:  x
-P = 16.58, p-value = 0.2793</code></pre>
+P = 23.21, p-value = 0.05694</code></pre>
 <p><br/></p>
 <p><strong>Shapiro-Francia</strong></p>
 <pre class="r"><code>sf.test(x)</code></pre>
@@ -1210,7 +1210,7 @@ P = 16.58, p-value = 0.2793</code></pre>
     Shapiro-Francia normality test
 
 data:  x
-W = 0.99382, p-value = 0.4946</code></pre>
+W = 0.9903, p-value = 0.1722</code></pre>
 <p>En todos los casos se presenta un valor-p grande por lo cual no se
 rechaza <span class="math inline">\(Ho\)</span>, asumimos que <span
 class="math inline">\(Ho\)</span> es verdad. Asumimos que la

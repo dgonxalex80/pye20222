@@ -666,42 +666,7 @@ plot # imprime grafico
 
 
 ```
-<br/><br/>
 
-## **calendR**
-
-```{r, fig.height=10}
-par(cex=0.3, cex.axis=.5, cex.lab=.5, cex.main=.5, cex.sub=.5)
-# install.packages(calendR)
-library(calendR)
-
-# Datos
-set.seed(2)
-datos <- rnorm(365)
-
-# Vertical calendar
-calendR(year = 2022,
-        special.days = datos,
-        low.col ="#ee964b",
-        special.col = "#faf0ca",
-        gradient = TRUE,
-        legend.pos = "none",
-        orientation = "portrait",
-        title.size = 20,  
-        subtitle.size = 9,
-        text.size = 9,
-        weeknames.size = 8,
-        day.size = 10,  # tamaño numero del dia
-        months.size = 20,
-        papersize="A3") # tamaño nombre del mes
-
-```
-
-
-
-
-Tomado de : https://r-charts.com/es/ranking/radar-chart/
- 
  <br/><br/><br/>
  
 # **Mapas** 
@@ -802,6 +767,9 @@ spplot(mapco[,6], col.regions = mi.palette, cuts = 6)  # mapa
 
 
 <br/><br/>
+
+
+
 
 ## **tmap**
 
