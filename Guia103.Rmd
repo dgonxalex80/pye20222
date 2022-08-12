@@ -75,7 +75,7 @@ Para alcanzar los objetivos planteados se propone realizar las siguientes activi
 
 |Actividad 132   | Descripción                   | 
 |:--------------|:-----------------------------  |
-|Trabajo parejas|  Deben construir un **mapa mental** del *Módulo 1*  que resuma los conceptos más importantes del Modulo 1. El mapa debe ser construido a mano en un pliego de cartulina |
+|Trabajo equipo|  Deben construir un **mapa mental** del *Módulo 1*  que resuma los conceptos más importantes del Modulo 1. El mapa debe ser construido a mano en medio pliego de cartulina. Los equipos podrán estar conformados por 3 o 4 estudiantes |
 |	Recurso    |[Capitulo 1](https://github.com/dgonzalez80/presentacionespye.io/blob/main/pdf/Capitulo1.pdf), web del curso, || Presentaciones y videos clases |
 |Fecha  | 23 de agosto  de 2022 |
 |Hora   | 23:59 hora local |
@@ -97,7 +97,7 @@ Para alcanzar los objetivos planteados se propone realizar las siguientes activi
 | Entregable    | Descripción                   | 
 |:--------------|:------------------------------|
 | Actividad131  | Tablero Acompañado de descripción de los resultados |
-|Activiada132   | Mapa mental - pliego de cartulina con el mapa dibujado |
+|Activiada132   | Mapa mental - 1/2 pliego de cartulina con el mapa dibujado a mano |
 |Fecha          | agosto 23 de 2022             |
 |Hora límite    | 23:59  hora  local            |
 |               |                               |
