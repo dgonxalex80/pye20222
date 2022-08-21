@@ -37,11 +37,13 @@ cg="#6c4675"
 ![](img/calendario20222.png)
 <br/><br/><br/>
 
+# **Salones de clase**
+
+![](img/salones.png)
+
+<br/><br/><br/>
 
 # **Atención a Estudiantes**
 
-
-
-
-<!-- ![](img/atencion_estudiantes_estadistica.png) -->
+![](img/atencion_estudiantes_estadistica.png) 
 
