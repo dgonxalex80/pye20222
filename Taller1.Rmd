@@ -66,6 +66,9 @@ sum(tiempo-mean(tiempo)^4)
 ```
 
 <br/>
+```{r}
+sort(tiempo)
+```
 
 La auditorı́a de la universidad desea conocer si el CentroInformático está cumpliendo con lineamietos establecidos por las normas para este tipo de servicios, dentro
 de los cuales se destacan:
