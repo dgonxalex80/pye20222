@@ -73,9 +73,9 @@ de los cuales se destacan:
 
 a. No poseer datos atı́picos.
 
-b. No exceder las 10 horas para la atención. Solo está permitido un 5 % de la muestra analizada.
+b. No exceder las 10 minutos para la atención. Solo está permitido un 5 % de la muestra analizada.
 
-c. Tener un 80 % de los tiempos por debajo de las 8 horas (que equivalen a un dı́a laboral).
+c. Tener un 80 % de los tiempos por debajo de las 8 minutos (que equivalen a un dı́a laboral).
 
 d. Tener una distribución con asimetrı́a positiva.
 
