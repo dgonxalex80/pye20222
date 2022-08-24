@@ -1,0 +1,71 @@
+---
+title: <span style="color:#ad6395"> **Taller 1**</span>  
+author: "dgonzalez "
+subtitle: <span style="color:#ad6395">**Módulo 1**</span> 
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
+    theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(comment = NA)
+
+library(RColorBrewer)
+library(summarytools)
+library(knitr)
+library(readxl)
+library(tidyverse)
+# Colombia<- readRDS("data/Colombia.RDS")
+# 
+# colores
+c0= "#b0394a"
+c1= "#ad6395"
+c2= "#a391c4"
+c3= "#8acfe6"
+c4= "#646420"
+c5= "#db524f"
+```
+
+![](img/banner1.png)
+
+### **Enunciado**
+
+<br/>
+
+Una de las principales medidas de la calidad de servicio que ofrece una organización y sus departamentos es la rapidez con la que responde a las quejas de sus clientes. El Centro de Servicios Informáticos de la Universidad está interesado en disminuir el tiempo de atención a quejas que se presentan relacionados con el mal funcionamiento de las máquinas virtuales tanto para profesores, colaboradores como para estudiantes que realizan prácticas de investigación. Con el fin de estudiar el comportamiento de este indicador, selecciona una muestra de los tiempos de atención en minutos que se presentan a continuación:
+
+```{r}
+tiempo=c(10.6, 10.9, 13.3, 11.5, 11.5, 9.0, 7.1, 10.8, 13.1, 8.1, 14.6, 9.4, 12.1, 7.1, 7.3, 6.8, 13.1, 10.8, 13.8, 9.6, 11.5, 6.7, 7.8, 9.7, 9.5, 7.5, 10.1, 12.7, 12.5, 7.1, 10.9, 10.6, 12.4, 10.6, 9.0, 7.5, 11.5, 7.4, 11.3, 11.8, 6.4, 2.3, 15.2, 5.4, 10.9, 8.3, 10.9, 7.9, 13.8, 11.0)
+
+stem(tiempo)
+
+sum(tiempo)
+sum(tiempo^2)
+sum(tiempo-mean(tiempo)^1)
+sum(tiempo-mean(tiempo)^2)
+sum(tiempo-mean(tiempo)^3)
+sum(tiempo-mean(tiempo)^4)
+```
+
+<br/>
+
+La auditorı́a de la universidad desea conocer si el CentroInformático está cumpliendo con lineamietos establecidos por las normas para este tipo de servicios, dentro
+de los cuales se destacan:
+
+
+a. No poseer datos atı́picos.
+
+b. No exceder las 10 horas para la atención. Solo está permitido un 5 % de la muestra analizada.
+
+c. Tener un 80 % de los tiempos por debajo de las 8 horas (que equivalen a un dı́a laboral).
+
+d. Tener una distribución con asimetrı́a positiva.
+
+
+
+El responsable de la auditorı́a le pide revise cada uno de los lineamientos y su cumplimiento y realizar un breve informe.
+
+![](img/resumen.png)
