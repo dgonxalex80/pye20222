@@ -168,7 +168,7 @@ Supongamos que un  procedimiento, designado con $P_1$, se puede hacer de $n_1$ m
 
 <br/><br/>
 
- ```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
 knitr::include_graphics("img/ej4.png")
 ```
 Un estudiante tiene dos posibilidades de ir de su casa a la universidad: En transporte público o en transporte particular. Para el caso del transporte público existen 5 alternativas. Para el caso de transporte particular tienen 6 alternativas. En este caso $n_{1}=5$ y $n_{2}=6$. El número de maneras como se puede transportar de la casa a la universidad será $n=n_{1}+n_{2}=11$ formas diferentes de ir a la U. 

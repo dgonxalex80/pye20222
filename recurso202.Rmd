@@ -329,6 +329,7 @@ Código basado en: https://www.youtube.com/watch?v=t0lmtrm_aa0
 **Resultados del árbol**
 
 **Eventos** : 
+
 + $S$ : sobrevive
 + $S'$ : no sobrevive
 + $H$ : hombre
