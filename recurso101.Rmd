@@ -128,17 +128,18 @@ En caso de tratarse de un problema con cierta frecuencia pero con característic
 
 <br/><br/>
 
-|    |                                     |
-|:--:|:------------------------------------|
-| <img src="img/ej1.png" alt="drawing" width="200"/> ||  
-|                  |Aumento de embarazo de adolescentes en Colombia|
-|                  | Incremento de fugas de energía eléctrica en la ciudad|
-|                  | Incremento de la tasa de empleo informal|
-|                  | Incremento de incapacidades  causadas por accidentes automovilísticos|
-|                  | Aumento del tiempo de atención al cliente|
-|                  | Aumento de quejas por prestación de servicios|
-|                  | Aumentó corrupción en Colombia, según Transparencia Internacional| 
-|                  | Disminución de la demanda de educación en el área de las ingenierías|
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/ej1.png")
+```
+
++ Aumento de embarazo de adolescentes en Colombia
++ Incremento de fugas de energía eléctrica en la ciudad
++ Incremento de la tasa de empleo informal
++ Incremento de incapacidades  causadas por accidentes automovilísticos
++ Aumento del tiempo de atención al cliente
++ Aumento de quejas por prestación de servicios
++ Aumentó corrupción en Colombia, según Transparencia Internacional 
++ Disminución de la demanda de educación en el área de las ingenierías
 
 <br/><br/><br/>
 
@@ -156,13 +157,14 @@ Algunos verbos que se recomienda no utilizar: saber, aprender, conocer, entender
 
 <br/><br/>
 
-|    |                                     |
-|:--:|:------------------------------------|
-| <img src="img/ej2.png" alt="drawing" width="200"/> || 
-|| Establecer los principales causas de las fugas de energía eléctrica en la  ciudad| 
-|| Determinar  las  principales causas de las incapacidades del personal por causas extralaborales|
-|| Determinar los principales factores que inciden sobre el aumento del tiempo de atención| 
-|| Establecer cuáles son los principales factores que inciden en la escogencia de la carrera universitaria en ingeniería|
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/ej2.png")
+```
+
++ Establecer los principales causas de las fugas de energía eléctrica en la  ciudad 
++ Determinar  las  principales causas de las incapacidades del personal por causas extralaborales
++ Determinar los principales factores que inciden sobre el aumento del tiempo de atención 
++ Establecer cuáles son los principales factores que inciden en la escogencia de la carrera universitaria en ingeniería
 
 <br/><br/><br/>
 
@@ -181,37 +183,43 @@ Existen diferentes formas de clasificación de las variables aleatorias, inicial
 
 <br/><br/>
 
-## **Variables Cualitativas**  
+### **Variables Cualitativas**  
 
-|    |                                     |
-|:--:|:------------------------------------|
-| <img src="img/ej3.png" alt="drawing" width="200"/> || 
-|| Día de la semana, (Lun, Mar, Mié, Jue, Vie, Sáb, Dom) |
-|| Estado civil, (soltero, casado, unión libre, separado, viudo)|
-|| Sexo,(Mujer, Hombre)|
-|| Satisfacción del cliente por el servicio prestado (Alta, media, baja)
-|| Tipo de queja |
-|| Barrio donde se produce el daño |
-|| Asignatura cursada |
-|| Carrera o programa académico | 
+Corresponden a valores no númericos que pueden corresponder a factores o a niveles de una variable aleatoria
+
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/ej3.png")
+```
+
++ Día de la semana, (Lun, Mar, Mié, Jue, Vie, Sáb, Dom) 
++ Estado civil, (soltero, casado, unión libre, separado, viudo)
++ Sexo,(Mujer, Hombre)
++ Satisfacción del cliente por el servicio prestado (Alta, media, baja)
++ Tipo de queja 
++ Barrio donde se produce el daño 
++ Asignatura cursada
++ Carrera o programa académico 
 
 <br/><br/>
 
 #### **Variables Cuantitativas** 
 
-|    |                                     |
-|:--:|:------------------------------------|
-| <img src="img/ej4.png" alt="drawing" width="200"/> |                       |
-|| Consumo de energía en la residencia|
-|| Tiempo de respuesta a la solicitud|
-|| Número de servicios realizados en  el día|
-|| Costo del servicio prestado| 
-|| Número de trabajadores que se requieren para solucionar problema|
-|| Consumo de energía de un hogar en kW-h |
-|| Valor de la factura de consumo  de energía para hogares |
-|| Valor de la cartera morosa de la empresa en  un  mes determinado |
-|| Peso en Kg de una persona |
-|| Edad de un estudiante |
+Son valores numéricos que pueden estar relacionados con la medición, el conteo de eventos o tambien con niveles numéricos que se asignen a variables que se miden a traves de test, pero que corresponden a variables cualitativas. A este último proceso descrito se le llama operacionalización de una variable cualitativa 
+
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/ej4.png")
+```
+
++ Consumo de energía en la residencia
++ Tiempo de respuesta a la solicitud
++ Número de servicios realizados en el día
++ Costo del servicio prestado
++ Número de trabajadores que se requieren para solucionar problema
++ Consumo de energía de un hogar en kW-h 
++ Valor de la factura de consumo  de energía para hogares 
++ Valor de la cartera morosa de la empresa en  un  mes determinado 
++ Peso en Kg de una persona 
++ Edad de un estudiante 
 
 Las variables se miden en diferentes escalas, dependiendo del tipo de valor que pueden tomar. Es necesario tener claro además del tipo de variables,  el tipo de escala, por cuanto esto puede determinar el tipo de procesamiento estadística que se debe utilizar.
 
@@ -240,13 +248,14 @@ Operaciones posibles  al comparar dos valores:
 
 <br/><br/>
 
-|    |                                     |
-|:--|:------------------------------------|
-|<img src="img/ej5.png" alt="drawing" width="70"/> || 
-|| Genero |
-|| Estado civil |
-|| Nacionalidad |
-|| Carrera o programa académico|
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/ej5.png")
+```
+
++ Genero 
++ Estado civil 
++ Nacionalidad 
++ Carrera o programa académico
 
 
 <br/><br/>
@@ -262,16 +271,17 @@ Corresponde a valores no numéricos con presencia de orden entre ellos. Es posib
 
 <br/><br/>
 
-|    |                                     |
-|:--|:------------------------------------|
-| <img src="img/ej6.png" alt="drawing" width="70"/> || 
-|| Considera que el servicio que acaba de recibir es:| 
-|| $\square$  Excelente,|
-|| $\square$  Muy bueno,|
-|| $\square$  Bueno, |
-|| $\square$  Regular,| 
-|| $\square$  Muy regular,| 
-|| $\square$  Pésimo|      
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/ej6.png")
+```
+
++ Considera que el servicio que acaba de recibir es:
+  + $\square$  Excelente,
+  + $\square$  Muy bueno,
+  + $\square$  Bueno, 
+  + $\square$  Regular,
+  + $\square$  Muy regular,
+  + $\square$  Pésimo     
 
 <br/><br/>
 
@@ -288,15 +298,16 @@ Corresponde a valores numéricos, dentro de los cuales solo tiene sentido la dif
 
 <br/><br/>
 
-|    |                                     |
-|:--|:------------------------------------|
-|<img src="img/ej7.png" alt="drawing" width="200"/> ||  
-|| Temperatura.  |
-|| La variable se puede medir en diferentes tipos de escalas : |
-|| * Celsius $^{\circ} C$, (La escala Celsius fue creada  Andrés Celsius (1742) . Esta escala  tiene como referencia los puntos de congelación y ebullición del agua, límites que divide en 100 partes iguales |
-|| * Kelvin $K$, Creada por William Thompson Kelvin (1848), en la que propone una transformación de la escala Celsius hasta un valor  hipotético en el que hay ausencia de calor. |
-|| * Fahrenheit $^{\circ}F$  Escala propuesta Gabriel Daniel Fahrenheit (1724), proponiendo una modificación a la escala Celsius |
-|| En conclusión la variable temperatura se puede medir en varias escalas |
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/ej7.png")
+```  
+
++ Temperatura.  La variable se puede medir en diferentes tipos de escalas : 
+  + Celsius $^{\circ} C$, (La escala Celsius fue creada  Andrés Celsius (1742) . Esta escala  tiene como referencia los puntos de congelación y ebullición del agua, límites que divide en 100 partes iguales 
+  + Kelvin $K$, Creada por William Thompson Kelvin (1848), en la que propone una transformación de la escala Celsius hasta un valor  hipotético en el que hay ausencia de calor. 
+  + Fahrenheit $^{\circ}F$  Escala propuesta Gabriel Daniel Fahrenheit (1724), proponiendo una modificación a la escala Celsius
+
+En conclusión la variable temperatura se puede medir en varias escalas 
 
 
 En ocasiones variables de tipo cualitativo no observables de manera directa como :
@@ -328,20 +339,23 @@ Corresponde a valores  numéricos, para los cuales además de las diferencias ta
 
 <br/><br/>
 
-|    |                                     |
-|:--|:------------------------------------|
-|<img src="img/ej8.png" alt="drawing" width="200"/> || 
-|| + Consumo de energía por hogar en kW-h |
-|| + Salario que recibe un empleado en pesos colombianos |
-|| + Utilidad de una empresa obtenida al final del año  |
-|| +	Nivel de endeudamiento de una empresa al final del año en porcentaje |
-|| + Precio del metro cuadrado de tierra  en a comuna 22 de Cali |
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/ej8.png")
+```
+
++ Consumo de energía por hogar en kW-h 
++ Salario que recibe un empleado en pesos colombianos 
++ Utilidad de una empresa obtenida al final del año  
++	Nivel de endeudamiento de una empresa al final del año en porcentaje 
++ Precio del metro cuadrado de tierra  en a comuna 22 de Cali 
 
 <br/><br/> 
 
-|    |                                     |
-|:--:|:------------------------------------|
-| ![](img/Nota_ojo.png) | Es importante poder distinguir entre variables estadísticas y variables no estadística en una base de datos. Para hacerlo nos preguntamos si para la variable en análisis tiene sentido un análisis estadístico (gráficos, tabla o indicadores).  Por ejemplo: No tiene sentido realizar un análisis con variables como :  id, nombre, correo electrónico, dirección, teléfono, longitud y latitud, representante legal, entro otras |
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/nota1.png")
+```
+
+Es importante poder distinguir entre variables estadísticas y variables no estadística en una base de datos. Para hacerlo nos preguntamos si para la variable en análisis tiene sentido un análisis estadístico (gráficos, tabla o indicadores).  Por ejemplo: No tiene sentido realizar un análisis con variables como :  id, nombre, correo electrónico, dirección, teléfono, longitud y latitud, representante legal, entro otras 
 
 <br/><br/><br/>
 
@@ -455,6 +469,10 @@ En este tipo de muestreo se seleccionan los elementos de la población de tal ma
 Para realizarlo se requiere de poseer un marco muestral actualizado y un sistema que permita la escogencia de las unidades de manera aleatoria
 
 <br/>
+
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/codigoR.png")
+```
 
 |           |                                                                               |
 |:----------|:------------------------------------------------------------------------------|

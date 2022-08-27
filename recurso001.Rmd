@@ -85,7 +85,9 @@ sum(1:100)
 ```
  <br/><br/>
 
-#### **Ejemplo 1:**
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/ej1.png")
+```
 
 Si se tienen las notas de un examen de 12 estudiantes como:
 
@@ -118,7 +120,9 @@ donde $k$, $a$ y $b$ son constantes y $x_i$ y $y_{i}$ corresponden a lod termino
 
 <br/><br/>
 
-#### **Ejemplo 2:**
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/ej2.png")
+```
 
 $\displaystyle\sum_{i=1}^{5} 3 = 15$, ¿ Porqué ?
 
@@ -130,7 +134,9 @@ $\displaystyle\sum_{i=1}^{10} 10x = 550$, ¿ Porqué ?
 
 <br/><br/>
 
-#### **Ejemplo 4:**
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/ej3.png")
+```
 
  $\displaystyle\sum_{i=1}^{10} (3x_{i}+2y_{i}) =475$, ¿ Porqué ?
  
@@ -230,7 +236,9 @@ $$\exp\bigg\{\displaystyle\sum_{i=1}^{n} x_{i}\bigg\}$$
 
 <br/><br/>
 
-#### **Ejemplo 1:**
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/ej4.png")
+```
 
 Encontrar la multiplicación de los 10 primeros números
 
