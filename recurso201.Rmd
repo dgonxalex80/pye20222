@@ -41,8 +41,10 @@ Encomendado Pascal de esta tarea empieza a compartir su trabajo con Fermat, mate
 
 <br/><br/>
 
-![](img/pascal.png)
 
+```{r, echo=FALSE, out.width="80%", fig.align = "center"}
+knitr::include_graphics("img/pascal.png")
+```
 
 Con el fin de motivar la construcción de los conceptos principales del tema se plantean las siguientes situaciones :
 
@@ -67,6 +69,8 @@ Este problema se retoma mas adelante
 Iniciaremos con algunos conceptos básicos que nos permiten la contribución de sus fundamentos.
 
 [El problema de los dados del caballero de Meré: soluciones publicadas en el siglo XVII](http://materias.df.uba.ar/estadisticaa2019v/files/2019/02/El_caballero_de_Mere.pdf)
+
+<br/><br/>
 
 <center>
 ![](img/dados.gif)
@@ -136,7 +140,9 @@ Conjunto de todos los posibles valores que puede tomar el experimento aleatorio.
 
 ::: {}
 
-![](img/dados.png){}
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+knitr::include_graphics("img/dados.png")
+```
 :::
 
 ::::
@@ -289,9 +295,11 @@ En este caso la probabilidad es valorada y asignada por un **EXPERTO**, como un 
 
 <br/><br/>
 
-![](img/tabla1.png){width=80%}
+```{r, echo=FALSE, out.width="70%", fig.align = "center"}
+knitr::include_graphics("img/tabla1.png")
+```
 
-<br/><br/><br/>
+<br/><br/>
 
 ### **Probabilidad simple o marginal**
 			
@@ -315,7 +323,7 @@ En este caso la probabilidad es valorada y asignada por un **EXPERTO**, como un 
 
 + $P(A' \cap B')$ : probabilidad de que NO ocurra A ni B 
 
-<br/><br/><br/>
+<br/><br/>
 
 
 ## **Problemas propuestos**
