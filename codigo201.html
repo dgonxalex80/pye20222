@@ -604,7 +604,7 @@ Unidad 2.1</strong></span></h3>
 
 
 <p><img src="img/banner2.png" /></p>
-<p><br/><br/></p>
+<p><br/><br/><br/></p>
 <div id="experimentos-aleatorios" class="section level1">
 <h1><strong>Experimentos aleatorios</strong></h1>
 <p><br/><br/></p>
@@ -612,19 +612,25 @@ Unidad 2.1</strong></span></h3>
 aleatorio</strong> se puede definir como una acción que podemos repetir
 en iguales condiciones muchas veces y cuyo resultado no conocemos
 anticipadamente</p>
+<p><br/><br/></p>
+<p><img src="img/ej1.png" width="10%" style="display: block; margin: auto auto auto 0;" /></p>
 <p>Un ejemplo de ello es cuando estamos jugando parques y un jugador
 lanza dos dados, el resultado solo es posible de observar después de
 haber realizado la acción de lanzarlos.</p>
 <p>Al conjunto de todos los posibles valores que puede tomar el
 experimento aleatorio se le denomina <strong>Espacio muestral</strong>,
 que se denota por la letra mayuscula <strong>S</strong>.</p>
-<p><img src="img/dados.gif" /></p>
-<p><br/></p>
+<p></br></br></p>
+<center>
+<img src="img/dados.gif" />
+</center>
+<p><br/></br></p>
 <p>Para este ejemplo :</p>
 <p><span class="math display">\[S=\{ 2,3,4,5,6,7,8,9,10,11,12
-\}\]</span></p>
+\}\]</span> </br></br><br/></p>
 <div id="lanzamiento-de-un-dados" class="section level2">
 <h2><strong>Lanzamiento de un dados</strong></h2>
+<p></br></p>
 <p>Para simular el lanzamiento de un dado utilizaremos la función
 <code>sample(x, size, replace = FALSE, prob = NULL)</code>, con
 parámetros: <code>x</code> : valores del espacio muestral;
@@ -636,14 +642,15 @@ muestra de 200 valores enteros entre 1 y 6, con repetición.</p>
 x=sample(1:6,n, replace = TRUE)
 td1=prop.table(table(x))
 barplot(td1, las=1)</code></pre>
-<p><img src="codigo201_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p><img src="codigo201_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p></br></br><br/></p>
 </div>
 <div id="lanzamiento-de-dos-dados" class="section level2">
 <h2><strong>Lanzamiento de dos dados</strong></h2>
-<p>En este caso utilizamos la función <code>sample</code> dos veces y se
-obtienen dos vectores que representan los resultados del dado1 y del
+<p>En este caso utilizamos la función <code>sample()</code> dos veces y
+se obtienen dos vectores que representan los resultados del dado1 y del
 dado2 respectivamente. Con estos resultados se construye una
-<code>data.frame</code> de dos columnas por n filas. En ella cada fila
+<code>data.frame()</code> de dos columnas por n filas. En ella cada fila
 de dos componentes conforma una muestra con dos valores.</p>
 <p>Para obtener la suma de los valores de los dos dados, utilizamos la
 función <code>apply(X, MARGIN, FUN, ..., simplify = TRUE)</code>
@@ -651,35 +658,39 @@ indicando con <code>MARGIN=1</code> que la operación (siguiente
 parámetro) se realizará por filas. Por último en el parámetro
 <code>FUN</code> se asigna la función a realizar. En resumen :
 <code>suma=apply(dados, 1, sum)</code></p>
+<p></br></p>
 <pre class="r"><code>n=20000000
 d1=sample(1:6,n, replace = TRUE)
 d2=sample(1:6,n, replace = TRUE)
 dados=data.frame(d1,d2)
 suma=apply(dados, 1, sum)
 barplot(table(suma), las=1,cex.axis=0.7)</code></pre>
-<p><img src="codigo201_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><img src="codigo201_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <pre class="r"><code>data.frame(prop.table(table(suma)))</code></pre>
 <pre><code>   suma       Freq
-1     2 0.02777585
-2     3 0.05557895
-3     4 0.08338395
-4     5 0.11110105
-5     6 0.13890655
-6     7 0.16667975
-7     8 0.13894060
-8     9 0.11109400
-9    10 0.08322215
-10   11 0.05553830
-11   12 0.02777885</code></pre>
+1     2 0.02778035
+2     3 0.05549840
+3     4 0.08330065
+4     5 0.11128035
+5     6 0.13889625
+6     7 0.16650465
+7     8 0.13902040
+8     9 0.11108180
+9    10 0.08332920
+10   11 0.05559365
+11   12 0.02771430</code></pre>
+<p></br></p>
 <p>Procedimiento alternativo</p>
 <pre class="r"><code>t=sapply(1:200, function(x){sum(sample(1:6,2,rep=T))})
 barplot(table(t), las=1, cex.axis=0.7)</code></pre>
-<p><img src="codigo201_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p><img src="codigo201_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p></br></br><br/></p>
 </div>
 <div id="urna" class="section level2">
 <h2><strong>Urna</strong></h2>
 <p>Para simular la extracción de bolas de una urna, se utilizan las
-funciones sample y rep mostradas en el siguiente ejemplo :</p>
+funciones <code>sample()</code> y <code>rep()</code> mostradas en el
+siguiente ejemplo :</p>
 <ul>
 <li>Simulación de urna con: 3 bolas Blancas, 5 Rojas y 4 Azules
 <ul>
@@ -689,10 +700,11 @@ funciones sample y rep mostradas en el siguiente ejemplo :</p>
 </ul></li>
 </ul>
 <pre class="r"><code>sample(c(1,2,3),2,rep=T,prob=c(3,5,4))</code></pre>
-<pre><code>[1] 2 2</code></pre>
+<pre><code>[1] 3 3</code></pre>
 <p>La misma simulación con palabras</p>
 <pre class="r"><code>sample(c(&quot;Blanca&quot;,&quot;Roja&quot;,&quot;Azul&quot;),2,rep=T,prob=c(3,5,4))</code></pre>
 <pre><code>[1] &quot;Azul&quot; &quot;Roja&quot;</code></pre>
+<p></br></br><br/></p>
 </div>
 </div>
 <div id="tablas-de-contingencia" class="section level1">
@@ -703,6 +715,7 @@ valores. En ellas se representan probabilidades conjuntas, marginales y
 condicionales</p>
 <p>Inicialmente construimos una tabla con los valores de las frecuencias
 relativas conjuntas</p>
+<p></br></p>
 <pre class="r"><code>x=c(20,60,100,30,140,50)
     m=matrix(x,ncol=2)
     rownames(m)=c(&quot;Adminitrativo&quot;,&quot;Operativo&quot;,&quot;Vendedor&quot;)
@@ -739,12 +752,13 @@ Vendedor      0.6666667 0.3333333</code></pre>
 Adminitrativo 0.1111111 0.1363636
 Operativo     0.3333333 0.6363636
 Vendedor      0.5555556 0.2272727</code></pre>
-<div id="ejemplo" class="section level2">
-<h2><strong>Ejemplo</strong></h2>
+<p><br/><br/></p>
+<p><img src="img/ej2.png" width="10%" style="display: block; margin: auto auto auto 0;" /></p>
+<p><br/><br/></p>
 <div id="ubicación-por-estado-contagiados-de-covid-en-colombia"
 class="section level3">
 <h3>Ubicación por estado contagiados de Covid en Colombia</h3>
-<pre class="r"><code>Colombia= readRDS(&quot;data/Colombia.RDS&quot;)
+<pre class="r"><code># Colombia= readRDS(&quot;data/Colombia.RDS&quot;)
 t21=table(Colombia$ubicacion, Colombia$estado)
 (t22=addmargins(t21))</code></pre>
 <pre><code>              
@@ -754,6 +768,7 @@ t21=table(Colombia$ubicacion, Colombia$estado)
   hospital             0       0       0     1239    1239
   hospital uci         0     110       0        0     110
   Sum             140845     110 6092928     1239 6235122</code></pre>
+<p><br/></p>
 <p>La tabla de frecuencias la convertimos en tabla de probabilidades</p>
 <pre class="r"><code>t23=prop.table(t21)
 round(t23, 4)</code></pre>
@@ -763,7 +778,10 @@ round(t23, 4)</code></pre>
   fallecido       0.0226 0.0000 0.0000   0.0000
   hospital        0.0000 0.0000 0.0000   0.0002
   hospital uci    0.0000 0.0000 0.0000   0.0000</code></pre>
-</div>
+<p><img src="img/nota1.png" width="10%" style="display: block; margin: auto auto auto 0;" /></p>
+<p>En el módulo 3 se presentan otro tipo de simulaciones partiendo del
+supuesto de un modelo de probabilidad y del conocimiento de las
+probabilidades de algunos eventos</p>
 </div>
 </div>
 

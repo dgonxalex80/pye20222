@@ -27,7 +27,7 @@ c5= "#db524f"
 
 ![](img/banner2.png)
 
-<br/><br/>
+<br/><br/><br/>
 
 # **Experimentos aleatorios**
 
@@ -35,21 +35,32 @@ c5= "#db524f"
 
 Como se menciona en la Guía 2.1, un **Experimento aleatorio** se puede definir como una acción que podemos repetir en iguales condiciones muchas veces y cuyo resultado no conocemos anticipadamente
 
+<br/><br/>
+
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/ej1.png")
+```
+
 Un ejemplo de ello es cuando estamos jugando parques y un jugador lanza dos dados, el resultado solo es posible de observar después de haber realizado la acción de lanzarlos. 
 
 Al conjunto de todos los posibles valores que puede tomar el experimento aleatorio se le denomina **Espacio muestral**, que se denota por la letra mayuscula **S**.
 
+</br></br>
 
+<center>
 ![](img/dados.gif)
+</center>
 
-<br/>
+<br/></br>
 
 Para este ejemplo :
 
 $$S=\{ 2,3,4,5,6,7,8,9,10,11,12 \}$$
-
+</br></br><br/>
 
 ## **Lanzamiento de un dados**
+
+</br>
 
 Para simular el lanzamiento de un dado utilizaremos la función `sample(x, size, replace = FALSE, prob = NULL)`, con parámetros: `x` : valores del espacio muestral; `size` : tamaño de la muestra y `replace` : para determinar si la selección se realiza con remplazo o sin remplazo.
 
@@ -62,13 +73,17 @@ td1=prop.table(table(x))
 barplot(td1, las=1)
 ```
 
+
+</br></br><br/>
+
 ## **Lanzamiento de dos dados**
 
-En este caso utilizamos la función `sample` dos veces y se obtienen dos vectores que representan los resultados del dado1 y del dado2 respectivamente. Con estos resultados se construye una `data.frame` de dos columnas por n filas. En ella cada fila de dos componentes conforma una muestra con dos valores.
+En este caso utilizamos la función `sample()` dos veces y se obtienen dos vectores que representan los resultados del dado1 y del dado2 respectivamente. Con estos resultados se construye una `data.frame()` de dos columnas por n filas. En ella cada fila de dos componentes conforma una muestra con dos valores.
 
 Para obtener la suma de los valores de los dos dados, utilizamos la función `apply(X, MARGIN, FUN, ..., simplify = TRUE)`
 indicando con `MARGIN=1` que la operación (siguiente parámetro) se realizará por filas. Por último en el parámetro `FUN` se asigna la función a realizar. En resumen : `suma=apply(dados, 1, sum)`
 
+</br>
 
 ```{r}
 n=20000000
@@ -81,6 +96,7 @@ data.frame(prop.table(table(suma)))
 
 ```
 
+</br>
 
 Procedimiento alternativo
 
@@ -90,11 +106,11 @@ barplot(table(t), las=1, cex.axis=0.7)
 ```
 
 
-
+</br></br><br/>
 
 ##  **Urna** 
 
-Para simular la extracción de bolas de una urna, se utilizan las funciones sample y rep mostradas en el siguiente ejemplo :
+Para simular la extracción de bolas de una urna, se utilizan las funciones `sample()` y `rep()` mostradas en el siguiente ejemplo :
 
 +  Simulación de urna con:  3 bolas Blancas, 5 Rojas y 4 Azules
     + 1 representa las bolas blancas
@@ -112,12 +128,15 @@ sample(c("Blanca","Roja","Azul"),2,rep=T,prob=c(3,5,4))
 ```
  
 
+</br></br><br/>
 
 # **Tablas de contingencia**
 
 Las tablas de contingencia o tablas cruzadas se basan en las tablas de frecuencia para dos variables cualitativas o cuantitativas con pocos valores. En ellas se representan probabilidades conjuntas, marginales y condicionales
 
 Inicialmente construimos una tabla con los valores de las frecuencias relativas conjuntas
+
+</br>
 
 ```{r}
 x=c(20,60,100,30,140,50)
@@ -151,17 +170,24 @@ o las probabilidades condicionales por columnas
 prop.table(m,2)
 ```
 
+<br/><br/>
 
-## **Ejemplo**
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/ej2.png")
+```
+
+<br/><br/>
 
 ### Ubicación por estado contagiados de Covid en Colombia
 
 ```{r}
-Colombia= readRDS("data/Colombia.RDS")
+# Colombia= readRDS("data/Colombia.RDS")
 t21=table(Colombia$ubicacion, Colombia$estado)
 (t22=addmargins(t21))
 
 ```
+
+<br/>
 
 La tabla de frecuencias la convertimos en tabla de probabilidades
 
@@ -169,3 +195,10 @@ La tabla de frecuencias la convertimos en tabla de probabilidades
 t23=prop.table(t21)
 round(t23, 4)
 ```
+
+
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/nota1.png")
+```
+
+En el módulo 3 se presentan otro tipo de simulaciones partiendo del supuesto de un modelo de probabilidad y del conocimiento de las probabilidades de algunos eventos
