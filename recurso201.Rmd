@@ -166,7 +166,7 @@ Tomada : película El dorado
 
 <br/><br/>
 
-<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #FFFFFF ; border-color: #000000;">
+<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #dbd4e8 ; border-color: #000000;">
 
 **Experimento aleatorio** 
 
@@ -186,7 +186,7 @@ Acción que puede ser replicada bajo las  mismas condiciones y cuyo resultado no
 
 <br/><br/>
 
-<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #FFFFFF ; border-color: #000000;">
+<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #dbd4e8 ; border-color: #000000;">
 
 **Espacio muestral** 
 
@@ -238,7 +238,7 @@ knitr::include_graphics("img/dados.png")
 
 <br/><br/><br/>
 
-<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #FFFFFF ; border-color: #000000;">
+<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #dbd4e8 ; border-color: #000000;">
 
 **Evento aleatorio** 
 
@@ -273,7 +273,7 @@ Resumiendo:
 
 <br/><br/><br/>
 
-<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #FFFFFF ; border-color: #000000;">
+<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #dbd4e8 ; border-color: #000000;">
 
 ### **Enfoque clásico**  
 
@@ -300,7 +300,7 @@ Ahora suponemos que lo ocurrió en el pasado segirá pasando y asi estudiando la
 
 <br/><br/><br/>
 
-<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #FFFFFF ; border-color: #000000;">
+<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #dbd4e8 ; border-color: #000000;">
 
 ### **Enfoque Frecuentista**
 
@@ -339,7 +339,7 @@ Con base en esta tabla podríamos pensar que la probabilidad de que una persona 
 
 <br/><br/><br/>
 
-<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #FFFFFF ; border-color: #000000;">
+<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #dbd4e8 ; border-color: #000000;">
 
 ### **Enfoque subjetivo** 
 
@@ -351,7 +351,7 @@ En este caso la probabilidad es valorada y asignada por un **EXPERTO**, como un 
 
 ## **Axiomas de  probabilidad**
 
-<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #FFFFFF ; border-color: #000000;">
+<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #dbd4e8 ; border-color: #000000;">
 
 + $A_{1}$ : Sea $S$ un espacio muestral  asociado a un experimento. Entonces:
 
