@@ -59,7 +59,7 @@ Para alcanzar los objetivos planteados se propone realizar las siguientes activi
 
 |Actividad      | Descripción                    | 
 |:--------------|:-----------------------------  |
-| Actividad 211 | [**Taller211**]().  Resuelva las preguntas del siguiente  taller y entregue su solución  en formato **pdf**  en el enlace correspondiente de Brightspace.|
+| Actividad 211 | [**Taller211**](https://dgonxalex80.github.io/pye20222/Talller211.html).  Resuelva las preguntas del siguiente  taller y entregue su solución  en formato **pdf**  en el enlace correspondiente de Brightspace.|
 | En parejas    | Cada integrante debe subir la solución de manera indivudial en la plataforma  Bs  | 
 |Fecha  |  04 de septiembre  de 2022 |
 |Hora   |  23:59 hora local     |
