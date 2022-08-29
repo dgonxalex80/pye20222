@@ -353,15 +353,26 @@ En este caso la probabilidad es valorada y asignada por un **EXPERTO**, como un 
 
 <div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #FFFFFF ; border-color: #000000;">
 
-+ $A_{1}$ : Sea $S$ un espacio muestral  asociado a un experimento. Entonces $P(S)=1$ 
++ $A_{1}$ : Sea $S$ un espacio muestral  asociado a un experimento. Entonces:
 
-+ $A_{2}$ : Para cualquier evento $A$, se cumple que $0 \leq P(A) \leq 1$ 
+$$P(S)=1$$ 
 
-+ $A_{3}$ : Si $A$ y $B$ son dos eventos mutuamente excluyentes, entonces: $P(A \cup B) = P(A) + P(B)$ ( En general $P(A \cup B) = P(A)+ P(B) - P(A \cap B)$ ) 
++ $A_{2}$ : Para cualquier evento $A$, se cumple que:
 
-+ $A_{4}$ : Para cualquier evento $A$, $P(\bar{A})=1-P(A)$
+$$0 \leq P(A) \leq 1$$ 
 
-+ $A_{5}$ : La probabilidad de $P(\phi) =0$   
++ $A_{3}$ : Si $A$ y $B$ son dos eventos mutuamente excluyentes, entonces: 
+$$P(A \cup B) = P(A) + P(B)$$ 
+En general 
+
+$$P(A \cup B) = P(A)+ P(B) - P(A \cap B)$$ 
+
+
++ $A_{4}$ : Para cualquier evento $A$, $P(A')=1-P(A)$
+
++ $A_{5}$ : La probabilidad que no ocurra nada : 
+
+$$P(\phi) = 0$$   
 
 </div>
 
