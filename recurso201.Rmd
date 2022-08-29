@@ -76,8 +76,16 @@ palabras=c("probabilidad",
            "experimento", 
            "conjunto", 
            "unión", 
-           "interseción" ) # 18
-replicas=c(10,8,8,8,8,8,8,8,8,4,4,4,4,4,4,4,4)
+           "interseción",
+           "conjunto",
+           "marginal",
+           "Pascal",
+           "Fermat",
+           "De Meré",
+           "Gauss",
+           "Laplace",
+           "Kolmogorov") # 20
+replicas=c(10,8,8,8,8,8,8,8,8,4,4,4,4,4,4,4,4,4,4,6,6,6,5,5,5)
 
 nube1=rep(palabras, replicas)
 

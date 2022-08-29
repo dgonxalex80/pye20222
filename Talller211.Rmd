@@ -35,7 +35,7 @@ library(summarytools)
 
 #### **Probabilidad y mi vida** 
 
-Las decisiones forman parte de nuestras vidas, dia a dia tomamos decisiones que afectan nuestro futuro, para tomarlas en algunas  ocasiones recurrimos a valorar el riesgo que  podrían tener. ¿ En tu vida te has  tomado decisiones con información previa que te ha permitido valorar su riesgo?. o por el contrario tus decisiones han obedecido a corazonadas y sentimientos?. Esta pregunta solo es para reflexionar sobre el tema . No debes contestarla si no lo deseas.
+Las decisiones forman parte de nuestras vidas, dia a dia tomamos decisiones que afectan nuestro futuro, para tomarlas en algunas  ocasiones recurrimos a valorar el riesgo que  podrían tener. ¿ En tu vida has  tomado decisiones con información previa que te ha permitido valorar su riesgo?. o por el contrario tus decisiones han obedecido a corazonadas y sentimientos?. Esta pregunta solo es para reflexionar sobre el tema . No debes contestarla si no lo deseas.
 
 </br></br></br>
 
@@ -65,7 +65,7 @@ Un experimento consiste en lanzar un dado y observar el número de puntos en su 
 
 #### **Faltar a clases**
 
-En un grupo de  100 estudiantes 30 residen por fuera de la ciudad, de los cuales 10 presentan altos niveles de inasistencia a clases, mientras que 35 de los que residen dentro de la ciudad también presentan altos niveles de inasistencia a clases.
+En un grupo de  100 estudiantes 30 residen por fuera de la ciudad, de los cuales 10 presentan altos niveles de inasistencia a clases, mientras que 35 de los que residen dentro en la ciudad también presentan altos niveles de inasistencia a clases.
 	
 + Construya una tabla de probabilidades con la información anterior.
 + Represente también la información mediante un diagrama de Venn. 
@@ -79,7 +79,7 @@ En un grupo de  100 estudiantes 30 residen por fuera de la ciudad, de los cuales
 
 #### **Sobre costos en la construcción**
 
-Una empresa de construcción local descubrió a través de una investigación que solo el 20\% de todos los trabajos son terminados a tiempo, mientras que el 30\% sufrían sobrecostos. Además, los sobrecostos se presentan en el 75\% de las veces en la que los trabajos se terminaron a tiempo.  Carlos, gerente de la empresa desea conocer que tan probable es que un proyecto no tenga sobrecostos y se termine a tiempo y le permita tomar decisiones en caso de ser necesario. Ayude a Carlos a resolver su interrogante.
+Una empresa de construcción local descubrió a través de una investigación que solo el 20\% de todos los trabajos son terminados a tiempo, mientras que el 30\% sufrían sobrecostos. Además, los sobrecostos se presentan en el 75\% de las veces en la que los trabajos se terminaron a tiempo.  Carlos, gerente de la empresa desea conocer que tan probable es que un proyecto no tenga sobrecostos y se termine a tiempo. Esto le permitirá tomar decisiones en caso de ser necesario. Ayude a Carlos a resolver su interrogante.
 
 
 </br></br></br>
@@ -88,7 +88,7 @@ Una empresa de construcción local descubrió a través de una investigación qu
 
 #### **Muertes por accidentes de transito** 
 
-Se sabe que el 65\% de los accidentes de tránsito que se producen en la ciudad ocurren durante la noche de los sábados y se deben a la ingesta excesiva de alcohol, un 25\% se deben a la imprudencia del conductor y el resto a otras causas, (fallo mecánico…etc.). En estos accidentes, el resultado es nefasto en el 30\% de las veces para el primer caso, un 20\% en el segundo y el 5\% en el tercero. Una empresa de salud que presta servicios de ambulancias quiere que Usted le ayude a pronosticar cuál es la causa del accidente más probable, sabiendo que este hecho ha tenido resultados nefastos. Con esta información la empresa pretende tomar decisiones sobre el equipamiento que deben tener sus vehículos, dando prioridad a los elementos relacionados con mayor probabilidad de ocurrencia. Ayude a la compañía de salud a establecer el orden de estas prioridades.  
+Se sabe que el 65\% de los accidentes de tránsito que se producen en la ciudad ocurren durante la noche de los sábados y se deben a : la ingesta excesiva de alcohol, un 25\% se deben a la imprudencia del conductor y el resto a otras causas, (fallo mecánico…etc.). En estos accidentes, el resultado es nefasto en el 30\% de las veces para el primer caso, un 20\% en el segundo y el 5\% en el tercero. Una empresa de salud que presta servicios de ambulancias quiere que Usted le ayude a pronosticar cuál es la causa del accidente más probable, sabiendo que este hecho ha tenido resultados nefastos. Con esta información la empresa pretende tomar decisiones sobre el equipamiento que deben tener sus vehículos, dando prioridad a los elementos relacionados con mayor probabilidad de ocurrencia. Ayude a la compañía de salud a establecer el orden de estas prioridades.  
 	
 
 </br></br></br>
@@ -114,12 +114,12 @@ knitr::include_graphics("img/circuitos.png")
 Un estudio sobre la conducta de un gran numero de  delincuentes adictos a  las  drogas  hace pensar que la  probabilidad de  una  condena de dos años después del tratamiento podría depender del nivel de educación del  delincuente. Las  proporciones del numero total de casos que caen en  cuatro categorías de educación y condena se muestran en la tabla siguiente:
 	
 	
-|  Educación      |                  |Condiciones dos años después del tratamiento	|
-|:----------------|-----------------:|--------------------------------------------:|
+|  Educación      |                              |Condiciones dos años después del tratamiento	|
+|:----------------|-----------------------------:|--------------------------------------------:|
 			 
 |	               |  Condenado  | No condenado | Totales         |
 |:---------------|------------:|-------------:|----------------:|
-|	10 años o mas  |        0.10 |        0.30  |            0.40 |
+|	10 años o más  |        0.10 |        0.30  |            0.40 |
 | 9 años o menos |        0.27 |        0.33  |            0.60 |
 |	Totales        |        0.37 |        0.63  |             1.00|
 
@@ -127,7 +127,7 @@ Un estudio sobre la conducta de un gran numero de  delincuentes adictos a  las  
 
 Suponga que se selecciona un  delincuente del programa de tratamiento y se esta interesado en  los siguientes eventos :
 	
-$A$: El delincuente tiene 10 años de educación o mas
+$A$: El delincuente tiene 10 años de educación o más
 
 $B$: El delincuente es condenado dos años después de completar el tratamiento 
 
