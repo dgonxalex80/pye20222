@@ -25,6 +25,10 @@ c4= "#646420"
 c5= "#db524f"
 
 library(summarytools)
+library(devtools)
+# install_github("lchiffon/wordcloud2")
+library(wordcloud)
+
 ```
 
 ![](img/banner2.png)
@@ -47,7 +51,7 @@ Antes de empezar con el tema reflexionemos sobre los siguientes interrogantes:
 
 ##### Azar - Aleatorio
 ##### Determinístico - No deterministico
-##### Incertidumbre - Probable - Imposible
+##### Incertidumbre - Probable - Improbable
 ##### Cierto - Incierto - Imposible
 
 <br/><br/><br/>
@@ -56,7 +60,7 @@ Antes de empezar con el tema reflexionemos sobre los siguientes interrogantes:
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 library("tm")
 library("SnowballC")
-library("wordcloud")
+library("wordcloud2")
 library("RColorBrewer")
 # nube1 <- read.csv("data/nube1.csv")
 
@@ -93,10 +97,14 @@ t=data.frame(table(nube1))
 
 dword=t[,1]
 dfreq=t[,2]
-  #set.seed(1234)
-  wordcloud(words = dword, freq = dfreq, min.freq = 1,
-            max.words=200, random.order=FALSE, rot.per=0.35, 
-            colors=brewer.pal(8, "Dark2"))
+set.seed(1234)
+wordcloud(words = dword, freq = dfreq, min.freq = 1,
+           max.words=200, random.order=FALSE, rot.per=0.35, 
+           colors=brewer.pal(8, "Dark2"))
+  
+#wordcloud2(data = t, wordSize=2)
+  
+  
 # wordcloud2(data=dfreq,size = 1.6 )
 
 ```
