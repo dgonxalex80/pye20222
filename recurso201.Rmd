@@ -35,9 +35,65 @@ library(summarytools)
 
 Antes de empezar con el tema reflexionemos sobre los siguientes interrogantes:
 
+#### ¿Qué es la probabilidad?
+#### ¿Cuál es su uso.....?
+#### ¿Como se mide......?
+#### ¿Que tipos de probabilidad existen?
+#### ¿Qué propiedades posee....?
+
+<br/><br/>
+
+#### ¿Qué significado tienen las palabras...
+
+##### Azar - Aleatorio
+##### Determinístico - No deterministico
+##### Incertidumbre - Probable - Imposible
+##### Cierto - Incierto - Imposible
+
+<br/><br/><br/>
 
 
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library("tm")
+library("SnowballC")
+library("wordcloud")
+library("RColorBrewer")
+# nube1 <- read.csv("data/nube1.csv")
 
+palabras=c("probabilidad", 
+           "azar", 
+           "aleatorio", 
+           "deterministico", 
+           "incertidumbre", 
+           "probable", 
+           "imposible", 
+           "cierto", 
+           "incierto", 
+           "clásico", 
+           "subjetivo", 
+           "frecuentista", 
+           "evento", 
+           "experimento", 
+           "conjunto", 
+           "unión", 
+           "interseción" ) # 18
+replicas=c(10,8,8,8,8,8,8,8,8,4,4,4,4,4,4,4,4)
+
+nube1=rep(palabras, replicas)
+
+t=data.frame(table(nube1))
+
+dword=t[,1]
+dfreq=t[,2]
+  #set.seed(1234)
+  wordcloud(words = dword, freq = dfreq, min.freq = 1,
+            max.words=200, random.order=FALSE, rot.per=0.35, 
+            colors=brewer.pal(8, "Dark2"))
+# wordcloud2(data=dfreq,size = 1.6 )
+
+```
+
+<br/><br/>
 
 Muchos relacionamos el concepto de probabilidad con los dados, pues forma parte de su origen y de su desarrollo inicial a través de preguntas y situaciones imaginarias y de alguna forma modelables desde la matemáticas. Pero este concepto va mucho mas alla como lo veremos en esta unidad.
 

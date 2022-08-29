@@ -74,7 +74,9 @@ navbar:
           href: monitoria2.html   
         - text: "---------"  
         - text: "Código 2.1"
-          href: codigo201.html        
+          href: codigo201.html 
+        - text: "Taller 211"
+          href: Talller211.html          
     - text: "Módulo 3"
       menu:
         - text: "Módulo 3"
