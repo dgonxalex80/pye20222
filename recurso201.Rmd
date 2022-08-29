@@ -88,8 +88,12 @@ palabras=c("probabilidad",
            "De Meré",
            "Gauss",
            "Laplace",
-           "Kolmogorov") # 20
-replicas=c(10,8,8,8,8,8,8,8,8,4,4,4,4,4,4,4,4,4,4,6,6,6,5,5,5)
+           "Kolmogorov",
+           "riesgo", 
+           "decisión") # 27
+replicas=c(10,8,8,8,8,8,8,8,8,4,
+           4,4,4,4,4,4,4,4,4,6,
+           6,6,5,5,5,8,8)
 
 nube1=rep(palabras, replicas)
 
@@ -97,15 +101,13 @@ t=data.frame(table(nube1))
 
 dword=t[,1]
 dfreq=t[,2]
-set.seed(1234)
-wordcloud(words = dword, freq = dfreq, min.freq = 1,
-           max.words=200, random.order=FALSE, rot.per=0.35, 
-           colors=brewer.pal(8, "Dark2"))
+#set.seed(1234)
+# wordcloud(words = dword, freq = dfreq, min.freq = 1,
+#            max.words=200, random.order=FALSE, rot.per=0.35, 
+#            colors=brewer.pal(8, "Dark2"))
   
-#wordcloud2(data = t, wordSize=2)
-  
-  
-# wordcloud2(data=dfreq,size = 1.6 )
+  library(wordcloud2)
+  wordcloud2(data = t, size = 0.2)
 
 ```
 

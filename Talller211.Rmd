@@ -97,7 +97,7 @@ Se sabe que el 65\% de los accidentes de tránsito que se producen en la ciudad 
 
 #### **Sistema de seguridad**: 
 
-Uno de  los sistemas de seguridad de la universidad funciona mediante la conexión de cuatro componentes como se muestra en las figuras. Suponga que estos  componentes funcionan de manera  independientes y que la probabilidad de que falle cada uno de los componentes $R1$, $R2$, $R3$ y $R4$ son respectivamente: $0.10$, $0.05$, $0.10$ y $0.20$. Con el fin de tener la mejor composición de ellos, es decir la mayor confiabilidad de funcionamiento, el director de recursos físicos le pide a determine cuál es la mejor configuración del sistema.
+Uno de  los sistemas de seguridad de la universidad funciona mediante la conexión de cuatro componentes como se muestra en las figuras. Suponga que estos  componentes funcionan de manera  independientes y que la probabilidad de que falle cada uno de los componentes `R1`, `R2`, `R3`y `R4` son respectivamente: $0.10$, $0.05$, $0.10$ y $0.20$. Con el fin de tener la mejor composición de ellos, es decir la mayor confiabilidad de funcionamiento, el director de recursos físicos le pide a determine cuál es la mejor configuración del sistema.
 
 
 ```{r, echo=FALSE, out.width="60%", fig.align = "center"}
@@ -139,8 +139,8 @@ Encuentre las probabilidades para los eventos:
 + $B$
 + $A \cap B$
 + $A \cup B$
-+ $\overline{A}$
-+ $\overline{A \cap B}$
-+ $\overline{A \cup B}$
++ $A'$
++ $(A \cap B)'$
++ $(A \cup B)'$
 
 	
