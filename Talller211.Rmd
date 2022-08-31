@@ -28,10 +28,12 @@ library(summarytools)
 ```
 
 ![](img/banner2.png)
+</br></br></br>
 
-</br></br>
+```{r, echo=FALSE, out.width="20%", fig.align = "left"}
+knitr::include_graphics("img/problema1.png")
+```
 
-## Problema 1
 
 #### **Probabilidad y mi vida** 
 
@@ -39,7 +41,10 @@ Las decisiones forman parte de nuestras vidas, dia a dia tomamos decisiones que 
 
 </br></br></br>
 
-## Problema 2
+```{r, echo=FALSE, out.width="20%", fig.align = "left"}
+knitr::include_graphics("img/problema2.png")
+```
+
 
 #### **Lanzamiento de un dado** 
 
@@ -61,7 +66,10 @@ Un experimento consiste en lanzar un dado y observar el número de puntos en su 
 
 </br></br></br>
 
-## Problema 3
+```{r, echo=FALSE, out.width="20%", fig.align = "left"}
+knitr::include_graphics("img/problema3.png")
+```
+
 
 #### **Faltar a clases**
 
@@ -75,7 +83,10 @@ En un grupo de  100 estudiantes 30 residen por fuera de la ciudad, de los cuales
 
 </br></br></br>
 
-## Problema 4
+```{r, echo=FALSE, out.width="20%", fig.align = "left"}
+knitr::include_graphics("img/problema4.png")
+```
+
 
 #### **Sobre costos en la construcción**
 
@@ -84,7 +95,9 @@ Una empresa de construcción local descubrió a través de una investigación qu
 
 </br></br></br>
 
-## Problema 5
+```{r, echo=FALSE, out.width="20%", fig.align = "left"}
+knitr::include_graphics("img/problema5.png")
+```
 
 #### **Muertes por accidentes de transito** 
 
@@ -92,8 +105,10 @@ Se sabe que el 65\% de los accidentes de tránsito que se producen en la ciudad 
 	
 
 </br></br></br>
+```{r, echo=FALSE, out.width="20%", fig.align = "left"}
+knitr::include_graphics("img/problema6.png")
+```
 
-## Problema 6
 
 #### **Sistema de seguridad**: 
 
@@ -106,7 +121,10 @@ knitr::include_graphics("img/circuitos.png")
 
 </br></br></br>
 
-## Problema 7
+```{r, echo=FALSE, out.width="20%", fig.align = "left"}
+knitr::include_graphics("img/problema7.png")
+```
+
 
 
 #### **Delincuentes adictos a las drogas** : 
