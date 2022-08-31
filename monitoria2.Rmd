@@ -105,7 +105,7 @@ knitr::include_graphics("img/problema5.png")
 Un lote consta de 10 artículos buenos, 4 con pequeños defectos y 2 con defectos graves. Se elige un artículo al azar. Encontrar la probabilidad de que : 
 
 + No tenga defectos, 
-+ Tenga un defecto grave, 
++ Tenga defecto grave, 
 + Que sea bueno o tenga un defecto grave
 	
 <br/><br/><br/>

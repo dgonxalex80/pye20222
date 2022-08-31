@@ -37,9 +37,21 @@ A continuación se relacionan las principales características de los conjuntos 
 
 En pesaremos con su definición
 
-## **Definición de conjunto**
+
+<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #FFE5E5 ; border-color: #000000;">
+
+
+</div>
+
+<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #FFE5E5 ; border-color: #000000;">
+
+## **Conjunto**
 
 Un conjunto es una colección de objetos que se denota con una letra mayúscula (comúnmente las primeras letras del alfabeto A,B,C..) . 
+
+</div>
+
+
 
 Se pueden escribir por:
 
