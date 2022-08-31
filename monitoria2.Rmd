@@ -63,7 +63,8 @@ Describa los siguientes conjuntos:
 + $A \cup B$
 + $A \cup B'$
 + $A \cap B'$
-+ $(A \cap B)`$
++ $(A \cap B)'$
++ Represente gráficamente los conjuntos solicitados
 
 
 </br></br></br>
