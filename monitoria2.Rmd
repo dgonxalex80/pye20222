@@ -53,7 +53,7 @@ Determine los elementos de los siguientes conjuntos:
 knitr::include_graphics("img/problema2.png")
 ```
 
-Suponga que el conjunto $U$ está dado por $U = \{ x | 0 \leq x \leq 2 \}$ . Sean los conjuntos $A$ y $B$ definidos como: 
+Suponga que el conjunto $U$ está dado por $U = \{ x | 0 \leq x \leq 2 \}$ . Sean los conjuntos `A` y `B` definidos como: 
 
 $$A=\{ x | 1/2 \leq x \leq 1\}$$  
 $$B = \{x|1/4 \leq x \leq 3/4 \}$$  
@@ -91,7 +91,7 @@ knitr::include_graphics("img/problema4.png")
 ```
 
 
-Diez fichas numeradas del 1 al 10 se mezclan en una urna. Se sacan de la urna dos fichas numeradas $(X,Y)$ una y otra a la vez sin sustitución. ¿Cuál es la probabilidad de que $X+Y=10$ ?
+Diez fichas numeradas del 1 al 10 se mezclan en una urna. Se sacan de la urna dos fichas numeradas `(X,Y)` una y otra a la vez sin sustitución. ¿Cuál es la probabilidad de que `X+Y=10` ?
 
 <br/><br/><br/>
 
@@ -117,9 +117,10 @@ knitr::include_graphics("img/problema6.png")
 ```
 
 
-Un mecanismo puede ponerse en cuatro posiciones digamos $a$,$b$,$c$ y $d$ . Hay 8 de tales mecanismos en un sistema. 
+Un mecanismo puede ponerse en cuatro posiciones digamos `a`, `b`, `c` y `d` . Hay 8 de tales mecanismos en un sistema. 
+
 + ¿De cuántas maneras diferentes se puede instalar el sistema ?, 
-+ ¿Cuantas maneras son posibles si sólo se usan las posiciones $a$ y $b$ con la misma frecuencia?
++ ¿Cuantas maneras son posibles si sólo se usan las posiciones `a` y `b` con la misma frecuencia?
 
 <br/><br/><br/>
 
@@ -130,7 +131,7 @@ knitr::include_graphics("img/problema7.png")
 ```
 
 
-Entre los números $1,2,3 .... 50$ se escoge un número al azar. ¿Cuál es la probabilidad de que el número escogido sea divisible por $6$ o por $8$?
+Entre los números $1,2,3 .... 50$ se escoge un número al azar. ¿Cuál es la probabilidad de que el número escogido sea divisible por `6` o por `8`?
 	
 <br/><br/><br/>
 
@@ -141,7 +142,7 @@ knitr::include_graphics("img/problema8.png")
 ```
 
 
-La urna 1 contiene $x$ bolas blancas e $y$ bolas rojas. LA urna 2 contiene $z$ bolas blancas y $v$ bolas rojas. Se escoge una bola al azar de la urna 1 y se pone en la urna 2. Entonces se escoge una bola al azar de la urna 2. ¿Cuál es la  probabilidad de que esta bola sea blanca?
+La urna 1 contiene `x` bolas blancas e `y` bolas rojas. LA urna 2 contiene `z` bolas blancas y `v` bolas rojas. Se escoge una bola al azar de la urna 1 y se pone en la urna 2. Entonces se escoge una bola al azar de la urna 2. ¿Cuál es la  probabilidad de que esta bola sea blanca?
 	
 <br/><br/><br/>
 
@@ -152,7 +153,7 @@ knitr::include_graphics("img/problema9.png")
 ```
 
 
-En las siguientes figuras (a) y (b) se supone que la probabilidad de que cada interruptor  este cerrado es $p$  y que cada  interruptor se abre o se cierra independientemente de cualquier otro. Encontrar en cada caso la probabilidad de la corriente pase de *Izquierda* a *Derecha*
+En las siguientes figuras (a) y (b) se supone que la probabilidad de que cada interruptor  este cerrado es `p`  y que cada  interruptor se abre o se cierra independientemente de cualquier otro. Encontrar en cada caso la probabilidad de la corriente pase de *Izquierda* a *Derecha*
 	
 
 ![](img/circuitos2.png)
@@ -209,7 +210,7 @@ knitr::include_graphics("img/problema13.png")
 ```
 
 
-Se cree que la distribución de los grupos sanguíneos en Estados Unidos en la Segunda Guerra Mundial era: tipo A, 41%; tipo B, 9%; tipo AB, 4%; y tipo O, 46%. Se estima que en esa época, el 4% de las personas pertenecientes al tipo O fue clasificado como del tipo A; el 88% de los del tipo A fue correctamente clasificado; el 4% de los del tipo B se clasificó como del tipo A, y el 10% de los del tipo AB fue, igualmente, clasificado como del tipo A. Un soldado fue herido y conducido a la enfermería. Se le clasificó como del tipo A. ¿Cuál es la probabilidad de que tal grupo sea ciertamente el suyo?
+Se cree que la distribución de los grupos sanguíneos en Estados Unidos en la Segunda Guerra Mundial era: `tipo A`, 41%; `tipo B`, 9%; `tipo AB`, 4%; y `tipo O`, 46%. Se estima que en esa época, el 4% de las personas pertenecientes al `tipo O` fue clasificado como del `tipo A`; el 88% de los del `tipo A` fue correctamente clasificado; el 4% de los del `tipo B` se clasificó como del `tipo A`, y el 10% de los del `tipo AB` fue, igualmente, clasificado como del `tipo A`. Un soldado fue herido y conducido a la enfermería. Se le clasificó como del `tipo A`. ¿Cuál es la probabilidad de que tal grupo sea ciertamente el suyo?
 	
 *Tomados de J. Susan Milto (2001)* 
 
