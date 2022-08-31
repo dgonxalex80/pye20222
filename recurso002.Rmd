@@ -70,7 +70,7 @@ Se pueden escribir por:
  
 + **por su nombre** : los dígitos
 
-+ **por compresión** : $A=\{ x\in\mathbb{Z},  0\le x  \le 9    \}$, utilizando  nomenclatura matemática.
++ **por compresión** : $A=\{ x \in \mathbb{Z}|  0 \leq x  \leq 9    \}$, utilizando  nomenclatura matemática.
 
 Al  comparar o combinar conjuntos debemos hacer uso de sus propiedades y operaciones, dentro de  las  cuales se encuentran $A \cup B$, $A \cap B$, 
 
@@ -153,7 +153,6 @@ $B-A =\{ 8,10,12,14,16,18,20 \}$
 
 <br/><br/>
 
-##  **Problemas propuestos** 
 
 <br/><br/>
 
