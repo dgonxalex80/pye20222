@@ -47,3 +47,6 @@ cg="#6c4675"
 
 ![](img/atencion_estudiantes_estadistica.png) 
 
+# **Información supletorios**
+
+![](img/supletorios_20222.png)
