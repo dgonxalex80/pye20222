@@ -1,5 +1,5 @@
 ---
-title: <span style="color:#a391c4"> **Monitoría 1**</span>  
+title: <span style="color:#a391c4"> **Monitoría 2**</span>  
 author: "dgonzalez "
 output:
   html_document:
@@ -23,12 +23,10 @@ c5= "#db524f"
 
 ![](img/banner2.png)
 
-## <span style="color:#F5F5F5">**Problema 1**</span>  
+</br></br></br>
 
 
-```{r, echo=FALSE, out.width="20%", fig.align = "left"}
-knitr::include_graphics("img/problema1.png")
-```
+##  <span style="color:#a391c4">**Problema 1**</span>  
 
 Suponga que el conjunto universal consta de los números enteros del 1 al 10. 
 
@@ -47,11 +45,7 @@ Determine los elementos de los siguientes conjuntos:
 
 </br></br></br>
 
-## <span style="color:#F5F5F5">**Problema 2**</span>  
-
-```{r, echo=FALSE, out.width="20%", fig.align = "left"}
-knitr::include_graphics("img/problema2.png")
-```
+##  <span style="color:#a391c4">**Problema 2**</span> 
 
 Suponga que el conjunto $U$ está dado por $U = \{ x | 0 \leq x \leq 2 \}$ . Sean los conjuntos `A` y `B` definidos como: 
 
@@ -70,11 +64,7 @@ Describa los siguientes conjuntos:
 </br></br></br>
 
 
-## <span style="color:#F5F5F5">**Problema 3**</span>  
-
-```{r, echo=FALSE, out.width="20%", fig.align = "left"}
-knitr::include_graphics("img/problema3.png")
-```
+##  <span style="color:#a391c4">**Problema 3**</span> 
 
 
 Un cargamento de 1500 lavadoras contiene 400 defectuosas y 1100 no defectuosas. Se eligen al azar doscientas lavadoras (sin sustitución) y se clasifican. 
@@ -84,22 +74,13 @@ c. ¿ entre 50 y 60 artículos defectuosos?
 
 <br/><br/><br/>
 
-## <span style="color:#F5F5F5">**Problema 4**</span>  
-
-```{r, echo=FALSE, out.width="20%", fig.align = "left"}
-knitr::include_graphics("img/problema4.png")
-```
-
+##  <span style="color:#a391c4">**Problema 4**</span> 
 
 Diez fichas numeradas del 1 al 10 se mezclan en una urna. Se sacan de la urna dos fichas numeradas `(X,Y)` una y otra a la vez sin sustitución. ¿Cuál es la probabilidad de que `X+Y=10` ?
 
 <br/><br/><br/>
 
-## <span style="color:#F5F5F5"> **Problema 5**</span>  
-
-```{r, echo=FALSE, out.width="20%", fig.align = "left"}
-knitr::include_graphics("img/problema5.png")
-```
+##  <span style="color:#a391c4">**Problema 5**</span> 
 
 
 Un lote consta de 10 artículos buenos, 4 con pequeños defectos y 2 con defectos graves. Se elige un artículo al azar. Encontrar la probabilidad de que : 
@@ -110,12 +91,7 @@ Un lote consta de 10 artículos buenos, 4 con pequeños defectos y 2 con defecto
 	
 <br/><br/><br/>
 
-## <span style="color:#F5F5F5"> **Problema 6**</span>  
-
-```{r, echo=FALSE, out.width="20%", fig.align = "left"}
-knitr::include_graphics("img/problema6.png")
-```
-
+##  <span style="color:#a391c4">**Problema 6**</span> 
 
 Un mecanismo puede ponerse en cuatro posiciones digamos `a`, `b`, `c` y `d` . Hay 8 de tales mecanismos en un sistema. 
 
@@ -124,33 +100,21 @@ Un mecanismo puede ponerse en cuatro posiciones digamos `a`, `b`, `c` y `d` . Ha
 
 <br/><br/><br/>
 
-## <span style="color:#F5F5F5">**Problema 7**</span>  
-
-```{r, echo=FALSE, out.width="20%", fig.align = "left"}
-knitr::include_graphics("img/problema7.png")
-```
+##  <span style="color:#a391c4">**Problema 7**</span> 
 
 
 Entre los números $1,2,3 .... 50$ se escoge un número al azar. ¿Cuál es la probabilidad de que el número escogido sea divisible por `6` o por `8`?
 	
 <br/><br/><br/>
 
-## <span style="color:#F5F5F5">**Problema 8**</span>  
-
-```{r, echo=FALSE, out.width="20%", fig.align = "left"}
-knitr::include_graphics("img/problema8.png")
-```
+##  <span style="color:#a391c4">**Problema 8**</span> 
 
 
 La urna 1 contiene `x` bolas blancas e `y` bolas rojas. La urna 2 contiene `z` bolas blancas y `v` bolas rojas. Se escoge una bola al azar de la urna 1 y se pone en la urna 2. Entonces se escoge una bola al azar de la urna 2. ¿Cuál es la  probabilidad de que esta bola sea blanca?
 	
 <br/><br/><br/>
 
-## <span style="color:#F5F5F5"> **Problema 9**</span>  
-
-```{r, echo=FALSE, out.width="20%", fig.align = "left"}
-knitr::include_graphics("img/problema9.png")
-```
+##  <span style="color:#a391c4">**Problema 9**</span> 
 
 
 En las siguientes figuras (a) y (b) se supone que la probabilidad de que cada interruptor  este cerrado es `p`  y que cada  interruptor se abre o se cierra independientemente de cualquier otro. Encontrar en cada caso la probabilidad de la corriente pase de *Izquierda* a *Derecha*
@@ -162,22 +126,14 @@ En las siguientes figuras (a) y (b) se supone que la probabilidad de que cada in
 
 <br/><br/><br/>
 
-## <span style="color:#F5F5F5">**Problema 10**</span>  
-
-```{r, echo=FALSE, out.width="20%", fig.align = "left"}
-knitr::include_graphics("img/problema10.png")
-```
+##  <span style="color:#a391c4">**Problema 10**</span> 
 
 
 Los contaminantes más comunes de las aguas son de origen orgánico. Puesto que la mayor parte de los materiales orgánicos se descompone por acción de bacterias que requieren oxígeno, un exceso de materia orgánica puede significar una disminución en la cantidad de oxígeno disponible. Ello afecta eventualmente a otros organismos presentes en el agua. La demanda de oxígeno por parte de una bacteria se llama demanda biológica de oxígeno (DBO). Un estudio de las corrientes acuáticas que circulan en las proximidades de un complejo industrial revela que el 35% tiene una alta DBO, el 10% 	muestra una acidez elevada y un 4% presenta ambas características. ¿Son independientes los sucesos «la corriente tiene una alta DBO» y «la corriente posee una acidez elevada»? Calcular la probabilidad de que la corriente tenga una acidez elevada, dado que presenta una alta DBO.
 	
 <br/><br/><br/>
 
-## <span style="color:#F5F5F5">**Problema 11**</span>  
-
-```{r, echo=FALSE, out.width="20%", fig.align = "left"}
-knitr::include_graphics("img/problema11.png")
-```
+##  <span style="color:#a391c4">**Problema 11**</span> 
 
 
 Suponga que una familia tiene cuatro hijos.  
@@ -189,11 +145,7 @@ Suponga que una familia tiene cuatro hijos.
 	
 <br/><br/><br/>
 
-## <span style="color:#F5F5F5">**Problema 12**</span>  
-
-```{r, echo=FALSE, out.width="20%", fig.align = "left"}
-knitr::include_graphics("img/problema12.png")
-```
+##  <span style="color:#a391c4">**Problema 12**</span> 
 
 
 Unos estudios muestran que los ejemplares de una cierta raza de liebres de alta montaña (liebre esquiadora) mueren antes de lo normal, aun en ausencia de depredadores o de 	enfermedad conocida alguna. Dos de las causas de muerte identificadas son: baja cantidad de azúcar en sangre y convulsiones. Se estima que el 7% de los animales presenta ambos síntomas, el 40% tiene bajo nivel de azúcar en sangre, y el 25% sufre convulsiones. 
@@ -203,11 +155,7 @@ Unos estudios muestran que los ejemplares de una cierta raza de liebres de alta 
 	
 <br/><br/><br/>
 
-## <span style="color:#F5F5F5">**Problema 13**</span>  
-
-```{r, echo=FALSE, out.width="20%", fig.align = "left"}
-knitr::include_graphics("img/problema13.png")
-```
+##  <span style="color:#a391c4">**Problema 13**</span> 
 
 
 Se cree que la distribución de los grupos sanguíneos en Estados Unidos en la Segunda Guerra Mundial era: `tipo A`, 41%; `tipo B`, 9%; `tipo AB`, 4%; y `tipo O`, 46%. Se estima que en esa época, el 4% de las personas pertenecientes al `tipo O` fue clasificado como del `tipo A`; el 88% de los del `tipo A` fue correctamente clasificado; el 4% de los del `tipo B` se clasificó como del `tipo A`, y el 10% de los del `tipo AB` fue, igualmente, clasificado como del `tipo A`. Un soldado fue herido y conducido a la enfermería. Se le clasificó como del `tipo A`. ¿Cuál es la probabilidad de que tal grupo sea ciertamente el suyo?
@@ -216,22 +164,14 @@ Se cree que la distribución de los grupos sanguíneos en Estados Unidos en la S
 
 <br/><br/><br/>
 
-## <span style="color:#F5F5F5"> **Problema 14**</span>  
-
-```{r, echo=FALSE, out.width="20%", fig.align = "left"}
-knitr::include_graphics("img/problema14.png")
-```
+##  <span style="color:#a391c4">**Problema 14**</span> 
 
 
 En el colegio Anglo-Frances se imparten sólo los idiomas inglés y francés. El 80% de los alumnos estudian  inglés y el resto francés. El 30% de los alumnos que cursan de inglés son socio del club musical del colegio, mientras de los que estudian francés son socio de dicho club el 40%. Si el director del colegio elige un alumno de manera aleatoria, ¿qué tan probable es que dicho alumno pertenezca al club de musical? . Por otra parte el psicólogo del colegio afirma que estudiar inglés es un evento independiente de estudiar francés. ¿usted que opina respecto a esta afirmación? (justifique su respuesta)
 
 <br/><br/><br/>
 
-## <span style="color:#F5F5F5"> **Problema 15**</span>  
-
-```{r, echo=FALSE, out.width="20%", fig.align = "left"}
-knitr::include_graphics("img/problema15.png")
-```
+##  <span style="color:#a391c4">**Problema 15**</span> 
 
 
 En una universidad de la región hay 4000 estudiantes distribuidos en tres grupos. Primeros semestre (1 a 3), mitad de carrera (4 a 7) y final de carrera (8 a 10). Esta población esta conformada por estudiantes que realizan actividades extracuricolares y aquellos que no participan en ninguna actividad, distribuidos como se muestra en la siguiente tabla:
@@ -248,11 +188,7 @@ Sandra prefiere que el grupo de estudiantes a su cargo sean estudiantes de prime
 
 <br/><br/><br/>
 
-## <span style="color:#F5F5F5"> **Problema 16**</span>  
-
-```{r, echo=FALSE, out.width="20%", fig.align = "left"}
-knitr::include_graphics("img/problema16.png")
-```
+##  <span style="color:#a391c4">**Problema 16**</span> 
 
 
 Un miembro de la comunidad universitaria se somete a una prueba para detectar el Covid19. Si la persona está enferma, el test dá positivo con un 96% de certeza. Si la persona está sana, el test será negativo con un 94% de certeza. Se sabe que 1 de cada 100 personas de esta comunidad está enferma

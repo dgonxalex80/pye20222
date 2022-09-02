@@ -26,7 +26,7 @@ c5= "#db524f"
 
 <br/><br/>
 
-## **Problema 1**
+## <span style="color:#ad6395"> **Problema  1**</span>  
 
 Para el siguiente grupo de variables defina para cada caso el tipo de variable y la escala de medición 
 
@@ -47,7 +47,7 @@ Para el siguiente grupo de variables defina para cada caso el tipo de variable y
 
 <br/><br/><br/>
 
-## **Problema 2**
+## <span style="color:#ad6395"> **Problema  2**</span>  
 
 Indique el concepto referido en cada uno de los siguientes enunciados:
 
@@ -66,7 +66,7 @@ Indique el concepto referido en cada uno de los siguientes enunciados:
 
 <br/><br/><br/>
 
-## **Problema 3**
+## <span style="color:#ad6395"> **Problema  3**</span>  
 
 Responda F (Falso)  o V (Verdadero), justificando la respuesta en caso de ser Falsa.
 
@@ -89,7 +89,7 @@ Responda F (Falso)  o V (Verdadero), justificando la respuesta en caso de ser Fa
 
 <br/><br/><br/>
 
-## **Problema 4**
+## <span style="color:#ad6395"> **Problema  4**</span>  
 
 Elabore un gráfico para representar adecuadamente la siguiente información: 
 
@@ -114,7 +114,7 @@ La clasificación de los empleados de una empresa por cargo es la siguiente: un 
 
 <br/><br/><br/>
 
-## **Problema 5**
+## <span style="color:#ad6395"> **Problema  5**</span>  
 
 Un vendedor convierte  los  pesos de los paquetes que se producen en  su empresa de libras a kilogramos ($1$ kg $\simeq$ 2.2 lb.). Como afecta esta conversión  la media y la desviación estándar?.   
 
@@ -128,7 +128,7 @@ Nota:
 
 <br/><br/><br/>
 
-## **Problema 6**
+## <span style="color:#ad6395"> **Problema  6**</span>  
 
 Para analizar la rapidez con que una máquina etiqueta las botellas en una compañía de jugos, se decide hacer seguimiento al número de botellas etiquetadas por día.  A  partir de los resultados procesados en  R presente un análisis estadístico para el número de botellas etiquetadas por día
 
@@ -157,7 +157,7 @@ Punto 11 pag. 34 notas Alonso
 
 <br/><br/><br/>
 
-## **Problema 7**	
+## <span style="color:#ad6395"> **Problema  7**</span>  
 
 El director de la asociación de comerciantes de tomates del Valle del Cauca estudia el comportamiento de las ventas diarias de los últimos meses para una muestra de 60 nuevos microempresarios en la región. Dos de las variables más importantes a tener en cuenta para el estudio fueron: Ventas (meses Mayo y Junio) y el nivel tecnológico de la empresa. La siguiente información corresponde a las ventas:
 
@@ -221,7 +221,7 @@ Tomado de Arroyo(2012)
 
 <br/><br/><br/>
 
-## **Problema 8**	
+## <span style="color:#ad6395"> **Problema  8**</span>  
 
 A partir del siguiente gráfico de los tiempos de atención en una entidad bancaria determine la media y la mediana (n=500 clientes). Se puede afirmar que la distribución del tiempo de atención es asimétrica positiva?. Se desea establecer los porcentajes de clientes atendidos en los rangos bajos (menos de 10 min), medios (entre 10 min y 12 min), altos (más de 12 min), con el fin de evaluar si en su mayoría los tiempos se concentran en el rango medio. Verifique si esta afirmación es correcta.
 
@@ -242,7 +242,7 @@ grid()
 
 
 
-## **Problema 10**	 
+## <span style="color:#ad6395"> **Problema  9**</span>  
 
 En un estudio realizado para investigar la distribución del tiempo de frendo total  ( tiempo de reacción más tiempo para pasar del acelerador al freno, en ms) en condiciones reales de manejo a 60 km/h se obtuvo el siguiente resumen de la distribución de los tiempos: 
 
@@ -273,7 +273,7 @@ Pct.Valid  100.00
 
 <br/><br/><br/>
 
-## **Problema 11**
+## <span style="color:#ad6395"> **Problema  10**</span>  
 
 Los pesos en libra de 54 paquetes de hamburguesas fueron obtenidos en el mostrador de un supermercado de cadena de la ciudad:
 
@@ -326,7 +326,7 @@ Para construir el diagrama de cajas se emplean los cuartiles ($Q_{1}$, $Q_{2}$ y
 
 <br/><br/><br/>
 
-## **Problema 12**:
+## <span style="color:#ad6395"> **Problema  11**</span>  
 
 El puntaje alcanzado por estudiantes en un test para medir el razonamiento deductivo mediante una prueba de personalidad de Millon (MPIS) se presenta en la siguiente tabla:
 
@@ -353,7 +353,7 @@ A partir de la información responda los siguientes interrogantes:
 
 <br/><br/><br/>
 
-## **Problema 13**:
+## <span style="color:#ad6395"> **Problema  12**</span>  
 
 Los tiempo en minutos de demora en la entrega de pedidos por parte de dos proveedores de insumos para laboratorio que llamaremos $P_{A}$ y $P_{B}$ sun los siguentes
 
