@@ -31,9 +31,63 @@ c5= "#db524f"
 
 <br/><br/>
 
+# **Guía de aprendizaje 2.2**
+
+<br/><br/>
+
+## **Introducción**
+
+Como fue mencionado en la Unidad 2.1 el concepto de probabilidad es fundamental dentro de la Estadística, pues soporta los conceptos de variable aleatoria y de las funciones que las rigen. Entre sus principales aplicaciones está la valoración del riesgo en relación con la toma de decisiones, la fiabilidad de productos y garantías de productos, teoría de juegos, entre otras aplicaciones.
+
+Como complemento de los conceptos vistos en la Unidad 2.1, en esta unidad se aborda el concepto de **Probabilidad total** y el **Teorema de Bayes**.
+
+<br/><br/>
+
+## **Objetivos de la unidad**
+
+Al finalizar la unidad los estudiantes estarán  en  capacidad de  RECONOCER, CALCULAR e INTERPRETAR  los diferentes tipos de probabilidad y sus aplicaciones, con el propósito de valorar los riesgos asociados a una decisión. 
+
+<br/><br/>
+
+## **Duración**
+
+La presente  unidad será desarrollada durante la semana comprendida entre el 05  y 11 de septiembre  de 2022. Ademas del material suministrado  contaran con el acompañamiento del profesor,  del monitor y espacio de Atención a estudiantes y manera asincrónica  de actividades académicas. Los entregables para esta unidad podrán enviarse a través de la plataforma Brightspace hasta el  11  de sseptiembre de 2022
+
+Para alcanzar los objetivos planteados se propone realizar la siguiente actividad
+
+<br/><br/>
+
+## **Cronograma de trabajo**
 
 
-<span style="color:#db524f"> **EN CONSTRUCCIÓN**</span> 
+|Actividad      | Descripción                    | 
+|:--------------|:-----------------------------  |
+| Actividad 221 | A partir de los conceptos vistos en las Unidades 2.1 y 2.2 deberá resolver los problemas propuestos en el [**Taller 202**](https://github.com/dgonzalez80/probabilidad20212.io/blob/main/talleres/Taller_202.pdf) y entregue su solución  en formato **pdf**  en el enlace correspondiente de Brightspace.|
+|Trabajo en parejas||
+|Fecha  |  11 de septiembre de 2022 |
+|Hora   |  23:59 hora local     |
+|||
 
 
-# **Guía de aprendizaje**
+<br/><br/>
+
+## **Criterios de evaluación**
+
+El taller del Modulo 2 recoge los elementos estudiados y por tanto  tiene objetivo la revisión de los principales conceptos tratados.
+
++ Reconocer los principales conceptos de  probabilidad y su efecto sobre la toma de decisiones informadas.
+
++ Reconocer e identificar los diferentes tipos de probabilidad  y sus respectivas interpretación.
+
+<br/><br/>
+
+## **Entregables** 
+
+| Entregable |  Descripción                    |
+|:--------------|:-----------------------------|
+| Actividad221    | Solucionario taller 221. Cada estudiante debe subir a la plataforma una copia en pdf del trabajo realizado que incluya el nombre de los dos | 
+| Fecha           |Domongo  11 de septiembre  de 2022 | 
+|Hora límite      | 23:59  hora  local |
+
+<br/><br/><br/><br/>
+
