@@ -219,7 +219,7 @@ a. Represente la información suministrada mediante:
     + Un diagrama de Venn
 
 
-b. Que es mas probable que ocurra :
+b. Que es más probable que ocurra :
     + Que sabiendo que gane el primer examen, también gane el segundo examen
     + Que sabiendo que perdió el primer examen, también pierda el segundo examen
 

@@ -382,9 +382,26 @@ $$P(\phi) = 0$$
 
 <br/><br/>
 
+:::: {style="display: flex;"}
+::: {}
+
 ```{r, echo=FALSE, out.width="70%", fig.align = "center"}
-knitr::include_graphics("img/tabla1.png")
+knitr::include_graphics("img/tabla1_22.png")
 ```
+  
+:::
+::: {}
+
+```{r, echo=FALSE, out.width="70%", fig.align = "center"}
+knitr::include_graphics("img/diagrama5_22.png")
+```
+:::
+  
+::::
+
+
+
+
 
 <br/><br/>
 

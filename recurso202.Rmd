@@ -84,27 +84,54 @@ m
 
 En la siguiente tabla se representan los tres tipos de probabilidad :
 <br/>
-![](img/tabla2031.png){width=80%}
-<br/><br/>
+
+:::: {style="display: flex;"}
+::: {}
+
+```{r, echo=FALSE, out.width="80%", fig.align = "center"}
+knitr::include_graphics("img/tabla2_22.png")
+```
+  
+:::
+::: {}
+
+```{r, echo=FALSE, out.width="80%", fig.align = "center"}
+knitr::include_graphics("img/tabla4_22.png")
+```
+:::
+  
+::::
+
+
+<br/><br/><br/>
+
+
+
+
 
 Esta información tambien se puede representar como un diagrama de árbol 
 
 <br/>
 
-![](img/arbol2031.png){width=80%}
+```{r, echo=FALSE, out.width="50%", fig.align = "center"}
+knitr::include_graphics("img/arbol1_22.png")
+```
 <br/><br/>
 
 O también como un diagrama de Venn:
 
 <br/>
 
-![](img/venn.png){width=80%}
+```{r, echo=FALSE, out.width="50%", fig.align = "center"}
+knitr::include_graphics("img/diagrama5_22.png")
+```
+
 <br/><br/>
 
 
 Por despeje se pueden obtener la llanada regla de la multiplicación :
 
-<br/>
+<br/><br/>
 
 <div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #dbd4e8 ; border-color: #000000;">
 
@@ -123,9 +150,11 @@ $$P(A \cap B) = P(A) P(B)$$
 
 <br/><br/><br/>
 
+##  <span style="color:#a391c4">**Eventos independientes**</span> 
+
 En el caso que se requiera evaluar si dos eventos son independientes o no, partiendo de la definición de probabilidad condicional se podría obtener la siguiente regla al despejar $P(A \cap B$ de la ecuación para obtener : $P(A \cap B) = P(A) * P(B|A)$. En caso de que la ocurrencia del evento $A$ previamente al evento $B$, no cambie su probabilidad, se podría escribir que $P(B|A)= P(B)$ y en este caso la regla indica que la probablidad conjunta de los eventos A y B es igual a la probabilidad de sus probabilidades marginales :
 
-<br/>
+<br/><br/>
 
 <div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #dbd4e8 ; border-color: #000000;">
 
@@ -137,16 +166,94 @@ $P(A \cap B) = P(A) P(B)$ o  $P(B|A)=P(B)$
 
 </div>
 
+<br/><br/><br/>
+
+:::: {style="display: flex;"}
+::: {}
+
+Para determinar si los eventos A y B son eventos independientes se debe cumplir que :
+
+$$P(A \cap B) = P(A) P(B)$$ 
+$$P(A \cap B') = P(A) P(B')$$ 
+$$P(A' \cap B) = P(A') P(B)$$ 
+$$P(A' \cap B') = P(A') P(B')$$ 
+
+:::
+:::{} 
+
+```{r, echo=FALSE, out.width="70%", fig.align = "center"}
+knitr::include_graphics("img/tabla1_22.png")
+```
+
+
+:::
+::::
+
+
+En el caso que se cumplan todas las condiciones, diremos que los eventos son independientes. En caso contrario,  los eventos no son independientes
+
+<br/><br/>
+
+Una aplicación de este concepto se ilustra con los siguientes ejemplos:
+
+<br/><br/>
+
+##  <span style="color:#a391c4">**Ejemplo 2**</span> 
+
+Se tiene un circuito formado por dos componentes $A_{1}$ y $A_{2}$ cada uno con probabilidad de funcionamiento $P(A_{1}) = 0.90$  y $P(A_{2}) = 0.95$ . Determinar la probabilidad de que el componente funcione.
+
+
+```{r, echo=FALSE, out.width="40%", fig.align = "center"}
+knitr::include_graphics("img/circuito1.png")
+```
+
+<br/><br/>
+
+**Solución:**
+
+Inicialmente se supone que los componentes $A_{1}$ y $A_{2}$ funcionan de manera independiente. Esto implica que $P(A_{1} \cap A_{2}) = P(A_{1}) P(A_{2})$
+
+Como para que el circuito funcione debe funcionar el componente $A_{1}$ y $A_{2}$, utilizando el principio de independencia tenemos que:
+
+$$P(A_{1} \cap A_{2}) = P(A_{1}) P(A_{2}) = 0.90 \times  0.95 = 0.855$$
+
+
+
 
 <br/><br/><br/>
 
-##  <span style="color:#a391c4">**Ejemplo 2**</span> 
+##  <span style="color:#a391c4">**Ejemplo 3**</span> 
+
+Ahora supongamos que el circuito anterior está conectado en paralelo. Determinar la probabilidad de que el circuito funciones
+
+```{r, echo=FALSE, out.width="40%", fig.align = "center"}
+knitr::include_graphics("img/circuito2.png")
+```
+
+<br/><br/>
+
+**Solución:**
+
+En este caso solo hay una manera como el circuito no funciona y es cuando ambos componentes no funcionan. Esto implica que la probabilidad de que no funcione bajo el supuesto que los dos componentes son independientes es:
+
+$$P(A_{1}^{'} \cap A_{2}^{'}) = P(A_{1}^{'}) \times P(A_{2}^{'}) = 0.10 \times 0.05 = 0.005 $$
+
+Ahora como se requiere la probabilidad de que el circuito funciones se utiliza el axiona  $A_{4}$ : Para cualquier evento $A$, $P(A')=1-P(A)$
+
+
+$$1-0.005 = 0.995$$
+
+
+<br/><br/><br/>
+
+##  <span style="color:#a391c4">**Ejemplo 4**</span> 
 
 El departamento de crédito de la universidad, informa que el 30% de los pagos realizados en la universidad se efectúan en efectivo, un 40% con tarjeta de crédito y el resto con tarjeta débito. En todos los casos estos pagos solo son recibidos en la caja ubicada en la oficina de Registro Académico de la universidad.
 
 Tambien se conoce que 20% de los pagos realizados en efectivo, 70% de los pagos realizados con tarjeta de crédito y el 80% de los pagos realizados con tarjeta débito, corresponden a pagos por valores superiores a $500 mil pesos
 
 Con el fin de mejorar el servicio, se esta diseñando un sistema de turnos que agilice el procedimiento de atención . El ingeniero a cargo del diseño de sistema requiere le ayude a valorar las prioridades para las personas que deben pagar mas de $500 mil pesos, pues el ingeniero sospecha que es más probable que una persona requiere pagar más de $500 mil pesos,  lo haga con efectivo.  Ayude al ingeniero con la información necesaria que le permita reafirmar su sospecha o por el contrario a valorar las diferentes posibilidades
+
 <br/><br/>
 
 **Solución:**
@@ -160,10 +267,34 @@ Definimos los siguientes eventos :
 + **TD** : El pago se realiza con tarjeta débito
 + **+5** : El pago es por una cantidad superior a $500 mil pesos
 
+<br/>
+
+**Información :**
+
+|                        |                        | por diferencia      |
+|:-----------------------|:-----------------------|:--------------------|
+|$P(E) = 0.30$           | $P(+5 | E) = 0.20$     |  $P(-5 | E) = 0.80$ | 
+|$P(TC) = 0.40$          | $P(+5 | TC) = 0.70$    | $P(-5 | TC) = 0.30$ | 
+|$P(TD) = 0.30$          | $P(+5 | TD) = 0.80$    | $P(-5 | TD) = 0.20$ |
+
+
+
 
 <br/><br/>
-![](img/ejemplo1.png){width=70%}
-![](img/ejemplo2.png){width=70%}
+
+```{r, echo=FALSE, out.width="50%", fig.align = "center"}
+knitr::include_graphics("img/diagrama6_22.png")
+```
+
+<br/>
+
+|                                                            |                            |
+|:-----------------------------------------------------------|:---------------------------|
+|$P(E|+5) = \dfrac{P(E \cap +5)}{P(+5)} = \dfrac{0.06}{0.58} = 0.1034$ | **TERCERO**      |
+|                                                                      |                  |    
+|$P(TC | +5)  =  \dfrac{P(TC \cap +5)}{P(+5)} = \dfrac{0.28}{0.58} = 0.4827$ | **PRIMERO**|
+|                                                                            |            |                                
+|$P(TD | +5)  =  \dfrac{P(TD \cap +5)}{P(+5)} = \dfrac{0.24}{0.58} = 0.4138$ | **SEGUNDO**|
 
 <br/><br/><br/>
 
@@ -173,7 +304,10 @@ Definimos los siguientes eventos :
 
 Ahora supongamos que el espacio muestral esta formado por un conjunto de eventos lo podemos representar como una partición del conjunto $S$ así :
 
-![](img/particion1.png){width=50%}
+```{r, echo=FALSE, out.width="50%", fig.align = "center"}
+knitr::include_graphics("img/particion1_22.png")
+```
+
 <br/><br/>
 
 
@@ -188,15 +322,22 @@ Ahora supongamos que el espacio muestral esta formado por un conjunto de eventos
 + $A_{i} \neq \phi$ 
  
  <br/><br/>
+
  En nuestro caso podemos tener solo cinco particiones para simplificar el procedimiento
+
  <br/>
  
- ![](img/particion2.png){width=60%}
+```{r, echo=FALSE, out.width="50%", fig.align = "center"}
+knitr::include_graphics("img/particion2_22.png")
+```
+
  <br/><br/>
  
  Pdemos reasaltar los conjuntos que conforman a $B$ :
  
- ![](img/particion3.png){width=60%}
+```{r, echo=FALSE, out.width="50%", fig.align = "center"}
+knitr::include_graphics("img/particion3_22.png")
+```
  
  <br/><br/>
  
@@ -205,6 +346,7 @@ Ahora supongamos que el espacio muestral esta formado por un conjunto de eventos
  $B = (A_{1} \cap B) \cup (A_{2} \cap B) \cup (A_{3} \cap B) \cup (A_{4} \cap B) \cup (A_{5} \cap B)$
  
 <br/><br/>
+
 En terminos de probabilidad  tenemos
   
 $P(B) = P(A_{1} \cap B) + P(A_{2} \cap B) + P(A_{3} \cap B) + P(A_{4} \cap B) + P(A_{5} \cap B)$
@@ -214,9 +356,10 @@ Este resultado se puede expresar en otros terminos de la regla de la multiplicac
 $P(B) = P(A_{1})P(B|A_{1}) + P(A_{2})P(B|A_{2})  +P(A_{3})P(B|A_{})  + P(A_{4})P(B|A_{4}) + P(A_{5})P(B|A_{5})$
 
 <br/><br/>
+
 En general :
    
-<br/><br/>  
+<br/><br/><br/>  
 
 <div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #dbd4e8 ; border-color: #000000;">
 
@@ -231,7 +374,7 @@ $$P(A)=P(E_{1})P(A|E_{1})+ P(E_{2})P(A|E_{2})+ P(E_{3})P(A|E_{3})+ \dots P(E_{k}
 
 <br/><br/><br/>
 
-##  <span style="color:#a391c4">**Ejemplo 3**</span> 
+##  <span style="color:#a391c4">**Ejemplo 5**</span> 
 
 En el caso que en el ejemplo anterior se requiere calcular la probabilidad $P(+5)$ utilizamos la regla de la probabilidad total:
 
@@ -244,13 +387,17 @@ $P(+5) = 0.30 \times 0.20 + 0.40 \times 0.70 + 0.30 \times 0.80$
 
 $P(+5) = 0.06 + 0.28 +0.24 = 0.58$
 
-<br/><br/> 
+<br/><br/><br/> 
 
 ##  <span style="color:#a391c4">**Teorema de Bayes**</span> 
 
 <br/><br/>
 
-![](img/Thomas_Bayes.gif)
+
+```{r, echo=FALSE, out.width="40%", fig.align = "center"}
+knitr::include_graphics("img/Thomas_Bayes.gif")
+```
+
 <br/>
 
 **Thomas Bayes** (Londres, Inglaterra, ~1702 - Tunbridge Wells, 1761) fue un matemático británico y ministro presbiteriano. Su obra más conocida es el Teorema de Bayes.
@@ -263,7 +410,7 @@ Tomado de  : https://www.investopedia.com/terms/b/bayes-theorem.asp <br/>
 Lectura recomendada : https://blogs.scientificamerican.com/cross-check/bayes-s-theorem-what-s-the-big-deal/
 
 
-<br/><br/> 
+<br/><br/><br/> 
 
 <div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #dbd4e8 ; border-color: #000000;">
 
@@ -275,9 +422,9 @@ $$P(E_{i}|A)=\dfrac{P(E_{i} \cap A)}{P(A)}= \dfrac{P(E_{i}) P(A|E_{i})}{\display
 
 </div>
 
-<br/><br/>
+<br/><br/><br/>
 
-##  <span style="color:#a391c4">**Ejemplo 4**</span> 
+##  <span style="color:#a391c4">**Ejemplo 6**</span> 
 
 <br/>
 
@@ -293,14 +440,7 @@ $P(E|+5) = \dfrac{0.30 \times 0.20}{0.30 \times 0.20 + 0.40 \times 0.70 + 0.30 \
 **Video** : https://www.youtube.com/watch?v=RvxjyKIKI5s
 
 
-##  <span style="color:#a391c4">**Reto**</span> 
-
-<br/><br/>
-Entre Bogotá D.E., Medellín y Cali, En cuál ciudad en la que se tiene la mayor probabilidad de contraer Covid?
-Indique los cálculos realizados.
-
-
-<br/><br/><br/><br/>
+<br/><br/><br/>
 
 
 Aplicaciones :
@@ -334,12 +474,16 @@ Código basado en: https://www.youtube.com/watch?v=t0lmtrm_aa0
 
 **Resultados del árbol**
 
+<br/>
+
 **Eventos** : 
 
 + $S$ : sobrevive
 + $S'$ : no sobrevive
 + $H$ : hombre
 + $M$ : mujer
+
+<br/><br/>
 
 **Probabilidades:**
 
@@ -351,6 +495,8 @@ Código basado en: https://www.youtube.com/watch?v=t0lmtrm_aa0
 + $P(S|M=  = 0.74$
 + $P(S'|H) = 0.81$
 + $P(S|H) = 0.19$
+
+<br/><br/>
 
 ```{r}
 t= table(titanic_train$Survived,
@@ -378,6 +524,11 @@ t        # tabla de probabilidades
 + https://bookdown.org/content/2031/arboles-de-decision-parte-ii.html
 
 <br/><br/><br/>
+
+
+
+
+
 
 
 
