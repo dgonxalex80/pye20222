@@ -1,0 +1,55 @@
+---
+title: <span style="color:#a391c4"> **Taller  221**</span>  
+author: "dgonzalez "
+subtitle: <span style="color:#a391c4">**Módulo 2- Unidad 2.2**</span>
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
+    theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA)
+library(tidyverse)
+#Colombia<- readRDS("data/Colombia.RDS")
+
+
+# colores
+c0= "#b0394a"
+c1= "#ad6395"
+c2= "#a391c4"
+c3= "#8acfe6"
+c4= "#646420"
+c5= "#db524f"
+
+library(summarytools)
+```
+
+![](img/banner2.png)
+</br></br></br>
+
+
+:::: {style="display: flex;"}
+::: {}
+
+Una compañia de seguros de automóviles trabaja con cuatro tipo de autos :  Rayquaza, Etenatus, Mewtwo y Groudon, sobre los que cuenta con la información que se muestra en la siguiente tabla.
+
+Construya un diagrama de árbol que represente la información suministrada y a partir de los resultados obtenidos ayude al gerente de la compaía quien esta interesado en conocer cual marca tiene mayor probabilidad de accidente si se conoce que ha tenido un accidente. Esto le ayudará a realizar ajustes en los precios de las polizas.
+  
+:::
+::: {}
+
+| Marca    |Proporción de autos       | probabilidad de accidente |
+|:--------:|:------------------------:|:-------------------------:|
+| Rayquaza | 0.27                     | 0.03                      | 
+| Etenatus | 0.17                     | 0.03                      |
+| Mewtwo   | 0.35                     | 0.05                      |
+| Groudon  | 0.31                     | 0.04                      |
+|          | 1.00                     |                           |
+:::
+::::
+
+
+
