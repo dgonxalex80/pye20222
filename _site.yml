@@ -76,7 +76,9 @@ navbar:
         - text: "Código 2.1"
           href: codigo201.html 
         - text: "Taller 211"
-          href: Talller211.html          
+          href: Talller211.html   
+        - text: "Taller 221"
+          href: Talller221.html  
     - text: "Módulo 3"
       menu:
         - text: "Módulo 3"
