@@ -437,7 +437,13 @@ $P(E|+5) = \dfrac{0.30 \times 0.20}{0.30 \times 0.20 + 0.40 \times 0.70 + 0.30 \
 
 <br/><br/>
 
-**Video** : https://www.youtube.com/watch?v=RvxjyKIKI5s
+##  <span style="color:#a391c4">**Ejemplo 7**</span>  
+
+En una fábrica de artı́culos para protección biodegradables, cuatro operarios colocan etiquetas de caducidad en cada
+artı́culo al final de la lı́nea de producción. Juan, quien coloca la fecha de caducidad en un 40 % de los paquetes no
+logra ponerla en uno de cada 200 paquetes; Luis, quien coloca en 30 % de los paquetes, no logra colocarla en uno
+de 100 paquetes; Maria, quien coloca etiquetas en el 15 % de los paquetes, no lo hace una vez en 90 paquetes; y Santiago que fecha 15 % de los paquetes, falla en uno de cada  200 paquetes. Si un cliente se queja de que su paquete no
+muestra la fecha de caducidad. ¿Cuál de los empleados es el más probable culpable de esta omisión?
 
 
 <br/><br/><br/>

@@ -1051,9 +1051,19 @@ utilizamos el Teorema de Bayes</p>
 \times 0.20 + 0.40 \times 0.70 + 0.30 \times 0.80} = \dfrac{0.06}{0.58}
 = 0.1034\)</span></p>
 <p><br/><br/></p>
-<p><strong>Video</strong> : <a
-href="https://www.youtube.com/watch?v=RvxjyKIKI5s"
-class="uri">https://www.youtube.com/watch?v=RvxjyKIKI5s</a></p>
+</div>
+<div id="ejemplo-7" class="section level2">
+<h2><span style="color:#a391c4"><strong>Ejemplo 7</strong></span></h2>
+<p>En una fábrica de artı́culos para protección biodegradables, cuatro
+operarios colocan etiquetas de caducidad en cada artı́culo al final de la
+lı́nea de producción. Juan, quien coloca la fecha de caducidad en un 40 %
+de los paquetes no logra ponerla en uno de cada 200 paquetes; Luis,
+quien coloca en 30 % de los paquetes, no logra colocarla en uno de 100
+paquetes; Maria, quien coloca etiquetas en el 15 % de los paquetes, no
+lo hace una vez en 90 paquetes; y Santiago que fecha 15 % de los
+paquetes, falla en uno de cada 200 paquetes. Si un cliente se queja de
+que su paquete no muestra la fecha de caducidad. ¿Cuál de los empleados
+es el más probable culpable de esta omisión?</p>
 <p><br/><br/><br/></p>
 <p>Aplicaciones :</p>
 <p><strong>Árboles de decisión</strong></p>
@@ -1072,11 +1082,6 @@ library(rattle)</code></pre>
 <pre><code>Rattle: A free graphical interface for data science with R.
 Versión 5.5.1 Copyright (c) 2006-2021 Togaware Pty Ltd.
 Escriba &#39;rattle()&#39; para agitar, sacudir y  rotar sus datos.</code></pre>
-<pre><code>
-Attaching package: &#39;rattle&#39;</code></pre>
-<pre><code>The following object is masked from &#39;package:highcharter&#39;:
-
-    weather</code></pre>
 <pre class="r"><code>library(rpart.plot)
 
 arbol=rpart( formula = Survived ~ Sex,
