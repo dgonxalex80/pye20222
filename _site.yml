@@ -156,7 +156,11 @@ navbar:
         - text: "Código 5.1"
           href: codigo501.html     
         - text: "Código 5.2"
-          href: codigo502.html    
+          href: codigo502.html   
+    - text: "Proyecto"
+      menu:
+        - text: "Guía proyecto"
+          href: proyecto.html          
   right:
     - icon: fab fa-github 
       href: https://github.com/dgonxalex80/pye20222         

@@ -445,6 +445,33 @@ logra ponerla en uno de cada 200 paquetes; Luis, quien coloca en 30 % de los paq
 de 100 paquetes; Maria, quien coloca etiquetas en el 15 % de los paquetes, no lo hace una vez en 90 paquetes; y Santiago que fecha 15 % de los paquetes, falla en uno de cada  200 paquetes. Si un cliente se queja de que su paquete no
 muestra la fecha de caducidad. ¿Cuál de los empleados es el más probable culpable de esta omisión?
 
+Solución:
+
+Información
+
+| Juan              | Luis                     |  Maria                     |  Santiago                     |
+|:------------------|:-------------------------|:---------------------------|:------------------------------|
+|$P(J) =  0.40$     | $P(L) =0.30$              | $P(M)=0.15$                | $P(S)=0.15$                   |
+|                   |                          |                            |                               |
+|$P(N|J)=1/200$     |$P(N|L) = 1/100$          |$P(N|M)=1/90$               |$P(N|S)=1/200$                 |
+
+
+|                   |                                |
+|------------------:|:-------------------------------------------|
+|N = (J \cap N) \cup (L \cap N) \cup (M \cap N) \cup (S \cap N) $$
+$$P(N) = P(J \cap N) + P(L \cap N) + P(M \cap N) + P(S \cap N) $$
+$$P(N) = P(J)P(N|J) + P(L)P(N|L) + P(M)P(N|M) + P(S)P(N|S)$$
+$$P(N) = 0.40 \dfrac{1}{200} + 0.30 \dfrac{1}{100} + 0.15 \dfrac{1}{90} + 0.15 \dfrac{1}{200}$$
+
+
+```{r}
+x=c(0.4,0.3,0.15,0.15)
+y=c(1/200,1/100,1/90,1/200)
+
+
+(x*y)/sum(x*y)
+```
+
 
 <br/><br/><br/>
 

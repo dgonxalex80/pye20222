@@ -583,6 +583,18 @@ div.tocify {
     </li>
   </ul>
 </li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Proyecto
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="proyecto.html">Guía proyecto</a>
+    </li>
+  </ul>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
@@ -1064,6 +1076,67 @@ lo hace una vez en 90 paquetes; y Santiago que fecha 15 % de los
 paquetes, falla en uno de cada 200 paquetes. Si un cliente se queja de
 que su paquete no muestra la fecha de caducidad. ¿Cuál de los empleados
 es el más probable culpable de esta omisión?</p>
+<p>Solución:</p>
+<p>Información</p>
+<table>
+<colgroup>
+<col width="18%" />
+<col width="25%" />
+<col width="26%" />
+<col width="29%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Juan</th>
+<th align="left">Luis</th>
+<th align="left">Maria</th>
+<th align="left">Santiago</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(P(J) = 0.40\)</span></td>
+<td align="left"><span class="math inline">\(P(L) =0.30\)</span></td>
+<td align="left"><span class="math inline">\(P(M)=0.15\)</span></td>
+<td align="left"><span class="math inline">\(P(S)=0.15\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(P(N|J)=1/200\)</span></td>
+<td align="left"><span class="math inline">\(P(N|L) =
+1/100\)</span></td>
+<td align="left"><span class="math inline">\(P(N|M)=1/90\)</span></td>
+<td align="left"><span class="math inline">\(P(N|S)=1/200\)</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col width="30%" />
+<col width="69%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="right">N = (J N) (L N) (M N) (S N) <span
+class="math display">\[
+\]</span>P(N) = P(J N) + P(L N) + P(M N) + P(S N) <span
+class="math display">\[
+\]</span>P(N) = P(J)P(N</td>
+<td align="left">J) + P(L)P(N</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code>x=c(0.4,0.3,0.15,0.15)
+y=c(1/200,1/100,1/90,1/200)
+
+
+(x*y)/sum(x*y)</code></pre>
+<pre><code>[1] 0.2696629 0.4044944 0.2247191 0.1011236</code></pre>
 <p><br/><br/><br/></p>
 <p>Aplicaciones :</p>
 <p><strong>Árboles de decisión</strong></p>
@@ -1082,13 +1155,18 @@ library(rattle)</code></pre>
 <pre><code>Rattle: A free graphical interface for data science with R.
 Versión 5.5.1 Copyright (c) 2006-2021 Togaware Pty Ltd.
 Escriba &#39;rattle()&#39; para agitar, sacudir y  rotar sus datos.</code></pre>
+<pre><code>
+Attaching package: &#39;rattle&#39;</code></pre>
+<pre><code>The following object is masked from &#39;package:highcharter&#39;:
+
+    weather</code></pre>
 <pre class="r"><code>library(rpart.plot)
 
 arbol=rpart( formula = Survived ~ Sex,
              data = titanic_train,
              method = &quot;class&quot;)
 fancyRpartPlot(arbol)</code></pre>
-<p><img src="recurso202_files/figure-html/unnamed-chunk-14-1.png" width="672" />
+<p><img src="recurso202_files/figure-html/unnamed-chunk-15-1.png" width="672" />
 <br/> Código basado en: <a
 href="https://www.youtube.com/watch?v=t0lmtrm_aa0"
 class="uri">https://www.youtube.com/watch?v=t0lmtrm_aa0</a></p>
