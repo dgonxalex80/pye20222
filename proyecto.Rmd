@@ -71,8 +71,9 @@ El producto de este trabajo deberá ser entregado en un  poster en formato pdf j
   
 ## **Fechas** 
   
-+ Entrega de informe parcial 
-    + Docuento con propuesta seleccionada (problema) 
+**Entrega de informe parcial** 
+
++ Docuento con propuesta seleccionada (problema) 
       + Titulo
       + Estado del arte
       + Metodologia
@@ -82,7 +83,8 @@ Hora : 23.59
   
   
 
-+ Entrega del informe final y video:
+**Entrega del informe final y video:**
+
 + **Poster** en formato pdf 
 + **video** o enlace de video con la sustentación del trabajo (requisito cámara prendida)
 
