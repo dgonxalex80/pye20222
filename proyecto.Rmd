@@ -50,7 +50,7 @@ El producto de este trabajo deberá ser entregado en un  poster en formato pdf j
   
 ## **Requisitos** 
   
-+ Equpipos conformados por cuatro estudianes. No se permiten trabajos individuales.
++ Equipos conformados por cuatro estudiantes. No se permiten trabajos individuales.
 
 + Seleccionar un problema de interés propio para el grupo que  permita la aplicación de los conocimientos de estadística vistos en el curso. El tema propuesto deberá contar con el visto bueno del profesor.
 
