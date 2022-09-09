@@ -58,16 +58,33 @@ El producto de este trabajo deberá ser entregado en un  poster en formato pdf j
 
 + Al final los estudiantes deberán realizar una presentación del trabajo y de los principales hallazgos. Cada grupo contará con un tiempo de 5 minutos para la presentación de los resultados.
 
++ Contenido del poster
+    + Titulo
+    + Integrantes
+    + Introducción
+    + Metodología
+    + Resultados
+    + Conclusiones y recomendaciones
+    + Bibliografia
+
 <br/><br/><br/>
   
 ## **Fechas** 
   
-Entrega de informes: 
++ Entrega de informe parcial + Docuento con propuesta seleccionada (problema) 
+  + Titulo
+  + Estado del arte
+  + Metodologia
+Fecha :  octubre 7 de 2022
+Hora : 23.59
   
+  
+
 + Entrega del informe final y video:
 + **Poster** en formato pdf 
 + **video** o enlace de video con la sustentación del trabajo (requisito cámara prendida)
 + Fecha: noviembre 18  2022
++ Hora : 23:59
 + El trabajo será socializado en la página del curso
 
 <br/><br/><br/>
@@ -78,6 +95,8 @@ Entrega de informes:
   
 + Metodología de la investigación . Hernandez Sampieri Roberto. Segunda edición. Mc Graw-Hill
 + Investigación de Mercados. Naresh K. Malhotra. Quinta Edición. Pearson.
++ [Psters en overleaf](https://www.overleaf.com/learn/latex/Posters)
+
 
 <br/><br/>
   
