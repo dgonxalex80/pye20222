@@ -100,7 +100,8 @@ El trabajo será socializado en la página del curso
   
 + Metodología de la investigación . Hernandez Sampieri Roberto. Segunda edición. Mc Graw-Hill
 + Investigación de Mercados. Naresh K. Malhotra. Quinta Edición. Pearson.
-+ [Psters en overleaf](https://www.overleaf.com/learn/latex/Posters)
++ [Poster en overleaf](https://www.overleaf.com/learn/latex/Posters)
++ [trello- tablero para la gestión de proyectos](https://trello.com/es/tour)
 
 <br/><br/>
 
