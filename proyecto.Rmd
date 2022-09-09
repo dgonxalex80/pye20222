@@ -54,7 +54,7 @@ El producto de este trabajo deberá ser entregado en un  poster en formato pdf j
 
 + Seleccionar un problema de interés propio para el grupo que  permita la aplicación de los conocimientos de estadística vistos en el curso. El tema propuesto deberá contar con el visto bueno del profesor.
 
-+  El contenido de la infografía deberá utilizar por lo menos 6 resultados producto de la inferencia estadística (intervalos de confianza o pruebas de hipótesis) que respalden los resultados presentados
++  El contenido del poster deberá utilizar por lo menos 6 resultados producto de la inferencia estadística (intervalos de confianza o pruebas de hipótesis) que respalden los resultados presentados
 
 + Al final los estudiantes deberán realizar una presentación del trabajo y de los principales hallazgos. Cada grupo contará con un tiempo de 5 minutos para la presentación de los resultados.
 
