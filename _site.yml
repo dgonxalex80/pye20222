@@ -106,7 +106,10 @@ navbar:
         - text: "Código 3.2"
           href: codigo302.html
         - text: "Código 3.3"
-          href: codigo303.html        
+          href: codigo303.html   
+        - text: "---------"            
+        - text: "Taller 311"
+          href: Talller311.html           
     - text: "Módulo 4"
       menu:
         - text: "Módulo 4"
