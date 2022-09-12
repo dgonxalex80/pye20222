@@ -349,7 +349,7 @@ $F(x) = P(X \leq x) = P(X < x)$
 
 $$f_{_{X}}(x) = \left \{ 
 				\begin{matrix} 
-				\dfrac{1}{4} e^{-x/4} & \mbox{ , }	y \geq 0\\ 
+				\dfrac{1}{4} e^{-x/4} & \mbox{ , }	x \geq 0\\ 
 				& \\
 				0  & \mbox{en otro caso }
 				\end{matrix}\right.  
