@@ -128,7 +128,7 @@ Para catacterizar la variable se define  la función de distribución de probabi
 
 Para $X$ un variable aleatoria discreta, su función de distribución de probabilidad estará dada por $f(x)$, la cual proporciona las probabilidades asociadas a todos los valores de su rango $R_{X}$ . Esta función debe cumplir las siguientes propiedades:
 
-+ $f(x) = P(X=x) > 0$
++ $f(x) = P(X=x) \geq 0$
 
 + $\sum_{R_X} f(x) = 1$
 
@@ -349,7 +349,7 @@ $F(x) = P(X \leq x) = P(X < x)$
 
 $$f_{_{X}}(x) = \left \{ 
 				\begin{matrix} 
-				\dfrac{1}{4} e^{-y/4} & \mbox{ , }	y \geq 0\\ 
+				\dfrac{1}{4} e^{-x/4} & \mbox{ , }	y \geq 0\\ 
 				& \\
 				0  & \mbox{en otro caso }
 				\end{matrix}\right.  
@@ -361,7 +361,7 @@ Para tener la seguridad que $f(x)$ puede ser una función de densidad de probabi
 
 <br/>
 
-$\displaystyle\int\limits_{0}^{+\infty} \dfrac{1}{4} e^{-y/4} \:dx =1$
+$\displaystyle\int\limits_{0}^{+\infty} \dfrac{1}{4} e^{-x/4} \:dx =1$
 
 ```{r, echo=FALSE}
 fy=function(y){1/4*exp(-y/4)}
