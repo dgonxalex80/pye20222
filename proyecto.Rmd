@@ -116,63 +116,91 @@ El trabajo será socializado en la página del curso
   
 ### 300MAE005 - A
 
-+ Grupo 1 : ¿Cúales son la principales causas de las enfermedades cardiovasculares?
+#### Grupo 1 : 
+
++ ¿Cúales son la principales causas de las enfermedades cardiovasculares?
   + Juliana Garzón Fajardo
   + Gabriela Quintero Moreno
   + Juan José López Abella
   
+Nota: se debe especificar en donde y en que periodo de tiempo se realiza el proyecto  
+  
 <br/><br/>
 
-+ Grupo 2: Muestreo de especies para conservación de ecosistemas secos
+#### Grupo 2: 
+
++ Muestreo de especies para conservación de ecosistemas secos
   + Maria Paula Lozano Arcila
   + Saray Milena Garcés Sanmartín
   + Daniel Izquierdo Cabrera
   + Jean Michael Vasquez Pinilla
   
+Nota: se debe especificar cúal es el problema, en que espacio y tiempo se realiza el proyecto  
 <br/><br/>
 
-+ Grupo 3 : Stram videogames
+#### Grupo 3 : 
+
++ Stram videogames
   + Santiago Montaño
   + Ricardo Andrade
   + Luis Felipe Gaitan
   + Camila Olarte
+  
+Nota: Se debe especificar cúal es el problema, espacio y tiempo en que se realiza el proyecto
 
 <br/><br/>
 
-+ Grupo 4: Incremneto en la tasa de personas que sufren alzheimer
+#### Grupo 4: 
+
++ Incremneto en la tasa de personas que sufren alzheimer
   + Alejandro  Cordoba Narvaez
   + Santiago Valencia Amaya
   + Sebastian Hurtado Bustos
 
+Nota: Se debe especificar el espacio y tiempo en que se realiza el proyecto
 <br/><br/>
 
-+ Grupo 5 : Accidentalidad en Cali
+#### Grupo 5: 
+
++ Accidentalidad en Cali
   + Gabriel Rico
   + Alejandra Herrán
   + David Alejandro Peña
 
+Nota: Se debe especificar cúal es el problema, espacio y tiempo en que se realiza el proyecto
+
 <br/><br/>
 
-+ Grupo 6 : Lenguas nativas de Colombia
+#### Grupo 6: 
+
++ Lenguas nativas de Colombia
   + Lenin aicedo Garcia
   + Jean Jose Lozano
   + Santiago Ruiz
-  
+
+Nota: Se debe especificar cúal es el problema, espacio y tiempo en que se realiza el proyecto  
 <br/><br/>
 
-+ Grupo 7 : Nivel o  proeficiencia en el idioma inglés en los colegios de Cali
+#### Grupo 7: 
+
++ Nivel o  proeficiencia en el idioma inglés en los colegios de Cali
     + Dana Chelsy Torres Martinez
     + Emerson Ramirez Gutierrez
     + Joan Trejos Marulanda
-    
+
+
+Nota: Se debe especificar cúal es el problema, espacio y tiempo en que se realiza el proyecto
+
 <br/><br/>
 
-+ Grupo 8 : Incremento de personas propensas a sufrir un accidente cerebrovascular
+#### Grupo 8: 
+
++ Incremento de personas propensas a sufrir un accidente cerebrovascular
     + Maria Pala Valencia
     + Isabella Gonzalez
     + Juan José Garcia
       
-      
+Nota: Se debe especificar el espacio y tiempo en que se realiza el proyecto      
   
 
 <br/><br/>
@@ -184,6 +212,11 @@ El trabajo será socializado en la página del curso
   + Maria Camila Betancourt     
   + Brenda Torres                     
   + Juan Jose Marin
-  + Juan Manuel  Valencia             
+  + Juan Manuel  Valencia   
+  
+Nota: Se debe el periodo de tiempo en que se realiza el proyecto  
+
+
+
 
 
