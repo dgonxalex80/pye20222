@@ -75,7 +75,12 @@ La distribución de probabilidad de $X$, el número de imperfecciones por 10 met
 | $f(x)$| 0.41   | 0.37   | 0.16   |  0.05  | 0.01   |
 
 
-Construya la función de distribución acumulada de $X$. Graficar la función de probabilidad y la distribución de probabilidad de $X$. ¿Cuál es la probabilidad de encontrar menos de $3$ imperfecciones en $10$ metros de una tela seleccionada al azar?.
++ Construya la función de distribución acumulada de $X$. 
++ Graficar la función de probabilidad y la distribución de probabilidad de $X$. 
++ ¿Cuál es la probabilidad de encontrar menos de $3$ imperfecciones en $10$ metros de una tela seleccionada al azar?.
++ Calcule el valor esperado del número de imperfecciones obtenidas por 10 metros de tela 
++ Calcule la varianza del número de imperfecciones obtenidas por 10 metros de tela
+
 
 <br/><br/><br/>
 
