@@ -139,7 +139,7 @@ Estas verificaciones se pueden realizar en R con dos instrucciones:
     + `upper` : limite superior  . Puede ser un número o `+Inf`
  
  
- `integrate(function(x) x, lower = 0, upper = 1)`
+ `integrate(function(x), lower = 0, upper = 1)`
  
  <br/><br/><br/>
  
