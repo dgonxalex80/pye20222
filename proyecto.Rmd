@@ -140,7 +140,7 @@ Nota: se debe especificar cúal es el problema, en que espacio y tiempo se reali
 
 #### Grupo 3 : 
 
-+ Stram videogames
++ Steam videogames
   + Santiago Montaño
   + Ricardo Andrade
   + Luis Felipe Gaitan
