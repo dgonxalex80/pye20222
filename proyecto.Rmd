@@ -114,7 +114,7 @@ El trabajo será socializado en la página del curso
   
 <br/><br/>
   
-### 300MAE005 - A
+## 300MAE005 - A
 
 #### Grupo 1 : 
 
@@ -205,7 +205,7 @@ Nota: Se debe especificar el espacio y tiempo en que se realiza el proyecto
 
 <br/><br/>
 
-### 300MAE005 - C
+## 300MAE005 - C
 
 
 + Grupo : Cantidad de materias perdidas por estudiantes de la universidad Javeriana Cali
