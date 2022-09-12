@@ -29,8 +29,6 @@ c5= "#db524f"
 
 <br/><br/>
 
-<span style="color:#db524f"> **EN CONSTRUCCIÓN**</span> 
-
 # **Guía de aprendizaje**
 
 
