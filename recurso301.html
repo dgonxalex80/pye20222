@@ -36,6 +36,14 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.23/datatables.js"></script>
+<link href="site_libs/dt-core-1.11.3/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.11.3/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.11.3/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -627,8 +635,8 @@ Unidad 3.1</strong></span></h3>
 
 <p><img src="img/banner3.png" /></p>
 <p><br/><br/></p>
-<div id="introducción" class="section level2">
-<h2><strong>Introducción</strong></h2>
+<div id="introducción" class="section level1">
+<h1><strong>Introducción</strong></h1>
 <p>El concepto de variable aleatoria constituye uno de los conceptos
 principales de la probabilidad y estadística. A este concepto se pueden
 asociar dos paradigmas de evolución histórica segun J.A. Alberth &amp;
@@ -667,10 +675,9 @@ manejo.</p>
 continuo,con sus principales características, conceptos relacionados con
 los vistos en el modulo anterior.</p>
 <p><br/><br/></p>
-</div>
-<div id="definición-variable-aleatoria" class="section level2"
+<div
 style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #DFF4F9 ; border-color: #000000;">
-<h2><strong>Definición Variable aleatoria</strong></h2>
+<p><strong>Definición Variable aleatoria</strong></p>
 <p>Una variable aleatoria <span class="math inline">\(X\)</span> es una
 función que asigna a cada valor de un espacio muestral <span
 class="math inline">\(S\)</span> un numero . El conjunto formado por
@@ -686,9 +693,9 @@ comportamiento conjunto de varias variables definidas sobre el mismo
 espacio muestral.Este ultimo caso sera tratado en la <strong>Unidad
 3.2</strong></p>
 <p><br/><br/></p>
-<div id="tipos-de-variables" class="section level3"
+<div
 style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #DFF4F9 ; border-color: #000000;">
-<h3><strong>Tipos de variables</strong></h3>
+<p><strong>Tipos de variables</strong></p>
 <ul>
 <li><p>Una variable <span class="math inline">\(X\)</span> se considera
 <strong>DISCRETA</strong> si su rango <span
@@ -701,24 +708,14 @@ intervalos.</p></li>
 </ul>
 </div>
 <p><br/><br/></p>
-<table>
-<colgroup>
-<col width="9%" />
-<col width="90%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="center"><img src="img/ej1.png" /></td>
-<td align="left">Un experimento aleatorio <span
-class="math inline">\(E\)</span>, consiste en lanzar una moneda
-balanceada al aire tres veces y observar el orden de caras (<span
-class="math inline">\(c\)</span>) y sellos (<span
-class="math inline">\(s\)</span>) que se obtienen en los tres
+<div id="ejemplo-1" class="section level2">
+<h2><strong>Ejemplo 1</strong></h2>
+<p>Un experimento aleatorio <span class="math inline">\(E\)</span>,
+consiste en lanzar una moneda balanceada al aire tres veces y observar
+el orden de caras (<span class="math inline">\(c\)</span>) y sellos
+(<span class="math inline">\(s\)</span>) que se obtienen en los tres
 lanzamientos. El espacio muestral <span class="math inline">\(S\)</span>
-de <span class="math inline">\(E\)</span>, estará dado por:</td>
-</tr>
-</tbody>
-</table>
+de <span class="math inline">\(E\)</span>, estará dado por: |</p>
 <p><span class="math display">\[S
 =\{(s,s,s),(s,s,c),(s,c,s),(s,c,c),(c,s,s),(c,s,c),(c,c,s),(c,c,c)\}
 \]</span></p>
@@ -738,33 +735,40 @@ la función que asigna a cada valor de la variable una
 probabilidad</p></li>
 </ul>
 <p><br/><br/></p>
-<p>En este ejemplo <span
-class="math inline">\((X=0)=\{(s,s,s)\}\)</span> ; <span
-class="math inline">\((X=1)=\{(s,s,c),(s,c,s),(c,s,s)\}\)</span> ;
-$(X=2)={(s,c,c),(c,s,c),(c,c,s) } $ y <span class="math inline">\((X=3)
-=\{(c,c,c) \}\)</span>. Bajo el supuesto que la moneda es balanceada, se
-cumple que los resultados en <span class="math inline">\(S\)</span> son
-igualmente posibles y por lo tanto:</p>
+<p>En este ejemplo :</p>
+<ul>
+<li><span class="math inline">\((X=0)=\{(s,s,s)\}\)</span> ;</li>
+<li><span
+class="math inline">\((X=1)=\{(s,s,c),(s,c,s),(c,s,s)\}\)</span> ;<br />
+</li>
+<li><span class="math inline">\((X=2)=\{(s,c,c),(c,s,c),(c,c,s)
+\}\)</span> y</li>
+<li><span class="math inline">\((X=3) =\{(c,c,c) \}\)</span>.</li>
+</ul>
+<p>Bajo el supuesto que la moneda es balanceada, se cumple que los
+resultados en <span class="math inline">\(S\)</span> son igualmente
+posibles y por lo tanto:</p>
 <p><span class="math display">\[f_{_{X}}(0) =P(X=0)= \frac{1}{8}
 \hspace{.2cm} ,\hspace{.5cm} f_{_{X}}(1) = P(X=1)=\frac{3}{8},\]</span>
 <span class="math display">\[f_{_{X}}(2) =
 P(X=2)=\frac{3}{8}\hspace{.2cm} ,\hspace{.5cm} f_{_{X}}(3) =P(X=3)=
 \frac{1}{8}\]</span></p>
 <p><br/><br/><br/></p>
-<div id="variables-discretas" class="section level2">
-<h2><strong>Variables discretas</strong></h2>
+</div>
+</div>
+<div id="variables-discretas" class="section level1">
+<h1><strong>Variables discretas</strong></h1>
 <p>Como se mencionó anteriormente una variable aleatoria se considera
-como DIACRETA cuando el conjunto de posibles valores que puede tomar la
-variables es un conjunto finito o infinito numerable. En la gran mayoria
-de los casos este conjunto corresponde a los números enteros.</p>
+como <strong>DISCRETA</strong> cuando el conjunto de posibles valores
+que puede tomar la variables es un conjunto finito o infinito numerable.
+En la gran mayoria de los casos este conjunto corresponde a los números
+enteros.</p>
 <p>Para catacterizar la variable se define la función de distribución de
 probabilidad que modela la asignación de las probabilidades</p>
 <p><br/><br/></p>
-<div id="definición-función-de-distribución-de-probabilidad"
-class="section level3"
+<div
 style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #DFF4F9 ; border-color: #000000;">
-<h3><strong>Definición: Función de distribución de
-probabilidad</strong></h3>
+<p><strong>Función de distribución de probabilidad</strong></p>
 <p>Para <span class="math inline">\(X\)</span> un variable aleatoria
 discreta, su función de distribución de probabilidad estará dada por
 <span class="math inline">\(f(x)\)</span>, la cual proporciona las
@@ -781,18 +785,22 @@ siguientes propiedades:</p>
 <p>Por lo general este tipo de variables proceden del conteo y empiezan
 por <strong>número de….</strong></p>
 <p><br/></p>
-<p>Ejemplos:</p>
+<div id="ejemplo-2" class="section level2">
+<h2><strong>Ejemplo 2</strong></h2>
+<p>Las siguientes variables se clasifican como <strong>variables
+aleatorias discretas</strong> :</p>
 <ul>
-<li><p>Número de llamadas que entran a un conmutador
+<li><p>X : Número de llamadas que entran a un conmutador
 diariamente</p></li>
-<li><p>Número de personas contagiadas por Covid19 durante un
+<li><p>Y: Número de personas contagiadas por Covid19 durante un
 día</p></li>
-<li><p>Número de quejas reportadas a una sucursal bancaria en un
+<li><p>Z: Número de quejas reportadas a una sucursal bancaria en un
 día</p></li>
-<li><p>Número de accidentes producidos en una ciudad</p></li>
-<li><p>Número de huevos producidos diariamente en una avícola</p></li>
-<li><p>Número de hijos en una familia</p></li>
-<li><p>Número de mensajes enviados en un grupo de Whatsapp</p></li>
+<li><p>W: Número de accidentes producidos en una ciudad</p></li>
+<li><p>S: Número de huevos producidos diariamente en una
+avícola</p></li>
+<li><p>T: Número de hijos en una familia</p></li>
+<li><p>M: Número de mensajes enviados en un grupo de Whatsapp</p></li>
 </ul>
 <p><br/><br/></p>
 <p>Como complemento de <span class="math inline">\(f(x)\)</span> y
@@ -812,20 +820,12 @@ como:</p>
 x}f(t)\]</span></p>
 </div>
 <p><br/><br/></p>
-<table>
-<colgroup>
-<col width="9%" />
-<col width="90%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="center"><img src="img/ej2.png" /></td>
-<td align="left">Para la variable definida como <span
+</div>
+<div id="ejemplo-3" class="section level2">
+<h2><strong>Ejemplo 3</strong></h2>
+<p>Para la variable definida como <span
 class="math inline">\(X\)</span>: número de puntos obtenidos al lanzar
-un dado tenemos que :</td>
-</tr>
-</tbody>
-</table>
+un dado tenemos que :</p>
 <table>
 <colgroup>
 <col width="10%" />
@@ -886,50 +886,51 @@ manera creciente</p>
 5 5 0.166667 0.8333
 6 6 0.166667 1.0000</code></pre>
 <p><br/><br/></p>
-<table>
-<colgroup>
-<col width="9%" />
-<col width="90%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="center"><img src="img/ej3.png" /></td>
-<td align="left">El restaurante “Asados y algo más” solo da servicio
-mediante reservas. De acuerdo con los registros diarios en los últimos
-diez años se sabe que el treinta por ciento de las personas que reservan
-no llegan al restaurante. El restaurante tiene treinta mesas y acepta
-cuarenta reservas. La función de distribución probabilidad que modela el
-número de personas que llegan al restaurante es <span
-class="math inline">\(f\)</span>, dada por:</td>
-</tr>
-</tbody>
-</table>
+</div>
+<div id="ejemplo-4" class="section level2">
+<h2><strong>Ejemplo 4</strong></h2>
+<p>El restaurante “Asados y algo más” solo da servicio mediante
+reservas. De acuerdo con los registros diarios en los últimos diez años
+se sabe que el treinta por ciento de las personas que reservan no llegan
+al restaurante. El restaurante tiene veinte puestos y acepta cuarenta
+reservas. La función de distribución probabilidad que modela el número
+de personas que llegan al restaurante es <span
+class="math inline">\(f\)</span>, dada por:</p>
 <p><br/></p>
 <p><span class="math display">\[f_{_{X}}(x) = \left \{
                 \begin{matrix}
-                \displaystyle\binom{40}{x}(0.7)^{x}(0.3)^{40-x} &amp;
-\mbox{si }    x=0,1,2,\ldots,40\\
+                \displaystyle\binom{20}{x}(0.7)^{x}(0.3)^{20-x} &amp;
+\mbox{si }    x=0,1,2,\ldots,20\\
                 &amp; \\
                 0  &amp; \mbox{en otro caso }
                 \end{matrix}\right.  
                 \]</span></p>
 <p><br/></p>
-<p>En este caso se utiliza la función combinatoria vista en la
-<strong>Guía 0.2</strong></p>
+<p>En este caso se utiliza la función combinatoria y el operador de
+sumatoria vista en la <strong>Guía 0.2</strong></p>
 <p>Representada de manera gráfica:</p>
 <p><br/></p>
-<p><img src="recurso301_files/figure-html/unnamed-chunk-4-1.png" width="672" />
+<pre class="r"><code>x=0:20
+fx=choose(20,x)*0.70^x*0.30^(20-x)  
+Fx=cumsum(fx)
+
+tabla=data.frame(x, fx, Fx)
+DT::datatable(head(tabla, 21),fillContainer = FALSE, options = list(pageLength = 12))</code></pre>
+<div id="htmlwidget-e95a0e3d664d56795d55" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e95a0e3d664d56795d55">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21"],[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],[3.486784401e-11,1.6271660538e-09,3.60688475259e-08,5.049638653626e-07,5.00755833151245e-06,3.73897688752929e-05,0.000218106985105875,0.00101783259716075,0.00385928193090118,0.012006654896137,0.030817080900085,0.0653695655456349,0.114396739704861,0.164261985217236,0.191638982753442,0.17886305056988,0.130420974373871,0.0716036722052622,0.0278458725242686,0.00683933711122388,0.000797922662976119],[3.486784401e-11,1.66203389781e-09,3.773088142371e-08,5.4269474678631e-07,5.55025307829876e-06,4.29400219535917e-05,0.000261047007059467,0.00127887960422022,0.0051381615351214,0.0171448164312584,0.0479618973313434,0.113331462876978,0.227728202581839,0.391990187799076,0.583629170552518,0.762492221122398,0.892913195496268,0.96451686770153,0.992362740225799,0.999202077337023,0.999999999999999]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>x<\/th>\n      <th>fx<\/th>\n      <th>Fx<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":12,"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[10,12,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<p><img src="recurso301_files/figure-html/unnamed-chunk-5-1.png" width="672" />
 <br/></p>
-<p><img src="recurso301_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><img src="recurso301_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <p><br/></p>
 <pre><code>P(X=0)  =  0 </code></pre>
-<pre><code>P(X=25) =  0.077405 </code></pre>
-<pre><code>P(X&lt;25) = P(X&lt;=24) =  0.1151 </code></pre>
-<pre><code>P(X &gt;25) = 1 - P(X&lt;=24) = 0.8849</code></pre>
+<pre><code>P(X=15) =  0.178863 </code></pre>
+<pre><code>P(X&lt;15) = P(X&lt;=14) =  0.5836 </code></pre>
+<pre><code>P(X &gt;15) = 1 - P(X&lt;=14) = 0.4164</code></pre>
 <p><br/><br/><br/><br/></p>
 </div>
-<div id="variables-continuas" class="section level2">
-<h2><strong>Variables continuas</strong></h2>
+</div>
+<div id="variables-continuas" class="section level1">
+<h1><strong>Variables continuas</strong></h1>
 <p>Como se mencionó se considera una variable como continua cuando el
 conjunto de valores que puede tomar es un conjunto infinito no
 numerable, es decir que siempre podrá haber un valor entre dos valores
@@ -938,17 +939,20 @@ de ella.</p>
 función continua, la cual se puede visualizar al construir un gráfico de
 densidad a partir de una muestra de ellos. A esta función se le llama
 función de densidad de probabilidad</p>
-<p>En este caso las variables por lo general proceden de una medición
-como por ejemplo:</p>
+<div id="ejemplo-5" class="section level2">
+<h2><strong>Ejemplo 5</strong>:</h2>
+<p>En el caso de las <strong>variables aleatorias continuas</strong> por
+lo general proceden de una medición como por ejemplo:</p>
 <ul>
-<li><p>Tiempo que tarda un estudiante en responder un examen</p></li>
-<li><p>Peso de un bebe recien nacido</p></li>
-<li><p>Edad de una persona</p></li>
-<li><p>Tiempo que tarda un vehículo en requerir una reparación de su
+<li><p>T: Tiempo que tarda un estudiante en responder un examen</p></li>
+<li><p>P: Peso de un bebe recien nacido</p></li>
+<li><p>E: Edad de una persona</p></li>
+<li><p>V: Tiempo que tarda un vehículo en requerir una reparación de su
 motor</p></li>
-<li><p>Diámetro de un agujero realizado en una lamina de acero</p></li>
-<li><p>Cantidad de azúcar contenida en un refresco</p></li>
-<li><p>Proporción de cemento en concreto</p></li>
+<li><p>D: Diámetro de un agujero realizado en una lamina de
+acero</p></li>
+<li><p>X: Cantidad de azúcar contenida en un refresco</p></li>
+<li><p>C: Proporción de cemento en concreto</p></li>
 </ul>
 <p><br/><br/></p>
 <div id="función-de-densidad-de-probabilidad" class="section level3"
@@ -979,22 +983,13 @@ style="padding: 15px; border: 1px solid transparent; border-color: transparent; 
 x)\)</span></p>
 </div>
 <p><br/><br/></p>
-<table>
-<colgroup>
-<col width="9%" />
-<col width="90%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="center"><img src="img/ej4.png" /></td>
-<td align="left">Con base en información histórica una compañía que
-fabrica lavadoras determinó que el tiempo <span
-class="math inline">\(Y\)</span> (en años) para que el electrodoméstico
-requiera una reparación mayor se obtiene mediante la siguiente función
-de densidad de probabilidad:</td>
-</tr>
-</tbody>
-</table>
+</div>
+<div id="ejemplo-6" class="section level2">
+<h2><strong>Ejemplo 6</strong></h2>
+<p>Con base en información histórica una compañía que fabrica lavadoras
+determinó que el tiempo <span class="math inline">\(Y\)</span> (en años)
+para que el electrodoméstico requiera una reparación mayor se obtiene
+mediante la siguiente función de densidad de probabilidad:</p>
 <p><br/></p>
 <p><span class="math display">\[f_{_{X}}(x) = \left \{
                 \begin{matrix}
@@ -1011,11 +1006,12 @@ puede ser una función de densidad de probabilidad se debe verificar</p>
 \dfrac{1}{4} e^{-x/4} \:dx =1\)</span></p>
 <pre><code>1 with absolute error &lt; 2.7e-05</code></pre>
 <p><br/></p>
-<p><img src="recurso301_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p><img src="recurso301_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <p><br/><br/><br/></p>
 </div>
-<div id="valor-esperado" class="section level2">
-<h2><strong>Valor esperado</strong></h2>
+</div>
+<div id="valor-esperado" class="section level1">
+<h1><strong>Valor esperado</strong></h1>
 <p>El valor esperado o esperanza matemática y la varianza corresponde a
 dos los conceptos principales asociados a una variable aleatoria. El
 concepto de esperanza está relacionado en un principio con los juegos de
@@ -1043,9 +1039,9 @@ class="math inline">\(\mu\)</span>, se define respectivamente como,
 \end{eqnarray*}\]</span></p>
 </div>
 <p>En el caso continuo y similarmente para el caso discreto.</p>
-<div id="propiedades-del-valor-esperado" class="section level3"
+<div id="propiedades-del-valor-esperado" class="section level2"
 style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #DFF4F9 ; border-color: #000000;">
-<h3><strong>Propiedades del Valor Esperado</strong></h3>
+<h2><strong>Propiedades del Valor Esperado</strong></h2>
 <ul>
 <li><p><span class="math inline">\(E(k) = k\)</span>, para todo numero
 real <span class="math inline">\(k\)</span>.</p></li>
@@ -1064,8 +1060,8 @@ independientes</p></li>
 </div>
 <p><br/><br/></p>
 </div>
-<div id="varianza" class="section level2">
-<h2><strong>Varianza</strong></h2>
+<div id="varianza" class="section level1">
+<h1><strong>Varianza</strong></h1>
 <p>Otra caracteristica importante de las variables aleatorias
 corresponde a la varianza que se denota por <span
 class="math inline">\(V[X]\)</span> o <span
@@ -1097,19 +1093,31 @@ style="padding: 15px; border: 1px solid transparent; border-color: transparent; 
 E[X^{2}]-\mu^{2}\]</span></p>
 </div>
 <p><br/><br/></p>
-<table>
-<colgroup>
-<col width="9%" />
-<col width="90%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="center"><img src="img/ej5.png" /></td>
-<td align="left">El valor esperado y la varianza para el número de
-personas que asisten al restaurante del ejemplo 3 son :</td>
-</tr>
-</tbody>
-</table>
+<div id="propiedades-de-la-varianza" class="section level2"
+style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #DFF4F9 ; border-color: #000000;">
+<h2><strong>Propiedades de la varianza</strong></h2>
+<ul>
+<li><p><span class="math inline">\(V[X] \geq 0\)</span></p></li>
+<li><p><span class="math inline">\(V[k] = 0\)</span>, para todo número
+real <span class="math inline">\(k\)</span></p></li>
+<li><p><span class="math inline">\(V[X + k] = V[X]\)</span>, para todo
+número real <span class="math inline">\(k\)</span></p></li>
+<li><p><span class="math inline">\(V[kX] = k^{2}V[X]\)</span>, para todo
+número real <span class="math inline">\(k\)</span></p></li>
+<li><p><span class="math inline">\(V[aX + bY] = a^{2}V[X] + b^{2}V[Y] +
+2ab \hspace{.2cm}Cov[XY]\)</span>, siendo <span
+class="math inline">\(a\)</span> y <span
+class="math inline">\(b\)</span> números reales. En el caso se ser X y Y
+variables aleatorias independientes la igualdad será: <span
+class="math inline">\(V[aX + bY] = a^{2}V[X] +
+b^{2}V[Y]\)</span></p></li>
+</ul>
+</div>
+<p><br/><br/><br/></p>
+<div id="ejemplo-7" class="section level2">
+<h2><strong>Ejemplo 7</strong></h2>
+<p>El valor esperado y la varianza para el número de personas que
+asisten al restaurante del ejemplo 3 son :</p>
 <pre><code>E[X] = 27.99995 </code></pre>
 <pre><code>V[X] =  8.401435</code></pre>
 <p>Este resultado nos indica que en promedio asisten al restaurante 28
@@ -1117,19 +1125,11 @@ personas de las cuarenta reservas aceptadas, con una varianza de 8.4 de
 la cual podemos obtener la desviación estándar y el coeficiente de
 variación</p>
 <p><br/><br/></p>
-<table>
-<colgroup>
-<col width="9%" />
-<col width="90%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="center"><img src="img/ej6.png" /></td>
-<td align="left">Para el ejemplo 4 correspondiente al tiempo que
-requiere una lavadora requiere una reparación mayor, tenemos:</td>
-</tr>
-</tbody>
-</table>
+</div>
+<div id="ejemplo-8" class="section level2">
+<h2><strong>Ejemplo 8</strong></h2>
+<p>Para el ejemplo 4 correspondiente al tiempo que requiere una lavadora
+requiere una reparación mayor, tenemos:</p>
 <pre><code>E[X] =  4 </code></pre>
 <pre><code>V[X] =  16</code></pre>
 <p>Esto nos indica que el valor esperado correspondiente al tiempo en
@@ -1138,22 +1138,23 @@ interpretación de la varianza podemos utilizar el concepto de desviación
 estandar o de coeficiente de variación</p>
 <p><br/><br/><br/><br/></p>
 </div>
-<div id="videos" class="section level2">
-<h2><strong>Videos</strong></h2>
-<div id="variables-aleatorias" class="section level3">
-<h3><strong>Variables aleatorias</strong></h3>
+</div>
+<div id="videos" class="section level1">
+<h1><strong>Videos</strong></h1>
+<div id="variables-aleatorias" class="section level2">
+<h2><strong>Variables aleatorias</strong></h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ABhDYVIfF0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 <p><br/><br/></p>
 </div>
-<div id="variables-discretas-1" class="section level3">
-<h3><strong>Variables discretas</strong></h3>
+<div id="variables-discretas-1" class="section level2">
+<h2><strong>Variables discretas</strong></h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CUMJ-MUiMaY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 <p><br/><br/></p>
 </div>
-<div id="variables-continuas-1" class="section level3">
-<h3><strong>Variables continuas</strong></h3>
+<div id="variables-continuas-1" class="section level2">
+<h2><strong>Variables continuas</strong></h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rlBxuLdOUt0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 </div>
