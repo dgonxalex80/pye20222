@@ -207,4 +207,6 @@ $$f(x) = \binom{25}{x} (0.80)^{x} (0.20)^{25−x}  \text{,  } x = 0, 1, . . . , 
 Problemas seleccionados de Walpole(2012).
   
 
+## Formato Rmarkdown
 
+https://github.com/dgonxalex80/pye20222/blob/main/Taller311Rmd.Rmd
