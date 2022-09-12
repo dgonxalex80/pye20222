@@ -476,7 +476,7 @@ div.tocify {
     </li>
     <li class="divider"></li>
     <li>
-      <a href="recursos301.html">Recursos 3.1</a>
+      <a href="recurso301.html">Recursos 3.1</a>
     </li>
     <li>
       <a href="recurso302.html">Recursos 3.2</a>
@@ -637,18 +637,14 @@ probabilidad es un valor mayor a cero</p></li>
 <li><p><span class="math inline">\(\sum_{R_X} f(x) = 1\)</span>, la suma
 de todas las probabilidades es igual a uno</p></li>
 </ul>
+<p><br/></p>
 <p>En este caso se puede utilizar la función sumatoria
 <code>sum(x, na.rm = FALSE)</code>, donde <code>x</code> es un vector y
 <code>na.rm</code> indica si el vector tienen datos faltantes.</p>
-<table>
-<tbody>
-<tr class="odd">
-<td align="left"><img src="img/ej1.png" width="80" /></td>
-<td align="left">Para la función <span
-class="math inline">\(f(x)\)</span></td>
-</tr>
-</tbody>
-</table>
+<p><br/><br/></p>
+<div id="ejemplo-1" class="section level3">
+<h3>Ejemplo 1</h3>
+<p>Para la función <span class="math inline">\(f(x)\)</span></p>
 <p><span class="math display">\[f_{_{X}}(x) = \left \{
                 \begin{matrix}
                 \displaystyle\binom{40}{x}(0.7)^{x}(0.3)^{40-x} &amp;
@@ -657,6 +653,7 @@ class="math inline">\(f(x)\)</span></td>
                 0  &amp; \mbox{en otro caso }
                 \end{matrix}\right.  
                 \]</span></p>
+<p><br/><br/></p>
 <pre class="r"><code># declaracion de la funcion
 fw=function(w){choose(40,w)*0.70^w*0.30^(40-w)}
 w=0:40
@@ -665,23 +662,29 @@ w=0:40
 plot(w, fw(w), pch=19, col=&quot;#BC2B6A&quot;, las=1)
 grid()</code></pre>
 <p><img src="codigo301_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p><br/><br/></p>
 <p>Para verificar que la suma de todas las probabilidades es igual a
 uno</p>
 <pre class="r"><code>fw=function(w){choose(40,w)*0.70^w*0.30^(40-w)}
 w=0:40
 sum(fw(w))</code></pre>
 <pre><code>[1] 1</code></pre>
+<p><br/><br/></p>
 <p>Para calcular la probabilidad <span class="math inline">\(P(20 \leq X
 \leq 30)\)</span></p>
 <pre class="r"><code>sum(fw(20:30))</code></pre>
 <pre><code>[1] 0.8016552</code></pre>
+<p><br/><br/><br/></p>
+</div>
 <div id="valor-esperado" class="section level3">
 <h3><strong>Valor esperado</strong></h3>
+<p><br/></p>
 <pre class="r"><code>fw=function(w){choose(40,w)*0.70^w*0.30^(40-w)}
 w=0:40
 Ex=sum(fw(w)*w)
 cat(&quot;E[X] = &quot;,Ex)</code></pre>
 <pre><code>E[X] =  28</code></pre>
+<p><br/><br/><br/></p>
 </div>
 <div id="varianza" class="section level3">
 <h3><strong>Varianza</strong></h3>
@@ -692,6 +695,7 @@ Ex2=sum(fw(w)*w^2)
 Vx=Ex2-Ex^2
 cat(&quot;V[X] = &quot;,Vx)</code></pre>
 <pre><code>V[X] =  8.4</code></pre>
+<p><br/><br/><br/></p>
 </div>
 </div>
 <div id="variables-continuas" class="section level1">
@@ -728,24 +732,19 @@ instrucciones:</p>
 </ul></li>
 </ul>
 <p><code>integrate(function(x) x, lower = 0, upper = 1)</code></p>
-<p><br/><br/></p>
-<table>
-<tbody>
-<tr class="odd">
-<td align="left"><img src="img/ej2.png" width="80" /></td>
-<td align="left">Para la función <span
-class="math inline">\(f(x)\)</span></td>
-</tr>
-</tbody>
-</table>
+<p><br/><br/><br/></p>
+<div id="ejemplo-2" class="section level3">
+<h3>Ejemplo 2</h3>
+<p>Para la función <span class="math inline">\(f(x)\)</span></p>
 <p><span class="math display">\[f_{_{X}}(x) = \left \{
                 \begin{matrix}
                 \dfrac{1}{4} e^{-x/4} &amp; \mbox{ , }  x \geq 0\\
                 &amp; \\
                 0  &amp; \mbox{en otro caso }
                 \end{matrix}\right.  
-                \]</span></p>
+                \]</span> <br/></p>
 <p><span class="math display">\[P(X &lt; 5)\]</span></p>
+<p><br/></p>
 <pre class="r"><code># declaracion de la funcion
 fx=function(x){1/4*exp(-x/4)}
 
@@ -758,22 +757,24 @@ x1=seq(0,5,0.01)
 f1=fx(x1)
 polygon(c(0,x1,5),c(0,f1,0),col=&quot;skyblue&quot;)</code></pre>
 <p><img src="codigo301_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p><br/><br/></p>
 <pre class="r"><code># integral entre 5 y 15 : P( X &lt; 5)
 integrate(fx, 0,5)</code></pre>
 <pre><code>0.7134952 with absolute error &lt; 7.9e-15</code></pre>
-<p><br/><br/></p>
+<p><br/><br/><br/></p>
+</div>
 </div>
 <div id="valor-esperado-1" class="section level2">
 <h2><strong>Valor esperado</strong></h2>
 <p><span class="math display">\[E(X) =
-\displaystyle\int\limits_{-\infty}^{+\infty}x f(x)dx\]</span></p>
+\displaystyle\int\limits_{-\infty}^{+\infty}x f(x)dx\]</span> <br/></p>
 <p>En este caso la función se multiplica por <span
 class="math inline">\(x\)</span></p>
 <pre class="r"><code>Mx=function(x){1/4*exp(-x/4)*x}
 Ex=integrate(Mx, 0, Inf)
 cat(&quot;E[X] = &quot;, Ex$value,&quot;\n&quot;)</code></pre>
 <pre><code>E[X] =  4 </code></pre>
-<p><br/><br/></p>
+<p><br/><br/><br/></p>
 </div>
 <div id="varianza-1" class="section level2">
 <h2><strong>Varianza</strong></h2>
@@ -787,6 +788,7 @@ Ex2=integrate(Mx2, lower=0,upper=Inf)
 
 cat(&quot;V[X] = &quot;, Ex2$value-Ex$value^2)</code></pre>
 <pre><code>V[X] =  16</code></pre>
+<p><br/><br/></p>
 <pre class="r"><code>fx=function(x){1/4*exp(-x/4)}
 Mx1=function(x){1/4*exp(-x/4)*x}
 Mx2=function(x){1/4*exp(-x/4)*x^2}
@@ -800,11 +802,13 @@ cat(&quot;E[X] = &quot;, Ex$value,&quot;\n&quot;)</code></pre>
 </div>
 <div id="otras-herramientas" class="section level2">
 <h2><strong>Otras herramientas</strong></h2>
+<p><br/></p>
 <div id="wolframalpha" class="section level3">
 <h3><strong>WolframAlpha</strong></h3>
 <p><img src="img/walpha.png" /></p>
 <p><a href="https://www.wolframalpha.com/"
 class="uri">https://www.wolframalpha.com/</a></p>
+<p><br/><br/></p>
 </div>
 <div id="symlab" class="section level3">
 <h3><strong>Symlab</strong></h3>

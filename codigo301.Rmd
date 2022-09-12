@@ -36,12 +36,15 @@ En el caso de las variables discretas la función de distribución de probabilid
 
 + $\sum_{R_X} f(x) = 1$, la suma de todas las probabilidades es igual a uno
 
+<br/>
 
 En este caso se puede utilizar la función sumatoria  `sum(x, na.rm = FALSE)`, donde `x` es un vector y `na.rm` indica si el vector tienen datos faltantes.
 
-|    |                                     |
-|:--|:------------------------------------|
-| ![](img/ej1.png){width=80px} | Para la función $f(x)$   |
+<br/><br/>
+
+### Ejemplo 1 
+
+Para la función $f(x)$   
 
 $$f_{_{X}}(x) = \left \{ 
 				\begin{matrix} 
@@ -51,6 +54,7 @@ $$f_{_{X}}(x) = \left \{
 				\end{matrix}\right.  
 				$$
 
+<br/><br/>
 
 ```{r}
 # declaracion de la funcion
@@ -63,6 +67,7 @@ grid()
 
 ```
 
+<br/><br/>
 
 Para verificar que la suma de todas las probabilidades es igual a uno 
 
@@ -72,14 +77,19 @@ w=0:40
 sum(fw(w))
 ```
 
+<br/><br/>
+
 Para calcular la probabilidad $P(20 \leq X \leq 30)$
 
 ```{r}
 sum(fw(20:30))
 ```
 
+<br/><br/><br/>
+
 ### **Valor esperado**
 
+<br/>
 
 ```{r}
 
@@ -88,6 +98,8 @@ w=0:40
 Ex=sum(fw(w)*w)
 cat("E[X] = ",Ex)
 ```
+
+<br/><br/><br/>
 
 ### **Varianza**
 
@@ -102,7 +114,7 @@ cat("V[X] = ",Vx)
 ```
 
 
-
+<br/><br/><br/>
 
 # **Variables continuas**
 
@@ -129,12 +141,11 @@ Estas verificaciones se pueden realizar en R con dos instrucciones:
  
  `integrate(function(x) x, lower = 0, upper = 1)`
  
- <br/><br/>
+ <br/><br/><br/>
  
- 
-|    |                                     |
-|:--|:------------------------------------|
-| ![](img/ej2.png){width=80px} | Para la función $f(x)$   |
+### Ejemplo 2 
+
+Para la función $f(x)$   
 
 
 $$f_{_{X}}(x) = \left \{ 
@@ -144,8 +155,11 @@ $$f_{_{X}}(x) = \left \{
 				0  & \mbox{en otro caso }
 				\end{matrix}\right.  
 				$$
-				
+<br/>
+
 $$P(X < 5)$$				
+
+<br/>
  
 ```{r}
 # declaracion de la funcion
@@ -165,17 +179,20 @@ polygon(c(0,x1,5),c(0,f1,0),col="skyblue")
 
 ```
 
+<br/><br/>
 
 ```{r}
 # integral entre 5 y 15 : P( X < 5)
 integrate(fx, 0,5)
 
 ```
-<br/><br/>
+
+<br/><br/><br/>
 
 ## **Valor esperado**
 
 $$E(X) = \displaystyle\int\limits_{-\infty}^{+\infty}x f(x)dx$$
+<br/>
 
 En este caso la función se multiplica por $x$
 
@@ -184,7 +201,8 @@ Mx=function(x){1/4*exp(-x/4)*x}
 Ex=integrate(Mx, 0, Inf)
 cat("E[X] = ", Ex$value,"\n")
 ```
-<br/><br/>
+
+<br/><br/><br/>
 
 ## **Varianza**
 
@@ -201,7 +219,7 @@ Ex2=integrate(Mx2, lower=0,upper=Inf)
 cat("V[X] = ", Ex2$value-Ex$value^2)
 ```
 
-
+<br/><br/>
 
 ```{r}
 fx=function(x){1/4*exp(-x/4)}
@@ -217,12 +235,15 @@ cat("V[X] = ", Ex2$value-Ex$value^2)
 
 ## **Otras herramientas**
 
+<br/>
+
 ### **WolframAlpha**
 
 ![](img/walpha.png)
 
 https://www.wolframalpha.com/
 
+<br/><br/>
 
 ### **Symlab**
 

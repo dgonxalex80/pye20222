@@ -1,0 +1,31 @@
+---
+title: "prueba"
+author: "dgonzalez"
+date: '2022-09-10'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+.section.sidebar { 
+  top: 61px;
+  border-bottom: 10px solid #063971;
+  border-left: 10px solid gray;
+  background-color: gray;
+}
+
+.navbar {
+background-color: rgb(36,17,56);
+border-color:black;
+}
+
+.sidebar{ 
+  background-color: #6c4675;
+}
+
+<span style="color:rgb(36,17,56)"> **background-color: rgb(36,17,56)**</span>
+<span style="color:#8acfe6"> ** background-color: #8acfe6**</span>

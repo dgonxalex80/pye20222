@@ -46,7 +46,7 @@ Clasifique las siguientes variables como discretas o continuas:
 |S :   | tiempo que dedica una persona al ocio - tiempo no productivo en horas          |
 |T :   | ingresos de una familia en pesos por mes                                       |
 |V :   | cantidad de calorias que contiene una bebida gaseosa                           |               
-|W :   | largo del femur en un adulto en centimetros                                    |
+|W :   | largo del femur de un adulto humano en centimetros                             |
 
 
 <br/><br/><br/>
@@ -198,11 +198,11 @@ La función de probabilidad del número de personas que llegan al restaurante es
 
 $$f(x) = \binom{25}{x} (0.80)^{x} (0.20)^{25−x}  \text{,  } x = 0, 1, . . . , 25$$
 
+<br/><br/><br/>
 
+### <span style="color:#db524f">**NOTA**</span>
 
-
-**Nota**: En todos los casos represente gráficamente la función de probabilidad correspon-
-diente y resalte la(s) probabilidad(es) solicitada(s).
+**En todos los casos** represente gráficamente la función de probabilidad correspondiente y en ella resalte las probabilidades solicitadas.
 
 Problemas seleccionados de Walpole(2012).
   
