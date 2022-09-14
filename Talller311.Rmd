@@ -199,7 +199,7 @@ El gerente de un restaurante que sólo da servicio mediante reservas sabe, por e
 
 <br/>
 
-La función de probabilidad del número de personas que llegan al restaurante es,
+La función de probabilidad del número de personas que llegan al restaurante solo esta definida para valores de $x = 0, 1, . . . , 25$ y es de la forma:
 
 $$f(x) = \binom{25}{x} (0.80)^{x} (0.20)^{25−x}  \text{,  } x = 0, 1, . . . , 25$$
 
