@@ -166,7 +166,7 @@ del resultado, $X$, es el tiempo,
 
 $$f_{_{X}}(x) = \left \{ 
 				\begin{matrix} 
-				2(1-x),  & \mbox{   }	0 \leq x \leq 0\\ 
+				2(1-x),  & \mbox{   }	0 \leq x \leq 1\\ 
 				& \\
 				0 , & \mbox{en cualquier otro caso }
 				\end{matrix}\right.  
