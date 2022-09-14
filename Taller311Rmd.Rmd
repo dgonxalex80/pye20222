@@ -8,19 +8,7 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, comment = NA)
-library(tidyverse)
-#Colombia<- readRDS("data/Colombia.RDS")
 
-
-# colores
-c0= "#b0394a"
-c1= "#ad6395"
-c2= "#a391c4"
-c3= "#8acfe6"
-c4= "#646420"
-c5= "#db524f"
-
-library(summarytools)
 ```
 
 
@@ -207,6 +195,4 @@ $$f(x) = \binom{25}{x} (0.80)^{x} (0.20)^{25−x}  \text{,  } x = 0, 1, . . . , 
 Problemas seleccionados de Walpole(2012).
   
 
-## Formato Rmarkdown
 
-https://github.com/dgonxalex80/pye20222/blob/main/Taller311Rmd.Rmd
