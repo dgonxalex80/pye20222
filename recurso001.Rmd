@@ -16,7 +16,7 @@ library(psych)
 library(summarytools)
 
 # install.packages("devtools")
-devtools::install_github("dgonxalex80/paqueteDEG")
+#devtools::install_github("dgonxalex80/paqueteDEG")
 library(paqueteDEG)
 
 # colores
