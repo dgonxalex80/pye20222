@@ -62,7 +62,9 @@ Calcule la probabilidad de que el tiempo que  pase para que el radar detecte ent
   
 <br/><br/>
 
- **3** Una variable aleatoria continua $X$, que puede tomar valores entre $x=2$ y $x=5$, tiene una función de densidad data por $f(x)=2(1+x)/27$.  Calcule 
+ **3** Una variable aleatoria continua $X$, que puede tomar valores entre $x=2$ y $x=5$, tiene una función de densidad data por $f(x)=2(1+x)/27$.  
+ 
+ Calcule: 
  
  + $P(X < 4)$
  + $P(3 \leq X < 4)$
@@ -70,7 +72,7 @@ Calcule la probabilidad de que el tiempo que  pase para que el radar detecte ent
  
  <br/><br/>
  
- **4** Suponga que cierto tipo de pequeñas empresas de procesamiento de datos están tan especializadas que algunas tienen dificultades para obtener utilidades durante su primer año de operación. La función de densidad de probabilidad está dada por
+ **4** Suponga que cierto tipo de pequeñas empresas de procesamiento de datos están tan especializadas que algunas tienen dificultades para obtener utilidades durante su primer año de operación. La función de densidad de probabilidad está dada por:
  
  $$f_{_{Y}}(y) = \left \{ 
 				\begin{matrix} 
@@ -114,9 +116,9 @@ Calcule la probabilidad de que el tiempo que  pase para que el radar detecte ent
 
 **8** Sea el número de llamadas telefónicas que recibe un conmutador durante un intervalo de 5 minutos una variable aleatoria $X$ con la siguiente función de distribución de probabilidad:
 
-$$f(x)= \dfrac{exp\{-2\} 2^x}{x!} \mbox{ , } x = 01,2,3,4,5.... $$
+$$f(x)= \dfrac{exp\{-2\}\hspace{.2cm} 2^x}{x!}\hspace{.3cm} \mbox{ , para }\hspace{.3cm} x = 01,2,3,4,5.... $$
 
-+ Determine la probabilidad de que $X$ sea igual a 0, 1, 2, 3, 4, 5 y 6
++ Determine la probabilidad de que $X$ sea igual a $0, 1, 2, 3, 4, 5$ y $6$
 + Grafique la función de distribución de probabilidad para estos valores de $X$
 + Determine la función de distribución acumulada para estos valores de $X$.
 + Represente la función $f(x)$ gráficamente
@@ -147,7 +149,9 @@ Problemas tomado de walpole (2006)
 
 <br/>
 
-**1.** Suponga que $f(x)=exp\{-x\}$, para $0 \leq x \leq 1$, $0$ para cualquier otro caso. Determine :
+**1.** Suponga que $f(x)=exp\{-x\}$, para $0 \leq x \leq 1$, $0$ para cualquier otro caso.
+
+Determine :
 
 + $P(1 < X)$
 + $P(1 < X < 2.5$
@@ -157,7 +161,9 @@ Problemas tomado de walpole (2006)
 
 <br/><br/>
 
-**2.** Para una variable aleatoria con función de densidad : $f(x)= x/8$ para $3 < X < 5$, determine :
+**2.** Para una variable aleatoria con función de densidad : $f(x)= x/8$ para $3 < X < 5$. 
+
+Determine :
 
 + $P(X < 4)$
 + $P(X > 3.5)$
@@ -176,7 +182,9 @@ $$F_{_{X}}(x) = \left \{
 				 1    & \mbox{ , } 5 \leq 5
 				\end{matrix}\right.  
 				$$
-				
+
+Determine:
+
 + $P(X < 4)$
 + $P(X = 1.5)$
 + $P(X > 3)$
@@ -190,6 +198,7 @@ $$F_{_{X}}(x) = \left \{
 |:----:|:----:|:------:|:------:|:------:|:------:|
 |$f(x)$|$1/8$ |$2/8$   |$2/8$   |$2/8$   | $1/8$  |
 
+Determine:
 
 + $P(X \leq 2)$
 + $P(X > 3)$
@@ -209,6 +218,7 @@ $$F_{_{X}}(x) = \left \{
 				$$
 
 Determine:
+
 + $P(X =1)$
 + $P(X \leq 1)$
 + $P(2 \leq X < 4)$
@@ -228,8 +238,8 @@ Determine:
 $$F_{_{X}}(x) = \left \{ 
 				\begin{matrix} 
 				 0    & \mbox{ , } x \leq 0\\ 
-				 0.2 x   & \mbox{, } 0 < x 5  \\
-				 1    & \mbox{ , } 5 \leq 5
+				 0.2 x   & \mbox{, } 0 < x < 5  \\
+				 1    & \mbox{ , } x \geq 5
 				\end{matrix}\right.  
 				$$
 
@@ -263,14 +273,18 @@ Cuando el profesor de Probabilidad y Estadística se preparaba para imprimir el 
 
 <br/><br/>
 
-**1.** Suponga que $f(x)=exp\{-x\}$, para $0 \leq x \leq 1$, $0$ para cualquier otro caso. Determine :
+**1.** Suponga que $f(x)=exp\{-x\}$, para $0 \leq x \leq 1$, $0$ para cualquier otro caso.
+
+Determine :
 
 + $E[X]$
 + $V[X]$
 
 <br/><br/>
 
-**2.** Para una variable aleatoria con función de densidad : $f(x)= x/8$ para $3 < X < 5$, determine :
+**2.** Para una variable aleatoria con función de densidad : $f(x)= x/8$ para $3 < X < 5$. 
+
+Determine :
 
 + $\mu_{_{X}}$
 + $\sigma_{_{X}}$
@@ -288,7 +302,7 @@ $$F_{_{X}}(x) = \left \{
 
 Determine : 
 
-+  $E[X]$
++ $E[X]$
 + $V[X]$
 + Se podría obtener el coeficiente de variación?. En caso afirmativo, ¿que valor tendría?
 
@@ -302,7 +316,7 @@ Determine :
 
 Determine : 
 
-+  $E[X]$
++ $E[X]$
 + $V[X]$
 
 <br/><br/>
@@ -318,7 +332,7 @@ Determine :
 
 Determine : 
 
-+  $E[X]$
++ $E[X]$
 + $V[X]$
 + Coeficiente de variación
 
@@ -339,7 +353,7 @@ Problemas tomados de Mongomery(2003)
 
  $$f_{_{X}}(x) = \left \{ 
 				\begin{matrix} 
-				\dfrac{8^{x} exp\{-8\}}{x!} & \mbox{ , }	x = 0,1,2,3,4,5,.....\\ 
+				\dfrac{8^{x}\hspace{.2cm} exp\{-8\}}{x!} & \mbox{ , para } \hspace{.3cm}	x = 0,1,2,3,4,5,.....\\ 
 				0  & \mbox{en otro caso }
 				\end{matrix}\right.  
 				$$
