@@ -102,7 +102,7 @@ La vida útil en días, para frascos de cierta medicina de prescripción es una 
 
 $$f_{_{X}}(x) = \left \{ 
 				\begin{matrix} 
-				\dfrac{2000}{(x+100)^{3}}, & \mbox{  }	x \geq 0\\ 
+				\dfrac{20000}{(x+100)^{3}}, & \mbox{  }	x \geq 0\\ 
 				& \\
 				0 , & \mbox{en cualquier otro caso }
 				\end{matrix}\right.  
