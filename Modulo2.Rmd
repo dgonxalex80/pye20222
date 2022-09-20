@@ -38,3 +38,10 @@ El concepto de probabilidad constituye uno de los  pilares de la estadística qu
 # **Objetivo**
 
 Al finalizar el módulo el estudiante estará en capacidad de DESARROLLAR el pensamiento probabilístico mediante el cálculo e interpretación de probabilidades mediante la  comprensión de los CONCEPTOS BASICOS, los diferentes ENFOQUES y TIPOS de probabilidad  que le ayuden en la valoración del riesgo para la toma de decisiones.
+
+
+<br/><br/><br/>
+
+# **Mapa**
+
+![](img/mapU2.png)

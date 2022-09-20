@@ -36,4 +36,8 @@ Este primer módulo te permitirá recorrer los  pasos de la metodología estadí
 
 Al finalizar este módulo el estudiante estará en capacidad de RESUMIR e INTERPRETAR información mediante la construcción de TABLAS DE FRECUENCIA, INDICADORES DESCRIPTIVOS Y GRAFICOS para la interpretación  y construcción de informes estadísticos descriptivos 
 
+<br/><br/><br/>
 
+# **Mapa**
+
+![](img/mapU1.png)
