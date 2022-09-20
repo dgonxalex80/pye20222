@@ -168,7 +168,7 @@ Determine :
 + $P(X < 4)$
 + $P(X > 3.5)$
 + $P(4 < X < 5)$
-+ $P(X < 3.5 o X > 4.5)$
++ $P((X < 3.5) \cup (X > 4.5))$
 + el valor de $Me$
 
 <br/><br/>

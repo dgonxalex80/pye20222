@@ -1,0 +1,49 @@
+---
+title: "Actividad3"
+author: "dgonzalez"
+date: '2022-09-19'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Modelo de Diseño, Serie de Tiempo y Datos Textuales
+
+1. Con base en los datos públicos de la pagina de “Yahoo Finance” https://finance.yahoo.com identificar una serie de interés que cumpla con dos criterios: compañía con al menos 4 años de registros y diferente de las series vistas en clase (publicar el informe final en Rpubs presentando código, resultados e interpretaciones). 
+
+Realice la descarga de los datos por medio del software R, la librería fGarch y la función get.hist.quote, la descarga debe ser diaria con al menos 4 años. (grafique la serie de tiempo e interprete el comportamiento enfatizando puntos de cambio de tendencias. Se considera como una ventaja si logra explicar el comportamiento de acuerdo con algunos eventos particulares como crisis, entre otros que se pueden investigar en noticias de medios confiables).
+
+Realice un análisis exploratorio de la serie de tiempo agregándola a nivel mensual por medio de la descomposición en tendencia, estacionalidad y ruido (interprete la tendencia y la estacionalidad, trate de dar explicación a los momentos clave de la estacionalidad ejemplo: fin de año, etc.) 
+
+Estime un modelo de ARIMA de series de tiempo (mensual) y realice pronósticos con este modelo (h=6 periodos futuros). ¿Considera que los pronósticos son lógicos de acuerdo con el comportamiento de la serie?  
+
+
+Con base en los datos públicos de la red social Twitter identificar una cuenta de interés que cumpla con dos criterios: cuenta con al menos 2 años de registros y diferente de la cuenta vista en clase (publicar el informe final en Rpubs presentando código, resultados e interpretaciones). 
+
+Realizar la descarga de los trinos por medio de la librería rtweet y la función get_timelines y presente los primeros 10 textos de los trinos de la cuenta descargada. 
+
+Realice la depuración de los textos vistos en clase y realice un análisis de palabras mas frecuentes (presente el grafico de nube de palabras e interprete). 
+
+Realice un análisis de sentimientos con base en los datos de los puntajes de la base de datos affin de acuerdo a lo visto en clase (interprete la tendencia central del sentimiento (positivo, negativo o neutro) que transmiten las personas a la cuenta). 
+
+
+
+
+2. Dos tipos de moluscos A y B fueron sometidos a tres concentraciones distintas de agua de mar (100%, 75% y 50%) y se observó el consumo de oxígeno midiendo la proporción de O2 por unidad de peso seco del molusco.   
+
+Realice un análisis exploratorio que permita conocer como es el consumo de oxígeno en las distintas concentraciones de agua de mar. y si estas conclusiones son las mismas para cada tipo de molusco. 
+
+Estime el modelo de diseño de experimentos el cual permita evaluar el efecto de la concentración de agua de mar y los tipos de molusco sobre el consumo de oxigeno. Interprete los coeficientes del modelo, el valor p y realice un post anova de considerarlo necesario para los factores. 
+
+
+
+
+3. Para estudiar la relación entre ciertas características del suelo y la producción de biomasa (gr) de una planta forrajera natural se obtuvieron 45 muestras en diferentes ambientes, y en cada muestra se estimó la biomasa (respuesta Y) y se registraron las características (covariables X) del suelo en el que crecía (pH, Salinidad, Zinc y Potasio). 
+
+Realice un análisis de correlaciones que permita identificar de manera bivariada las relaciones entre las covariables y la respuesta (incluir coeficiente de correlación e interpretaciones). 
+
+Estime el modelo de regresión lineal múltiple para explicar la biomasa en función de las covariables e interprete el valor p, los coeficientes de las variables significativas y el coeficiente R2. 
+
+El informe se presenta en parejas  y  entrega en la plataforma Brightspace en formato pdf . Cada integrante debe subir el archivo al sistema. 
