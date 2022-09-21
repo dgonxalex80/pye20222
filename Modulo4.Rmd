@@ -35,3 +35,11 @@ La inferencia estadística es una de las herramientas mas fuertes de la estadís
 # **Objetivo**
 
 Al finalizar el módulo el estudiante estará en capacidad de RECONOCER, INFERIR y CONSTRASTAR a partir de la estimación a través de INTERVALOS DE CONFIANZA  y PRUEBAS DE HIPOTESIS, permitiendo incorporar estas herramientas estadísticas a la toma de decisiones.
+
+
+<br/><br/><br/>
+
+# **Mapa**
+
+![](img/mapU4.png)
+
