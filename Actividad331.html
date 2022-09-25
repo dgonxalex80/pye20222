@@ -14,10 +14,10 @@
 
 <title>Actividad 331</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -148,11 +148,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -624,6 +628,126 @@ style="color:#8acfe6"><strong>Actividad 331</strong></span></h1>
 
 
 <p><img src="img/banner3.png" /></p>
+<div id="descripción-actividad" class="section level1">
+<h1><strong>Descripción actividad </strong></h1>
+</div>
+<div id="construcción-de-un-artículo" class="section level1">
+<h1><strong>Construcción de un artículo</strong></h1>
+<div id="paso-1" class="section level2">
+<h2><strong>Paso 1</strong></h2>
+<p>En un formato <strong>Rmd</strong> deberan construir un documento que
+contenga las principales caracteristicas de la distribución asignada
+<strong>a cada estudiante</strong></p>
+<p><img src="img/blog1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Nota: para tenerlo disponeble es necesario cargar el paquete
+<strong>distill</strong></p>
+</div>
+<div id="paso-2" class="section level2">
+<h2><strong>Paso 2</strong></h2>
+<p>Cada estudiante aportará al trabajo realizado por uno de sus
+compañeros mediante dos contribuciones:</p>
+<ul>
+<li><p><strong>plus</strong> : realizará por lo menos un aporte que
+permita mejorar el trabajo sustancialmente y que aun no está claramente
+incorporado al trabajo</p></li>
+<li><p><strong>delta</strong> : dentro de los elementos contemplados en
+el trabajo deberá realizar sugerencias que lo potencie para un mejor
+resultado</p></li>
+</ul>
+<p><br/><br/></p>
+</div>
+<div id="contenido-del-artículo" class="section level2">
+<h2><strong>Contenido del artículo</strong></h2>
+<ul>
+<li><p>Origen de la distribución</p></li>
+<li><p>Características principales : f(x), F(x), E[X], V[X],
+representación gráfica….</p></li>
+<li><p>Ejemplo con enunciado, solución y sintaxis en R</p></li>
+<li><p>Aplicaciones en el campo de las ingeniería, ciencias, economía,
+salud…</p></li>
+<li><p>Relaciones entre distribuciones nivariadas. <a
+href="http://www.stat.rice.edu/~dobelman/courses/texts/leemis.distributions.2008amstat.pdf">(Artículo)</a></p></li>
+<li><p>Referencias bibliográficas</p></li>
+</ul>
+<p><br/><br/><br/></p>
+</div>
+<div id="asignación-de-distribuciones" class="section level2">
+<h2><strong>Asignación de distribuciones</strong></h2>
+<p><br/><br/></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">num</th>
+<th align="left">Distribución</th>
+<th align="left">num</th>
+<th align="left">Distribución</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">1</td>
+<td align="left">Binomial</td>
+<td align="left">2</td>
+<td align="left">Poisson</td>
+</tr>
+<tr class="even">
+<td align="center">3</td>
+<td align="left">Hipergeométrico</td>
+<td align="left">4</td>
+<td align="left">Geométrico o de Pascal</td>
+</tr>
+<tr class="odd">
+<td align="center">5</td>
+<td align="left">Binomial negativo</td>
+<td align="left">6</td>
+<td align="left">Uniforme</td>
+</tr>
+<tr class="even">
+<td align="center">7</td>
+<td align="left">Normal</td>
+<td align="left">8</td>
+<td align="left">Exponencial</td>
+</tr>
+<tr class="odd">
+<td align="center">9</td>
+<td align="left">Gamma</td>
+<td align="left">10</td>
+<td align="left">Weibull</td>
+</tr>
+<tr class="even">
+<td align="center">11</td>
+<td align="left">Cauchy</td>
+<td align="left">12</td>
+<td align="left">Lognormal</td>
+</tr>
+<tr class="odd">
+<td align="center">13</td>
+<td align="left">Beta</td>
+<td align="left">14</td>
+<td align="left">Erlang</td>
+</tr>
+<tr class="even">
+<td align="center">15</td>
+<td align="left">Gumbel</td>
+<td align="left">16</td>
+<td align="left">Logistic</td>
+</tr>
+</tbody>
+</table>
+<p>La asignación se realizará por sorteo en sesión de clase el dia lunes
+25 de septiembre de 2022. A los estudiantes no presentes el profesor
+realizará la asignatura de la distribución</p>
+</div>
+<div id="fechas" class="section level2">
+<h2><strong>Fechas</strong></h2>
+<ul>
+<li>Revisión por parte de pares (paso 2) : septiembre 30 2022</li>
+<li>Entrega del artículo final : octubre 3 de 2022</li>
+</ul>
+<p>Los documentos resultantes serán publicados en un blog para la
+revisión de todos</p>
+</div>
+</div>
 
 
 

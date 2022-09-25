@@ -29,6 +29,76 @@ c5= "#db524f"
 <br/><br/>
 
 
-<span style="color:#db524f"> **EN CONSTRUCCIÓN**</span> 
+# **Guía de aprendizaje 3.3**
 
-# **Guía de aprendizaje**
+<br/><br/>
+
+## **Introducción**
+
+En las unidades 3.1 y 3.2 hemos recorrido los principales conceptos relacionados caracterización de las variables aleatorias tanto discretas como continuas.  Características como:  $f(x)$, $F(x)$, $E[X]$, $V[X]$, en el caso univariado. Para el caso conjunto : $f(x,y)$, $F(x,y)$, $E[XY]$, $Cov[XY]$  y  $\rho$. 
+
+En esta unidad se presentan los principales modelos estadísticos tanto para variables discretas como continuas y sus aplicaciones. En el caso de los modelos discretas se deberá identificar el modelo a través de  las características del experimento que la genera la variable. Para el caso continuo los ejemplos indicaran el modelo correspondiente que genera la variable.
+
+
+<br/><br/>
+
+## **Objetivos de la unidad**
+
+Al finalizar la unidad los estudiantes estarán  en  capacidad de  IDENTIFICAR, CALCULAR y APLICAR los diferentes modelos de probabilidad para la solución de problemas en contexto  y su representación a través de la simulación.
+
+<br/><br/>
+
+## **Duración**
+
+La presente  unidad será desarrollada durante la comprendida entre 26 de septiembre al 2 de octubre     
+Ademas del material suministrado  contaran con el acompañamiento del profesor en las  sesiones descritas en el calentadario y de manera asincrónica con  foro de actividades académicas. Los entegables para esta unidad podrán enviarse a través de la plataforma Brightspace hasta el  2 de octubre.
+
+Para alcanzar los objetivos planteados se propone realizar las siguientes actividades
+
+<br/><br/>
+
+## **Cronograma de trabajo**
+
+
+|Actividad        | Descripción                                                             | 
+|:----------------|:------------------------------------------------------------------------|
+|**Actividad 331**|**blog** : Construir un blog  enformato Rmd (Rmarkdown)  para cada uno de los modelos asignados que contenga sus principales características |
+|                 | Trabajo en equipo de  2 estudiantes                                    |
+|Fecha            | 2  de octubre                                                          |
+|Hora             | 23:59                                                                  |
+
+
+|                |                                                                         | 
+|:---------------|:------------------------------------------------------------------------|
+|**Activiad 332**| De manera individual deberá resolver el problema asignado del [**taller de simulación**](https://dgonxalex80.github.io/probabilidad20212.io/Actividad332.html))  para ser resuelto con ayuda computacional. El resultado se debe publicar en RPub y si enlace copiado en el enlace de la actividad en Bs                                         |
+|               | Trabajo individual                                                      |
+|Fecha          | 2 de octubre                                                            |
+|Hora           | 23:59                                                                   |
+
+<br/><br/>
+
+## **Criterios de evaluación**
+
+<br/><br/>
+
+
+* Reconoce los modelos especiales asociados a contextos  y problemas reales
+
+* Utiliza las herramientas estadística apropiadas en el calculo de probabilidades en la solución de problemas en contexto
+
+* Utiliza herramientas computacionales que le permita  la solución de problemas en contexto a través de la simulación
+	
+<br/><br/>
+
+## **Entregables** 
+
+<br/><br/>
+
+|Actividad      | Descripción                      | 
+|:--------------|:---------------------------------|
+|Entregable 1   | carpeta con archivos Rmd, html  e imagenes  en un solo archivo zip (se debe utilizar el paquete distill de R para generar la plantilla) |
+|Entregable 2   |  enlace de Rmd publicado con el desarrollo del prolema asignado |
+| Fecha         | Domingo 3 de abril  de 2022      |
+| Hora límite   | 23:59  hora  local               |
+
+<br/><br/><br/><br/>

@@ -7,7 +7,7 @@ output:
     toc: yes
     toc_depth: 2
     toc_float: yes
-    theme: flatly
+    theme: cosmo
 ---
 
 ```{r setup, include=FALSE}
@@ -23,3 +23,80 @@ c5= "#db524f"
 ```
 
 ![](img/banner3.png)
+
+#  **Descripción actividad ** 
+
+# **Construcción de un artículo**
+
+## **Paso 1**
+
+En un formato  **Rmd** deberan construir un documento que contenga las principales caracteristicas de la distribución asignada **a cada estudiante**
+
+
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+knitr::include_graphics("img/blog1.png")
+```
+
+Nota: para tenerlo disponeble es necesario cargar el paquete **distill**
+
+## **Paso 2**
+
+Cada estudiante aportará al trabajo realizado por uno de sus compañeros mediante dos contribuciones:
+
+* **plus** : realizará por lo menos un aporte que permita mejorar el trabajo sustancialmente y que aun no está claramente incorporado al trabajo
+
+* **delta** : dentro de los elementos contemplados en el trabajo deberá realizar sugerencias que lo potencie para un mejor resultado
+
+
+<br/><br/>
+
+## **Contenido del artículo**
+
+* Origen de la distribución
+* Características principales : f(x), F(x), E[X], V[X], representación gráfica....
+* Ejemplo con enunciado, solución y sintaxis en R
+* Aplicaciones en el campo de las ingeniería, ciencias, economía, salud...
+* Relaciones entre distribuciones nivariadas. [(Artículo)](http://www.stat.rice.edu/~dobelman/courses/texts/leemis.distributions.2008amstat.pdf)
+
+* Referencias bibliográficas 
+
+<br/><br/><br/>
+
+## **Asignación de distribuciones** 
+
+<br/><br/>
+
+|num         | Distribución     |   num  |  Distribución         |
+|:----------:|:-----------------|:-------| :---------------------|
+| 1          | Binomial   	    | 2      | Poisson               |	
+| 3          | Hipergeométrico  | 4      | Geométrico o de Pascal|	
+| 5          | Binomial negativo|  6     | Uniforme              |	
+| 7          | Normal	          |  8     | Exponencial           |	
+| 9          | Gamma	          |  10    | Weibull               |
+| 11         | Cauchy           | 12     | Lognormal	           |
+| 13         | Beta             | 14     |Erlang	               |
+| 15         |Gumbel	          | 16     |Logistic               |
+
+
+La asignación se realizará por sorteo en sesión de clase el dia lunes 25 de septiembre de 2022. A los estudiantes no presentes el profesor realizará la asignatura de la distribución
+
+## **Fechas** 
+
+* Revisión por parte de pares (paso 2) : septiembre 30  2022
+* Entrega del artículo final : octubre 3 de 2022
+
+Los documentos resultantes serán publicados en un blog para la revisión de todos
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -14,10 +14,10 @@
 
 <title>Actividad 332</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -148,11 +148,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -624,8 +628,319 @@ style="color:#8acfe6"><strong>Actividad 332</strong></span></h1>
 
 
 <p><img src="img/banner3.png" /></p>
-<p><span style="color:#db524f"> <strong>EN
-CONSTRUCCIÓN</strong></span></p>
+<div id="problemas-de-simulación" class="section level1">
+<h1><strong>Problemas de simulación</strong></h1>
+<p><br/><br/></p>
+<div id="ejercicio-1" class="section level2">
+<h2><strong>Ejercicio 1</strong></h2>
+<p>Un cable está compuesto por seis alambres. La fuerza de ruptura de
+cada alambre es una variable aleatoria distribuida normalmente con media
+de <span class="math inline">\(10 kN\)</span> y desviación estándar de
+<span class="math inline">\(1 kN\)</span> (<span
+class="math inline">\(kN\)</span>=kiloNewton=<span
+class="math inline">\(10^{3}N\)</span>). Utilizando el método de cable
+quebradizo, se estima que la fuerza del cable es igual a la fuerza de
+alambre más frágil multiplicada por el número de alambres.</p>
+<p><img src="img/cable.png" width="15%" style="display: block; margin: auto;" /></p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Utilice una muestra simulada de tamaño 1000 para estimar la
+fuerza media de este tipo de cable.</p></li>
+<li><p>Estime la mediana de la fuerza del cable.</p></li>
+<li><p>Estime la desviación estándar de la fuerza del cable.</p></li>
+<li><p>Para que sea aceptable en cierta obra, la probabilidad de que el
+cable se rompa con una carga de <span class="math inline">\(70
+kN\)</span> debe ser menor a <span class="math inline">\(0.01\)</span>.
+¿Parece ser que el cable es aceptable? Explique.</p></li>
+</ol>
+<p><br/><br/><br/><br/></p>
+</div>
+<div id="ejercicio-2" class="section level2">
+<h2><strong>Ejercicio 2</strong></h2>
+<p>Estimación del valor de <span class="math inline">\(\pi\)</span> . LA
+siguiente figura sugiere como estimar el valor de <span
+class="math inline">\(\pi\)</span> con una simulación. En la figura, un
+circuíto con un áreaigual a <span class="math inline">\(\pi/4\)</span>,
+está inscrito en un cuadrado cuya área es igual a 1. Se elige de forma
+aleatoria 100 puntos dentro del cuadrado . La probabilidad de que un
+punto esté dentro del círculo es igual a la pracción del área del
+cuadrado que abarca a este, la cual es <span
+class="math inline">\(\pi/4\)</span>. Por tanto, se puede estimar el
+valor de <span class="math inline">\(\pi/4\)</span> al contar el número
+de puntos dentro del círculo, que es 79 para obtener la estimación de
+<span class="math inline">\(\pi/4 \approx 0.76\)</span> . De este último
+resultado se concluye que <span class="math inline">\(\pi \approx
+4(0.79) =3.14\)</span> . Este ejercicio presenta un experimento de
+simulación que fue diseñado para estimar el valor de <span
+class="math inline">\(\pi\)</span> al generar 1000 puntos en el
+cuadrado.</p>
+<p><img src="img/fig_pi.png" width="40%" style="display: block; margin: auto;" /></p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Genere 1000 coordenadas <span class="math inline">\(x\)</span>:
+<span class="math inline">\(X_{1}\)</span>, . . . , <span
+class="math inline">\(X_{1000}\)</span>. Utilice la distribución
+uniforme con valor mínimo de <span class="math inline">\(0\)</span> y
+valor máximo de <span class="math inline">\(1\)</span>. La distribución
+uniforme genera variables aleatorias que tienen la misma probabilidad de
+venir de cualquier parte del intervalo <span class="math inline">\((0,
+1)\)</span>.</p></li>
+<li><p>Genere <span class="math inline">\(1000\)</span> coordenadas
+<span class="math inline">\(y\)</span> : <span
+class="math inline">\(Y_{1}, . . . , Y_{1000}\)</span>, utilizando
+nuevamente la distribución uniforme con valor mínimo de <span
+class="math inline">\(0\)</span> y valor máximo de <span
+class="math inline">\(1\)</span>.</p></li>
+<li><p>Cada punto <span class="math inline">\((X_{i},Y_{i})\)</span> se
+encuentra dentro del círculo si su distancia desde el centro <span
+class="math inline">\((0.5, 0.5)\)</span> es menor a <span
+class="math inline">\(0.5\)</span>. Para cada par <span
+class="math inline">\((X_{i},Y_{i})\)</span> determine si la distancia
+desde el centro es menor a <span class="math inline">\(0.5\)</span>.
+Esto último se puede realizar al calcular el valor <span
+class="math inline">\((X_{i}-0.5)^{2}+(Y_{i}-0.5)^{2}\)</span>, que es
+el cuadrado de la distancia, y al determinar si es menor que <span
+class="math inline">\(0.25\)</span>.</p></li>
+<li><p>¿Cuántos de los puntos están dentro del círculo? ¿Cuál es su
+estimación de <span class="math inline">\(\pi\)</span>? (Nota: Con sólo
+1000 puntos, es probable que su estimación sea inferior por 0.05 o más.
+Una simulación con 10000 y 100000 puntos tiene mayores probabilidades de
+dar como resultado una estimación muy cercana al valor
+verdadero</p></li>
+</ol>
+<p><br/><br/><br/><br/></p>
+</div>
+<div id="ejercicio-3" class="section level2">
+<h2><strong>Ejercicio 3</strong></h2>
+<p>Tres sistemas están compuestos por los componentes <span
+class="math inline">\(R1\)</span>,<span
+class="math inline">\(R2\)</span>,<span
+class="math inline">\(R3\)</span> y <span
+class="math inline">\(R4\)</span> conectados, como lo muestra las
+siguientes figuras. El tiempo de vida en meses de los componentes <span
+class="math inline">\(R1\)</span> y <span
+class="math inline">\(R3\)</span> sigue una distribución lognormal con
+<span class="math inline">\(\mu=2\)</span> y <span
+class="math inline">\(\sigma=1\)</span> y la distribución en meses de
+los componentes <span class="math inline">\(R2\)</span> y <span
+class="math inline">\(R4\)</span> una distribución lognormal con <span
+class="math inline">\(\mu=1\)</span> y <span
+class="math inline">\(\sigma=0.1\)</span>. El sistema solo funciona si A
+y B lo hacen.</p>
+<p><img src="img/circuitos.png" width="40%" style="display: block; margin: auto;" /></p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Genere por simulación un gran número (al menos <span
+class="math inline">\(1000\)</span>) de los tiempos de vida de los
+sistemas</p></li>
+<li><p>Estime la media del tiempo de vida para cada sistema.</p></li>
+<li><p>Estime la probabilidad de que los sistemas fallen en un tiempo
+inferior a dos meses.</p></li>
+<li><p>Estime el <span class="math inline">\(20^{o}\)</span> percentil
+(<span class="math inline">\(P_{20}\)</span>) de los tiempos de vida del
+primer sistema .</p></li>
+<li><p>Construya una gráfica de probabilidad normal de los tiempo de
+vida para cada sistema. ¿Los tiempos de vida de los sistemas tienen una
+distribución aproximadamente normal?</p></li>
+<li><p>Construya un histograma de los tiempos de vida de los sistemas.
+¿Están sesgados a la izquierda, sesgados a la derecha, o son
+aproximadamente simétricos?</p></li>
+</ol>
+<p><br/><br/><br/><br/></p>
+</div>
+<div id="ejercicio-4" class="section level2">
+<h2><strong>Ejercicio 4</strong></h2>
+<p>La edad de una antigua pieza de materia orgánica se puede estimar a
+partir de la tasa a la que emite partículas beta como resultado del
+decaimiento del carbono-14. Por ejemplo , si X es el número de
+partículas emitidas durante diez minutos por un fragmento óseo con 10000
+años de antigüedad que contiene 1 g de carbono, entonces X tiene una
+distribución de Poisson con media <span
+class="math inline">\(\lambda=45.62\)</span> . Un arqueólogo descubrió
+un pequeño fragmento óseo que contiene 1 g de carbono. Si t es la edad
+desconocida del hueso, en años, el arqueólogo contar{a el número X de
+partículas emitidas en diez minutos y calculará una edad estimada <span
+class="math inline">\(\widehat{t}\)</span> con la fórmula:</p>
+<p><span class="math display">\[\widehat{t}=\dfrac{\ln 15.3 - \ln
+(X/10)}{0.0001210} \]</span></p>
+<p>El arqueólogo no lo sabe, pero el hueso tiene exactamente <span
+class="math inline">\(10000\)</span> años de antiguedad, por lo que
+<span class="math inline">\(X\)</span> tiene una distribución de Poisson
+con <span class="math inline">\(\lambda=45.62\)</span>.</p>
+<p><img src="img/piezas.png" width="20%" style="display: block; margin: auto;" /></p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Genere una muestra simulada de 10000 valores de <span
+class="math inline">\(X\)</span> y sus correspondientes valores de <span
+class="math inline">\(\widehat{t}\)</span>.</p></li>
+<li><p>Estime la media de <span
+class="math inline">\(\widehat{t}\)</span>.</p></li>
+<li><p>Estime la desviación estándar de <span
+class="math inline">\(\widehat{t}\)</span>.</p></li>
+<li><p>Estime la probabilidad de que <span
+class="math inline">\(\widehat{t}\)</span> esté a 1000 años con una edad
+real de 10000 años.</p></li>
+</ol>
+<p><br/><br/><br/><br/></p>
+</div>
+<div id="ejercicio-5" class="section level2">
+<h2><strong>Ejercicio 5</strong></h2>
+<p>Victor distribuye partes para motocicletas, y se estima que cada una
+de ellas tiene una probabilidad de <span
+class="math inline">\(0.03\)</span> de estar defectuosa. José tambien
+distribuye partes semejantes y su producto tiene una probabilidad de
+<span class="math inline">\(0.05\)</span> de estar defectuoso. Usted
+recibe un envío de <span class="math inline">\(100\)</span> partes
+procedente de cada vendedor (Victor y José).</p>
+<p><img src="img/moto.png" width="45%" style="display: block; margin: auto;" /></p>
+<ol style="list-style-type: lower-alpha">
+<li>Sea <span class="math inline">\(X\)</span> el número de partes
+defectuosas en el envío proveniente del almacén de Victor y <span
+class="math inline">\(Y\)</span> del número de partes defectuosas
+provenientes del almacén de José . ¿Cuáles son las distribuciones de las
+variables <span class="math inline">\(X\)</span> y <span
+class="math inline">\(Y\)</span>?</li>
+<li>Genere muestras simuladas de tamaño <span
+class="math inline">\(1000\)</span> a partir de las distribuciones de
+<span class="math inline">\(X\)</span> y <span
+class="math inline">\(Y\)</span>.</li>
+<li>Utilice las muestras para estimar la probabilidad de que el número
+total de partes defectuosas sea menor a diez.</li>
+<li>Utilice las muestras para estimar la probabilidad de que el envío de
+Victor tiene más partes defectuosas que el envío de José.</li>
+<li>Construya una gráfica de probabilidad normal para el número total de
+partes defectuosas. ¿La cantidad sigue una distribución normal?</li>
+</ol>
+<p><br/><br/></p>
+<p>Ejercicios tomados de Navidi(2006)</p>
+<p><br/><br/></p>
+</div>
+</div>
+<div id="asignación-de-problemas" class="section level1">
+<h1><strong>Asignación de problemas</strong></h1>
+<table>
+<colgroup>
+<col width="19%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="18%" />
+<col width="18%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">id</th>
+<th align="center">problema</th>
+<th align="center">id</th>
+<th align="center">problema</th>
+<th align="center">id</th>
+<th align="center">problema</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">#8942601</td>
+<td align="center">1</td>
+<td align="center">#8950623</td>
+<td align="center">4</td>
+<td align="center">#8959566</td>
+<td align="center">2</td>
+</tr>
+<tr class="even">
+<td align="right">#8943452</td>
+<td align="center">2</td>
+<td align="center">#8953986</td>
+<td align="center">5</td>
+<td align="center">#8960388</td>
+<td align="center">3</td>
+</tr>
+<tr class="odd">
+<td align="right">#8952608</td>
+<td align="center">3</td>
+<td align="center">#8956419</td>
+<td align="center">1</td>
+<td align="center">#8960737</td>
+<td align="center">4</td>
+</tr>
+<tr class="even">
+<td align="right">#8954056</td>
+<td align="center">4</td>
+<td align="center">#8956654</td>
+<td align="center">2</td>
+<td align="center">#8961366</td>
+<td align="center">5</td>
+</tr>
+<tr class="odd">
+<td align="right">#8955425</td>
+<td align="center">5</td>
+<td align="center">#8957862</td>
+<td align="center">3</td>
+<td align="center">#8962126</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="right">#8956583</td>
+<td align="center">1</td>
+<td align="center">#8957920</td>
+<td align="center">4</td>
+<td align="center">#8962328</td>
+<td align="center">2</td>
+</tr>
+<tr class="odd">
+<td align="right">#8956630</td>
+<td align="center">2</td>
+<td align="center">#8958068</td>
+<td align="center">5</td>
+<td align="center">#8962362</td>
+<td align="center">3</td>
+</tr>
+<tr class="even">
+<td align="right">#8959875</td>
+<td align="center">3</td>
+<td align="center">#8958098</td>
+<td align="center">1</td>
+<td align="center">#8963790</td>
+<td align="center">4</td>
+</tr>
+<tr class="odd">
+<td align="right">#8960928</td>
+<td align="center">4</td>
+<td align="center">#8958167</td>
+<td align="center">2</td>
+<td align="center">#8964251</td>
+<td align="center">5</td>
+</tr>
+<tr class="even">
+<td align="right">#8965113</td>
+<td align="center">5</td>
+<td align="center">#8958428</td>
+<td align="center">3</td>
+<td align="center">#8965006</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="right">#8935723</td>
+<td align="center">1</td>
+<td align="center">#8958434</td>
+<td align="center">4</td>
+<td align="center">#8967474</td>
+<td align="center">2</td>
+</tr>
+<tr class="even">
+<td align="right">#8935991</td>
+<td align="center">2</td>
+<td align="center">#8958636</td>
+<td align="center">5</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="right">#8949815</td>
+<td align="center">3</td>
+<td align="center">#8959024</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+</div>
 
 
 
