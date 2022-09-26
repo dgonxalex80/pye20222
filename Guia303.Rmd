@@ -75,7 +75,7 @@ Los documentos construidos por todos serán publicados en un blog para la revisi
 
 |                |                                                                         | 
 |:---------------|:------------------------------------------------------------------------|
-|[**Activiad 332**](https://dgonxalex80.github.io/pye20222/Actividad332.html) | De manera individual deberá resolver el problema asignado del [**taller de simulación**](https://dgonxalex80.github.io/probabilidad20212.io/Actividad332.html))  para ser resuelto con ayuda computacional. El resultado se debe publicar en **RPub**. Su enlace copiado en la **actividad 331** de la plataforma **Bs**                                         |
+|[**Activiad 332**](https://dgonxalex80.github.io/pye20222/Actividad332.html) | De manera individual deberá resolver el problema asignado del **taller de simulación**  para ser resuelto con ayuda computacional. El resultado se debe publicar en **RPub**. Su enlace copiado en la **actividad 331** de la plataforma **Bs**                                         |
 |               | Trabajo individual                                                      |
 |Fecha          | 3 de octubre                                                            |
 |Hora           | 23:59                                                                   |
