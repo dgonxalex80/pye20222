@@ -62,7 +62,8 @@ Para alcanzar los objetivos planteados se propone realizar las siguientes activi
 
 |Actividad        | Descripción                                                             | 
 |:----------------|:------------------------------------------------------------------------|
-|**Actividad 331**|**Artículo**                                                             |
+|[**Actividad 331**](https://dgonxalex80.github.io/pye20222/Actividad331.html)
+|**Artículo**                                                             |
 |                 | Paso 1: Construir un artículo enformato Rmd (Rmarkdown)  para el modelo asignado que contenga sus principales características   |
 |                 | Paso 2: Aportar al trabajo realizado por el compañero asignado por el profesor - **sep 30 de 2022**| 
 |Fecha            | **octubre 3 de 2022**                                                       |
@@ -74,7 +75,7 @@ Los documentos construidos por todos serán publicados en un blog para la revisi
 
 |                |                                                                         | 
 |:---------------|:------------------------------------------------------------------------|
-|**Activiad 332**| De manera individual deberá resolver el problema asignado del [**taller de simulación**](https://dgonxalex80.github.io/probabilidad20212.io/Actividad332.html))  para ser resuelto con ayuda computacional. El resultado se debe publicar en **RPub**. Su enlace copiado en la **actividad 331** de la plataforma **Bs**                                         |
+|[**Activiad 332**](https://dgonxalex80.github.io/pye20222/Actividad332.html) | De manera individual deberá resolver el problema asignado del [**taller de simulación**](https://dgonxalex80.github.io/probabilidad20212.io/Actividad332.html))  para ser resuelto con ayuda computacional. El resultado se debe publicar en **RPub**. Su enlace copiado en la **actividad 331** de la plataforma **Bs**                                         |
 |               | Trabajo individual                                                      |
 |Fecha          | 3 de octubre                                                            |
 |Hora           | 23:59                                                                   |
