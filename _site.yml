@@ -109,7 +109,12 @@ navbar:
           href: codigo303.html   
         - text: "---------"            
         - text: "Taller 311"
-          href: Talller311.html           
+          href: Talller311.html   
+        - text: "---------"                
+        - text: "Actividad 331"
+          href: Actividad331.html 
+        - text: "Actividad 332"
+          href: Actividad332.html           
     - text: "Módulo 4"
       menu:
         - text: "Módulo 4"
