@@ -14,7 +14,7 @@
 
 <title> Código 3.3</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -148,11 +148,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -501,6 +505,13 @@ div.tocify {
     <li class="divider"></li>
     <li>
       <a href="Talller311.html">Taller 311</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="Actividad331.html">Actividad 331</a>
+    </li>
+    <li>
+      <a href="Actividad332.html">Actividad 332</a>
     </li>
   </ul>
 </li>
@@ -913,7 +924,7 @@ data.frame(x,fx,Fx)        # construye tabla</code></pre>
 <li>Generar 15 números aleatorios a partir de esta distribución</li>
 </ol>
 <pre class="r"><code>rbinom(15,20,0.30)</code></pre>
-<pre><code> [1]  3  7  8  7  7  6  4  5  2  9  6  8  5  8 11</code></pre>
+<pre><code> [1]  5 11  3 10  5  6  7  6  8  6  8  1  5  2  8</code></pre>
 <p><br/></p>
 <ol start="5" style="list-style-type: decimal">
 <li>Construir la gráfica de la función de distribución de probabilidad
@@ -989,8 +1000,8 @@ class="math inline">\(P(X&gt;70)\)</span></li>
 class="math inline">\(X\)</span></li>
 </ol>
 <pre class="r"><code>rnorm(10,70,sqrt(100))</code></pre>
-<pre><code> [1] 68.73036 57.29933 68.56743 79.02103 70.22671 75.23284 46.31879 58.01913
- [9] 92.83832 66.32227</code></pre>
+<pre><code> [1] 74.73086 57.96915 88.60153 70.83066 85.54537 65.19727 76.64268 82.39180
+ [9] 56.21193 77.39401</code></pre>
 <p><br/></p>
 <ol start="4" style="list-style-type: decimal">
 <li>Generar la gráfica de la función de densidad de la variable <span
@@ -1089,19 +1100,19 @@ N: 1000
 
                       value
 ----------------- ---------
-             Mean      6.00
+             Mean      6.01
           Std.Dev      0.51
-              Min      4.51
+              Min      4.47
                Q1      5.65
-           Median      6.00
-               Q3      6.34
-              Max      7.67
+           Median      6.01
+               Q3      6.33
+              Max      8.30
               MAD      0.51
-              IQR      0.69
-               CV      0.09
-         Skewness      0.12
+              IQR      0.68
+               CV      0.08
+         Skewness      0.19
       SE.Skewness      0.08
-         Kurtosis     -0.04
+         Kurtosis      0.34
           N.Valid   1000.00
         Pct.Valid    100.00</code></pre>
 </div>

@@ -681,16 +681,23 @@ A continuación el código para el mapa de Cali sin información
 
 ### **Mapa de Cali** 
 
-```{r, warning=FALSE, message=FALSE}
-require(sp)
-require(rgdal)
-require(raster)
+```{r, eval=FALSE}
+# require(sp)
+# require(rgdal)
+# require(raster)
 
-cali=shapefile("map/cali/cali.shp")  # importa mapa en formato .shp
-plot(cali)                      # gráfico de Cali
+# cali=shapefile("map/cali/cali.shp")  # importa mapa en formato .shp
+# plot(cali)                      # gráfico de Cali
 
 ```
  <br/>
+ 
+ 
+```{r map1, echo=FALSE, out.width="40%", fig.align = "center"}
+knitr::include_graphics("img/mapCali.png")
+```
+
+
  
 ### **Mapa de Cali con indice**
  
@@ -700,11 +707,16 @@ En el caso de Cali tiene 22 comunas se adiciona un vector con 22 valores con el 
  
 <br/><br/>
 
-```{r, warning=FALSE, message=FALSE}
-cali=shapefile("map/cali/cali.shp")  # importa mapa en formato .shp
-cali@data$indice=rnorm(22)      # se genera variable a ilustrar
-spplot(cali[,21], palette = "BuGn") 
+```{r, eval=FALSE}
+# cali=shapefile("map/cali/cali.shp")  # importa mapa en formato .shp
+# cali@data$indice=rnorm(22)      # se genera variable a ilustrar
+# spplot(cali[,21], palette = "BuGn") 
 ```
+
+```{r map2, echo=FALSE, out.width="40%", fig.align = "center"}
+knitr::include_graphics("img/mapCali2.png")
+```
+
 <br/><br/>
 
 ### **Mapa de Colombia**
@@ -712,22 +724,28 @@ spplot(cali[,21], palette = "BuGn")
 Para el caso de Colombia se obtiene el archivo depto.shp que contiene la información de Colombia por departamentos (33)
 
 <br/><br/>
-```{r, warning=FALSE, message=FALSE}
-require(sp)
-require(rgdal)
-require(raster)
+```{r, eval=FALSE}
+# require(sp)
+# require(rgdal)
+# require(raster)
 
-mapco=shapefile("map/colombia/depto.shp")  # importa mapa en formato .shp
-plot(mapco)                      # gráfico de Colombia
+# mapco=shapefile("map/colombia/depto.shp")  # importa mapa en formato .shp
+# plot(mapco)                      # gráfico de Colombia
 
 ```
 <br/>
+
+
+```{r map3, echo=FALSE, out.width="40%", fig.align = "center"}
+knitr::include_graphics("img/mapColombia.png")
+```
+
 Para representar información en el mapa seden ingresar una vector con 33 valores, igual numero de departamentos en el mismo orden en que se encuentran los nombre de los departamento en el archivo mapco
 
 <br/>
 
 ```{r}
-mapco$NOMBRE_DPT
+# mapco$NOMBRE_DPT
 ```
 <br/>
 
@@ -739,33 +757,36 @@ De la base de datos abiertos Colombia se obtiene la siguiente información corre
 # colombia=readRDS("data/Colombia.RDS")
 # colombia$departamento_nom= str_to_upper(colombia$departamento_nom)
 # t=table(colombia$departamento_nom,colombia$estado)
-fallecidos=c(15174,3876,26516,807,2417,2151,880,1333,2388,3487,6495,382,2880,
-             1296,1380,2076,2861,3961,1635,2119,6934,1546,3411,11929,400,844,
-             620,249,29,87,17,45,133)
+# fallecidos=c(15174,3876,26516,807,2417,2151,880,1333,2388,3487,6495,382,2880,
+#             1296,1380,2076,2861,3961,1635,2119,6934,1546,3411,11929,400,844,
+#             620,249,29,87,17,45,133)
 ```
  
 
 <br/><br/>
 
-```{r, warning=FALSE, message=FALSE}
-require(sp)
-require(rgdal)
-require(raster)
-require(RColorBrewer)
+```{r }
+# require(sp)
+# require(rgdal)
+# require(raster)
+# require(RColorBrewer)
 
-mi.palette <- brewer.pal(n = 7, name = "OrRd")   # paleta de colores
-mapco=shapefile("map/colombia/depto.shp")  # importa mapa en formato .shp
+# mi.palette <- brewer.pal(n = 7, name = "OrRd")   # paleta de colores
+# mapco=shapefile("map/colombia/depto.shp")  # importa mapa en formato .shp
 # colombia=readRDS("data/Colombia.RDS")
 # colombia$departamento_nom= str_to_upper(colombia$departamento_nom)
 # t=table(colombia$departamento_nom,colombia$estado)
-fallecidos=c(15174,3876,26516,807,2417,2151,880,1333,2388,3487,6495,382,2880,
-             1296,1380,2076,2861,3961,1635,2119,6934,1546,3411,11929,400,844,
-             620,249,29,87,17,45,133) # vector con información
-mapco@data$fallecidos=fallecidos # se adiciona variable con 33 valores = 33 dptos, en mismo orden
-spplot(mapco[,6], col.regions = mi.palette, cuts = 6)  # mapa
+# fallecidos=c(15174,3876,26516,807,2417,2151,880,1333,2388,3487,6495,382,2880,
+#             1296,1380,2076,2861,3961,1635,2119,6934,1546,3411,11929,400,844,
+#             620,249,29,87,17,45,133) # vector con información
+# mapco@data$fallecidos=fallecidos # se adiciona variable con 33 valores = 33 dptos, en mismo orden
+# spplot(mapco[,6], col.regions = mi.palette, cuts = 6)  # mapa
 ```
 
 
+```{r map4, echo=FALSE, out.width="40%", fig.align = "center"}
+knitr::include_graphics("img/mapColombia2.png")
+```
 <br/><br/>
 
 
@@ -858,7 +879,7 @@ Este paquete permite la construcción de tableros que pueden ser publicados en f
 
 Iniciaremos cargando el paquete (por una única vez)
 ```{r, eval=FALSE, message=FALSE, warning=FALSE}
-install.packages("flexdashboard")
+# install.packages("flexdashboard")
 ```
 
 Tambien debemos activarlo, aunque este procedimiento viene en el formato que nos proporciona RStudio 

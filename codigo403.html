@@ -14,7 +14,7 @@
 
 <title> Código 4.3</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -148,11 +148,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -502,6 +506,13 @@ div.tocify {
     <li>
       <a href="Talller311.html">Taller 311</a>
     </li>
+    <li class="divider"></li>
+    <li>
+      <a href="Actividad331.html">Actividad 331</a>
+    </li>
+    <li>
+      <a href="Actividad332.html">Actividad 332</a>
+    </li>
   </ul>
 </li>
 <li class="dropdown">
@@ -664,7 +675,7 @@ class="math inline">\(X no \sim norm\)</span></td>
     Shapiro-Wilk normality test
 
 data:  w
-W = 0.98899, p-value = 0.5835</code></pre>
+W = 0.98977, p-value = 0.6463</code></pre>
 <p><br/><br/><br/></p>
 <p><strong>Prueba de hipótesis para una media</strong></p>
 <p><br/></p>
@@ -686,13 +697,13 @@ class="math inline">\(\sigma^{2}=4\)</span>)</td>
     One-sample z-Test
 
 data:  w
-z = -1.7047, p-value = 0.08826
+z = -1.013, p-value = 0.3111
 alternative hypothesis: true mean is not equal to 1000
 95 percent confidence interval:
-  999.2671 1000.0511
+  999.4054 1000.1894
 sample estimates:
 mean of x 
- 999.6591 </code></pre>
+ 999.7974 </code></pre>
 <p><br/><br/><br/></p>
 <div id="prueba-de-hipótesis-para-una-media" class="section level3">
 <h3><strong>Prueba de hipótesis para una media</strong></h3>
@@ -1100,7 +1111,7 @@ plot(density(x), las=1)</code></pre>
     Shapiro-Wilk normality test
 
 data:  x
-W = 0.98894, p-value = 0.1248</code></pre>
+W = 0.99139, p-value = 0.2827</code></pre>
 <p>Esta prueba no requiere la instalación de paquetes adicionales, está
 disponible en la configuración básica de R</p>
 <p><br/><br/></p>
@@ -1116,7 +1127,7 @@ disponible en la configuración básica de R</p>
     Adjusted Jarque-Bera test for normality
 
 data:  x
-AJB = 1.295, p-value = 0.503</code></pre>
+AJB = 1.0233, p-value = 0.5815</code></pre>
 <p><br/><br/></p>
 <p><strong>Frosini</strong></p>
 <pre class="r"><code>frosini.norm.test(x)    </code></pre>
@@ -1124,7 +1135,7 @@ AJB = 1.295, p-value = 0.503</code></pre>
     Frosini test for normality
 
 data:  x
-B = 0.25141, p-value = 0.122</code></pre>
+B = 0.1891, p-value = 0.4245</code></pre>
 <p><br/><br/></p>
 <p><strong>Geary</strong></p>
 <pre class="r"><code>geary.norm.test(x)  </code></pre>
@@ -1132,7 +1143,7 @@ B = 0.25141, p-value = 0.122</code></pre>
     Geary test for normality
 
 data:  x
-d = 0.78597, p-value = 0.8095</code></pre>
+d = 0.79366, p-value = 0.6365</code></pre>
 <p><br/><br/></p>
 <p><strong>Hagazy-Green 1</strong></p>
 <pre class="r"><code>hegazy1.norm.test(x)    </code></pre>
@@ -1140,7 +1151,7 @@ d = 0.78597, p-value = 0.8095</code></pre>
     Hegazy-Green test for normality
 
 data:  x
-T = 0.073231, p-value = 0.131</code></pre>
+T = 0.060124, p-value = 0.372</code></pre>
 <p><br/></p>
 <p><strong>Hagazy-Green 2</strong></p>
 <pre class="r"><code>hegazy2.norm.test(x)</code></pre>
@@ -1148,7 +1159,7 @@ T = 0.073231, p-value = 0.131</code></pre>
     Hegazy-Green test for normality
 
 data:  x
-T = 0.0094281, p-value = 0.243</code></pre>
+T = 0.0067515, p-value = 0.5045</code></pre>
 <p><br/><br/></p>
 <p><strong>Jarque-Bera</strong></p>
 <pre class="r"><code>jb.norm.test(x) </code></pre>
@@ -1156,7 +1167,7 @@ T = 0.0094281, p-value = 0.243</code></pre>
     Jarque-Bera test for normality
 
 data:  x
-JB = 1.3594, p-value = 0.4675</code></pre>
+JB = 1.1102, p-value = 0.528</code></pre>
 <p><br/><br/></p>
 <p><strong>de kurtosis</strong></p>
 <pre class="r"><code>kurtosis.norm.test(x)</code></pre>
@@ -1164,7 +1175,7 @@ JB = 1.3594, p-value = 0.4675</code></pre>
     Kurtosis test for normality
 
 data:  x
-T = 2.7373, p-value = 0.4145</code></pre>
+T = 2.6889, p-value = 0.324</code></pre>
 <p><br/><br/></p>
 <p><strong>de sesgo</strong></p>
 <pre class="r"><code>skewness.norm.test(x)   </code></pre>
@@ -1172,7 +1183,7 @@ T = 2.7373, p-value = 0.4145</code></pre>
     Skewness test for normality
 
 data:  x
-T = -0.15339, p-value = 0.3605</code></pre>
+T = -0.095438, p-value = 0.557</code></pre>
 <p><br/><br/></p>
 <p><strong>Spiegelhalter</strong></p>
 <pre class="r"><code>spiegelhalter.norm.test(x)  </code></pre>
@@ -1180,7 +1191,7 @@ T = -0.15339, p-value = 0.3605</code></pre>
     Spiegelhalter test for normality
 
 data:  x
-T = 1.2723, p-value = 0.1955</code></pre>
+T = 1.26, p-value = 0.367</code></pre>
 <p><br/><br/></p>
 <p><strong>Weisberg-Bingham</strong></p>
 <pre class="r"><code>wb.norm.test(x) </code></pre>
@@ -1188,7 +1199,7 @@ T = 1.2723, p-value = 0.1955</code></pre>
     Weisberg-Bingham test for normality
 
 data:  x
-WB = 0.9903, p-value = 0.1665</code></pre>
+WB = 0.99289, p-value = 0.3735</code></pre>
 <p><br/><br/><br/></p>
 <div id="paquete-nortest" class="section level3">
 <h3><strong>Paquete nortest</strong></h3>
@@ -1203,7 +1214,7 @@ WB = 0.9903, p-value = 0.1665</code></pre>
     Anderson-Darling normality test
 
 data:  x
-A = 0.68052, p-value = 0.07446</code></pre>
+A = 0.43913, p-value = 0.2904</code></pre>
 <p><br/></p>
 <p><strong>Cramer-von Mises</strong></p>
 <pre class="r"><code>cvm.test(x)</code></pre>
@@ -1211,7 +1222,7 @@ A = 0.68052, p-value = 0.07446</code></pre>
     Cramer-von Mises normality test
 
 data:  x
-W = 0.096014, p-value = 0.1267</code></pre>
+W = 0.054509, p-value = 0.4451</code></pre>
 <p><br/></p>
 <p><strong>Lilliefors (Kolmogorov-Smirnov)</strong></p>
 <pre class="r"><code>lillie.test(x)</code></pre>
@@ -1219,7 +1230,7 @@ W = 0.096014, p-value = 0.1267</code></pre>
     Lilliefors (Kolmogorov-Smirnov) normality test
 
 data:  x
-D = 0.053148, p-value = 0.1826</code></pre>
+D = 0.041203, p-value = 0.5591</code></pre>
 <p><br/></p>
 <p><strong>chi-cuadrado de Pearson</strong></p>
 <pre class="r"><code>pearson.test(x)</code></pre>
@@ -1227,7 +1238,7 @@ D = 0.053148, p-value = 0.1826</code></pre>
     Pearson chi-square normality test
 
 data:  x
-P = 23.21, p-value = 0.05694</code></pre>
+P = 10.63, p-value = 0.7148</code></pre>
 <p><br/></p>
 <p><strong>Shapiro-Francia</strong></p>
 <pre class="r"><code>sf.test(x)</code></pre>
@@ -1235,7 +1246,7 @@ P = 23.21, p-value = 0.05694</code></pre>
     Shapiro-Francia normality test
 
 data:  x
-W = 0.9903, p-value = 0.1722</code></pre>
+W = 0.99289, p-value = 0.381</code></pre>
 <p>En todos los casos se presenta un valor-p grande por lo cual no se
 rechaza <span class="math inline">\(Ho\)</span>, asumimos que <span
 class="math inline">\(Ho\)</span> es verdad. Asumimos que la
