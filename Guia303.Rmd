@@ -64,8 +64,8 @@ Para alcanzar los objetivos planteados se propone realizar las siguientes activi
 |:----------------|:------------------------------------------------------------------------|
 |**Actividad 331**|**Artículo**                                                             |
 |                 | Paso 1: Construir un artículo enformato Rmd (Rmarkdown)  para el modelo asignado que contenga sus principales características   |
-|                 | Paso 2: Aportar al trabajo realizado por el compañero asignado por el profesor - sep 30| 
-|Fecha            | octubre 3 de 2022                                                       |
+|                 | Paso 2: Aportar al trabajo realizado por el compañero asignado por el profesor - **sep 30 de 2022**| 
+|Fecha            | **octubre 3 de 2022**                                                       |
 |Hora             | 23:59                                                                   |
 
 Los documentos construidos por todos serán publicados en un blog para la revisión de todos
@@ -76,7 +76,7 @@ Los documentos construidos por todos serán publicados en un blog para la revisi
 |:---------------|:------------------------------------------------------------------------|
 |**Activiad 332**| De manera individual deberá resolver el problema asignado del [**taller de simulación**](https://dgonxalex80.github.io/probabilidad20212.io/Actividad332.html))  para ser resuelto con ayuda computacional. El resultado se debe publicar en **RPub**. Su enlace copiado en la **actividad 331** de la plataforma **Bs**                                         |
 |               | Trabajo individual                                                      |
-|Fecha          | 2 de octubre                                                            |
+|Fecha          | 3 de octubre                                                            |
 |Hora           | 23:59                                                                   |
 
 <br/><br/>
@@ -102,7 +102,8 @@ Los documentos construidos por todos serán publicados en un blog para la revisi
 |:--------------|:---------------------------------|
 |Actividad 331  | carpeta con archivos Rmd, html  e imagenes  en un solo archivo zip (se debe utilizar el paquete distill de R para generar la plantilla) |
 |Actividad 332  | enlace de Rmd publicado en **RPub** con el desarrollo del prolema asignado |
-| Fecha         | Domingo 3 de abril  de 2022      |
+|               |                                  |
+| Fecha         | Lunes 3  de octubre  de 2022      |
 | Hora límite   | 23:59  hora  local               |
 
 <br/><br/><br/><br/>
