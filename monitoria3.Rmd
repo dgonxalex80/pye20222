@@ -203,7 +203,7 @@ Determine:
 + $P(X \leq 2)$
 + $P(X > 3)$
 + $P(-1 \leq X \leq 1)$
-+ $P(X < 3.5 o X > 4.5)$
++ $P(X < 3.5 ; X > 4.5)$
 + El valor de $Me$
 
 <br/><br/>
@@ -246,6 +246,12 @@ $$F_{_{X}}(x) = \left \{
 Determine: 
 
 + $P(X < 2.8)$
+
+```{r}
+Fx=function(x){0.2*x }
+Fx(2.8)
+```
+
 + $P(X > 1.5)$
 + $P(X < -2)$
 + Determine $f_{_{X}}(x)$
@@ -477,10 +483,12 @@ d. Doscientos paquetes seleccionados aleatoriamente contienen cinco kilogramos d
 [**Solución Taller 322**](https://github.com/dgonzalez80/pye20221.io/blob/main/talleres/Solucion_Taller322.pdf)
 
 
+<br/><br/><br/>
+
 # **Ejercicios U3.3**
 
+<br/><br/>
 
-<br/><br/><br/>
 
 ## <span style="color:#104E8B">**Taller 331**</span>
 
@@ -497,6 +505,10 @@ a. $P(X = 2)$
 $$P(X=5) = \displaystyle\binom{10}{5} 0.2^{5} (1-0.2)^{10-5}$$
 
 ```{r}
+# dbinom(x,     # valor de x
+#        size,  # tamaño 
+#        prob)  # probabilidad de exito
+
 dbinom(5,10,0.2)
 ```
 
@@ -554,6 +566,14 @@ abline(v = 1:10,  lty = 2, col = "grey")
 **2. Modelo geometrico**  Sea una variable geométrica $X \sim geomn,(x,p=0.05)$ . Determine :
 
 a. $P(X = 1)$
+
+```{r}
+# dgeom(x,    # valor de x
+#       prob) # probabilidad de exito
+
+dgeom(1,0.05)
+```
+
 	
 b. $P(X \leq 2)$
 	
@@ -568,6 +588,17 @@ e. Construya la gráfica de $f(x)$
 **3. Modelo hipergeometrico** Suponga que $X$ tiene una distribución hipergeometrica con $N=100$, $n=4$ y $K=20$. ($X\sim hyper(x,N=100,n=4,k=20)$) Determine:
 
 a. $P(X = 1)$
+
+```{r}
+# dhyper(x,   # valor de x 
+#        m,   # casos existoros : k = 20
+#        n,   # casos no exitosos : N-k = 80 
+#        k)   # muestra que se extrae  :n = 4 
+# m+n = N : total de la urna  : 100
+#       
+dhyper(1, m=20, n=80, k=4 )
+```
+
 	
 b. $P(X = 6)$
 	
@@ -582,6 +613,13 @@ e. Construya la gráfica de $f(x)$
 **4. Modelo Poisson** Suponga que $X$ tiene una distribución Poisson con media $lambda=4$ ($X \sim pois(x,lambda=4)$). Determine:	
 
 a. $P(X = 0)$
+
+```{r}
+#  dpois(x,       # valor de x
+#        lambda)  # media o lambda
+dpois(0,4)
+```
+
 	
 b. $P(X = 4)$
 	
@@ -593,9 +631,18 @@ e. Construya la gráfica de $f(x)$
 
 <br/><br/>
 
-**5. Modelo binomial negativo** Sea la variable $X$ con distribución binomial negativa con $N=100$ , $K=20$, $n=5$ ($X\sim nbinom(x,n,p,mu)$ ).	Determine:
+**5. Modelo binomial negativo** Sea la variable $X$ con distribución binomial negativa con $p=0.20$ y $k=3$, $n=5$.	Determine:
 	
-a. $P(X = 0)$
+a. $P(X = 3)$
+
+```{r}
+# dnbinom(x,     # valor de x
+#         size,  # numero de exitos requeridos
+#         prob)  # probabilidad de exito
+
+dnbinom(3,3,0.20)
+```
+
 	
 b. $P(X = 6)$
 	
@@ -699,13 +746,19 @@ e. $E[X] $ y $V[X]$.
 
 a.  A la derecha de z = - 0.85. 
 
+```{r}
+pnorm(-0.85, lower.tail = FALSE)
+1-pnorm(-0.85)
+```
+
+
 b.Entre z = 0.40 y z = 1.30.  
 
 c. Entre z = -0.30 y z = 0.90. 
 
 d.  Desde z = -1.50 hasta z = -0.45.
 
-Nota: en cada caso realice un  bosquejo del área que representa la probabilidad
+**Nota**: en cada caso realice un  bosquejo del área que representa la probabilidad
 
 <br/><br/>
 
@@ -727,7 +780,12 @@ Nota: En cada caso represente gráficamente los valores solicitados
 
 a. Realice un bosquejo de la gráfica de la función de  densidad de probabilidad de $X$
 
-b. $P(X \leq 100)$. 
+b. $P(X \leq 130)$.
+
+```{r}
+pnorm(130, 150, 10)
+```
+
 
 c. $P(300 \leq X \leq 400)$.
 
@@ -741,7 +799,12 @@ f. Determine el valor de $k$ que cumpla : $P(-k < X < k)= 0.95$.
 
 **5. Modelo exponencial** Sea $X$ una variable aleatoria con distribución exponencial . ($X\sim exp(\lambda=2)$). Determine:
 
-a. $P(X \leq 0)$.
+a. $P(X \leq 1)$.
+
+```{r}
+pexp(1,2)
+```
+
 
 b. $P(X \geq 2)$.
 
@@ -858,6 +921,11 @@ h. $P(-2 < Z < 2)$
 **2.** Asuma que $Z$ tiene una distribución normal estándar. Determine el valor de $z$ para las siguientes probabilidades:
 
 a. $P(Z < z) = 0.90$
+
+```{r}
+qnorm(0.90)
+```
+
 
 b. $P(Z < z ) = 0.50$
 

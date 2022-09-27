@@ -303,9 +303,9 @@ Como ejemplo se presentan los siguientes problemas tomados de Navidi.
 
 <br/><br/>
 
-## **Ejemplo 3** 
-
-Se fabrican placas rectangulares cuyas longitudes en pulgadas se distribuyen como $N(2.0; 0.01)$ y cuyos anchos se distribuyen $N(3.0; 0.04)$. Suponga que las longitudes y los anchos son independientes. El área de una placa esta dada por $A=XY$.
+|    |                                     |
+|:--:|:------------------------------------|
+| ![](img/ej3.png) | Se fabrican placas rectangulares cuyas longitudes en pulgadas se distribuyen como $N(2.0; 0.01)$ y cuyos anchos se distribuyen $N(3.0; 0.04)$. Suponga que las longitudes y los anchos son independientes. El área de una placa esta dada por $A=XY$. |
 
 ![](img\lamina.png) 
 
@@ -337,6 +337,9 @@ Problema 3 capitulo 4 Navidi(2006)
 ```{r}
 summarytools::descr(A2)
 ```
+
+<br/><br/><br/>
+
 
 # **App Probability Distributions** 
 

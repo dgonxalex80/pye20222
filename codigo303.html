@@ -924,7 +924,7 @@ data.frame(x,fx,Fx)        # construye tabla</code></pre>
 <li>Generar 15 números aleatorios a partir de esta distribución</li>
 </ol>
 <pre class="r"><code>rbinom(15,20,0.30)</code></pre>
-<pre><code> [1]  5 11  3 10  5  6  7  6  8  6  8  1  5  2  8</code></pre>
+<pre><code> [1] 7 6 8 8 8 5 3 5 6 7 6 9 4 6 5</code></pre>
 <p><br/></p>
 <ol start="5" style="list-style-type: decimal">
 <li>Construir la gráfica de la función de distribución de probabilidad
@@ -1000,8 +1000,8 @@ class="math inline">\(P(X&gt;70)\)</span></li>
 class="math inline">\(X\)</span></li>
 </ol>
 <pre class="r"><code>rnorm(10,70,sqrt(100))</code></pre>
-<pre><code> [1] 74.73086 57.96915 88.60153 70.83066 85.54537 65.19727 76.64268 82.39180
- [9] 56.21193 77.39401</code></pre>
+<pre><code> [1] 65.81286 69.32513 69.16649 84.96722 65.10824 72.15520 70.01085 81.73604
+ [9] 63.06546 81.22367</code></pre>
 <p><br/></p>
 <ol start="4" style="list-style-type: decimal">
 <li>Generar la gráfica de la función de densidad de la variable <span
@@ -1059,14 +1059,23 @@ comportamiento eminentemente aleatorio.<br />
 <p>Como ejemplo se presentan los siguientes problemas tomados de
 Navidi.</p>
 <p><br/><br/></p>
-<div id="ejemplo-3" class="section level2">
-<h2><strong>Ejemplo 3</strong></h2>
-<p>Se fabrican placas rectangulares cuyas longitudes en pulgadas se
-distribuyen como <span class="math inline">\(N(2.0; 0.01)\)</span> y
-cuyos anchos se distribuyen <span class="math inline">\(N(3.0;
-0.04)\)</span>. Suponga que las longitudes y los anchos son
-independientes. El área de una placa esta dada por <span
-class="math inline">\(A=XY\)</span>.</p>
+<table>
+<colgroup>
+<col width="9%" />
+<col width="90%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="center"><img src="img/ej3.png" /></td>
+<td align="left">Se fabrican placas rectangulares cuyas longitudes en
+pulgadas se distribuyen como <span class="math inline">\(N(2.0;
+0.01)\)</span> y cuyos anchos se distribuyen <span
+class="math inline">\(N(3.0; 0.04)\)</span>. Suponga que las longitudes
+y los anchos son independientes. El área de una placa esta dada por
+<span class="math inline">\(A=XY\)</span>.</td>
+</tr>
+</tbody>
+</table>
 <p><img src="img\lamina.png" /></p>
 <ol style="list-style-type: lower-alpha">
 <li><p>Utilice una muestra simulada de tamaño <span
@@ -1100,22 +1109,22 @@ N: 1000
 
                       value
 ----------------- ---------
-             Mean      6.01
-          Std.Dev      0.51
-              Min      4.47
-               Q1      5.65
-           Median      6.01
-               Q3      6.33
-              Max      8.30
-              MAD      0.51
-              IQR      0.68
+             Mean      5.99
+          Std.Dev      0.48
+              Min      4.53
+               Q1      5.68
+           Median      5.99
+               Q3      6.31
+              Max      7.98
+              MAD      0.47
+              IQR      0.63
                CV      0.08
-         Skewness      0.19
+         Skewness     -0.03
       SE.Skewness      0.08
-         Kurtosis      0.34
+         Kurtosis      0.07
           N.Valid   1000.00
         Pct.Valid    100.00</code></pre>
-</div>
+<p><br/><br/><br/></p>
 </div>
 <div id="app-probability-distributions" class="section level1">
 <h1><strong>App Probability Distributions</strong></h1>

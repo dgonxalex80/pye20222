@@ -872,7 +872,7 @@ función de distribución de probabilidad :</p>
 <li><span class="math inline">\(P(X \leq 2)\)</span></li>
 <li><span class="math inline">\(P(X &gt; 3)\)</span></li>
 <li><span class="math inline">\(P(-1 \leq X \leq 1)\)</span></li>
-<li><span class="math inline">\(P(X &lt; 3.5 o X &gt; 4.5)\)</span></li>
+<li><span class="math inline">\(P(X &lt; 3.5 ; X &gt; 4.5)\)</span></li>
 <li>El valor de <span class="math inline">\(Me\)</span></li>
 </ul>
 <p><br/><br/></p>
@@ -912,6 +912,11 @@ tiene una función de probabilidad acumulada:</p>
 <p>Determine:</p>
 <ul>
 <li><span class="math inline">\(P(X &lt; 2.8)\)</span></li>
+</ul>
+<pre class="r"><code>Fx=function(x){0.2*x }
+Fx(2.8)</code></pre>
+<pre><code>[1] 0.56</code></pre>
+<ul>
 <li><span class="math inline">\(P(X &gt; 1.5)\)</span></li>
 <li><span class="math inline">\(P(X &lt; -2)\)</span></li>
 <li>Determine <span class="math inline">\(f_{_{X}}(x)\)</span></li>
@@ -1236,11 +1241,12 @@ kilogramos de maní?</p></li>
 <p><a
 href="https://github.com/dgonzalez80/pye20221.io/blob/main/talleres/Solucion_Taller322.pdf"><strong>Solución
 Taller 322</strong></a></p>
+<p><br/><br/><br/></p>
 </div>
 </div>
 <div id="ejercicios-u3.3" class="section level1">
 <h1><strong>Ejercicios U3.3</strong></h1>
-<p><br/><br/><br/></p>
+<p><br/><br/></p>
 <div id="taller-331" class="section level2">
 <h2><span style="color:#104E8B"><strong>Taller 331</strong></span></h2>
 <p><br/><br/></p>
@@ -1256,7 +1262,11 @@ p=0.2)\)</span> Determine:</p>
 </ol>
 <p><span class="math display">\[P(X=5) = \displaystyle\binom{10}{5}
 0.2^{5} (1-0.2)^{10-5}\]</span></p>
-<pre class="r"><code>dbinom(5,10,0.2)</code></pre>
+<pre class="r"><code># dbinom(x,     # valor de x
+#        size,  # tamaño 
+#        prob)  # probabilidad de exito
+
+dbinom(5,10,0.2)</code></pre>
 <pre><code>[1] 0.02642412</code></pre>
 <p><br/><br/></p>
 <ol start="2" style="list-style-type: lower-alpha">
@@ -1295,13 +1305,20 @@ plot(x,fx,
      pch=19) 
 grid()
 abline(v = 1:10,  lty = 2, col = &quot;grey&quot;)</code></pre>
-<p><img src="monitoria3_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><img src="monitoria3_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <p><br/><br/></p>
 <p><strong>2. Modelo geometrico</strong> Sea una variable geométrica
 <span class="math inline">\(X \sim geomn,(x,p=0.05)\)</span> . Determine
 :</p>
 <ol style="list-style-type: lower-alpha">
-<li><p><span class="math inline">\(P(X = 1)\)</span></p></li>
+<li><span class="math inline">\(P(X = 1)\)</span></li>
+</ol>
+<pre class="r"><code># dgeom(x,    # valor de x
+#       prob) # probabilidad de exito
+
+dgeom(1,0.05)</code></pre>
+<pre><code>[1] 0.0475</code></pre>
+<ol start="2" style="list-style-type: lower-alpha">
 <li><p><span class="math inline">\(P(X \leq 2)\)</span></p></li>
 <li><p><span class="math inline">\(P(X = 8)\)</span></p></li>
 <li><p><span class="math inline">\(P(X \geq 2)\)</span></p></li>
@@ -1316,7 +1333,17 @@ class="math inline">\(n=4\)</span> y <span
 class="math inline">\(K=20\)</span>. (<span class="math inline">\(X\sim
 hyper(x,N=100,n=4,k=20)\)</span>) Determine:</p>
 <ol style="list-style-type: lower-alpha">
-<li><p><span class="math inline">\(P(X = 1)\)</span></p></li>
+<li><span class="math inline">\(P(X = 1)\)</span></li>
+</ol>
+<pre class="r"><code># dhyper(x,   # valor de x 
+#        m,   # casos existoros : k = 20
+#        n,   # casos no exitosos : N-k = 80 
+#        k)   # muestra que se extrae  :n = 4 
+# m+n = N : total de la urna  : 100
+#       
+dhyper(1, m=20, n=80, k=4 )</code></pre>
+<pre><code>[1] 0.4190527</code></pre>
+<ol start="2" style="list-style-type: lower-alpha">
 <li><p><span class="math inline">\(P(X = 6)\)</span></p></li>
 <li><p><span class="math inline">\(P(X \geq 1)\)</span></p></li>
 <li><p><span class="math inline">\(P(X = 4)\)</span></p></li>
@@ -1329,7 +1356,13 @@ class="math inline">\(X\)</span> tiene una distribución Poisson con
 media <span class="math inline">\(lambda=4\)</span> (<span
 class="math inline">\(X \sim pois(x,lambda=4)\)</span>). Determine:</p>
 <ol style="list-style-type: lower-alpha">
-<li><p><span class="math inline">\(P(X = 0)\)</span></p></li>
+<li><span class="math inline">\(P(X = 0)\)</span></li>
+</ol>
+<pre class="r"><code>#  dpois(x,       # valor de x
+#        lambda)  # media o lambda
+dpois(0,4)</code></pre>
+<pre><code>[1] 0.01831564</code></pre>
+<ol start="2" style="list-style-type: lower-alpha">
 <li><p><span class="math inline">\(P(X = 4)\)</span></p></li>
 <li><p><span class="math inline">\(P(X \geq 2)\)</span></p></li>
 <li><p><span class="math inline">\(P(X \leq 2)\)</span></p></li>
@@ -1339,12 +1372,19 @@ class="math inline">\(f(x)\)</span></p></li>
 <p><br/><br/></p>
 <p><strong>5. Modelo binomial negativo</strong> Sea la variable <span
 class="math inline">\(X\)</span> con distribución binomial negativa con
-<span class="math inline">\(N=100\)</span> , <span
-class="math inline">\(K=20\)</span>, <span
-class="math inline">\(n=5\)</span> (<span class="math inline">\(X\sim
-nbinom(x,n,p,mu)\)</span> ). Determine:</p>
+<span class="math inline">\(p=0.20\)</span> y <span
+class="math inline">\(k=3\)</span>, <span
+class="math inline">\(n=5\)</span>. Determine:</p>
 <ol style="list-style-type: lower-alpha">
-<li><p><span class="math inline">\(P(X = 0)\)</span></p></li>
+<li><span class="math inline">\(P(X = 3)\)</span></li>
+</ol>
+<pre class="r"><code># dnbinom(x,     # valor de x
+#         size,  # numero de exitos requeridos
+#         prob)  # probabilidad de exito
+
+dnbinom(3,3,0.20)</code></pre>
+<pre><code>[1] 0.04096</code></pre>
+<ol start="2" style="list-style-type: lower-alpha">
 <li><p><span class="math inline">\(P(X = 6)\)</span></p></li>
 <li><p><span class="math inline">\(P(X \geq 10)\)</span></p></li>
 <li><p><span class="math inline">\(P(X \leq 12)\)</span></p></li>
@@ -1466,13 +1506,17 @@ class="math inline">\(Z\sim N(0,1)\)</span>, determine el área:</p>
 <ol style="list-style-type: lower-alpha">
 <li>A la derecha de z = - 0.85.</li>
 </ol>
+<pre class="r"><code>pnorm(-0.85, lower.tail = FALSE)</code></pre>
+<pre><code>[1] 0.8023375</code></pre>
+<pre class="r"><code>1-pnorm(-0.85)</code></pre>
+<pre><code>[1] 0.8023375</code></pre>
 <p>b.Entre z = 0.40 y z = 1.30.</p>
 <ol start="3" style="list-style-type: lower-alpha">
 <li><p>Entre z = -0.30 y z = 0.90.</p></li>
 <li><p>Desde z = -1.50 hasta z = -0.45.</p></li>
 </ol>
-<p>Nota: en cada caso realice un bosquejo del área que representa la
-probabilidad</p>
+<p><strong>Nota</strong>: en cada caso realice un bosquejo del área que
+representa la probabilidad</p>
 <p><br/><br/></p>
 <p><strong>3. Modelo normal estandar</strong> Para una variable <span
 class="math inline">\(Z\sim N(0,1)\)</span>, determine el área:</p>
@@ -1491,7 +1535,11 @@ continua <span class="math inline">\(X\sim norm(\mu=150,
 <ol style="list-style-type: lower-alpha">
 <li><p>Realice un bosquejo de la gráfica de la función de densidad de
 probabilidad de <span class="math inline">\(X\)</span></p></li>
-<li><p><span class="math inline">\(P(X \leq 100)\)</span>.</p></li>
+<li><p><span class="math inline">\(P(X \leq 130)\)</span>.</p></li>
+</ol>
+<pre class="r"><code>pnorm(130, 150, 10)</code></pre>
+<pre><code>[1] 0.02275013</code></pre>
+<ol start="3" style="list-style-type: lower-alpha">
 <li><p><span class="math inline">\(P(300 \leq X \leq
 400)\)</span>.</p></li>
 <li><p><span class="math inline">\(P(X\geq 550)\)</span>.</p></li>
@@ -1508,7 +1556,11 @@ class="math inline">\(X\)</span> una variable aleatoria con distribución
 exponencial . (<span class="math inline">\(X\sim
 exp(\lambda=2)\)</span>). Determine:</p>
 <ol style="list-style-type: lower-alpha">
-<li><p><span class="math inline">\(P(X \leq 0)\)</span>.</p></li>
+<li><span class="math inline">\(P(X \leq 1)\)</span>.</li>
+</ol>
+<pre class="r"><code>pexp(1,2)</code></pre>
+<pre><code>[1] 0.8646647</code></pre>
+<ol start="2" style="list-style-type: lower-alpha">
 <li><p><span class="math inline">\(P(X \geq 2)\)</span>.</p></li>
 <li><p><span class="math inline">\(P(1 &lt; X &lt; 2)\)</span>.</p></li>
 <li><p>Realice un bosquejo de la gráfica de <span
@@ -1667,7 +1719,11 @@ estandar determine el área bajo la curva:</p>
 tiene una distribución normal estándar. Determine el valor de <span
 class="math inline">\(z\)</span> para las siguientes probabilidades:</p>
 <ol style="list-style-type: lower-alpha">
-<li><p><span class="math inline">\(P(Z &lt; z) = 0.90\)</span></p></li>
+<li><span class="math inline">\(P(Z &lt; z) = 0.90\)</span></li>
+</ol>
+<pre class="r"><code>qnorm(0.90)</code></pre>
+<pre><code>[1] 1.281552</code></pre>
+<ol start="2" style="list-style-type: lower-alpha">
 <li><p><span class="math inline">\(P(Z &lt; z ) = 0.50\)</span></p></li>
 <li><p><span class="math inline">\(P(Z &gt; z) = 0.10\)</span></p></li>
 <li><p><span class="math inline">\(P(Z &gt; z) = 0.90\)</span></p></li>

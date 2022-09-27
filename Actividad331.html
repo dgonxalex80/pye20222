@@ -650,6 +650,21 @@ contenga las principales caracteristicas de la distribución asignada
 <p><img src="img/blog1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><strong>Nota</strong>: para tenerlo disponeble es necesario cargar el
 paquete <strong>distill</strong></p>
+<p>El encabezado el Rmd seria :</p>
+<pre class="r"><code>---
+title: &quot;Titulo del articulo&quot;
+description: |
+  Descripcion del articulo.
+author:
+  - name: Daniel Enrique Gonzalez Gomez
+date: 2022-09-26
+preview: imagen.png
+output:
+  distill::distill_article:
+    self_contained: false
+---</code></pre>
+<p>La imagen en formato png corresponde a la imagen que acompaña al
+articulo</p>
 <p><br/><br/></p>
 </div>
 <div id="paso-2" class="section level2">
@@ -1005,10 +1020,13 @@ revisión de todos</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Nota</strong>: Como ejemplo da la asignación de los modelos,
-el id=1 corresponde al primer estudiante de la Tabla 2 le corresponde el
-modelo 9 de la Tabla 1 : a Ramirez Emerson le corresponde realizar un
-artículo sobre el modelo gamma</p>
+<p><br/><br/></p>
+<p><strong>Nota</strong>:</p>
+<p>Como ejemplo da la asignación de los modelos, el <strong>id =
+1</strong> corresponde al primer estudiante de la <strong>Tabla
+2</strong> le corresponde el <strong>modelo 9 : gamma</strong> de la
+<strong>Tabla 1</strong>. Lo cual indica que a Emerson Ramirez le
+corresponde realizar un artículo sobre el modelo gamma</p>
 </div>
 </div>
 </div>
