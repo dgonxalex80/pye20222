@@ -701,17 +701,17 @@ barplot(table(suma), las=1,cex.axis=0.7)</code></pre>
 <p><img src="codigo201_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <pre class="r"><code>data.frame(prop.table(table(suma)))</code></pre>
 <pre><code>   suma       Freq
-1     2 0.02777585
-2     3 0.05557895
-3     4 0.08338395
-4     5 0.11110115
-5     6 0.13890640
-6     7 0.16667970
-7     8 0.13894065
-8     9 0.11109410
-9    10 0.08322200
-10   11 0.05553835
-11   12 0.02777890</code></pre>
+1     2 0.02777140
+2     3 0.05555145
+3     4 0.08335865
+4     5 0.11112825
+5     6 0.13892785
+6     7 0.16661870
+7     8 0.13892795
+8     9 0.11106715
+9    10 0.08335120
+10   11 0.05557060
+11   12 0.02772680</code></pre>
 <p></br></p>
 <p>Procedimiento alternativo</p>
 <pre class="r"><code>t=sapply(1:200, function(x){sum(sample(1:6,2,rep=T))})
@@ -733,10 +733,10 @@ siguiente ejemplo :</p>
 </ul></li>
 </ul>
 <pre class="r"><code>sample(c(1,2,3),2,rep=T,prob=c(3,5,4))</code></pre>
-<pre><code>[1] 2 2</code></pre>
+<pre><code>[1] 1 1</code></pre>
 <p>La misma simulación con palabras</p>
 <pre class="r"><code>sample(c(&quot;Blanca&quot;,&quot;Roja&quot;,&quot;Azul&quot;),2,rep=T,prob=c(3,5,4))</code></pre>
-<pre><code>[1] &quot;Roja&quot;   &quot;Blanca&quot;</code></pre>
+<pre><code>[1] &quot;Azul&quot; &quot;Roja&quot;</code></pre>
 <p></br></br><br/></p>
 </div>
 </div>
@@ -811,7 +811,7 @@ round(t23, 4)</code></pre>
   fallecido       0.0226 0.0000 0.0000   0.0000
   hospital        0.0000 0.0000 0.0000   0.0002
   hospital uci    0.0000 0.0000 0.0000   0.0000</code></pre>
-<p><img src="img/nota1.png" width="10%" style="display: block; margin: auto auto auto 0;" /></p>
+<p><img src="img/nota.png" width="10%" style="display: block; margin: auto auto auto 0;" /></p>
 <p>En el módulo 3 se presentan otro tipo de simulaciones partiendo del
 supuesto de un modelo de probabilidad y del conocimiento de las
 probabilidades de algunos eventos</p>

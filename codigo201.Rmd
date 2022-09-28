@@ -198,7 +198,7 @@ round(t23, 4)
 
 
 ```{r, echo=FALSE, out.width="10%", fig.align = "left"}
-knitr::include_graphics("img/nota1.png")
+knitr::include_graphics("img/nota.png")
 ```
 
 En el módulo 3 se presentan otro tipo de simulaciones partiendo del supuesto de un modelo de probabilidad y del conocimiento de las probabilidades de algunos eventos
