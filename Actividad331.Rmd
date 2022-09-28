@@ -140,7 +140,8 @@ Los documentos resultantes serán publicados en un blog para la revisión de tod
 | 9	 |Quintero Moreno Gabriela	        | 21	|Izquierdo Cabrera Daniel	  | 33	|Valencia Sanchez Jesus	          |
 | 10 |Rico Aragon Gabriel	              | 22	|Andrade Vargas Jose	      | 34	|Caicedo Garcia Heber	            |
 | 11 |Lopez Abella Juan	                | 23	|Lozano Arcila Maria	      | 35	|Marin Hincapie Juan	            |
-| 12 |Valencia Piedrahita Maria	        | 24	|Ruiz Calero Santiago	      |	36  |Escobar William                  |
+| 12 |Valencia Piedrahita Maria	        | 24	|Ruiz Calero Santiago	      |	36  |EscobarIsaac                     |
+|37  | Chapid Willian David             |     |                           |                                       |
 
 <br/><br/>
 
@@ -162,6 +163,7 @@ Los documentos resultantes serán publicados en un blog para la revisión de tod
 |	10	 |	3	    |	22	 |	15	  |	34	 |	14 	  |
 |	11	 |	6	    |	23	 |	13	  |	35	 |	5	    |
 |	12	 |	8	    |	24	 |	1	    |	36	 |	13	  |
+|      |        |      |        | 37   |   8    |
 
 
 <br/><br/>
