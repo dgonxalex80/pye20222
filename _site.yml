@@ -168,7 +168,11 @@ navbar:
     - text: "Proyecto"
       menu:
         - text: "Guía proyecto"
-          href: proyecto.html          
+          href: proyecto.html   
+    - text: "Blog"
+      menu:
+        - text: "Blog"
+          href: https://dgonxalex80.github.io/blog_PyE20222/blog.html           
   right:
     - icon: fab fa-github 
       href: https://github.com/dgonxalex80/pye20222         
