@@ -30,7 +30,7 @@ library(summarytools)
 ![](img/banner2.png)
 </br></br></br>
 
-```{r, echo=FALSE, out.width="20%", fig.align = "left"}
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
 knitr::include_graphics("img/problema1.png")
 ```
 
@@ -41,7 +41,7 @@ Las decisiones forman parte de nuestras vidas, dia a dia tomamos decisiones que 
 
 </br></br></br>
 
-```{r, echo=FALSE, out.width="20%", fig.align = "left"}
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
 knitr::include_graphics("img/problema2.png")
 ```
 
@@ -66,7 +66,7 @@ Un experimento consiste en lanzar un dado y observar el número de puntos en su 
 
 </br></br></br>
 
-```{r, echo=FALSE, out.width="20%", fig.align = "left"}
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
 knitr::include_graphics("img/problema3.png")
 ```
 
@@ -83,7 +83,7 @@ En un grupo de  100 estudiantes 30 residen por fuera de la ciudad, de los cuales
 
 </br></br></br>
 
-```{r, echo=FALSE, out.width="20%", fig.align = "left"}
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
 knitr::include_graphics("img/problema4.png")
 ```
 
@@ -95,7 +95,7 @@ Una empresa de construcción local descubrió a través de una investigación qu
 
 </br></br></br>
 
-```{r, echo=FALSE, out.width="20%", fig.align = "left"}
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
 knitr::include_graphics("img/problema5.png")
 ```
 
@@ -105,7 +105,7 @@ Se sabe que los accidentes de tránsito en su mayoria  ocurren durante la noche 
 	
 
 </br></br></br>
-```{r, echo=FALSE, out.width="20%", fig.align = "left"}
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
 knitr::include_graphics("img/problema6.png")
 ```
 
@@ -121,7 +121,7 @@ knitr::include_graphics("img/circuitos.png")
 
 </br></br></br>
 
-```{r, echo=FALSE, out.width="20%", fig.align = "left"}
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
 knitr::include_graphics("img/problema7.png")
 ```
 

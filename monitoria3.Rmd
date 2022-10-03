@@ -272,7 +272,18 @@ Fx(2.8)
 Cuando el profesor de Probabilidad y Estadística se preparaba para imprimir el cuestionario del segundo examen parcial, fue enterado por la secretaria del departamento que la máquina fotocopiadora se había averiado y que el técnico había acabado de llegar en ese instante y empezado a repararla. El profesor debe contar con por lo menos 10 minutos extras - tiempo de fotocopiado de 35 exámenes, organizar sus respectivas hojas de respuestas, sumado tiempo de su desplazamiento hasta el salón de clase, arreglo de las mesas y entrega de los cuestionarios a los estudiantes. Al mirar el reloj, el profesor observa que faltan 20 minutos para la hora en que debe empezar el examen y decide esperar a que el técnico repare la fotocopiadora. ¿Es acertada o no la decisión que tomó el profesor? Justifique su respuesta.   
 
 
-### [**Solución**](https://github.com/dgonxalex80/probabilidad20212.io/blob/main/talleres/Solucion_Taller_303.pdf)
+```{r, echo=FALSE}
+library(downloadthis)
+download_link(
+  link = "https://github.com/dgonxalex80/probabilidad20212.io/blob/main/talleres/Solucion_Taller_303.pdf",
+  button_label = "Descarga: solución pdf ",
+  button_type = "primary",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
+```
+
 <br/><br/>
 
 ## **Taller 314**
@@ -368,7 +379,19 @@ El estudio afirma también que los jóvenes en promedio reciben al rededor de 12
 
 <br/><br/>
 
-### [**Solución**](https://github.com/dgonxalex80/probabilidad20212.io/blob/main/talleres/Solucion_Taller_304.pdf)
+```{r, echo=FALSE}
+library(downloadthis)
+download_link(
+  link = "https://github.com/dgonxalex80/probabilidad20212.io/blob/main/talleres/Solucion_Taller_304.pdf",
+  button_label = "Descarga: solución pdf ",
+  button_type = "primary",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
+```
+
+
 
 <br/><br/><br/>
 
@@ -422,7 +445,17 @@ c. Determine  $Cor[XY]$ ,  interprete su resultado
 
 <br/>
 
-[**Solución Taller 301**](https://github.com/dgonzalez80/pye20221.io/blob/main/talleres/Taller301.pdf)
+```{r, echo=FALSE}
+library(downloadthis)
+download_link(
+  link = "https://github.com/dgonzalez80/pye20221.io/blob/main/talleres/Taller301.pdf",
+  button_label = "Descarga: solución pdf ",
+  button_type = "primary",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
+```
 
 <br/><br/><br/>
 
@@ -480,7 +513,18 @@ d. Doscientos paquetes seleccionados aleatoriamente contienen cinco kilogramos d
 
 <br/>
 
-[**Solución Taller 322**](https://github.com/dgonzalez80/pye20221.io/blob/main/talleres/Solucion_Taller322.pdf)
+```{r, echo=FALSE}
+library(downloadthis)
+download_link(
+  link = "https://github.com/dgonzalez80/pye20221.io/blob/main/talleres/Solucion_Taller322.pdf",
+  button_label = "Descarga: solución pdf ",
+  button_type = "primary",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
+```
+
 
 
 <br/><br/><br/>
@@ -722,7 +766,21 @@ c. Se presenten menos de 2 grietas en 500 m
 
 <br/><br/>
 
-### [**Solución**](https://github.com/dgonxalex80/probabilidad20212.io/blob/main/talleres/Solucion_Taller_%20307.pdf)
+
+```{r, echo=FALSE}
+library(downloadthis)
+download_link(
+  link = "https://github.com/dgonxalex80/probabilidad20212.io/blob/main/talleres/Solucion_Taller_%20307.pdf",
+  button_label = "Descarga: solución pdf ",
+  button_type = "primary",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
+```
+
+
+
 
 <br/><br/><br/>
 
@@ -890,8 +948,18 @@ La organización mundial de la salud ha establecido rangos para este indice y lo
 			
 <br/><br/>
 
-### [**Solución**](https://github.com/dgonxalex80/probabilidad20212.io/blob/main/talleres/Solucion_Taller_%20308.pdf)			
-			
+```{r, echo=FALSE}
+library(downloadthis)
+download_link(
+  link = "https://github.com/dgonxalex80/probabilidad20212.io/blob/main/talleres/Solucion_Taller_%20308.pdf",
+  button_label = "Descarga: solución pdf ",
+  button_type = "primary",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
+```
+
 <br/><br/><br/>
 
 ## **Taller 333**

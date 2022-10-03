@@ -27,7 +27,9 @@ c5= "#db524f"
 
 <br/><br/>
 
-## **Ejercicio 1**
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/problema1.png")
+```
 
 Un cable está compuesto por seis alambres. La fuerza de ruptura de cada alambre es una variable aleatoria distribuida normalmente con media de $10 kN$ y desviación estándar de $1 kN$ ($kN$=kiloNewton=$10^{3}N$). Utilizando el método de cable quebradizo, se estima que la fuerza del cable es igual a la fuerza de alambre más frágil multiplicada por el número de alambres.
 
@@ -48,7 +50,9 @@ d. Para que sea aceptable en cierta obra, la probabilidad de que el cable se rom
 
 
 
-## **Ejercicio 2**
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/problema2.png")
+```
 
 Estimación del valor de $\pi$ . LA siguiente figura sugiere como estimar el valor de $\pi$ con una simulación. En la figura, un circuíto con un áreaigual a $\pi/4$, está inscrito en un cuadrado cuya área es igual a 1. Se elige de forma aleatoria 100 puntos dentro del cuadrado . La probabilidad de que un punto esté dentro del círculo es igual a la pracción del área del cuadrado que abarca a este, la cual es $\pi/4$. Por tanto, se puede estimar el valor de $\pi/4$ al contar el número de puntos dentro del círculo, que es 79 para obtener la estimación de $\pi/4 \approx 0.76$ . De este último resultado se concluye que $\pi \approx 4(0.79) =3.14$ . Este ejercicio presenta un experimento de simulación que fue diseñado para estimar el valor de $\pi$ al generar 1000 puntos en el cuadrado.
 
@@ -67,7 +71,9 @@ d. ¿Cuántos de los puntos están dentro del círculo? ¿Cuál es su estimació
 
 <br/><br/><br/><br/>
 
-## **Ejercicio 3**
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/problema3.png")
+```
 
 Tres sistemas están compuestos por los componentes $R1$,$R2$,$R3$ y $R4$ conectados,  como lo muestra las siguientes figuras. El tiempo de vida en meses de los componentes $R1$ y $R3$ sigue una distribución lognormal con $\mu=2$ y $\sigma=1$ y la distribución en meses de los componentes $R2$ y $R4$ una distribución lognormal con $\mu=1$ y $\sigma=0.1$. El sistema solo funciona si A y B lo hacen.
 
@@ -90,7 +96,9 @@ f. Construya un histograma de los tiempos de vida de los sistemas. ¿Están sesg
 
 <br/><br/><br/><br/>
 
-## **Ejercicio 4**
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/problema4.png")
+```
 
 La edad de una antigua pieza de materia orgánica se puede estimar a partir de la tasa a la que emite partículas beta como resultado del decaimiento del carbono-14. Por ejemplo , si X es el número de partículas emitidas durante diez minutos por un fragmento óseo con 10000 años de antigüedad  que contiene 1 g de carbono, entonces X tiene una distribución de Poisson con media $\lambda=45.62$ . Un arqueólogo descubrió un pequeño fragmento óseo que contiene 1 g de carbono. Si t es la edad desconocida del hueso, en años, el arqueólogo contar{a el número X de partículas emitidas en diez minutos y calculará una edad estimada $\widehat{t}$ con la fórmula:
 	
@@ -115,7 +123,9 @@ d. Estime la probabilidad de que $\widehat{t}$ esté a 1000 años con una edad r
 
 <br/><br/><br/><br/>
 
-## **Ejercicio 5**
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/problema5.png")
+```
 
 
 Victor distribuye partes para motocicletas, y se estima que cada una de ellas tiene una probabilidad de $0.03$ de estar defectuosa. José  tambien distribuye partes semejantes  y su producto tiene  una probabilidad de $0.05$ de estar defectuoso. Usted recibe un envío de $100$ partes procedente de cada vendedor (Victor  y José). 

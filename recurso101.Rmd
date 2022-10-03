@@ -352,7 +352,7 @@ knitr::include_graphics("img/ej8.png")
 <br/><br/> 
 
 ```{r, echo=FALSE, out.width="10%", fig.align = "left"}
-knitr::include_graphics("img/nota1.png")
+knitr::include_graphics("img/nota.png")
 ```
 
 Es importante poder distinguir entre variables estadísticas y variables no estadística en una base de datos. Para hacerlo nos preguntamos si para la variable en análisis tiene sentido un análisis estadístico (gráficos, tabla o indicadores).  Por ejemplo: No tiene sentido realizar un análisis con variables como :  id, nombre, correo electrónico, dirección, teléfono, longitud y latitud, representante legal, entro otras 

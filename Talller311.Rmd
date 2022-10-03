@@ -30,7 +30,10 @@ library(summarytools)
 ![](img/banner3.png)
 </br></br></br>
 
-## <span style="color:#8acfe6">**Problema 1**</span>
+
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/problema1.png")
+```
 
 Clasifique las siguientes variables como discretas o continuas:
 
@@ -51,7 +54,9 @@ Clasifique las siguientes variables como discretas o continuas:
 
 <br/><br/><br/>
 
-## <span style="color:#8acfe6">**Problema 2**</span>
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/problema2.png")
+```
 
 Determine el valor de $C$ de modo que cada una de las siguientes funciones sirva
 como una función de probabilidad de una variable aleatoria discreta
@@ -59,14 +64,18 @@ como una función de probabilidad de una variable aleatoria discreta
 $$f(x) = C \binom{2}{x} \binom{3}{3-x}, \text{ para } x=0,1,2$$
 <br/><br/><br/>
 
-## <span style="color:#8acfe6">**Problema 3**</span>
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/problema3.png")
+```
 
 Un embarque de 7 televisores contiene 2 unidades defectuosas. Un hotel compra al azar 3 de los televisores. Si $X$ es el número de unidades defectuosas en un grupo de tres televisores comprados por el hotel al azar, encuentra la función de probabilidad de $X$. Expresa los resultados de forma gráfica. Construye la función de distribución acumulada de $X$. Usar $F(X)$ para responder, ¿cuál es la probabilidad que hayan cero televisores defectuosos en el grupo de tres televisores?, ¿cuál es la probabilidad que haya más de 1 televisor defectuoso en la selección de tres televisores?.
 
 
 <br/><br/><br/>
 
-## <span style="color:#8acfe6">**Problema 4**</span>
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/problema4.png")
+```
 
 La distribución de probabilidad de $X$, el número de imperfecciones por 10 metros de una tela sintética en rollos continuos de ancho uniforme, está dada por
 
@@ -84,19 +93,25 @@ La distribución de probabilidad de $X$, el número de imperfecciones por 10 met
 
 <br/><br/><br/>
 
-## <span style="color:#8acfe6">**Problema 5**</span>
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/problema5.png")
+```
 
 Sea $W$ el número de sellos en tres lanzamientos de una moneda. Liste los elementos del espacio muestral $S$ para los tres lanzamientos de la moneda y asigne un valor $w$ de $W$ a cada punto muestral.
 
 <br/><br/><br/>
 
-## <span style="color:#8acfe6">**Problema 6**</span>
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/problema6.png")
+```
 
 Encuentre la distribución de probabilidad de la variable aleatoria W del ejercicio anterior; suponga que la cara está cargada de manera que una cara tenga doble de probabilidad de ocurrir que un sello.
 
 <br/><br/><br/>
 
-## <span style="color:#8acfe6">**Problema 7**</span>
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/problema7.png")
+```
 
 La vida útil en días, para frascos de cierta medicina de prescripción es una variable aleatoria que tiene función de densidad,
 
@@ -116,7 +131,9 @@ Encuentre la probabilidad de que un frasco de esta medicina tenga una vida útil
 
 <br/><br/><br/>
 
-## <span style="color:#8acfe6">**Problema 8**</span>
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/problema8.png")
+```
 
 El número total de horas, medidas en unidades de 100 horas, que una familia utiliza una lavadora en un periodo de un año es una variable aleatoria continua $X$ que tiene la función de densidad,
 
@@ -135,7 +152,9 @@ $$f_{_{X}}(x) = \left \{
 
 <br/><br/><br/>
 
-## <span style="color:#8acfe6">**Problema 9**</span>
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/problema9.png")
+```
 
 Una variable aleatoria continua $X$ que puede tomar valores entre $x = 1$ y $x = 3$ tiene una función de densidad dada por $f (x) = 1/2$.
 
@@ -158,7 +177,9 @@ Para la función de densidad del ejercicio anterior encuentre $F(x)$. Utilíce l
 
 <br/><br/><br/>
 
-## <span style="color:#8acfe6">**Problema 10**</span>
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/problema10.png")
+```
 
 En una tarea de laboratorio, cuando el equipo está operando la función de densidad
 del resultado, $X$, es el tiempo,
@@ -179,7 +200,9 @@ $$f_{_{X}}(x) = \left \{
 
 <br/><br/><br/>
 
-## <span style="color:#8acfe6">**Problema 11**</span>
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/problema11.png")
+```
 
 La probabilidad de tener una unidad defectuosa en una línea de ensamblaje es de $p = 0.05$. Si el conjunto de unidades terminadas constituye un conjunto de ensayos independientes, la función de probabilidad de número de unidades defectuosas está dada por,
 
@@ -193,7 +216,9 @@ $$f(x) = \binom{10}{x} p^{x} (1 − p)^{10−x}  \text{,  } x = 0, 1, . . . , 10
 
 <br/><br/><br/>
 
-## <span style="color:#8acfe6">**Problema 12**</span>
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/problema12.png")
+```
 
 El gerente de un restaurante que sólo da servicio mediante reservas sabe, por experiencia, que el $20$% de las personas que reservan una mesa no asistirán. Si el restaurante acepta $25$ reservas pero sólo dispone de $20$ mesas, ¿cuál es la probabilidad de que a todas las personas que asistan al restaurante se les asigne una mesa?. 
 
@@ -205,7 +230,9 @@ $$f(x) = \binom{25}{x} (0.80)^{x} (0.20)^{25−x}  \text{,  } x = 0, 1, . . . , 
 
 <br/><br/><br/>
 
-### <span style="color:#db524f">**NOTA**</span>
+```{r, echo=FALSE, out.width="10%", fig.align = "left"}
+knitr::include_graphics("img/nota.png")
+```
 
 **En todos los casos** represente gráficamente la función de probabilidad correspondiente y en ella resalte las probabilidades solicitadas.
 
@@ -213,6 +240,6 @@ Problemas seleccionados de Walpole(2012).
   
 <br/><br/><br/>
 
-## **Formato Rmarkdown**
+### **Formato Rmarkdown**
 
 https://github.com/dgonxalex80/pye20222/blob/main/Taller311Rmd.Rmd
