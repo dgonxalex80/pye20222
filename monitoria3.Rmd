@@ -1426,4 +1426,18 @@ $$Z(t)= \dfrac{f(t)}{1-F(t)} $$
 
 <br/><br/>
 
+# **Examen Parcial 2016**
+
+```{r, echo=FALSE}
+library(downloadthis)
+download_link(
+  link = "https://github.com/dgonxalex80/pye20222/blob/main/pdf/FORMULARIO%20SEGUNDO_PARCIAL_300MAE004_20162c.pdf",
+  button_label = "Descarga: segundo parcial 2016 pdf ",
+  button_type = "primary",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
+```
+
 
