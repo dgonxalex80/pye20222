@@ -18,9 +18,11 @@ Colombia$recuperado[Colombia$recuperado=="n/a"]=NA
 Colombia22=subset(Colombia, Colombia$fecha_reporte_web>="2022-01-01") # data del 2022
 Colombia21=subset(Colombia, Colombia$fecha_reporte_web>="2021-01-01" & Colombia$fecha_reporte_web<"2022-01-01") # data de 2021
 Colombia20=subset(Colombia, Colombia$fecha_reporte_web>="2020-01-01" & Colombia$fecha_reporte_web<"2021-01-01") # data de 2020
+Colombia22_09=subset(Colombia, Colombia$fecha_reporte_web>="2022-09-01") # data de 2022 sep
+
 
 Valle22=subset(Colombia22, departamento=="76") # data del valle del cauca de 2022
-Cali22= subset(Colombia22, ciudad_municipio_nom=="CALI") # data de cali de 2022
+Cali22_09= subset(Colombia22_09, ciudad_municipio_nom=="CALI") # data de cali de 2022
 
 table(Colombia22$estado)
 table(Colombia21$estado)
@@ -32,6 +34,9 @@ summarytools::freq(Colombia20$estado, cumul = F)
 summarytools::descr(Colombia22$edad)
 
 saveRDS(Colombia, file = "data/Colombia.RDS")  # guardar base con modificaciones
+
+table(Cali22_06$estado)
+
 #-----------------------------------------------------
 
 

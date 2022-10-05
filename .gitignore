@@ -5,7 +5,6 @@
 data/
 map/
 data/
-pdf/
 .Rproj
 .Rdata
 .httr-oauth
