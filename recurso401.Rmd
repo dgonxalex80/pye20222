@@ -107,7 +107,7 @@ $$f(x)=\frac{1}{\sqrt{50 \pi}} \exp{\Bigg(- \frac{1}{50}\big(x-100\big)^{2}\Bigg
 Es una función de los valores obtenidos en una muestra aleatoria que da como resultado un valor que corresponde a una aproximación del parámetro objeto de estudio. Generalmente se representa como $\widehat{\theta}$. Como algunos ejemplos podemos citar:
 
 $$\widehat{\mu}=\frac{1}{n}\sum_{i=1}^{n}x_{i}=\bar{x} $$
-$$\widehat{\sigma^{2}}=\frac{1}{n-1}\sum_{i=1}^{n}\big(x-\bar{x}\big)^{2} = s^{2}$$
+$$\widehat{\sigma^{2}}=\frac{1}{n-1}\sum_{i=1}^{n}\big(x_{i}-\bar{x}\big)^{2} = s^{2}$$
 
 <br/><br/>
 
@@ -539,7 +539,7 @@ Un estimador $\widehat{\theta}$ se considera insesgado si $E[\widehat{\theta}] =
 
 Un estimador  $\widehat{\theta_{1}}$ se considera más eficiente que  $\widehat{\theta_{2}}$ cuando:
 
-$$\widehat{\theta_{1}} <\widehat{\theta_{2}}$$
+$$V[\widehat{\theta_{1}}] < V[\widehat{\theta_{2}}]$$
 
 <br/><br/>
 
