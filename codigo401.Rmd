@@ -36,6 +36,7 @@ library(readr)
 base_muestreo <- read_delim("data/base_muestreo.csv", 
     delim = ";", escape_double = FALSE, col_types = cols(ID = col_integer()), 
     trim_ws = TRUE)
+library(paqueteDEG)
 
 ```
 
@@ -175,7 +176,7 @@ d100=density(Mx100)
 d1000=density(Mx1000)
 # Gráficos de densidad -------------------------------
 # configuración de las gráficas
-par(cex=0.5, cex.axis=.5, cex.lab=.5, cex.main=.5, cex.sub=.5,  mfrow=c(3,2), mai = c(.5, .5, .5, .5))
+par(cex=0.5, cex.axis=.5, cex.lab=.5, cex.main=.5, cex.sub=.5,  mfrow=c(2,2), mai = c(.5, .5, .5, .5))
 # histogramas  de comparacion-------------------------
 plot(d, main=" ", xlab = "n=1")
 plot(d2,main=" ", xlab = "n=2")
@@ -474,7 +475,13 @@ base2
 Para los casos de los muestreos estratificado y muestreo por conglomerados se utiliza el muestreo aleatorio simple como base. 
 
 
+
+
+<br/><br/><br/><br/>
+
 # **PaqueteDEG**
+
+<br/><br/>
 
 1. Instalación del paquete.
 
@@ -503,4 +510,40 @@ Información del problema :
 $$n = \dfrac{ z_{_{\alpha/2}} \times \sigma^{2} }{e^{2}} =\dfrac{1.96^{2} \times 3025 }{5^{2}} =464.83 \sim 465$$
 
 
+
+<br/><br/><br/>
+
+Ahora con una base de datos que contiene la carrera y la nota final del curso de matemáticas fundamental.
+
+```{r}
+head(base_muestreo)
+```
+
+```{r}
+cat("dimensión de la base  : ", dim(base_muestreo), "\n")
+cat("media poblacional ", mean(base_muestreo$NF), "\n")
+t=table(base_muestreo$CAR)
+cat("proporción poblacional : ", t[2]/sum(t))
+```
+
+Con 180 mregistros y tres columnas o variables :
+
++ ID  : identificación del estudiante
++ CAR : programa en el que se encuentra matriculado
++ NF : nota final de matemáticas fundamentales
+
+
+Como seleccionar una muestra aleatoria de 20 estudiantes: 
+
+```{r}
+idm=sample(1:80, 30)
+muestra =base_muestreo[idm,]
+muestra
+```
+
+Estimador :$\widehat{\mu}$ media muestral
+
+```{r}
+mean(muestra$NF)
+```
 

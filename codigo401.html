@@ -14,7 +14,7 @@
 
 <title> Código 4.1</title>
 
-<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -185,8 +185,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -194,16 +194,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -694,7 +687,7 @@ abline(h=20,  col=&quot;red&quot;)</code></pre>
 <p><img src="codigo401_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 <pre class="r"><code>apply(T123,2,mean)</code></pre>
 <pre><code>      T1       T2       T3 
-20.17773 18.07150 19.87865 </code></pre>
+20.02908 18.25457 20.08003 </code></pre>
 <p>Para un tamaño de muestra n=10 se observa que los mejores resultados
 se obtienen con T3. Este estimador se puede clasificar como INSESGADO y
 EFICIENTE, pues ademas que su promedio está muy cerca de 20, tiene la
@@ -714,7 +707,7 @@ abline(h=20,  col=&quot;red&quot;)</code></pre>
 <p><img src="codigo401_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <pre class="r"><code>apply(T123,2,mean)</code></pre>
 <pre><code>      T1       T2       T3 
-19.93896 19.79472 19.99267 </code></pre>
+20.00585 19.79377 19.99170 </code></pre>
 <p>Los resutados indican que el mejor estimador de b corresponde a T3.
 Sin embargo el estimador T2 que era insesgado al aumentar el tamaño de
 la muestra pasando de n=10 a n=100 se observa que su promedio se acerca
@@ -774,34 +767,36 @@ d100=density(Mx100)
 d1000=density(Mx1000)
 # Gráficos de densidad -------------------------------
 # configuración de las gráficas
-par(cex=0.5, cex.axis=.5, cex.lab=.5, cex.main=.5, cex.sub=.5,  mfrow=c(3,2), mai = c(.5, .5, .5, .5))
+par(cex=0.5, cex.axis=.5, cex.lab=.5, cex.main=.5, cex.sub=.5,  mfrow=c(2,2), mai = c(.5, .5, .5, .5))
 # histogramas  de comparacion-------------------------
 plot(d, main=&quot; &quot;, xlab = &quot;n=1&quot;)
 plot(d2,main=&quot; &quot;, xlab = &quot;n=2&quot;)
 #plot(d20, main=&quot;&quot;, xlab = &quot;n=20&quot;)
 plot(d30, main=&quot; &quot;, xlab = &quot;n=30&quot;)
-plot(d50, main=&quot; &quot;, xlab = &quot;n=50&quot;)
-plot(d100, main=&quot; &quot;, xlab = &quot;n=100&quot;)
-plot(d1000,main=&quot; &quot;, xlab=&quot;n=1000&quot;)</code></pre>
+plot(d50, main=&quot; &quot;, xlab = &quot;n=50&quot;)</code></pre>
 <p><img src="codigo401_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
-<pre class="r"><code># histogramas  de comparacion--------------------------
+<pre class="r"><code>plot(d100, main=&quot; &quot;, xlab = &quot;n=100&quot;)
+plot(d1000,main=&quot; &quot;, xlab=&quot;n=1000&quot;)
+# histogramas  de comparacion--------------------------
 hist(X1,  main = &quot;n=1&quot;, freq=FALSE)
-hist(Mx2, main =&quot;n=2&quot;, freq=FALSE) 
-# hist(Mx20, main = &quot;n=20&quot;,freq=FALSE)
+hist(Mx2, main =&quot;n=2&quot;, freq=FALSE) </code></pre>
+<p><img src="codigo401_files/figure-html/unnamed-chunk-4-2.png" width="672" /></p>
+<pre class="r"><code># hist(Mx20, main = &quot;n=20&quot;,freq=FALSE)
 hist(Mx30, main = &quot;n=30&quot;,freq=FALSE) 
 hist(Mx50, main = &quot;n=50&quot;,freq=FALSE) 
 hist(Mx100, main = &quot;n=100&quot;, freq=FALSE) 
 hist(Mx1000, main = &quot;n=1000&quot;, freq = FALSE) </code></pre>
-<p><img src="codigo401_files/figure-html/unnamed-chunk-4-2.png" width="672" /></p>
+<p><img src="codigo401_files/figure-html/unnamed-chunk-4-3.png" width="672" /></p>
 <pre class="r"><code># histogramas  de comparacion--------------------------
 qqnorm(X1) ; qqline(X1, col=&quot;red&quot;)
 qqnorm(Mx2) ; qqline(Mx2, col=&quot;red&quot;)
 # qqnorm(Mx20) ; qqline(Mx20, col=&quot;red&quot;)
 qqnorm(Mx30) ; qqline(Mx30, col=&quot;red&quot;)
-qqnorm(Mx50) ; qqline(Mx50, col=&quot;red&quot;)
-qqnorm(Mx100) ; qqline(Mx100, col=&quot;red&quot;)
+qqnorm(Mx50) ; qqline(Mx50, col=&quot;red&quot;)</code></pre>
+<p><img src="codigo401_files/figure-html/unnamed-chunk-4-4.png" width="672" /></p>
+<pre class="r"><code>qqnorm(Mx100) ; qqline(Mx100, col=&quot;red&quot;)
 qqnorm(Mx1000) ; qqline(Mx1000, col=&quot;red&quot;)</code></pre>
-<p><img src="codigo401_files/figure-html/unnamed-chunk-4-3.png" width="672" /></p>
+<p><img src="codigo401_files/figure-html/unnamed-chunk-4-5.png" width="672" /></p>
 <p>Se puede observar la convergencia de la distribución de la media
 muestral a una distribución normal al aumentarse el tamaño de la
 muestra</p>
@@ -1082,8 +1077,8 @@ distinguen por un Id del 1 al 1000, utilizamos la funcion
 <strong>sample</strong> para seleccionar la muestra:</p>
 <pre class="r"><code>x&lt;-seq(1,1000,1)
 sample(x, 20)</code></pre>
-<pre><code> [1] 311 976   8 640 508 763 258 711  75 378 455 437 861 772 925 933 723 415 393
-[20] 329</code></pre>
+<pre><code> [1] 816 161 943   7 105 152 419 734 879  60 571 247 473 273 462  91 539 123 406
+[20] 324</code></pre>
 <p>En este caso se ha seleccionado una muestra de tamaño <span
 class="math inline">\(n=10\)</span> de una población de <span
 class="math inline">\(N=1000\)</span> unidades. Dato que la población es
@@ -1094,7 +1089,7 @@ población sea demasiado pequeña (este tipo de muestreos se llaman
 bootstrap o remuestreo) :</p>
 <pre class="r"><code>x&lt;-1:10
 sample(x, 20, replace = TRUE)</code></pre>
-<pre><code> [1]  1  4  3  1  4  3  5  4  7  5  3 10  9  2 10  1  7  5 10  8</code></pre>
+<pre><code> [1]  4  8  1  2 10  5  9  4  8  7 10  4  5  1  7  2  2  4  6  3</code></pre>
 <p><br/><br/></p>
 </div>
 <div id="muestreo-sistemático" class="section level3">
@@ -1104,26 +1099,26 @@ a=100
 ids=S.SY(N, a)
 ids</code></pre>
 <pre><code>      [,1]
- [1,]   30
- [2,]  130
- [3,]  230
- [4,]  330
- [5,]  430
- [6,]  530
- [7,]  630
- [8,]  730
- [9,]  830
-[10,]  930
-[11,] 1030
-[12,] 1130
-[13,] 1230
-[14,] 1330
-[15,] 1430
-[16,] 1530
-[17,] 1630
-[18,] 1730
-[19,] 1830
-[20,] 1930</code></pre>
+ [1,]   44
+ [2,]  144
+ [3,]  244
+ [4,]  344
+ [5,]  444
+ [6,]  544
+ [7,]  644
+ [8,]  744
+ [9,]  844
+[10,]  944
+[11,] 1044
+[12,] 1144
+[13,] 1244
+[14,] 1344
+[15,] 1444
+[16,] 1544
+[17,] 1644
+[18,] 1744
+[19,] 1844
+[20,] 1944</code></pre>
 <p><br/><br/></p>
 </div>
 <div id="ejemplo-muestreo-aleatorio-simple" class="section level3">
@@ -1162,38 +1157,40 @@ a=N/n
 ids=S.SY(N, a)
 ids</code></pre>
 <pre><code>      [,1]
- [1,]   10
- [2,]   28
- [3,]   46
- [4,]   64
- [5,]   82
- [6,]  100
- [7,]  118
- [8,]  136
- [9,]  154
-[10,]  172</code></pre>
+ [1,]   18
+ [2,]   36
+ [3,]   54
+ [4,]   72
+ [5,]   90
+ [6,]  108
+ [7,]  126
+ [8,]  144
+ [9,]  162
+[10,]  180</code></pre>
 <pre class="r"><code>base2=base_muestreo[ids,]
 base2</code></pre>
 <pre><code># A tibble: 10 × 3
       ID CAR      NF
    &lt;int&gt; &lt;chr&gt; &lt;dbl&gt;
- 1    10 ELE     3  
- 2    28 MAT     4.2
- 3    46 MAT     4.8
- 4    64 SIS     2.3
- 5    82 MAT     3.8
- 6   100 BIO     3.8
- 7   118 IND     3.5
- 8   136 CIV     2.2
- 9   154 IND     2  
-10   172 CIV     2.2</code></pre>
+ 1    18 MAT     4  
+ 2    36 SIS     3.7
+ 3    54 CIV     2.3
+ 4    72 IND     4.2
+ 5    90 MAT     4  
+ 6   108 BIO     4  
+ 7   126 BIO     1.2
+ 8   144 CIV     2  
+ 9   162 CIV     4.1
+10   180 CIV     1.7</code></pre>
 <p><br/><br/></p>
 <p>Para los casos de los muestreos estratificado y muestreo por
 conglomerados se utiliza el muestreo aleatorio simple como base.</p>
+<p><br/><br/><br/><br/></p>
 </div>
 </div>
 <div id="paquetedeg" class="section level1">
 <h1><strong>PaqueteDEG</strong></h1>
+<p><br/><br/></p>
 <ol style="list-style-type: decimal">
 <li>Instalación del paquete.</li>
 </ol>
@@ -1225,6 +1222,54 @@ class="math inline">\(z_{_{\alpha/2}} = 1.96\)</span></li>
 <p><span class="math display">\[n = \dfrac{ z_{_{\alpha/2}} \times
 \sigma^{2} }{e^{2}} =\dfrac{1.96^{2} \times 3025 }{5^{2}} =464.83 \sim
 465\]</span></p>
+<p><br/><br/><br/></p>
+<p>Ahora con una base de datos que contiene la carrera y la nota final
+del curso de matemáticas fundamental.</p>
+<pre class="r"><code>head(base_muestreo)</code></pre>
+<pre><code># A tibble: 6 × 3
+     ID CAR      NF
+  &lt;int&gt; &lt;chr&gt; &lt;dbl&gt;
+1     1 CIV     3  
+2     2 BIO     2.7
+3     3 ELE     3.5
+4     4 ELE     4.3
+5     5 ELE     4.2
+6     6 ELE     4  </code></pre>
+<pre class="r"><code>cat(&quot;dimensión de la base  : &quot;, dim(base_muestreo), &quot;\n&quot;)</code></pre>
+<pre><code>dimensión de la base  :  180 3 </code></pre>
+<pre class="r"><code>cat(&quot;media poblacional &quot;, mean(base_muestreo$NF), &quot;\n&quot;)</code></pre>
+<pre><code>media poblacional  3.153889 </code></pre>
+<pre class="r"><code>t=table(base_muestreo$CAR)
+cat(&quot;proporción poblacional : &quot;, t[2]/sum(t))</code></pre>
+<pre><code>proporción poblacional :  0.3611111</code></pre>
+<p>Con 180 mregistros y tres columnas o variables :</p>
+<ul>
+<li>ID : identificación del estudiante</li>
+<li>CAR : programa en el que se encuentra matriculado</li>
+<li>NF : nota final de matemáticas fundamentales</li>
+</ul>
+<p>Como seleccionar una muestra aleatoria de 20 estudiantes:</p>
+<pre class="r"><code>idm=sample(1:80, 30)
+muestra =base_muestreo[idm,]
+muestra</code></pre>
+<pre><code># A tibble: 30 × 3
+      ID CAR      NF
+   &lt;int&gt; &lt;chr&gt; &lt;dbl&gt;
+ 1    32 IND     3.1
+ 2    24 MAT     4.5
+ 3    62 CIV     3.6
+ 4    70 CIV     1.2
+ 5    16 SIS     4  
+ 6    48 CIV     3.4
+ 7    41 CIV     3.1
+ 8    33 SIS     3  
+ 9    78 IND     3.7
+10    45 CIV     2.6
+# … with 20 more rows</code></pre>
+<p>Estimador :<span class="math inline">\(\widehat{\mu}\)</span> media
+muestral</p>
+<pre class="r"><code>mean(muestra$NF)</code></pre>
+<pre><code>[1] 3.15</code></pre>
 </div>
 
 
