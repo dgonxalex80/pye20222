@@ -14,7 +14,7 @@
 
 <title>Probabilidad y Estadística</title>
 
-<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -185,8 +185,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -194,16 +194,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -650,10 +643,133 @@ Estadística</strong></span></h1>
 
 
 <p><img src="img/banner4.png" /></p>
-<p><span style="color:#db524f"> <strong>EN
-CONSTRUCCIÓN</strong></span></p>
 <div id="guía-de-aprendizaje" class="section level1">
 <h1><strong>Guía de aprendizaje</strong></h1>
+<p><br/><br/></p>
+<div id="introducción" class="section level2">
+<h2><strong>Introducción</strong></h2>
+<p>La inferencia estadística constituye una de las principales
+componentes de la metodologia estadistica, encaminados a generar
+procedimiento para el avance de la ciencia. Con ella se pueden
+generalizar los resultados obtenidos en una muestra a toda la población,
+previo cumplimiento de supuestos establecidos por la estadística
+(llamada paramétrica) .</p>
+<p>Antes de empezar es necesario entender los conceptos básicos como:
+población, censo, parámetro, muestra, muestreo, estimador, estimación,
+métodos de estimación, propiedades de los estimadores como la
+insesgadez, la eficiencia, la consistencia .Las distribuciones
+muestrales : normal, t-student, chi-cuadrado y f de Fisher. Todos
+trabajados y tratados en la unidad 4.1.</p>
+<p>El siguiente documento te oriente sobre los pasos a seguir para
+alcanzar el objetivo planteado</p>
+<p><br/><br/></p>
+</div>
+<div id="objetivos-de-la-unidad" class="section level2">
+<h2><strong>Objetivos de la unidad</strong></h2>
+<p>Al finalizar la unidad el estudiante estará en capacidad de
+IDENTIFICAR, CALCULAR, INTERPRETAR e INFERIR sobre un intervalo de
+confianza para estimadores de una y dos poblaciones, que le permita
+seleccionar la mejor alternativa para la estimación de un parámetro
+poblacional, orientados a la toma de decisiones informadas.</p>
+<p><br/><br/></p>
+</div>
+<div id="duración" class="section level2">
+<h2><strong>Duración</strong></h2>
+<p>La presente unidad será desarrollada del 17 al 23 de octubre 2022 .
+Ademas del material suministrado contaran con el acompañamiento del
+profesor durante las sesiones de clase y de manera asincrónica con foro
+de actividades académicas. Los entegables para esta unidad podrán
+enviarse a través de la plataforma Brightspace hasta el 24 de octubre de
+2022</p>
+<p>Para alcanzar los objetivos planteados se propone realizar las
+siguientes actividades</p>
+<p><br/><br/></p>
+</div>
+<div id="cronograma-de-trabajo" class="section level2">
+<h2><strong>Cronograma de trabajo</strong></h2>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="66%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Actividad</th>
+<th align="left">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Actividad 421</strong></td>
+<td align="left">Construir un <strong>mapa mental</strong> sobre
+<strong>intervalos de confianza</strong> en formato pdf</td>
+</tr>
+<tr class="even">
+<td align="left">Trabajo individual</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Fecha</td>
+<td align="left">24 de octubre de 2022</td>
+</tr>
+<tr class="even">
+<td align="left">Hora</td>
+<td align="left">23:59 hora local</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Actividad 422</strong></td>
+<td align="left">Resuelva las preguntas y problemas planteadas en el <a
+href="https://github.com/dgonzalez80/pye2021.io/blob/main/talleres/Taller412.pdf"><strong>Taller
+422</strong></a> y entregue su solución en formato pdf en el enlace
+correspondiente de Brightspace</td>
+</tr>
+<tr class="even">
+<td align="left">Trabajo individual</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Fecha</td>
+<td align="left">24 de octubre de 2022</td>
+</tr>
+<tr class="even">
+<td align="left">Hora</td>
+<td align="left">23:59 hora local</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="criterios-de-evaluación" class="section level2">
+<h2><strong>Criterios de evaluación</strong></h2>
+<p><br/><br/></p>
+</div>
+<div id="entregables" class="section level2">
+<h2><strong>Entregables</strong></h2>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="66%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left">Actividad 421</td>
+<td align="left">Mapa mental sobre intervalos de confianza</td>
+</tr>
+<tr class="even">
+<td align="left">Actividad 422</td>
+<td align="left">Solucionario taller 422 de problemas sobre intervalos
+de confianza</td>
+</tr>
+<tr class="odd">
+<td align="left">Fecha</td>
+<td align="left">24 de octubre de 2022</td>
+</tr>
+<tr class="even">
+<td align="left">Hora</td>
+<td align="left">23:59 hora local</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 

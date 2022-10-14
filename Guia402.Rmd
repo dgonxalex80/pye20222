@@ -27,7 +27,66 @@ c5= "#db524f"
 ![](img/banner4.png)
 
 
-<span style="color:#db524f"> **EN CONSTRUCCIÓN**</span> 
-
 
 # **Guía de aprendizaje**
+
+<br/><br/>
+
+## **Introducción**
+
+La inferencia estadística constituye una de las principales componentes de la metodologia estadistica, encaminados a generar procedimiento para el avance de la ciencia. Con ella se pueden generalizar los
+resultados obtenidos en una muestra a toda la población, previo cumplimiento de supuestos establecidos por la estadística (llamada paramétrica) .
+
+Antes de empezar es necesario entender los conceptos básicos como: población, censo, parámetro, muestra, muestreo, estimador, estimación, métodos de estimación, propiedades de los estimadores como la insesgadez, la eficiencia, la consistencia .Las distribuciones muestrales : normal, t-student, chi-cuadrado y f de Fisher. Todos trabajados y tratados en la unidad 4.1.
+
+El siguiente documento te  oriente sobre los pasos a seguir para alcanzar el objetivo planteado
+
+<br/><br/>
+
+## **Objetivos de la unidad**
+
+Al finalizar la unidad el estudiante estará en capacidad de IDENTIFICAR, CALCULAR, INTERPRETAR e INFERIR sobre un intervalo de confianza para estimadores de una y dos poblaciones,
+que le permita seleccionar la mejor alternativa para la estimación de un parámetro poblacional, orientados a la toma de decisiones  informadas.
+
+<br/><br/>
+
+
+
+## **Duración**
+
+La presente  unidad será desarrollada del 17 al 23 de octubre 2022 . Ademas del material suministrado  contaran con el acompañamiento del profesor durante las sesiones de clase  y de manera asincrónica con  foro de actividades académicas. Los entegables para esta unidad podrán enviarse a través de la plataforma Brightspace hasta el  24 de octubre de 2022 
+
+Para alcanzar los objetivos planteados se propone realizar las siguientes actividades
+
+<br/><br/>
+
+## **Cronograma de trabajo**
+
+
+|Actividad      | Descripción                    | 
+|:--------------|:-----------------------------  |
+|**Actividad 421**    |Construir un **mapa mental** sobre **intervalos de confianza**  en formato pdf|
+|Trabajo individual |  |
+|Fecha          | 24 de octubre de 2022 |
+|Hora           | 23:59 hora local       |
+|**Actividad 422**    |Resuelva las preguntas y problemas planteadas en  el  [**Taller 422**](https://github.com/dgonzalez80/pye2021.io/blob/main/talleres/Taller412.pdf) y entregue su solución  en formato  pdf en el enlace correspondiente de  Brightspace|
+|Trabajo individual |  |
+|Fecha          | 24 de octubre de 2022 |
+|Hora           | 23:59 hora local       |
+
+
+
+
+## **Criterios de evaluación**
+
+<br/><br/>
+
+## **Entregables** 
+
+|               |                              | 
+|:--------------|:-----------------------------|
+| Actividad 421 | Mapa mental sobre intervalos de confianza|
+| Actividad 422 | Solucionario taller 422 de problemas sobre intervalos de confianza| 
+|Fecha          | 24 de octubre  de 2022 |
+|Hora           | 23:59 hora local       |
+
