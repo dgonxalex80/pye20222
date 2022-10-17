@@ -172,7 +172,11 @@ navbar:
     - text: "Blog"
       menu:
         - text: "Blog"
-          href: https://dgonxalex80.github.io/blog_PyE20222/blog.html           
+          href: https://dgonxalex80.github.io/blog_PyE20222/blog.html  
+    - text: "Parciales"
+      menu:
+        - text: "Segundo parcial"
+        - href: segundo_parcial.html
   right:
     - icon: fab fa-github 
       href: https://github.com/dgonxalex80/pye20222         
