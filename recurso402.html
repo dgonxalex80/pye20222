@@ -780,7 +780,10 @@ media.</td>
 </tr>
 </tbody>
 </table>
-<p><br/><br/></p>
+<p>Este caso tambien se utiliza cuando se desconoce la distribución de
+la variable X. En este caso se utiliza el teorema central del límite que
+aproxima la distribución de la media muestral a la distribución normal
+<br/><br/></p>
 <p><strong>Solución</strong></p>
 <p>La estimación del tiempo que demora el pago de una factura es un
 valor de importancia tanto para empresarios como para proveedores, pues
@@ -820,7 +823,7 @@ class="math display">\[P\Bigg(-z_{\alpha/2}\frac{\sigma}{\sqrt{n}} \leq
 \bar{X}-\mu \leq
 z_{\alpha/2}\frac{\sigma}{\sqrt{n}}\Bigg)=1-\alpha\]</span></p>
 <p>Para construirlo partimos del supuesto que podemos tolerar un error
-de muestreo <span class="math display">\[e = \vert\bar{X}-\mu\vert \leq
+de muestreo <span class="math display">\[e = \vert\bar{x}-\mu\vert \leq
 z_{\alpha/2}\frac{\sigma}{\sqrt{n}}\]</span></p>
 <p>y que deseamos una con fiabilidad del <span
 class="math inline">\((1-\alpha)\%\)</span>.</p>
@@ -862,7 +865,7 @@ varianza : no tenemos la varianza y por tanto tenemos 3 alternativas
 la varianza <span class="math inline">\(s^{2}\)</span>, (3) preguntando
 a un experto sobre el valor del mínimo y el máximo de la variable se
 puede estimar la desviación estándar <span
-class="math display">\[s=\frac{\max\{x\}+\min\{x\}}{2}\]</span></p>
+class="math display">\[s=\frac{\max\{x\}-\min\{x\}}{2}\]</span></p>
 <pre class="r"><code># varianza
 # s2.nota=var(sample(Colombia$edad, 100))
 s2.nota =352.2395
@@ -888,7 +891,7 @@ aproximación a una distribución normal</p>
 \frac{p(1-p)}{n}\Bigg)\]</span></p>
 <p>por tanto</p>
 <p><span class="math display">\[\Bigg[ \hspace{.3cm}
-^`\widehat{p}-z_{\alpha/2}\sqrt{\frac{\widehat{p}\hspace{.1cm}(1-\widehat{p}}{n}}
+^\widehat{p}-z_{\alpha/2}\sqrt{\frac{\widehat{p}\hspace{.1cm}(1-\widehat{p}}{n}}
 \hspace{.2cm};\hspace{.2cm}
 \widehat{p}+z_{\alpha/2}\sqrt{\frac{\widehat{p}\hspace{.1cm}(1-\widehat{p}}{n}}
 \hspace{.3cm} \Bigg] \]</span></p>
@@ -1044,15 +1047,9 @@ para la desviación estandar de los precios de los últimos 22 dias
 <p><br/><br/></p>
 <pre class="r"><code>ecopetrol=c(2810, 2810, 2825, 2769, 2734, 2706, 2699, 2671, 2550, 2590, 2570, 2529, 2520, 2566, 2615, 2620, 2550, 2572, 2553, 2570, 2593, 2606) 
 
-cat(&quot;IC_var :&quot;, 
-    paqueteDEG::intervalo.var(ecopetrol)
-    )</code></pre>
-<pre><code>IC_var : 9810.519 10202.94</code></pre>
-<pre class="r"><code> # intervalo de confianza para la varianza
-cat(&quot;\n&quot;)</code></pre>
-<pre class="r"><code>cat(&quot;IC_sd :&quot;,
-    sqrt(paqueteDEG::intervalo.var(ecopetrol)) 
-    )# intervalo de confianza para la desviación estandar</code></pre>
+cat(&quot;IC_var :&quot;, paqueteDEG::intervalo.var(ecopetrol),&quot;\n&quot;)  # intervalo de confianza para la varianza</code></pre>
+<pre><code>IC_var : 9810.519 10202.94 </code></pre>
+<pre class="r"><code>cat(&quot;IC_sd :&quot;,sqrt(paqueteDEG::intervalo.var(ecopetrol)))# intervalo de confianza para la desviación estandar</code></pre>
 <pre><code>IC_sd : 99.04807 101.0096</code></pre>
 <p><br/><br/></p>
 <p>Se estima con una confianza del 95% que la desviación estándar del
@@ -1127,9 +1124,9 @@ normal.</td>
 <pre class="r"><code>peso.ant=c(58.2, 60.3, 61.3, 69.0, 64.0, 62.6, 56.7)
 peso.des=c(60.0, 54.9, 58.1, 62.1, 58.5, 59.9, 54.4)
 
-t.test(peso.ant,peso.des,  
-       paired = TRUE,        # pareadas  
-       conf.level = 0.95)$conf.int    # </code></pre>
+t.test(peso.ant,peso.des,             # variables
+       paired = TRUE,                 # pareadas  
+       conf.level = 0.95)$conf.int    # nivel de confianza</code></pre>
 <pre><code>[1] 0.8029499 6.1113358
 attr(,&quot;conf.level&quot;)
 [1] 0.95</code></pre>
@@ -1215,7 +1212,7 @@ par(mfrow = c(1, 2))
 boxplot(inf.ing, las=1, col=c2, ylim=c(3,6)); grid()
 boxplot(inf.fin, las=1, col=c3, ylim=c(3,6)); grid()</code></pre>
 <p><img src="recurso402_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
-<pre class="r"><code>var.test(inf.ing, inf.fin)$conf.int</code></pre>
+<pre class="r"><code>var.test(inf.ing, inf.fin)$conf.int         # variables</code></pre>
 <pre><code>[1]  0.2859721 10.3579460
 attr(,&quot;conf.level&quot;)
 [1] 0.95</code></pre>
@@ -1535,12 +1532,12 @@ mx=apply(b,1,mean)                 # se calculan m medias por fila</code></pre>
 <pre class="r"><code>ic1=quantile(mx, probs=c(0.025, 0.975)) # se calcula IC método 1
 ic1</code></pre>
 <pre><code>    2.5%    97.5% 
-4.737143 6.454429 </code></pre>
+4.741321 6.460250 </code></pre>
 <p><br/><br/></p>
 <pre class="r"><code>ic2=c(2*mean(mx)-ic1[2], 2*mean(mx)-ic1[1]) # se calcula IC método 2
 ic2</code></pre>
 <pre><code>   97.5%     2.5% 
-4.650646 6.367931 </code></pre>
+4.675867 6.394796 </code></pre>
 <p><br/><br/></p>
 <pre class="r"><code>hist(mx, las=1, main=&quot; &quot;, ylab = &quot; &quot;, xlab = &quot; &quot;, col=c3)
 abline(v=ic1, col=&quot;red&quot;)

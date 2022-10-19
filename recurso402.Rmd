@@ -142,6 +142,8 @@ Supuestos:
 |:--:|:------------------------------------|
 | ![](img/ej1.png){width=120%} | Se registró el tiempo transcurrido entre la facturación y la recepción del pago, para una muestra de 100 clientes en una empresa. La media y la desviación estándar son respectivamente: 39.1 días y 17.3 días. Con el fin de establecer una medición de la calidad en el servicio, se requiere determinar una estimación del 95% para la media.|
 
+
+Este caso tambien se utiliza cuando se desconoce la distribución de la variable X. En este caso se utiliza el teorema central del límite que aproxima la distribución de la media muestral a la distribución normal
 <br/><br/>
 
 **Solución** 
@@ -172,7 +174,7 @@ Uno de los problemas más frecuentes a los que nos enfrentamos es la determinaci
 $$P\Bigg(-z_{\alpha/2}\frac{\sigma}{\sqrt{n}} \leq \bar{X}-\mu \leq z_{\alpha/2}\frac{\sigma}{\sqrt{n}}\Bigg)=1-\alpha$$
 
 Para construirlo partimos del supuesto que podemos tolerar un error de muestreo
-$$e = \vert\bar{X}-\mu\vert \leq z_{\alpha/2}\frac{\sigma}{\sqrt{n}}$$
+$$e = \vert\bar{x}-\mu\vert \leq z_{\alpha/2}\frac{\sigma}{\sqrt{n}}$$
 
 y que deseamos una con fiabilidad del $(1-\alpha)\%$.
 
@@ -197,7 +199,7 @@ Información:
 Confianza  : 98%  ($z_{\alpha/2}$)
 error de muestro : 3 una personas ($|\bar{x}-\mu| < e$)
 varianza : no tenemos la varianza y por tanto tenemos 3 alternativas :(1) mediante un estudio previo similar obtener el valor de la varianza,  (2) realizar una muestra piloto  que puede ser de n=40 y con ella estimar la varianza $s^{2}$, (3) preguntando a un experto sobre el valor del mínimo y el máximo de la variable se puede estimar la desviación estándar 
-$$s=\frac{\max\{x\}+\min\{x\}}{2}$$   
+$$s=\frac{\max\{x\}-\min\{x\}}{2}$$   
 
 ```{r}
 # varianza
@@ -227,7 +229,7 @@ $$\widehat{p} \sim N\Bigg(p, \frac{p(1-p)}{n}\Bigg)$$
 
 por tanto
 
-$$\Bigg[ \hspace{.3cm} ^`\widehat{p}-z_{\alpha/2}\sqrt{\frac{\widehat{p}\hspace{.1cm}(1-\widehat{p}}{n}} \hspace{.2cm};\hspace{.2cm} \widehat{p}+z_{\alpha/2}\sqrt{\frac{\widehat{p}\hspace{.1cm}(1-\widehat{p}}{n}} \hspace{.3cm} \Bigg] $$
+$$\Bigg[ \hspace{.3cm} ^\widehat{p}-z_{\alpha/2}\sqrt{\frac{\widehat{p}\hspace{.1cm}(1-\widehat{p}}{n}} \hspace{.2cm};\hspace{.2cm} \widehat{p}+z_{\alpha/2}\sqrt{\frac{\widehat{p}\hspace{.1cm}(1-\widehat{p}}{n}} \hspace{.3cm} \Bigg] $$
 
 <div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #000000; background-color: #f9f9ec ; border-color: #000000;">
 
@@ -338,14 +340,8 @@ Supuestos:
 ```{r}
 ecopetrol=c(2810, 2810,	2825, 2769, 2734, 2706,	2699, 2671, 2550, 2590,	2570, 2529,	2520, 2566,	2615, 2620, 2550, 2572,	2553, 2570,	2593, 2606)	
 
-cat("IC_var :", 
-    paqueteDEG::intervalo.var(ecopetrol)
-    )
- # intervalo de confianza para la varianza
-cat("\n")
-cat("IC_sd :",
-    sqrt(paqueteDEG::intervalo.var(ecopetrol)) 
-    )# intervalo de confianza para la desviación estandar
+cat("IC_var :", paqueteDEG::intervalo.var(ecopetrol),"\n")  # intervalo de confianza para la varianza
+cat("IC_sd :",sqrt(paqueteDEG::intervalo.var(ecopetrol)))# intervalo de confianza para la desviación estandar
 ```
 <br/><br/>
 
@@ -389,9 +385,9 @@ $d_{i}=x_{1i}-x_{2i}$
 peso.ant=c(58.2, 60.3, 61.3, 69.0, 64.0, 62.6, 56.7)
 peso.des=c(60.0, 54.9, 58.1, 62.1, 58.5, 59.9, 54.4)
 
-t.test(peso.ant,peso.des,  
-       paired = TRUE,        # pareadas  
-       conf.level = 0.95)$conf.int    # 
+t.test(peso.ant,peso.des,             # variables
+       paired = TRUE,                 # pareadas  
+       conf.level = 0.95)$conf.int    # nivel de confianza
 
 ```
 
@@ -447,7 +443,7 @@ par(mfrow = c(1, 2))
 boxplot(inf.ing, las=1, col=c2, ylim=c(3,6)); grid()
 boxplot(inf.fin, las=1, col=c3, ylim=c(3,6)); grid()
 
-var.test(inf.ing, inf.fin)$conf.int
+var.test(inf.ing, inf.fin)$conf.int         # variables
 t.test(inf.ing, inf.fin,  paired = FALSE,   # grupos independientes 
        var.equal = TRUE,                    # varianzas iguales
        conf.level = 0.95)$conf.int 
