@@ -552,6 +552,10 @@ div.tocify {
     <li>
       <a href="codigo403.html">Código 4.3</a>
     </li>
+    <li class="divider"></li>
+    <li>
+      <a href="Talller422.html">Taller 422</a>
+    </li>
   </ul>
 </li>
 <li class="dropdown">
@@ -719,17 +723,17 @@ barplot(table(suma), las=1,cex.axis=0.7)</code></pre>
 <p><img src="codigo201_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <pre class="r"><code>data.frame(prop.table(table(suma)))</code></pre>
 <pre><code>   suma       Freq
-1     2 0.02782745
-2     3 0.05553890
-3     4 0.08334435
-4     5 0.11104325
-5     6 0.13895040
-6     7 0.16668185
-7     8 0.13871075
-8     9 0.11111235
-9    10 0.08342020
-10   11 0.05558630
-11   12 0.02778420</code></pre>
+1     2 0.02777585
+2     3 0.05557895
+3     4 0.08338395
+4     5 0.11110115
+5     6 0.13890640
+6     7 0.16667970
+7     8 0.13894065
+8     9 0.11109410
+9    10 0.08322200
+10   11 0.05553835
+11   12 0.02777890</code></pre>
 <p></br></p>
 <p>Procedimiento alternativo</p>
 <pre class="r"><code>t=sapply(1:200, function(x){sum(sample(1:6,2,rep=T))})
@@ -754,7 +758,7 @@ siguiente ejemplo :</p>
 <pre><code>[1] 2 2</code></pre>
 <p>La misma simulación con palabras</p>
 <pre class="r"><code>sample(c(&quot;Blanca&quot;,&quot;Roja&quot;,&quot;Azul&quot;),2,rep=T,prob=c(3,5,4))</code></pre>
-<pre><code>[1] &quot;Blanca&quot; &quot;Roja&quot;  </code></pre>
+<pre><code>[1] &quot;Roja&quot;   &quot;Blanca&quot;</code></pre>
 <p></br></br><br/></p>
 </div>
 </div>

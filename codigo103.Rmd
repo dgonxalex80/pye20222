@@ -495,14 +495,15 @@ Inicialmente se instala el paquete por una única vez
 Luego se carga para utilizar sus funciones
 
 ```{r, message=FALSE,warning=FALSE}
-library(highcharter)
+# library(highcharter)
 ```
 
 
-```{r, message=FALSE,warning=FALSE}
-hchart(casas, "scatter", hcaes(x = precio, y = area.con, group = mes)) %>%
-  hc_title(text = "Precio por área construida") 
+```{r, message=FALSE,warning=FALSE, echo=FALSE}
+# hchart(casas, "scatter", hcaes(x = precio, y = area.con, group = mes)) %>%
+#  hc_title(text = "Precio por área construida") 
 ```
+
 ```{r}
 # paquetes requeridos
 # install.packages("ggplot2")

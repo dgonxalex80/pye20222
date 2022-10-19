@@ -335,7 +335,7 @@ Esta prueba no requiere la instalación de paquetes adicionales, está disponibl
 Las siguientes pruebas requieren instalar y cargar el paquete: `normtest`
 
 ```{r}
-install.packages("normtets")
+# install.packages("normtets")
 library(normtest)
 ```
 

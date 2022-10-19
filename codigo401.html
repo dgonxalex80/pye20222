@@ -552,6 +552,10 @@ div.tocify {
     <li>
       <a href="codigo403.html">Código 4.3</a>
     </li>
+    <li class="divider"></li>
+    <li>
+      <a href="Talller422.html">Taller 422</a>
+    </li>
   </ul>
 </li>
 <li class="dropdown">
@@ -612,6 +616,19 @@ div.tocify {
   <ul class="dropdown-menu" role="menu">
     <li>
       <a href="https://dgonxalex80.github.io/blog_PyE20222/blog.html">Blog</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Parciales
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Segundo parcial</li>
+    <li>
+      <a href="segundo_parcial.html"></a>
     </li>
   </ul>
 </li>
@@ -687,7 +704,7 @@ abline(h=20,  col=&quot;red&quot;)</code></pre>
 <p><img src="codigo401_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 <pre class="r"><code>apply(T123,2,mean)</code></pre>
 <pre><code>      T1       T2       T3 
-20.02908 18.25457 20.08003 </code></pre>
+20.17773 18.07150 19.87865 </code></pre>
 <p>Para un tamaño de muestra n=10 se observa que los mejores resultados
 se obtienen con T3. Este estimador se puede clasificar como INSESGADO y
 EFICIENTE, pues ademas que su promedio está muy cerca de 20, tiene la
@@ -707,7 +724,7 @@ abline(h=20,  col=&quot;red&quot;)</code></pre>
 <p><img src="codigo401_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <pre class="r"><code>apply(T123,2,mean)</code></pre>
 <pre><code>      T1       T2       T3 
-20.00585 19.79377 19.99170 </code></pre>
+19.93896 19.79472 19.99267 </code></pre>
 <p>Los resutados indican que el mejor estimador de b corresponde a T3.
 Sin embargo el estimador T2 que era insesgado al aumentar el tamaño de
 la muestra pasando de n=10 a n=100 se observa que su promedio se acerca
@@ -1077,8 +1094,8 @@ distinguen por un Id del 1 al 1000, utilizamos la funcion
 <strong>sample</strong> para seleccionar la muestra:</p>
 <pre class="r"><code>x&lt;-seq(1,1000,1)
 sample(x, 20)</code></pre>
-<pre><code> [1] 816 161 943   7 105 152 419 734 879  60 571 247 473 273 462  91 539 123 406
-[20] 324</code></pre>
+<pre><code> [1] 311 976   8 640 508 763 258 711  75 378 455 437 861 772 925 933 723 415 393
+[20] 329</code></pre>
 <p>En este caso se ha seleccionado una muestra de tamaño <span
 class="math inline">\(n=10\)</span> de una población de <span
 class="math inline">\(N=1000\)</span> unidades. Dato que la población es
@@ -1089,7 +1106,7 @@ población sea demasiado pequeña (este tipo de muestreos se llaman
 bootstrap o remuestreo) :</p>
 <pre class="r"><code>x&lt;-1:10
 sample(x, 20, replace = TRUE)</code></pre>
-<pre><code> [1]  4  8  1  2 10  5  9  4  8  7 10  4  5  1  7  2  2  4  6  3</code></pre>
+<pre><code> [1]  1  4  3  1  4  3  5  4  7  5  3 10  9  2 10  1  7  5 10  8</code></pre>
 <p><br/><br/></p>
 </div>
 <div id="muestreo-sistemático" class="section level3">
@@ -1099,26 +1116,26 @@ a=100
 ids=S.SY(N, a)
 ids</code></pre>
 <pre><code>      [,1]
- [1,]   44
- [2,]  144
- [3,]  244
- [4,]  344
- [5,]  444
- [6,]  544
- [7,]  644
- [8,]  744
- [9,]  844
-[10,]  944
-[11,] 1044
-[12,] 1144
-[13,] 1244
-[14,] 1344
-[15,] 1444
-[16,] 1544
-[17,] 1644
-[18,] 1744
-[19,] 1844
-[20,] 1944</code></pre>
+ [1,]   30
+ [2,]  130
+ [3,]  230
+ [4,]  330
+ [5,]  430
+ [6,]  530
+ [7,]  630
+ [8,]  730
+ [9,]  830
+[10,]  930
+[11,] 1030
+[12,] 1130
+[13,] 1230
+[14,] 1330
+[15,] 1430
+[16,] 1530
+[17,] 1630
+[18,] 1730
+[19,] 1830
+[20,] 1930</code></pre>
 <p><br/><br/></p>
 </div>
 <div id="ejemplo-muestreo-aleatorio-simple" class="section level3">
@@ -1157,31 +1174,31 @@ a=N/n
 ids=S.SY(N, a)
 ids</code></pre>
 <pre><code>      [,1]
- [1,]   18
- [2,]   36
- [3,]   54
- [4,]   72
- [5,]   90
- [6,]  108
- [7,]  126
- [8,]  144
- [9,]  162
-[10,]  180</code></pre>
+ [1,]   10
+ [2,]   28
+ [3,]   46
+ [4,]   64
+ [5,]   82
+ [6,]  100
+ [7,]  118
+ [8,]  136
+ [9,]  154
+[10,]  172</code></pre>
 <pre class="r"><code>base2=base_muestreo[ids,]
 base2</code></pre>
 <pre><code># A tibble: 10 × 3
       ID CAR      NF
    &lt;int&gt; &lt;chr&gt; &lt;dbl&gt;
- 1    18 MAT     4  
- 2    36 SIS     3.7
- 3    54 CIV     2.3
- 4    72 IND     4.2
- 5    90 MAT     4  
- 6   108 BIO     4  
- 7   126 BIO     1.2
- 8   144 CIV     2  
- 9   162 CIV     4.1
-10   180 CIV     1.7</code></pre>
+ 1    10 ELE     3  
+ 2    28 MAT     4.2
+ 3    46 MAT     4.8
+ 4    64 SIS     2.3
+ 5    82 MAT     3.8
+ 6   100 BIO     3.8
+ 7   118 IND     3.5
+ 8   136 CIV     2.2
+ 9   154 IND     2  
+10   172 CIV     2.2</code></pre>
 <p><br/><br/></p>
 <p>Para los casos de los muestreos estratificado y muestreo por
 conglomerados se utiliza el muestreo aleatorio simple como base.</p>
@@ -1255,21 +1272,21 @@ muestra</code></pre>
 <pre><code># A tibble: 30 × 3
       ID CAR      NF
    &lt;int&gt; &lt;chr&gt; &lt;dbl&gt;
- 1    32 IND     3.1
- 2    24 MAT     4.5
- 3    62 CIV     3.6
- 4    70 CIV     1.2
- 5    16 SIS     4  
- 6    48 CIV     3.4
- 7    41 CIV     3.1
- 8    33 SIS     3  
- 9    78 IND     3.7
-10    45 CIV     2.6
+ 1    80 BIO     3  
+ 2    39 IND     4.7
+ 3     9 CIV     1.5
+ 4    20 IND     4.6
+ 5    46 MAT     4.8
+ 6    62 CIV     3.6
+ 7    12 SIS     3.4
+ 8     8 MAT     4.3
+ 9    24 MAT     4.5
+10    60 CIV     2.4
 # … with 20 more rows</code></pre>
 <p>Estimador :<span class="math inline">\(\widehat{\mu}\)</span> media
 muestral</p>
 <pre class="r"><code>mean(muestra$NF)</code></pre>
-<pre><code>[1] 3.15</code></pre>
+<pre><code>[1] 3.406667</code></pre>
 </div>
 
 
