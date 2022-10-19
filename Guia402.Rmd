@@ -69,7 +69,7 @@ Para alcanzar los objetivos planteados se propone realizar las siguientes activi
 |Trabajo individual |  |
 |Fecha          | 24 de octubre de 2022 |
 |Hora           | 23:59 hora local       |
-|**Actividad 422**    |Resuelva las preguntas y problemas planteadas en  el  [**Taller 422**](https://github.com/dgonzalez80/pye2021.io/blob/main/talleres/Taller412.pdf) y entregue su solución  en formato  pdf en el enlace correspondiente de  Brightspace|
+|**Actividad 422**    |Resuelva las preguntas y problemas planteadas en  el  [**Taller 422**](https://dgonxalex80.github.io/pye20222/Taller422.html) y entregue su solución  en formato  pdf en el enlace correspondiente de  Brightspace|
 |Trabajo individual |  |
 |Fecha          | 24 de octubre de 2022 |
 |Hora           | 23:59 hora local       |
