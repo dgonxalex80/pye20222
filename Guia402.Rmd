@@ -63,7 +63,7 @@ Para alcanzar los objetivos planteados se propone realizar las siguientes activi
 ## **Cronograma de trabajo**
 
 
-|Actividad      | Descripción                    | 
+|Actividad      | Descripción                    | https://github.com/dgonxalex80
 |:--------------|:-----------------------------  |
 |**Actividad 421**    |Construir un **mapa mental** sobre **intervalos de confianza**  en formato pdf|
 |Trabajo individual |  |
