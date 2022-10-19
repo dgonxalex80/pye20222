@@ -416,7 +416,7 @@ Con la información recogia por los estudiantes en la hoja electrónica ubicada 
 |:------------------|:------------------------------------------------------------------------------:|:------| 
 | media             | $$IC_{\mu}: \bar{x} \pm z_{\alpha/2} \hspace{.1cm}\frac{\sigma}{\sqrt{n}}$$    | (1)   | 
 |                   | $$IC_{\mu}: \bar{x} \pm z_{\alpha/2} \hspace{.1cm}\frac{s}{\sqrt{n}}$$         | (2)   |
-|                   | $$IC_{\mu}: \bar{x} \pm t_{\alpha/2} \hspace{.1cm}\frac{s}{\sqrt{n}}$$         | (3)   |
+|                   | $$IC_{\mu}: \bar{x} \pm t_{\alpha/2; v=n-1} \hspace{.1cm}\frac{s}{\sqrt{n}}$$         | (3)   |
 |                   |                                                                                |       |
 | tamaño muestra    | $$n = \displaystyle\frac{z_{\alpha/2}^{2}\sigma^{2}}{e^{2}}$$                  | (4)   |
 |                   | $$n=\dfrac{n_{o}N}{n_{o}+N-1}$$                                                | (5)   |
