@@ -87,8 +87,7 @@ Para alcanzar los objetivos planteados se propone realizar las siguientes activi
 
 |               |                              | 
 |:--------------|:-----------------------------|
-| Actividad 431 | Mapa mental sobre pruebas de hipótesis|
-| Actividad 432 | Solucionario taller 431 de problemas sobre pruebas de hipótesis| 
+| Actividad 431 | Solucionario taller 431 de problemas sobre pruebas de hipótesis| 
 | Fecha         | 6 de noviembre   de 2022 |
 | Hora          | 23:59 hora local       |
 
