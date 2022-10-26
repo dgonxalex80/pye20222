@@ -8,3 +8,9 @@ data/
 .Rdata
 .httr-oauth
 .DS_Store
+.aux
+.bcf
+.log
+.out
+.xml
+.gz
