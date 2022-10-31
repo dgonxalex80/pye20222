@@ -323,7 +323,7 @@ El valor-p corresponde al área delimitada por el $EdeP$ en el sentido que indic
 
 |    |                                     |
 |:--:|:------------------------------------|
-| ![](img/Nota_nota.png) | Al aplicar las últimas dos reglas (2 y 3) no se requiere la construcción de una $RdeR$ para tomar la decisión. Solo con revisar el valor-p entregado por la prueba y aplicar la regla se toma la decisión. En adelante utilizaremos las reglas 2 y 3 dado que al ejecutar las funciones  en R nos sumunistran información sobre valor-p.|
+| ![](img/nota.png) | Al aplicar las últimas dos reglas (2 y 3) no se requiere la construcción de una $RdeR$ para tomar la decisión. Solo con revisar el valor-p entregado por la prueba y aplicar la regla se toma la decisión. En adelante utilizaremos las reglas 2 y 3 dado que al ejecutar las funciones  en R nos sumunistran información sobre valor-p.|
 
 <br/><br/>
 
