@@ -185,8 +185,10 @@ Los parámetros más importante a los que se les realizan pruebas de hipótesis 
 |:-------------|:------------------------|:-----------------------|:-----------------------|
 |$\mu$         |$Ho: \mu = \mu_{o}$      |$Ho: \mu \geq \mu_{o}$  |$Ho: \mu \leq \mu_{o}$  |
 |              |$Ha: \mu \neq \mu_{o}$   |$Ha: \mu < \mu_{o}$     |$Ha: \mu > \mu_{o}$     |
+|              |                         |                        |                        |
 |$p$           |$Ho: p = p_{o}$          |$Ho: p \geq p_{o}$      |$Ho: p \leq p_{o}$      |
 |              |$Ha: p \neq p_{o}$       |$Ha: p < p_{o}$         |$Ha: p > p_{o}$         |
+|              |                         |                        |                        |
 |$\sigma^{2}$  |$Ho: \sigma^{2} = \sigma^{2}_{o}$   |$Ho: \sigma^{2} \geq \sigma^{2}_{o}$ |$Ho: \sigma^{2} \leq \sigma^{2}_{o}$|
 |              |$Ha: \sigma^{2} \neq \sigma^{2}_{o}$|$Ha: \sigma^{2} < \sigma^{2}_{o}$   |$Ha: \sigma^{2} > \sigma^{2}u_{o}$  |
 
