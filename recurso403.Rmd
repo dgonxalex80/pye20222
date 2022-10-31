@@ -294,7 +294,7 @@ knitr::include_graphics("img/RdeR1.png")
 
 <br/>
 
-**Conclusión**: Como el **EdeP** (`t = -0.39343`) NO cae en la **RdeR**, entonces NO rechazamos $Ho$, asuminos $Ho$ es verdadera, es decir $\mu$ de los precios es igual a \$120. 
+**Conclusión**: Como el **EdeP** (`t = -0.39343`) NO cae en la **RdeR**, entonces NO rechazamos $Ho$, asuminos $Ho$ es verdadera, es decir $\mu$ de los precios es igual a 120 mil pesos. 
 
 
 <br/><br/>
