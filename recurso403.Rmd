@@ -294,12 +294,12 @@ knitr::include_graphics("img/RdeR1.png")
 
 <br/>
 
-**Conclusión**: Como el **EdeP** (`t = -0.39343`) NO cae en la **RdeR**, entonces NO rechazamos $Ho$, asuminos $Ho$ es verdadera, es decir $\mu$ de los precios es igual a \120. 
+**Conclusión**: Como el **EdeP** (`t = -0.39343`) NO cae en la **RdeR**, entonces NO rechazamos $Ho$, asuminos $Ho$ es verdadera, es decir $\mu$ de los precios es igual a \$120. 
 
 
 <br/><br/>
 
-**Regla 2**: Si $\alpha >$ **valor-p** entonces rechazamos $H_{0}$, se **acepta** $H_{a}$. Si por el contrario $\alpha >$ valor-p, no rechazamos $H_{0}$, **asumimos** 	que $H_{0}$ es verdad. 
+**Regla 2**: Si $\alpha >$ **valor-p** entonces rechazamos $H_{0}$, se **acepta** $H_{a}$ como verdadera. Si por el contrario $\alpha <  $ **valor-p**, no rechazamos $H_{0}$, **asumimos** 	que $H_{0}$ es verdad. 
 
 <br/><br/><br/>
 
@@ -664,9 +664,11 @@ x.img=c(16, 15, 12, 17, 18, 14, 16, 14, 16,  17, 19, 16,  14, 21, 20, 16, 16, 16
 
 **Solución**:
 
-Hipótesis Nula	Ho: Me = 15 
-Hipótesis Alterna  Ha: Me 15   ó    Ha : Me > 15 
-Estadístico de Prueba : M + : Numero de signos positivos
+Hipótesis Nula	$Ho: Me = 15$ 
+
+Hipótesis Alterna  $Ha : Me > 15$ 
+
+Estadístico de Prueba : $M +$ : Numero de signos positivos
 
 |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
