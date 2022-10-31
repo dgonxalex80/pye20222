@@ -492,7 +492,8 @@ boxplot(grupo2, las=1, col=c3, ylim=c(5,10))
 Iniciaremos con una prueba de hipótesis para la comparación de varianzas:
 
 Ho:$\sigma^{2}_{1} = \sigma^{2}_{2}$<br/>
-Ho:$\sigma^{2}_{1} \neq \sigma^{2}_{2}$<br/>
+
+Ha:$\sigma^{2}_{1} \neq \sigma^{2}_{2}$<br/>
 
 
 
