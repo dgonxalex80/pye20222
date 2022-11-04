@@ -409,7 +409,16 @@ knitr::include_graphics("img/peanutmm.jpg")
 
 Con la información recogia por los estudiantes en la hoja electrónica ubicada el [sitio](https://docs.google.com/spreadsheets/d/16h5EjYzy1MKBS4z11CQyOeseCM08i7Hzyyqk-EAFjGY/edit?usp=sharing)  se puede afirmar que los datos obtenidos respaldan la información suministrada por la compañia en su pagina?. Use una prueba de hipótesis apropiada. Adjunte el proceso realizado
 
-# Formulario
+<br/><br/><br/>
+
+# **Taller 343**
+
+![Enunciado]()
+
+
+<br/><br/><br/>
+
+# **Formulario**
 
 
 | parámetro         |  intervalo de confianza                                                        |       |
