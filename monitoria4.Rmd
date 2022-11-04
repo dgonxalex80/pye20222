@@ -413,7 +413,9 @@ Con la información recogia por los estudiantes en la hoja electrónica ubicada 
 
 # **Taller 343**
 
-![Enunciado]()
+<br/>
+
+#### [Enunciados](https://github.com/dgonxalex80/pye20222/blob/main/pdf/20221104074513994.pdf)
 
 
 <br/><br/><br/>
