@@ -417,6 +417,31 @@ Con la información recogia por los estudiantes en la hoja electrónica ubicada 
 
 #### [Enunciados](https://github.com/dgonxalex80/pye20222/blob/main/pdf/Taller_PdeH2.pdf)
 
+## **punto 1**
+
+Los jóvenes colombianos se ha vuelto más concientes con respecto a la importancia de una buena nutrición acompañada de actividad deportiva para tener una buena salud. Una asociación de profesionales relacionados con este tema opinan que los jóvenes están modificando sus dietas que incluyen menos carnes rojas y más frutas y verduras.  Para vericar estas hipótesis  un grupo de estudiantes de la universidad Javeriana de Cali decide seleccionar registros nutricionales de los estudiantes consignados en una encuesta realizada por Bienestar Universitario hace 10 años y comparar la cantidad promedio de carnes rojas consumidas por año con las cantidades consumidas por un grupo de jóvenes que serán entrevistados este año.  De acuerdo con la información actual se estima que el consumo de carne de res por año varie entre 0 y 104 libras por año.
+
+¿Cuánmtos jóvenes deben seleccionar los investigadores de cada grupo se desean estimar la diferencia en el consumo anual promedio per capita de carne de res correctamente dentro mas o menos 5 libras con una confianza del 99%?
+
+Si además se desea estimar la proporción de jóvenes que son vegetarianos ¿qué tamaño deben tener en cuenta?
+
+
+
+## **punto 2**
+
+Las investigadores del punto anterio selecionaron dos grupos de 400 jóvenes cada uno y reunieron la siguiente información sobre los hábitos de consumo de carne de res actuales y de hace 10 años.
+
+|                              | Hace 10 años |  Este año     |
+| media muestral               |  73          |  63           |
+| desviación estandar muestral |  25          |  28           |
+
+A los investigadores les gustaria poder mosrar que el consumo de carne percapita se redujo en los últomos 10 años, mediante a construcción de un intervalo de confianza. Con la información obtenida y el intervalo de confianza construido a qué conclusión se podría llegar?
+
+
+
+## **punto 3**
+
+Uno de los problemas más frecuentes en los jóvenes universitarios 
 
 
 <br/><br/><br/>
