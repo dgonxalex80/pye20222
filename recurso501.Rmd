@@ -141,17 +141,18 @@ $$\begin{equation*}
 	\end{equation*}$$
 
 Donde:
+
 + $Y$,representa una la variable dependiente, también llamada variable respuesta o variable predicha.
 
-<br/>
+
 
 + $X_{1},X_{2},\dots, X_{k}$, corresponden a un conjunto de variables independientes o predictoras.
 
-<br/>
+
 
 + $\beta_{0},\beta_{1},\beta_{2},\dots, \beta{k}$ son un conjunto de constantes o parámetros del modelo (constantes) que deben ser estimadas a partir del conjunto de valores obtenidos en una muestra.
 
-<br/>
+
 
 + $u$ corresponde a una variable aleatoria no observable que representa todas las variables que no se incluyen en el modelo y corresponde a un componente aleatorio producto del azar de la naturaleza. Sin la presencia de esta variable en la estructura de la relación, el modelo formulado corresponderá a una relación matemática.
 
@@ -349,7 +350,7 @@ summary(regresion)
 
 De acuerdo con estos resultados obtenidos en R, muestra que la ecuación estimada es :
 
-$$\widehat{y} = 1.77788 + 0.55817$$
+$$\widehat{y_{i}} = 1.77788 + 0.55817 x_{i}$$
 
 <br/><br/>
 
@@ -363,7 +364,7 @@ Para validar estos resultados, para poder ser utilizados se debe:
 
 # **Validación de supuestos**
 
-Los supuestos a validar se deben verificar sobre los residuales $\widehat{u_{i}}$ que corresponde a la diferencia entre $\widehat{y_{i}}$ y $y$ y que son las realizaciones de los errores.(  $\widehat{u_{i}} = \widehat{y_{i}}-y_{i}$)
+Los supuestos a validar se deben verificar sobre los residuales $\widehat{u_{i}}$ que corresponde a la diferencia entre $\widehat{y_{i}}$ y $y$ y que son las realizaciones de los errores. ($\widehat{u_{i}} = \widehat{y_{i}}-y_{i}$)
 
 
 
@@ -418,7 +419,7 @@ lmtest::gqtest(y~x)
 
 ## **Supuesto 3** 
 
-Los errores se distribuyen normal $u\sim$ $N(0,\sigma^{2})$}\\
+Los errores se distribuyen normal $u\sim$ $N(0,\sigma^{2})$}
 
 
 |                                                           |
@@ -435,7 +436,7 @@ shapiro.test(u)
 
 ## **Supuesto 4**
 
-Los errores son independientes $E[u_i,u_j]=0$}\\
+Los errores son independientes $E[u_i,u_j]=0$
 
 |                                                                  |
 |:-----------------------------------------------------------------|
@@ -670,7 +671,7 @@ $Cor[u_{i},u_{i-1}]=0$. Los errores no están auto-correlacionados. El supuesto 
 
 $u \sim N(0, \sigma^{2})$ . Para verificar este supuesto se puede construir una gráfica de los residuales $qqnorm$ y una prueba de hipótesis de normalidad
 
-Es necesario antes de utilizar el modelo, verificar el cumplimiento de los anteriores supuestos.\\
+Es necesario antes de utilizar el modelo, verificar el cumplimiento de los anteriores supuestos.
 
 <br/><br/><br/>
 
@@ -719,7 +720,7 @@ Para la verificación del supuesto de homoscedasticidad indica que la variable i
 
 |    |                                     |
 |:--:|:------------------------------------|
-| ![](img/ej3.png){width=120%} | |
+| ![](img/ej3.png){width=10%} | |
 
 
 ```{r}

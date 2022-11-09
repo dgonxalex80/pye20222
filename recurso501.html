@@ -729,30 +729,24 @@ cero)</p>
 <p><span class="math display">\[\begin{equation*}
     Y=\beta_{0}+\beta_{1}X_{1}+\beta_{2}X_{2}+ \dots + \beta_{k}X_{k} +u
     \end{equation*}\]</span></p>
-<p>Donde: + <span class="math inline">\(Y\)</span>,representa una la
-variable dependiente, también llamada variable respuesta o variable
-predicha.</p>
-<p><br/></p>
+<p>Donde:</p>
 <ul>
-<li><span class="math inline">\(X_{1},X_{2},\dots, X_{k}\)</span>,
+<li><p><span class="math inline">\(Y\)</span>,representa una la variable
+dependiente, también llamada variable respuesta o variable
+predicha.</p></li>
+<li><p><span class="math inline">\(X_{1},X_{2},\dots, X_{k}\)</span>,
 corresponden a un conjunto de variables independientes o
-predictoras.</li>
-</ul>
-<p><br/></p>
-<ul>
-<li><span class="math inline">\(\beta_{0},\beta_{1},\beta_{2},\dots,
+predictoras.</p></li>
+<li><p><span class="math inline">\(\beta_{0},\beta_{1},\beta_{2},\dots,
 \beta{k}\)</span> son un conjunto de constantes o parámetros del modelo
 (constantes) que deben ser estimadas a partir del conjunto de valores
-obtenidos en una muestra.</li>
-</ul>
-<p><br/></p>
-<ul>
-<li><span class="math inline">\(u\)</span> corresponde a una variable
+obtenidos en una muestra.</p></li>
+<li><p><span class="math inline">\(u\)</span> corresponde a una variable
 aleatoria no observable que representa todas las variables que no se
 incluyen en el modelo y corresponde a un componente aleatorio producto
 del azar de la naturaleza. Sin la presencia de esta variable en la
 estructura de la relación, el modelo formulado corresponderá a una
-relación matemática.</li>
+relación matemática.</p></li>
 </ul>
 <p><br/><br/></p>
 <p>Un caso particular del modelo, ocurre cuando solo tiene una variable
@@ -1030,8 +1024,8 @@ F-statistic: 54.41 on 1 and 10 DF,  p-value: 2.38e-05</code></pre>
 <p><br/><br/></p>
 <p>De acuerdo con estos resultados obtenidos en R, muestra que la
 ecuación estimada es :</p>
-<p><span class="math display">\[\widehat{y} = 1.77788 +
-0.55817\]</span></p>
+<p><span class="math display">\[\widehat{y_{i}} = 1.77788 + 0.55817
+x_{i}\]</span></p>
 <p><br/><br/></p>
 <p>Para validar estos resultados, para poder ser utilizados se debe:</p>
 <ul>
@@ -1049,7 +1043,7 @@ hipótesis individuales</li>
 class="math inline">\(\widehat{u_{i}}\)</span> que corresponde a la
 diferencia entre <span class="math inline">\(\widehat{y_{i}}\)</span> y
 <span class="math inline">\(y\)</span> y que son las realizaciones de
-los errores.( <span class="math inline">\(\widehat{u_{i}} =
+los errores. (<span class="math inline">\(\widehat{u_{i}} =
 \widehat{y_{i}}-y_{i}\)</span>)</p>
 <pre class="r"><code>yhat=predict(regresion)
 u=yhat-y
@@ -1122,7 +1116,7 @@ alternative hypothesis: variance increases from segment 1 to 2</code></pre>
 <h2><strong>Supuesto 3</strong></h2>
 <p>Los errores se distribuyen normal <span
 class="math inline">\(u\sim\)</span> <span
-class="math inline">\(N(0,\sigma^{2})\)</span>}\</p>
+class="math inline">\(N(0,\sigma^{2})\)</span>}</p>
 <table>
 <tbody>
 <tr class="odd">
@@ -1146,7 +1140,7 @@ W = 0.94569, p-value = 0.5751</code></pre>
 <div id="supuesto-4" class="section level2">
 <h2><strong>Supuesto 4</strong></h2>
 <p>Los errores son independientes <span
-class="math inline">\(E[u_i,u_j]=0\)</span>}\</p>
+class="math inline">\(E[u_i,u_j]=0\)</span></p>
 <table>
 <tbody>
 <tr class="odd">
@@ -1676,7 +1670,7 @@ verificar este supuesto se puede construir una gráfica de los residuales
 <span class="math inline">\(qqnorm\)</span> y una prueba de hipótesis de
 normalidad</p>
 <p>Es necesario antes de utilizar el modelo, verificar el cumplimiento
-de los anteriores supuestos.\</p>
+de los anteriores supuestos.</p>
 <p><br/><br/><br/></p>
 <p><strong>Analisis de resultados</strong></p>
 <p>Listado 1. Supuesto de modelo completo</p>
@@ -1748,7 +1742,7 @@ suponer la varianza de los errores es constante.</p>
 <table>
 <tbody>
 <tr class="odd">
-<td align="center"><img src="img/ej3.png" style="width:120.0%" /></td>
+<td align="center"><img src="img/ej3.png" style="width:10.0%" /></td>
 <td align="left"></td>
 </tr>
 </tbody>
