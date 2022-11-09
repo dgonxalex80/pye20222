@@ -440,7 +440,7 @@ Los errores son independientes $E[u_i,u_j]=0$
 
 |                                                                  |
 |:-----------------------------------------------------------------|
-|$Ho$ : $E[u_{i}u_{j}] = 0$   : los erreres son independients      |
+|$Ho$ : $E[u_{i}u_{j}] = 0$    : los errores son independients      |
 |$Ha$ : $E[u_{i}u_{j}] \neq 0$ : los errores no son independientes |
 
 
