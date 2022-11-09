@@ -1015,8 +1015,8 @@ install.packages('remotes')  # solo una vez
 # codigo para cargar instructivo Taller_regresion1
 library(remotes) 
 library(devtools)  
-install_github("dgonzalez80/paquetepye", force = TRUE) # bajar paquete
-learnr::run_tutorial("Taller_regresion1", "paquetepye") # correr instructivo 1
+install_github("dgonzalez80/paqueteDEG", force = TRUE) # bajar paquete
+learnr::run_tutorial("Taller_regresion1", "paqueteDEG") # correr instructivo 1
 
 ```
 
@@ -1027,8 +1027,8 @@ learnr::run_tutorial("Taller_regresion1", "paquetepye") # correr instructivo 1
 # codigo para cargar instructivo Taller_regresion1
 library(remotes) 
 library(devtools)  
-install_github("dgonzalez80/paquetepye", force = TRUE) # bajar paquete
-learnr::run_tutorial("Taller_regresion2", "paquetepye") # correr instructivo 2 (se corre uno de los dos !!)
+install_github("dgonzalez80/paquetDEG", force = TRUE) # bajar paquete
+learnr::run_tutorial("Taller_regresion2", "paqueteDEG") # correr instructivo 2 (se corre uno de los dos !!)
 ```
 
 <br/><br/>
