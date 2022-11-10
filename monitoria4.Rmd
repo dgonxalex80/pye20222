@@ -449,11 +449,12 @@ Uno de los problemas más frecuentes en los jóvenes universitarios
 
 # [**Taller resuelto PdeH**](https://github.com/dgonxalex80/pye20222/blob/main/pdf/P-PdeH1.pdf)
 
-
+<br/><br/><br/>
 
 
 # **Formulario**
 
+<br/><br/>
 
 | parámetro         |  intervalo de confianza                                                        |       |
 |:------------------|:------------------------------------------------------------------------------:|:------| 
@@ -486,3 +487,10 @@ Uno de los problemas más frecuentes en los jóvenes universitarios
 |                   |                                                                                |       |
 |                   |                                                                                |       |
 |razón de varianzas | $$\Bigg(\dfrac{s_{1}^{2}}{s_{2}^{2}} \dfrac{1}{f_{1-\alpha/2}(v_{1},v_{2})}; \dfrac{s_{1}^{2}}{s_{2}^{2}}\dfrac{1}{f_{\alpha/2}(v_{2},v_{1})}\Bigg)$$ | (15)|
+
+<br/><br/><br/>
+
+
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+knitr::include_graphics("img/DiagramaPdeH.png")
+```

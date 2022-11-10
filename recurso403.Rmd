@@ -424,6 +424,23 @@ Podemos entonce concluir que $\sigma^{2} \neq 81$
 
 <br/><br/><br/>
 
+
+| parámetro       |  prueba de dos colas    | prueba de cola inferior| prueba de cola superior|
+|:----------------|:------------------------|:-----------------------|:-----------------------|
+|$\mu_{1}-\mu_{2}$|$Ho: \mu_{1}-\mu_{2}=\Delta_{o}$|$Ho: \mu_{1}-\mu_{2} \geq=\Delta_{o}$  |$Ho: \mu_{1}-\mu_{2}\leq\Delta_{o}$  |
+|                 |$Ha: \mu_{1}-\mu_{2} \neq \Delta_{o}$|$Ha: \mu_{1}-\mu_{2} <\Delta_{o}$ |$Ha: \mu_{1}-\mu_{2} > \Delta_{o}$   |
+|                 |                                  |                        |                        |
+|                 |                                  |                        |                        |
+|                 |                                  |                        |                        |
+|$p_{1}-p_{2}$    |$Ho: p_{1}-p_{2} = \Delta_{o}$    |$Ho: p_{1}-p_{2} \geq\Delta_{o}$      |$Ho: p_{1}-p_{2} \leq \Delta_{o}$      |
+|                 |$Ha: p_{1}-p_{2} \neq \Delta_{o}$ |$Ha: p_{1}-p_{2} < \Delta_{o}$        |$Ha: p_{1}-p_{2} > \Delta_{o}$      |
+|                 |                         |                        |                        |
+|                 |                                  |                        |                        |
+|                 |                                  |                        |                        |
+|$\sigma_{1}^{2}/\sigma_{2}^{2}$ |$Ho: \sigma_{1}^{2} = \sigma^{2}_{2}$   |$Ho: \sigma_{1}^{2} \geq \sigma_{2}^{2}$ |$Ho: \sigma_{1}^{2} \leq \sigma_{2}^{2}$|
+|                                |$Ha: \sigma_{1}^{2} \neq \sigma^{2}_{2}$|$Ha: \sigma_{1}^{2} < \sigma_{2}^{2}$    |$Ha: \sigma_{1}^{2} > \sigma_{2}^{2}$  |
+<br/><br/><br/>
+
 ### **Pruebas de hipótesis para una comparación de dos medias** 
 
 <br/><br/>

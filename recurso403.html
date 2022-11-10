@@ -1320,6 +1320,117 @@ hipótesis nula, aceptamos la hipótesis alterna como verdadera.</p>
 <div id="p-de-h-sobre-dos-poblaciones" class="section level2">
 <h2><strong>P de H sobre dos poblaciones</strong></h2>
 <p><br/><br/><br/></p>
+<table>
+<colgroup>
+<col width="18%" />
+<col width="27%" />
+<col width="26%" />
+<col width="26%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">parámetro</th>
+<th align="left">prueba de dos colas</th>
+<th align="left">prueba de cola inferior</th>
+<th align="left">prueba de cola superior</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span
+class="math inline">\(\mu_{1}-\mu_{2}\)</span></td>
+<td align="left"><span class="math inline">\(Ho:
+\mu_{1}-\mu_{2}=\Delta_{o}\)</span></td>
+<td align="left"><span class="math inline">\(Ho: \mu_{1}-\mu_{2}
+\geq=\Delta_{o}\)</span></td>
+<td align="left"><span class="math inline">\(Ho:
+\mu_{1}-\mu_{2}\leq\Delta_{o}\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"><span class="math inline">\(Ha: \mu_{1}-\mu_{2} \neq
+\Delta_{o}\)</span></td>
+<td align="left"><span class="math inline">\(Ha: \mu_{1}-\mu_{2}
+&lt;\Delta_{o}\)</span></td>
+<td align="left"><span class="math inline">\(Ha: \mu_{1}-\mu_{2} &gt;
+\Delta_{o}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(p_{1}-p_{2}\)</span></td>
+<td align="left"><span class="math inline">\(Ho: p_{1}-p_{2} =
+\Delta_{o}\)</span></td>
+<td align="left"><span class="math inline">\(Ho: p_{1}-p_{2}
+\geq\Delta_{o}\)</span></td>
+<td align="left"><span class="math inline">\(Ho: p_{1}-p_{2} \leq
+\Delta_{o}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"><span class="math inline">\(Ha: p_{1}-p_{2} \neq
+\Delta_{o}\)</span></td>
+<td align="left"><span class="math inline">\(Ha: p_{1}-p_{2} &lt;
+\Delta_{o}\)</span></td>
+<td align="left"><span class="math inline">\(Ha: p_{1}-p_{2} &gt;
+\Delta_{o}\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left"><span
+class="math inline">\(\sigma_{1}^{2}/\sigma_{2}^{2}\)</span></td>
+<td align="left"><span class="math inline">\(Ho: \sigma_{1}^{2} =
+\sigma^{2}_{2}\)</span></td>
+<td align="left"><span class="math inline">\(Ho: \sigma_{1}^{2} \geq
+\sigma_{2}^{2}\)</span></td>
+<td align="left"><span class="math inline">\(Ho: \sigma_{1}^{2} \leq
+\sigma_{2}^{2}\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"><span class="math inline">\(Ha: \sigma_{1}^{2} \neq
+\sigma^{2}_{2}\)</span></td>
+<td align="left"><span class="math inline">\(Ha: \sigma_{1}^{2} &lt;
+\sigma_{2}^{2}\)</span></td>
+<td align="left"><span class="math inline">\(Ha: \sigma_{1}^{2} &gt;
+\sigma_{2}^{2}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br/><br/><br/></p>
 <div id="pruebas-de-hipótesis-para-una-comparación-de-dos-medias"
 class="section level3">
 <h3><strong>Pruebas de hipótesis para una comparación de dos
@@ -2416,8 +2527,8 @@ runs.test(y)</code></pre>
     Runs Test
 
 data:  y
-statistic = -0.20102, runs = 50, n1 = 50, n2 = 50, n = 100, p-value =
-0.8407
+statistic = -0.80407, runs = 47, n1 = 50, n2 = 50, n = 100, p-value =
+0.4214
 alternative hypothesis: nonrandomness</code></pre>
 <p><strong>Conclusión</strong></p>
 <p>Como el valor-p (0.3149) es mayor al nivel de significancia, no se
@@ -2452,7 +2563,7 @@ plot(density(x), main=&quot; &quot;, las=1, xlab = &quot; &quot;, ylab=&quot; &q
     Shapiro-Wilk normality test
 
 data:  x
-W = 0.99385, p-value = 0.5782</code></pre>
+W = 0.99238, p-value = 0.3845</code></pre>
 <p>Esta prueba no requiere la instalación de paquetes adicionales, pues
 está disponible en la configuración básica de R</p>
 <p>Como el valor-p es superior al nivel de significancia <span
@@ -2471,19 +2582,19 @@ jb.norm.test(x)  # Test de normalidad de Jarque-Bera</code></pre>
     Jarque-Bera test for normality
 
 data:  x
-JB = 0.82646, p-value = 0.657</code></pre>
+JB = 1.403, p-value = 0.468</code></pre>
 <pre class="r"><code>kurtosis.norm.test(x)</code></pre>
 <pre><code>
     Kurtosis test for normality
 
 data:  x
-T = 2.8392, p-value = 0.622</code></pre>
+T = 2.9101, p-value = 0.782</code></pre>
 <pre class="r"><code>skewness.norm.test(x)   </code></pre>
 <pre><code>
     Skewness test for normality
 
 data:  x
-T = -0.13538, p-value = 0.4285</code></pre>
+T = 0.20017, p-value = 0.2285</code></pre>
 <pre class="r"><code># install.packages(&quot;nortets&quot;)
 library(nortest)
 
@@ -2492,13 +2603,13 @@ lillie.test(x) # Kolmogorov-Smirnov</code></pre>
     Lilliefors (Kolmogorov-Smirnov) normality test
 
 data:  x
-D = 0.044352, p-value = 0.4387</code></pre>
+D = 0.034276, p-value = 0.82</code></pre>
 <pre class="r"><code>pearson.test(x) # chi-cuadrado de Pearson</code></pre>
 <pre><code>
     Pearson chi-square normality test
 
 data:  x
-P = 8.59, p-value = 0.8564</code></pre>
+P = 9.27, p-value = 0.8134</code></pre>
 <p><br/><br/></p>
 <p><br/><br/><br/><br/></p>
 </div>

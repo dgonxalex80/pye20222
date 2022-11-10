@@ -1,0 +1,46 @@
+---
+title: "Untitled"
+author: "dgonzalez80"
+date: "2022-11-09"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+|    |                   |**Estadístico de prueba**                                       | Supuestos                    |
+|:--:|:------------------|:---------------------------------------------------------------|:-----------------------------|
+|    |Una población      |                                                                | $x \sim Normal$              |
+|(1) |$Ho:\mu=\mu_{0}$   |                                                                | varianza conocicda           |
+|    |$Ho:\mu\neq\mu_{0}$| $Z_{o} =\dfrac{\bar{X}-\mu_{o}}{\sigma/\sqrt{n}}\sim N(0,1)$   |                              |                   
+|    |                   |                                                                |                              |
+|    |                   |                                                                |                              |
+|(2) |$Ho:\mu=\mu_{0}$   |                                                                | $x \sim Normal$              |
+|    |$Ho:\mu\neq\mu_{0}$|$Z_{o} =\dfrac{\bar{X}-\mu_{o}}{s/\sqrt{n}} \sim N(0,1)$        | varianza desconocida         |
+|    |                   |                                                                |                              |
+|    |                   |                                                                |                              |
+|(3) |                 | $T_{o} = \dfrac{\bar{X}-\mu_{o}}{s/\sqrt{n}} \sim t_{v=n-1}$   |
+|    |                   |                                                                |                              |
+|    |                   |                                                                |                              |
+
+|(4) |                 | $X^{2}_{o} = \dfrac{(n-1)S^{2}}{\sigma_{o}^{2}} \sim \chi^{2}_{v=n-1}$ | 
+|    |                   |                                                                |                              |
+|    |                   |                                                                |                              |
+|(5) |                 | $Z_{o} =  \dfrac{X-n \hspace{.1cm} p_{o}}{\sqrt{n \hspace{.1cm }p_{o}}} \sim N(0,1)$ |
+|    |                   |                                                                |                              |
+|    |                   |                                                                |                              |
+|    |                 | $Z_{o} = \dfrac{\widehat{p}-p_{0}}{\sqrt{p_{o}(1-p_{o})/n}} \sim N(0,1)$ |
+|    | Dos poblaciones |                                                                 |
+|(6) |                 | $T_{o} =  \dfrac{\bar{d}-\Delta_{o}}{s_{d}^{2}} \sim t_{v=n-1}$ |
+|    |                 | donde: $\bar{d}=\dfrac{1}{n}\displaystyle\sum_{i=1}^{n}d_{i} \hspace{.2cm}\text{ y } \hspace{.2cm} d_{i} = x_{1}-x_{2}$ |
+|(7) |                 | $Z_{o} = \dfrac{(\bar{x}_{1}-\bar{x}_{2})- \Delta_{o}}{\sqrt{\dfrac{\sigma_{1}^{2}}{n_{1}}+\dfrac{\sigma_{2}^{2}}{n_{2}}}} \sim N(0,1)$|
+|(8) |                 | $T_{o} = \dfrac{(\bar{x}_{1}-\bar{x}_{2})-\Delta_{o}}{s_{p}\sqrt{\dfrac{1}{n_{1}} + \dfrac{1}{n_{2}}}} \sim t_{v=n_{1}+n_{2}-2}$|
+|    |                 | donde: $s^{2}_{p}=\dfrac{(n_{1}-1)s_{1}^{2}+(n_{2}-1)s^{2}_{2}}{n_{1}+n_{2}-2}$ |
+|(9) |                 | $T_{o} =  \dfrac{(\bar{x}_{1}-\bar{x}_{2}-\Delta_{o}}{\sqrt{\dfrac{s^{2}_{1}}{n_{1}}+\dfrac{s^{2}_{2}}{n_{2}}}} \sim t_{v^{*}}$ |
+|    |                 | donde: $v^{*}= \dfrac{(s^{2}_{1}/n_{1} + s^{2}_{2}/n_{2})^{2}}{\dfrac{(s^{2}_{1}/n_{1})^{2}}{n_{1}-1}+\dfrac{(s^{2}_{2}/n_{2})^{2}}{n_{2}-1}}$|
+|(10)|                 | $Z_{o} =  \dfrac{(\widehat{p_{1}}-\widehat{p_{2}})-\Delta_{o}}{\sqrt{\widehat{p}\widehat{q}(1/n_{1}+1/n_{2})}}$ |
+|    |                 | donde: $\widehat{p}=\dfrac{x_{1}+x_{2}}{n_{1}+n_{2}}$ \hspace{.2cm} $\widehat{q}=1-\widehat{p}$, |
+|    |                 | $\widehat{p_{1}}=\dfrac{x_{1}}{n_{1}} \hspace{.1cm} \text{ y } \hspace{.1cm}\widehat{p_{2}}=\dfrac{x_{2}}{n_{2}}$ |
+|(11)|                 | $F =  \dfrac{s_{1}^{2}}{s_{2}^{2}} \sim F_{v_{1}:n_{1}-1; v_{2}: n_{2}-1}$ |
+|    |                 | |
